@@ -1,0 +1,57 @@
+ErrorDocument 404 /index.php
+RewriteEngine on
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# Expires headers
+# ----------------------------------------------------------------------
+
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+
+# Perhaps better to whitelist expires rules? Perhaps.
+  ExpiresDefault                          "access plus 1 month"
+
+# cache.appcache needs re-requests in FF 3.6 (thx Remy ~Introducing HTML5)
+  ExpiresByType text/cache-manifest       "access plus 0 seconds"
+
+
+
+# Your document html
+  ExpiresByType text/html                 "access plus 0 seconds"
+
+
+# Favicon (cannot be renamed)
+  ExpiresByType image/x-icon              "access plus 1 week"
+
+# Media: images, video, audio
+  ExpiresByType image/gif                 "access plus 1 week"
+  ExpiresByType image/png                 "access plus 1 week"
+  ExpiresByType image/jpg                 "access plus 1 week"
+  ExpiresByType image/jpeg                "access plus 1 week"
+  ExpiresByType video/ogg                 "access plus 1 week"
+  ExpiresByType audio/ogg                 "access plus 1 week"
+  ExpiresByType video/mp4                 "access plus 1 week"
+  ExpiresByType video/webm                "access plus 1 week"
+
+# CSS and JavaScript
+  ExpiresByType text/css                  "access plus 1 week"
+  ExpiresByType application/javascript    "access plus 1 week"
+  ExpiresByType text/javascript           "access plus 1 week"
+
+# Webfonts
+  ExpiresByType font/truetype             "access plus 1 month"
+  ExpiresByType font/opentype             "access plus 1 month"
+  ExpiresByType application/x-font-woff   "access plus 1 month"
+  ExpiresByType image/svg+xml             "access plus 1 month"
+  ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+
+
+  <IfModule mod_headers.c>
+    Header append Cache-Control "public"
+  </IfModule>
+
+</IfModule>
