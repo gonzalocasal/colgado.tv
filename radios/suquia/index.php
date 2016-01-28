@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='Suquia';
 $descripcion='Escuchar Suquia por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $logo='/css/logos/radio/suquia.png';

@@ -1,5 +1,5 @@
 <?php
-$activa=['',' pagActiva','','',''];
+$activa=1;
 $ad='si';
 $titulo='Antena 3';
 $descripcion='Ver Antena 3 internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

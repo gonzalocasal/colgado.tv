@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='FM Pasi&oacute;n';
 $descripcion='Escuchar FM Pasi&oacute;n por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $ad='no';

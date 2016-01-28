@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='Am&eacute;rica 1190';
 $descripcion='Escuchar Am&eacute;rica 1190 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $ad='no';

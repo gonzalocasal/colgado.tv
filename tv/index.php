@@ -1,6 +1,6 @@
 <?php
-$activa=[' pagActiva','','','',''];
-$activa=[' pagActiva','','','',''];
+$activa=0;
+$activa=0;
 if (isset($index)){
 $titulo='Colgado del Cable';
 $luces='no';

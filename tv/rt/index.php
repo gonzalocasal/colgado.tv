@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='RT Noticias';
 $descripcion='Ver RT Noticias por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

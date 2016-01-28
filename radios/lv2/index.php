@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='LV2';
 $descripcion='Escuchar LV2 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $logo='/css/logos/radio/lv2.png';

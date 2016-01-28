@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='AMC';
 $programacion='';

@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='Radio Nacional';
 $descripcion='Escuchar Radio Nacional por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $ad='no';

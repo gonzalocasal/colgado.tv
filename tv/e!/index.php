@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='E!';
 $descripcion='Ver E! en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

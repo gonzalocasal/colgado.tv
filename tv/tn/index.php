@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='TN';
 $descripcion='Ver TN por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
@@ -9,7 +9,7 @@ $player='<script type="text/javascript" src="/view/resources/player.js"></script
 </div>
 <script type="text/javascript">
   jwplayer("player_421").setup({
-    file: "http://200.42.92.142/live/tnhd1/master.m3u8",
+    file: "http://200.42.92.141/live/tnhd2/master.m3u8",
 	title: "TN en VIVO - Colgado.TV",
     width: "800",
     height: "450",

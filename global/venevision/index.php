@@ -1,5 +1,5 @@
 <?php
-$activa=['',' pagActiva','','',''];
+$activa=1;
 $ad='si';
 $titulo='Venevisi&oacute;n';
 $descripcion='Ver Venevisi&oacute;n internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

@@ -7,11 +7,14 @@ if (!isset($player)){
 }else{
 	$cards='';
 }
+$pactiva=[' ',' ',' ',' ',' '];
+$pactiva[$activa].='pagActiva';
+
 $templateDir=''.$root.'/view/';
 $templateDirCompi=''.$root.'/view/view-c';
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem($templateDir);
 $twig = new Twig_Environment($loader);
 $template = $twig->loadTemplate("template");
-$template->display(array('titulo' =>$titulo,'descripcion'=>$descripcion,'activa'=>$activa,'ad'=>$ad,'player'=>$player,'cards'=>$cards,'programacion'=>$programacion));
+$template->display(array('titulo' =>$titulo,'descripcion'=>$descripcion,'activa'=>$pactiva,'ad'=>$ad,'player'=>$player,'cards'=>$cards,'programacion'=>$programacion));
 ?>

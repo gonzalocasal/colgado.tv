@@ -1,5 +1,5 @@
 <?php
-$activa=['','','',' pagActiva',''];
+$activa=3;
 $titulo='Contacto | Colgado';
 $luces="no";
 $ad="no";

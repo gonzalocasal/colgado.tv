@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='UTN Mendoza';
 $descripcion='Escuchar UTN Mendoza por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $logo='/css/logos/radio/utnmendoza.png';

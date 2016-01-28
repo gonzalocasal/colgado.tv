@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='Telefe';
 $descripcion='Ver Telefe online por internet en vivo las 24hs toda la programaci&oacute;n sin l&iacute;mites.';

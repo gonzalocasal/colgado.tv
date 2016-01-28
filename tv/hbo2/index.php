@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='HBO 2';
 $descripcion='Ver HBO 2 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

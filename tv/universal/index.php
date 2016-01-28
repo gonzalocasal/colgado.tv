@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='Universal';
 $descripcion='Ver Universal por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

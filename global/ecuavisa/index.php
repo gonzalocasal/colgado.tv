@@ -1,5 +1,5 @@
 <?php
-$activa=['',' pagActiva','','',''];
+$activa=1;
 $ad='si';
 $titulo='Ecuavisa';
 $descripcion='Ver Ecuavisa internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

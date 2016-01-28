@@ -1,5 +1,5 @@
 <?php
-$activa=[' pagActiva','','','',''];
+$activa=0;
 $ad='si';
 $titulo='Canal 26';
 $descripcion='Ver Canal 26 internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

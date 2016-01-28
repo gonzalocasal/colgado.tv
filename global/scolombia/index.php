@@ -1,5 +1,5 @@
 <?php
-$activa=['',' pagActiva','','',''];
+$activa=1;
 $ad='si';
 $titulo='Se&ntilde;al Colombia';
 $descripcion='Ver Se&ntilde;al Colombia internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

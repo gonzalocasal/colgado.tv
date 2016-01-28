@@ -1,5 +1,5 @@
 <?php
-$activa=['',' pagActiva','','',''];
+$activa=1;
 $ad='si';
 $titulo='Azteca 7';
 $descripcion='Ver Azteca 7 internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';

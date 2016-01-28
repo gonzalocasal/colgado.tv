@@ -1,5 +1,5 @@
 <?php
-$activa=['','',' pagActiva','','']; 
+$activa=2; 
 $titulo='Cadena 3';
 $descripcion='Escuchar Cadena 3 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $logo='/css/logos/radio/cadena3.png';
