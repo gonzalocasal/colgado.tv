@@ -24,53 +24,43 @@
         <div id="centro">
             <nav>
                 <ul>
-                    <li><img alt="" class="tab" height="24" id="menu-icon" src=
-                    "/view/imgs/icon_menu.png" width="24"></li>
-                    <li><img alt="" class="tab" height="25" id="logo" src=
-                    "/view/imgs/logo.jpg" width="25"></li>
+                    <li><img alt="" class="tab" height="24" id="menu-icon" src="/view/imgs/icon_menu.png" width="24"></li>
+                    <li><img alt="" class="tab" height="25" id="logo" src="/view/imgs/logo.jpg" width="25"></li>
                     <li>
-                        <a class="tab{{activa[0]}}" href="/" id=
-                        "nav-home">COLGADO.TV</a>
+                        <a class="tab{{activa[0]}}" href="/" id="nav-home">COLGADO.TV</a>
                     </li>
                     <li>
-                        <a class="tab{{activa[0]}}" href="/tv" id=
-                        "nav-tv">CABLE</a>
+                        <a class="tab{{activa[0]}}" href="/tv" id="nav-tv">CABLE</a>
                     </li>
                     <li>
-                        <a class="tab{{activa[1]}}" href="/global" id=
-                        "nav-global">GLOBAL</a>
+                        <a class="tab{{activa[1]}}" href="/global" id="nav-global">GLOBAL</a>
                     </li>
                     <li>
-                        <a class="tab{{activa[2]}}" href="/radios" id=
-                        "nav-radio">RADIOS</a>
+                        <a class="tab{{activa[2]}}" href="/radios" id="nav-radio">RADIOS</a>
                     </li>
                     <li>
-                        <a class="tab{{activa[3]}}" href="/contacto" id=
-                        "nav-contacto">CONTACTO</a>
+                        <a class="tab{{activa[3]}}" href="/contacto" id="nav-contacto">CONTACTO</a>
                     </li>
                     <li>
-                        <a class="tab{{activa[4]}}" href="/ayuda" id=
-                        "nav-ayuda">AYUDA</a>
+                        <a class="tab{{activa[4]}}" href="/ayuda" id="nav-ayuda">AYUDA</a>
                     </li>
-                    <li style="list-style: none">{% if not programacion is
-                    empty %}</li>
+                    {% if not programacion isempty %}
                     <li>
-                        <a class="tab" href="{{programacion}}" id=
-                        "programacion" target="_blank">PROGRAMACI&Oacute;N</a>
+                        <a class="tab" href="{{programacion}}" id="programacion" target="_blank">PROGRAMACI&Oacute;N</a>
                     </li>
-                    <li style="list-style: none">{% endif %}{% if cards is
-                    empty %}</li>
+                    {% endif %}
+                    {% if cards is empty %}
                     <li>
                         <a class="" href="#" id="luces"></a>
                     </li>
-                    <li style="list-style: none">{% endif %}</li>
+                    {% endif %}
                 </ul>
             </nav>
         </div>
     </div>
     <div class="slide-in" id="menu">
         <input id="menu-search" placeholder="Buscar..." type="text">
-        <div id="items" style="margin-left: 2em">
+        <div id="items">
             {% include 'menuitems' %}
         </div>
     </div>
