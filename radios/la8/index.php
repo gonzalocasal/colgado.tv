@@ -6,7 +6,6 @@ $logo='/css/logos/radio/la8.png';
 $alt='La 8';
 $ad='no';
 $programacion='';
-$player='<embed autostart="1" showcontrols="1" height="300" width="600" 
-		 src="http://player.services.digitar.net/files/lt8/lt8.asx" type="video/x-ms-asf-plugin"/>';
+$player='<audio autoplay="" controls=""><source type="audio/mpeg" src="http://media203.services.digitar.net:8040/lt8radio.mp3"></audio>';
 include_once'../../controller/prepare.php';	
 ?>

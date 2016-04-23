@@ -5,7 +5,7 @@ $descripcion='Escuchar Cadena 3 por internet en vivo las 24hs toda la programaci
 $logo='/css/logos/radio/cadena3.png';
 $ad='no';
 $programacion='http://www.cadena3.com/programacion.asp';
-$player='<embed autostart="1" showcontrols="1" height="300" width="600" 
-		 src="http://active.telecomCDN.com/cadena3/cadena3" type="video/x-ms-asf-plugin"/>';
+$player='<iframe id="ciframe" width="500" height="50" src="http://www.raddios.com/application/libraries/raddios-player/player-raddios.php?rand=1002616310&r=273&type=mp3&autoplay=1&currentsong=0&lang=es
+"></iframe>';
 include_once'../../controller/prepare.php';	
 ?>
