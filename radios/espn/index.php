@@ -1,7 +1,7 @@
 <?php
 $activa=2; 
-$titulo='ESPN';
-$descripcion='Escuchar ESPN por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
+$titulo='ESPN Radio';
+$descripcion='Escuchar ESPN Radio por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.';
 $ad='no';
 $programacion='http://www.espn1079.fm/programacion/';
 $player='<script type="text/javascript" src="/view/resources/player.js"></script><script type="text/javascript">jwplayer.key="e7ahbpd4sGi3zkDppT6q7tYUseKOkqu09/wC15Swiu8=";</script>

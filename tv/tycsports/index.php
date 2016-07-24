@@ -9,7 +9,7 @@ $player='<script type="text/javascript" src="/view/resources/player.js"></script
 </div>
 <script type="text/javascript">
   jwplayer("player_421").setup({
-    file: "http://kalseglive-a.akamaihd.net/dc-1/m/ny-live-publish4/kLive/smil:1_3j5azqiu_all.smil/playlist.m3u8",
+    file: "http://kalseglive-a.akamaihd.net/dc-1/m/ny-live-publish5/kLive/smil:1_8ovn8mx4_all.smil/playlist.m3u8",
 	title: "TyC Sports en VIVO - Colgado.TV",
     width: "800",
     height: "450",
