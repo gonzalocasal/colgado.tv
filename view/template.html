@@ -19,12 +19,12 @@
                     <ul>
                     <li><img class="tab" id="menu-icon" src="/view/imgs/icon_menu.png" alt="" width="24" height="24" ></li>
                     <li><img class="tab" id="logo" src="/view/imgs/logo.jpg" alt="" width="25" height="25"/></li>
-                    <li><a href="/" id="nav-home" class="tab{{activa[0]}}">COLGADO.TV</a></li>
-                    <li><a href="/tv" id="nav-tv" class="tab{{activa[0]}}">CABLE</a></li>
-                    <li><a href="/global" id="nav-global" class="tab{{activa[1]}}">GLOBAL</a></li>
-                    <li><a href="/radios" id="nav-radio" class="tab{{activa[2]}}">RADIOS</a></li>
-                    <li><a href="/contacto" id="nav-contacto" class="tab{{activa[3]}}">CONTACTO</a></li>
-                    <li><a href="/ayuda" id="nav-ayuda" class="tab{{activa[4]}}">AYUDA</a></li>
+                    <li><a href="/" id="nav-home"               class="tab {% if activa==0 %}pagActiva{% endif %}">COLGADO.TV</a></li>
+                    <li><a href="/tv" id="nav-tv"               class="tab {% if activa==0 %}pagActiva{% endif %}">CABLE</a></li>
+                    <li><a href="/global" id="nav-global"       class="tab {% if activa==1 %}pagActiva{% endif %}">GLOBAL</a></li>
+                    <li><a href="/radios" id="nav-radio"        class="tab {% if activa==2 %}pagActiva{% endif %}">RADIOS</a></li>
+                    <li><a href="/contacto" id="nav-contacto"   class="tab {% if activa==3 %}pagActiva{% endif %}">CONTACTO</a></li>
+                    <li><a href="/ayuda" id="nav-ayuda"         class="tab {% if activa==4 %}pagActiva{% endif %}">AYUDA</a></li>
                     <li id="programacion">{% if not programacion is empty %}<a href="{{programacion}}" target="_blank" class="tab" >PROGRAMACI&Oacute;N</a>{% endif %}</li>
                     {% if cards is empty %}
                     <li><a class="" id="luces" href="#"></a></li>
@@ -38,16 +38,23 @@
             <ul id="items">{% include 'menuitems.html' %}</ul>
         </div>
         <div id="space"></div>
-        <div id="sombra"></div>
-        {% if cards is empty %}
-        <div id="cuerpo">
-            <div id="player">{{player |raw}}</div>
-        </div>
+        <div id="sombra"></div>        
+        {% if player is defined %}
+            <div id="cuerpo">
+                {% if protected is defined %}
+                    <img id="shield" src="/view/imgs/shield.jpg" />
+                    <div id="playerProtected">
+                    <script type="text/javascript">var content = '{{player |raw}}';</script>
+                    </div>
+                {% else %}
+                    <div id="player">{{player |raw}}</div>
+                {% endif %}    
+            </div>        
         {% else %}
             {% for card in cards %}
             <div class="card">{{card |raw}}</div>
             {% endfor %}
-        {% endif %}
+        {% endif %}        
         {% if ad=="si" %}
             {% include 'ad.html' |raw %}
         {% endif %}

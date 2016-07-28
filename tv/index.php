@@ -1,11 +1,6 @@
 <?php
-$activa=0;
 if (isset($index)){
-$titulo='Colgado del Cable';
-$luces='no';
-$ad='no';
-$programacion='';
-$descripcion='Colgado del Cable es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.';
+
 $cards[1]='<a href="/tv/telefe/" class="spritetv sprite-telefe"></a>&nbsp;<a href="/tv/eltrece/" class="spritetv sprite-eltrece"></a>&nbsp;<a href="/tv/america/" class="spritetv sprite-america"></a><br><a href="/tv/tvpublica/" class="spritetv sprite-tvp"></a>&nbsp;<a href="/tv/canal9/" class="spritetv sprite-canal9"></a>';
 $cards[2]='<a href="/tv/tn/" class="spritetv sprite-tn"></a>&nbsp;<a href="/tv/c5n/" class="spritetv sprite-c5n"></a>&nbsp;<a href="/tv/america24/" class="spritetv sprite-a24"></a><a href="/tv/canal26/" class="spritetv sprite-canal26"></a><br><a href="/tv/telesur/" class="spritetv sprite-telesur"></a>&nbsp;<a href="/tv/rt/" class="spritetv sprite-rt"></a><br>';
 $cards[3]='<a href="/tv/tycsports/" class="spritetv sprite-tycsports"></a>&nbsp;<a href="/tv/dxtv/" class="spritetv sprite-dxtv"></a>&nbsp;<a href="/tv/americasports/" class="spritetv sprite-americasports2"></a>&nbsp;<a href="/tv/garage/" class="spritetv sprite-garage "></a>&nbsp;<a href="/tv/directvsports/" class="spritetv sprite-directvsports DirecTV Sports"></a><br><a href="/tv/espn/" class="spritetv sprite-espntv ESPN"></a>&nbsp;<a href="/tv/espn2/" class="spritetv sprite-espn2 ESPN2"></a><br><a href="/tv/foxsports/" class="spritetv sprite-foxsports Fox Sports"></a>&nbsp;<a href="/tv/foxsports2/" class="spritetv sprite-foxsports2 Fox Sports 2"></a>';
@@ -14,7 +9,17 @@ $cards[5]='<a href="/tv/magazine/" class="spritetv sprite-magazine Magazine"></a
 $cards[6]='<a href="/tv/mtv/" class="spritetv sprite-mtv MTV"></a>&nbsp;<a href="/tv/vh1/" class="spritetv sprite-vh1 VH1"></a>&nbsp;<a href="/tv/vevo/" class="spritetv sprite-vevo VEVO"></a>&nbsp;<a href="/tv/onetv/" class="spritetv sprite-onetv One Tv"></a>&nbsp;<a href="/tv/rocknpop/" class="spritetv sprite-rocknpoptv Rock & Pop Se Ve"></a>';
 $cards[7]='<a href="/tv/pakapaka/" class="spritetv sprite-pakapaka Paka Paka"></a>&nbsp;<a href="/tv/tateti/" class="spritetv sprite-tateti tateti"></a>&nbsp;<a href="/tv/cartoon/" class="spritetv sprite-cartoon Cartoon Network"></a><br><a href="/tv/nick/" class="spritetv sprite-nick Nick"></a>&nbsp;<a href="/tv/discoverykids/" class="spritetv sprite-discoverykids Discovery Kids"></a>&nbsp;<a href="/tv/disney/" class="spritetv sprite-disneychannel Disney Channel"></a>&nbsp;<a href="/tv/disneyjunior/" class="spritetv sprite-disneyjunior Disney Junior"></a>&nbsp;<a href="/tv/disneyxd/" class="spritetv sprite-disneyxd Disney XD"></a>';
 $cards[8]='<a href="/tv/fox/" class="spritetv sprite-fox FOX"></a>&nbsp;<a href="/tv/warner/" class="spritetv sprite-warner Warner"></a>&nbsp;<a href="/tv/fx/" class="spritetv sprite-fx FX"></a><br><a href="/tv/ftv/" class="spritetv sprite-ftv FTV"></a>&nbsp;<a href="/tv/foxlife/" class="spritetv sprite-foxlife Fox Life"></a>&nbsp;<a href="/tv/e!/" class="spritetv sprite-e! E!"></a><br><a href="/tv/universal/" class="spritetv sprite-universal Universal"></a>&nbsp;<a href="/tv/axn/" class="spritetv sprite-axn AXN"></a>&nbsp;<a href="/tv/sony/" class="spritetv sprite-sony Sony"></a><br><a href="/tv/tbs/" class="spritetv sprite-tbs TBS Veryfunny"></a>&nbsp;<a href="/tv/comedycentral/" class="spritetv sprite-comedycentral Comedy Central"></a>&nbsp;<a href="/tv/syfy/" class="spritetv sprite-syfy Syfy"></a><br><a href="/tv/gourmet/" class="spritetv sprite-gourmet El Gourmet"></a>&nbsp;<a href="/tv/ae/" class="spritetv sprite-ae A&#38;E"></a>&nbsp;<a href="/tv/infinito/" class="spritetv sprite-infinito Infinito"></a><br><a href="/tv/glitz/" class="spritetv sprite-glitz Glitz"></a>&nbsp;<a href="/tv/tlnovelas/" class="spritetv sprite-tlnovelas Tlnovelas"></a>&nbsp;<a href="/tv/casaclub/" class="spritetv sprite-casaclub Casa Club"></a>';
-$cards[9]='<a href="/tv/tnt/" class="spritetv sprite-tnt TNT"></a>&nbsp;&nbsp;<a href="/tv/space/" class="spritetv sprite-space Space"></a>&nbsp;<a href="/tv/cinecanal/" class="spritetv sprite-cinecanal Cinecanal"></a><br><a href="/tv/studiouniversal/" class="spritetv sprite-studiouniversal Studio Universal"></a>&nbsp;&nbsp;<a href="/tv/filmzone/" class="spritetv sprite-filmzone Film Zone"></a>&nbsp;&nbsp;<a href="/tv/isat/" class="spritetv sprite-isat I-Sat"></a><br><a href="/tv/cinemax/" class="spritetv sprite-cinemax Cinemax"></a>&nbsp;&nbsp;<a href="/tv/amc/" class="spritetv sprite-amc AMC"></a>&nbsp;&nbsp;<br><a href="/tv/tcm/" class="spritetv sprite-tcm TCM"></a>&nbsp;&nbsp;<a href="/tv/golden/" class="spritetv sprite-golden Golden Edge"></a>&nbsp;&nbsp;<a href="/tv/hbo/" class="spritetv sprite-hbo HBO"></a>&nbsp;<a href="/tv/hboplus/" class="spritetv sprite-hboplus HBO Plus"></a>&nbsp;&nbsp;';}
+$cards[9]='<a href="/tv/tnt/" class="spritetv sprite-tnt TNT"></a>&nbsp;&nbsp;<a href="/tv/space/" class="spritetv sprite-space Space"></a>&nbsp;<a href="/tv/cinecanal/" class="spritetv sprite-cinecanal Cinecanal"></a><br><a href="/tv/studiouniversal/" class="spritetv sprite-studiouniversal Studio Universal"></a>&nbsp;&nbsp;<a href="/tv/filmzone/" class="spritetv sprite-filmzone Film Zone"></a>&nbsp;&nbsp;<a href="/tv/isat/" class="spritetv sprite-isat I-Sat"></a><br><a href="/tv/cinemax/" class="spritetv sprite-cinemax Cinemax"></a>&nbsp;&nbsp;<a href="/tv/amc/" class="spritetv sprite-amc AMC"></a>&nbsp;&nbsp;<br><a href="/tv/tcm/" class="spritetv sprite-tcm TCM"></a>&nbsp;&nbsp;<a href="/tv/golden/" class="spritetv sprite-golden Golden Edge"></a>&nbsp;&nbsp;<a href="/tv/hbo/" class="spritetv sprite-hbo HBO"></a>&nbsp;<a href="/tv/hboplus/" class="spritetv sprite-hboplus HBO Plus"></a>&nbsp;&nbsp;';
+
+$model=[
+'activa'=>0,
+'titulo'=>'Colgado del Cable',
+'luces'=>'no',
+'ad'=>'no',
+'programacion'=>'',
+'descripcion'=>'Colgado del Cable es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.',
+'cards'=>$cards ];
+}
 else{
 	header('Location: /');
 }?>

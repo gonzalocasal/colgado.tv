@@ -1,22 +1,24 @@
 function cerrar() {
-    $("#floatLayer").css({
-        opacity: "0"
-    }), setTimeout(function() {
+    $("#floatLayer").css({ opacity: "0"}), setTimeout(function() {
         $("#floatLayer").css({
             display: "none"
         })
     }, 500)
 }
-
 function setscroll() {
     var e = document.getElementById("items").scrollTop;
     localStorage.setItem("scrollpos", e)
 }
-
 function mclick() {
     var e = 1;
     localStorage.setItem("menuclick", e)
 }
+$("#shield").click(function(){
+    $("#playerProtected").show();
+    $("#shield").hide();
+    $( "#playerProtected" ).append(content);
+    $("#ciframe").attr("scrolling", "no");
+});
 $("#cuerpo").css({
         opacity: "1"
     }), $("#ciframe").attr("scrolling", "no"), setTimeout(function() {
