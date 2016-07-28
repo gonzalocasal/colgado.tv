@@ -4,7 +4,6 @@ $model=[
 'ad'=>'si',
 'titulo'=>'C&oacute;rdoba TV',
 'descripcion'=>'Ver C&oacute;rdoba TV internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'programacion'=>'',
 'player'=>'<object type="application/x-shockwave-flash" id="flashcontentmultistream_80395" name="flashcontentmultistream_80395" 
 data="http://api.codistream.net/videoplayergenerator/embedVideoPlayerCodistream-v3.6.swf" width="690" height="450">
 <param name="scale" value="noScale"><param name="menu" value="false"><param name="allowFullScreen" value="true"><param name="wmode" value="transparent">

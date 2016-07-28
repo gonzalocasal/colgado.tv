@@ -16,9 +16,6 @@ $cards[1]=' <script src="https://www.google.com/recaptcha/api.js?hl=es"></script
 $model=[
 'activa'=>3,
 'titulo'=>'Contacto | Colgado',
-'luces'=>'no',
-'ad'=>'no',
-'programacion'=>'',
 'descripcion'=>'Colgado.TV es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.',
 'cards' => $cards];
 

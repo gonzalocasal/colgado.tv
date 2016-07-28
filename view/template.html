@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="es">
+<!DOCTYPE html><html lang="en">
     <head>
         <title>{{titulo |raw}}{% if cards is empty %} | Colgado{% endif %}</title>
         <style>{% include 'style.css' |raw %}{% include 'fonts.css' |raw %}{% if not cards is empty %}{% include 'sprites.css' |raw %}{% endif %}</style>
@@ -25,8 +25,8 @@
                     <li><a href="/radios" id="nav-radio"        class="tab {% if activa==2 %}pagActiva{% endif %}">RADIOS</a></li>
                     <li><a href="/contacto" id="nav-contacto"   class="tab {% if activa==3 %}pagActiva{% endif %}">CONTACTO</a></li>
                     <li><a href="/ayuda" id="nav-ayuda"         class="tab {% if activa==4 %}pagActiva{% endif %}">AYUDA</a></li>
-                    <li id="programacion">{% if not programacion is empty %}<a href="{{programacion}}" target="_blank" class="tab" >PROGRAMACI&Oacute;N</a>{% endif %}</li>
-                    {% if cards is empty %}
+                    <li id="programacion">{% if programacion is defined %}<a href="{{programacion}}" target="_blank" class="tab" >PROGRAMACI&Oacute;N</a>{% endif %}</li>
+                    {% if player is defined %}
                     <li><a class="" id="luces" href="#"></a></li>
                     {% endif %}
                     </ul>

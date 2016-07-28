@@ -6,9 +6,6 @@ $cards[3]='<a href="/radios/cadena3/"class="spriteradio sprite-cadena3 Cadena 3"
 $model=[
 'activa'=>2,
 'titulo'=>'Radios | Colgado',
-'luces'=>'no',
-'ad'=>'no',
-'programacion'=>'',
 'descripcion'=>'Colgado.TV es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.',
 'cards' => $cards];
 

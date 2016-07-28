@@ -11,9 +11,6 @@ $cards[8]='<a href="/global/dw/" class="spriteglobal sprite-dw DW"></a><a href="
 $model=[
 'activa'=>1,
 'titulo'=>'Global | Colgado',
-'luces'=>'no',
-'ad'=>'no',
-'programacion'=>'',
 'descripcion'=>'Colgado.TV es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.',
 'cards' => $cards];
 

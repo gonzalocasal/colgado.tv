@@ -5,9 +5,6 @@ $cards[1]='<img  src="/view/imgs/contacto.jpg" height="197" width="248" alt="Con
 $model=[
 'activa'=>3,
 'titulo'=>'Contacto | Colgado',
-'luces'=>'no',
-'ad'=>'no',
-'programacion'=>'',
 'descripcion'=>'Colgado.TV es el mejor sitio web para ver TV y escuchar radio por internet en vivo las 24hs online, gratis y sin l&iacute;mites.',
 'cards' => $cards];
 
