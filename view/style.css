@@ -511,7 +511,7 @@ textarea {
         margin-left: -10px
     }
     audio {
-        width: 100%
+        width: 350px;
     }
     #floatLayer,
     #luces,
