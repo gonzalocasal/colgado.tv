@@ -38,20 +38,24 @@ nav li {
     margin-bottom: 15px
 }
 #player,
+#playerProtected,
 .tab {
     position: relative
 }
 #centro,
 #luces,
 #player,
+#playerProtected
 iframe {
     overflow: hidden
 }
 #playerProtected{
-    display:none;
+    display:none
 }
 #shield{
     cursor: pointer; 
+    z-index: 980;
+    position: relative
 }
 #header,
 .slide-in {
@@ -104,6 +108,9 @@ nav a {
 #floatLayer {
     opacity: 0;
     transition: opacity .5s linear
+}
+#ad{
+    display: inline-flex
 }
 .pagActiva {
     border-bottom: 2px solid #DD3131
@@ -182,10 +189,12 @@ audio {
     width: 500px
 }
 #player,
+#playerProtected,
 #sombra {
     background-color: #000
 }
 #player,
+#playerProtected,
 br {
     line-height: 0
 }
@@ -197,7 +206,9 @@ br {
     content: " ";
     display: block
 }
-#player {
+#shield,
+#player,
+#playerProtected {
     z-index: 980
 }
 #floatLayer {
@@ -460,7 +471,8 @@ textarea {
     }
     #ciframe,
     #cuerpo,
-    #player {
+    #player,
+    #playerProtected, {
         width: 100%;
         max-height: 250px
     }

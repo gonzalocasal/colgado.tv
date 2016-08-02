@@ -30,6 +30,10 @@ $("#cuerpo").css({
             zIndex: "997"
         }), $("#player").css({
             zIndex: "998"
+        }), $("#playerProtected").css({
+            zIndex: "998"
+        }), $("#shield").css({
+            zIndex: "998"        
         }), $("#sombra").css({
             display: "block"
         }), $("#sombra").fadeTo(300, .9), $("#floatLayer").css({
