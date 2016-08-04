@@ -8,4 +8,3 @@ $model=[
 'player'=>'<iframe id="ciframe" src="http://vaughnlive.tv/embed/video/beto_8?viewers=true&width=780&height=410&watermark=left&autoplay=true" width="800" height="450"></iframe>'];
 include_once'../controller/prepare.php';	
 ?>
-</script>
