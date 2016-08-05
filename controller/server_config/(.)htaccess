@@ -1,4 +1,4 @@
-ErrorDocument 404 /index.php
+ErrorDocument 404 /controller/404.php
 
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d 
