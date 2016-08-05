@@ -1,12 +1,9 @@
 ErrorDocument 404 /index.php
-RewriteEngine on
-<FilesMatch "\.(jpg|jpeg|png|gif|ico|css)$">
-Header set Cache-Control "max-age=604800, public"
-</FilesMatch>
 
-# ----------------------------------------------------------------------
-# Expires headers
-# ----------------------------------------------------------------------
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
 
 
 <IfModule mod_expires.c>
@@ -55,3 +52,4 @@ Header set Cache-Control "max-age=604800, public"
   </IfModule>
 
 </IfModule>
+
