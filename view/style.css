@@ -528,7 +528,8 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
-@media screen and max-width 800px{
+
+@media screen and (max-width: 650px){
 .mobile-item {
 border-left-style:solid;
 border-left-width:3px;
@@ -565,10 +566,6 @@ width:100%;
 max-height:250px
 }
 
-0 {
-width:100%;
-max-height:250px
-}
 
 .card {
 max-width:100%
