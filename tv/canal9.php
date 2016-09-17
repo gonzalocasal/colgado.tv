@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'Canal 9',
 'descripcion'=>'Ver Canal 9 internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://www.directv.com.ar/guia/ChannelDetail.aspx?id=122',

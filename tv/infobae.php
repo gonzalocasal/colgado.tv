@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'Infobae TV',
 'descripcion'=>'Ver Infobae TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://www.infobae.com/tv',

@@ -1,7 +1,13 @@
 <!DOCTYPE html><html lang="es">
     <head>
-        <title>{{titulo |raw}}{% if cards is empty %} | Colgado{% endif %}</title>
-        <style>{% include 'style.css' |raw %}{% include 'fonts.css' |raw %}{% if not cards is empty %}{% include 'sprites.css' |raw %}{% endif %}</style>
+        <title>
+        {{titulo |raw}}{% if page is empty %} | Colgado{% endif %}
+        </title>
+        <style>
+        {% include 'css/style.css' |raw %}
+        {% include 'css/fonts.css' |raw %}
+        {% include 'css/sprites.css' |raw %}
+        </style>
         <meta name="description" content="{{descripcion | raw}}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta property="og:title" content="Colgado del Cable"/>
@@ -24,7 +30,6 @@
                     <li><img class="tab" id="menu-icon" src="/view/imgs/icon_menu.png" alt="" width="24" height="24" ></li>
                     <li><a href="/" id="nav-home"><img id="logo" src="/view/imgs/logo.jpg" alt="" width="170" height="48"/></a></li>
                     <li><a href="/tv" id="nav-tv"               class="tab {% if activa==0 %}pagActiva{% endif %}">CABLE</a></li>
-                    <li><a href="/global" id="nav-global"       class="tab {% if activa==1 %}pagActiva{% endif %}">GLOBAL</a></li>
                     <li><a href="/radios" id="nav-radio"        class="tab {% if activa==2 %}pagActiva{% endif %}">RADIOS</a></li>
                     <li><a href="/contacto" id="nav-contacto"   class="tab {% if activa==3 %}pagActiva{% endif %}">CONTACTO</a></li>
                     <li><a href="/ayuda" id="nav-ayuda"         class="tab {% if activa==4 %}pagActiva{% endif %}">AYUDA</a></li>
@@ -38,30 +43,28 @@
         </div>
         <div id="menu" class="slide-in">
             <input type="text" id="menu-search" placeholder="Buscar..."/> 
-            <ul id="items">{% include 'menuitems.html' %}</ul>
+            <ul id="items">{% include 'html/menuitems.html' %}</ul>
         </div>
         <div id="space"></div>
         <div id="sombra"></div>        
         {% if player is defined %}
-            <div id="cuerpo">
-                {% if protected is defined %}
-                    <img id="shield" src="/view/imgs/shield.jpg" />
-                    <div id="playerProtected">
-                    <script type="text/javascript">var content = '{{player |raw}}';</script>
-                    </div>
-                {% else %}
-                    <div id="player">{{player |raw}}</div>
-                {% endif %}    
-            </div>        
+        <div id="cuerpo">
+            {% if protected is defined %}
+                <img id="shield" alt="shield" src="/view/imgs/shield.jpg" />
+                <div id="playerProtected">
+                <script type="text/javascript">var content = '{{player |raw}}';</script>
+                </div>
+            {% else %}
+                <div id="player">{{player |raw}}</div>
+            {% endif %}    
+        </div>        
         {% else %}
-            {% for card in cards %}
-            <div class="card">{{card |raw}}</div>
-            {% endfor %}
+            {% include 'html/'~page |raw %}
         {% endif %}        
-        {% if ad=="si" %}
-            {% include 'ad.html' |raw %}
-        {% endif %}
-        <script type="text/javascript">{% include 'jquery.js' |raw %}</script> 
-        <script type="text/javascript">{% include 'scripts.js' |raw %}</script> 
+        {% if ad %}
+            {% include 'html/ad.html' |raw %}
+        {% endif %}       
+        <script type="text/javascript">{% include 'js/jquery.js' |raw %}</script>
+        <script type="text/javascript">{% include 'js/scripts.js' |raw %}</script> 
     </body>
 </html>

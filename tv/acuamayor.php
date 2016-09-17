@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'ACUA Mayor',
 'descripcion'=>'Ver ACUA Mayor por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://acuamayor.tda.gob.ar/programacion/',

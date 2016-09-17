@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'Construir TV',
 'descripcion'=>'Ver Construir TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://www.construirtv.com/?sec=3',

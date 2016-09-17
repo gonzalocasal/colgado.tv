@@ -1,9 +1,9 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'VH1',
 'descripcion'=>'Ver VH1 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'player'=>'<iframe id="ciframe" src="http://canalespremium.tk/cp.php?num=483" width="800" height="450"></iframe>'];
+'player'=>'<iframe id="ciframe" src="http://onetvgratis.com/video_embed/VHR/94/100%25x100%25.html" width="800" height="450" allowfullscreen></iframe>'];
 include_once'../controller/prepare.php'	;
 ?>

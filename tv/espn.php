@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'protected'=>true,
 'titulo'=>'ESPN',
 'descripcion'=>'Ver ESPN por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',

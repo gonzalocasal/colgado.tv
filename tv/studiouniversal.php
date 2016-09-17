@@ -1,7 +1,7 @@
 <?php
 $model=[
 'activa'=>0,
-'ad'=>'si',
+'ad'=>true,
 'titulo'=>'Studio Universal',
 'descripcion'=>'Ver Studio Universal por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://www.directv.com.ar/guia/ChannelDetail.aspx?id=508',

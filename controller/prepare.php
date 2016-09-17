@@ -7,6 +7,7 @@ $templateDir=''.$root.'/view/';
 $templateDirCompi=''.$root.'/view/view-c';
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem($templateDir);
+
 $twig = new Twig_Environment($loader);
 $template = $twig->loadTemplate("template.html");
 
