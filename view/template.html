@@ -27,8 +27,8 @@
             <div id="centro">
                 <nav>
                     <ul>
-                    <li><img class="tab" id="menu-icon" src="/view/imgs/icon_menu.png" alt="" width="24" height="24" ></li>
-                    <li><a href="/" id="nav-home"><img id="logo" src="/view/imgs/logo.jpg" alt="" width="170" height="48"/></a></li>
+                    <li><img class="tab" id="menu-icon" src="/view/imgs/icon_menu.png" alt="logo" width="24" height="24" ></li>
+                    <li><a href="/" id="nav-home"><img id="logo" src="/view/imgs/logo.png" alt="" width="166" height="48"/></a></li>
                     <li><a href="/tv" id="nav-tv"               class="tab {% if activa==0 %}pagActiva{% endif %}">CABLE</a></li>
                     <li><a href="/radios" id="nav-radio"        class="tab {% if activa==2 %}pagActiva{% endif %}">RADIOS</a></li>
                     <li><a href="/contacto" id="nav-contacto"   class="tab {% if activa==3 %}pagActiva{% endif %}">CONTACTO</a></li>
@@ -49,7 +49,7 @@
         <div id="sombra"></div>        
         {% if player is defined %}
         <div id="cuerpo">
-            {% if protected is defined %}
+            {% if protected is defined and protected %}
                 <img id="shield" alt="shield" src="/view/imgs/shield.jpg" />
                 <div id="playerProtected">
                 <script type="text/javascript">var content = '{{player |raw}}';</script>

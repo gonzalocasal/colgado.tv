@@ -10,7 +10,7 @@ $model=[
 </div>
 <script type="text/javascript">
   jwplayer("player_421").setup({
-    file: "http://server6.stweb.tv:1935/c5n/live_media/playlist.m3u8",
+    file: "http://server7.stweb.tv/c5n/ngrp:live_all/chunklist_w195879384_b598304.m3u8",
 	title: "C5N en VIVO - Colgado.TV",
     width: "800",
     height: "450",
@@ -21,5 +21,3 @@ $model=[
 </script>'];
 include_once'../controller/prepare.php'	;
 ?>
-
-

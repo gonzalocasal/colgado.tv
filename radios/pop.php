@@ -15,5 +15,3 @@ $model=[
 		</script>'];
 include_once'../controller/prepare.php';	
 ?>
-
-

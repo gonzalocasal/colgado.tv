@@ -4,6 +4,6 @@ $model=[
 'titulo'=>'Brava',
 'descripcion'=>'Escuchar Brava por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'programacion'=>'http://www.fmbrava.net.ar/index.php?option=com_content&view=category&layout=blog&id=38&Itemid=110',
-'player'=>'<iframe id="ciframe" width="480" height="240" src="http://www.brava.com.ar/brava-online.html"></iframe>'];
+'player'=>'<audio src="http://190.113.128.139:8080/nihuilfm" tabindex="0" controls="true" autoplay></audio>'];
 include_once'../controller/prepare.php';	
 ?>
