@@ -12,8 +12,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://live-edge01.telecentro.net.ar/live/smil:c26.smil/master.m3u8",
 	title: "Canal 26 en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

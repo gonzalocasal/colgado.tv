@@ -11,8 +11,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://server5.stweb.tv/radioone/ngrp:live_all/playlist.m3u8",
 	title: "One TV en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

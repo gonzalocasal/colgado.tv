@@ -13,8 +13,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://cdna.telesur.ultrabase.net/mbliveMain/ngrp:mblive_all/master.m3u8",
 	title: "Telesur en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",
     autostart: "true",

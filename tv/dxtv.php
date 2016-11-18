@@ -12,8 +12,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://186.33.227.198/DXTV/smil:DXTV.smil/master.m3u8",
 	title: "DXTV en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

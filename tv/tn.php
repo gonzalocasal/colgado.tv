@@ -12,8 +12,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://streaming.fibercorp.com.ar/a01/ngrp:cmd_tn_vivo1-20048_all/master.m3u8",
 	title: "TN en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

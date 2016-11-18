@@ -12,8 +12,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://ionlive1-lh.akamaihd.net/i/tateti_1@126174/master.m3u8",
 	title: "America - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

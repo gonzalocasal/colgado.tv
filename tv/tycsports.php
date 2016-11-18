@@ -13,8 +13,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://cdnapi.kaltura.com/p/1885581/sp/188558100/playManifest/entryId/0_pp4mf5wo/format/applehttp/protocol/http/uiConfId/35254601/a.m3u8?referrer=aHR0cDovL3d3dy50eWNzcG9ydHNwbGF5LmNvbQ==&playSessionId=61b99a31-63a1-009e-245b-453ba12a2a88",
 	title: "Tyc Sports en VIVO - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",

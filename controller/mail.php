@@ -35,6 +35,8 @@ if ($response != null && $response->success) {
 	alert(\"Gracias por el mensaje.\");
 	window.location.replace(\"http://colgado.tv\");
 	</script>";
+}else{
+	echo "<script language=\"JavaScript\">window.location.replace(\"http://colgado.tv\");</script>";
 }
 
 ?>

@@ -12,8 +12,8 @@ $model=[
   jwplayer("player_421").setup({
     file: "http://live.oneplay.tv/reproducir/.m3u8",
 	title: "Lifetime - Colgado.TV",
-    width: "800",
-    height: "450",
+    width: "950",
+    height: "535",
     image: "",
     stretching: "exactfit",        
     autostart: "true",
