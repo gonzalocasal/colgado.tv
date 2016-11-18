@@ -220,6 +220,9 @@ width:480px;
 margin:40px auto 30px
 }
 
+#contactoImage{
+	box-shadow: 0 2px 5px rgba(0,0,0,.4);
+}
 .contacto-label {
 vertical-align:top;
 display:inline-block;
