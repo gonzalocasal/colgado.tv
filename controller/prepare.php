@@ -8,6 +8,8 @@ $templateDirCompi=''.$root.'/view/view-c';
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem($templateDir);
 
+$key=['googleKey'=>getenv('GOOGLE_KEY')];
+$model = array_merge($model, $key);
 $twig = new Twig_Environment($loader);
 $template = $twig->loadTemplate("template.html");
 

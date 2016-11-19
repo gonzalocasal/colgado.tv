@@ -1,9 +1,10 @@
 ErrorDocument 404 /controller/404.php
 
-RewriteEngine on 
-RewriteCond %{REQUEST_FILENAME} !-d 
-RewriteCond %{REQUEST_FILENAME}\.php -f 
-RewriteRule ^(.*)$ $1.php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^\.]+)$ $1.php [NC]
 
 
 <IfModule mod_expires.c>
@@ -52,4 +53,3 @@ RewriteRule ^(.*)$ $1.php
   </IfModule>
 
 </IfModule>
-
