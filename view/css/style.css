@@ -4,7 +4,6 @@ box-shadow:0 1px 4px #333;
 webkit-transition:left .2s ease-in;
 background-color:#2D2D2D;
 position:fixed;
-height:55px;
 left:0;
 opacity:1;
 right:0;
@@ -179,7 +178,7 @@ display:inline-flex
 
 #logo {
 margin-right: 50px;
-margin-bottom:-20px
+margin-bottom:-22px
 }
 
 #menu-icon {
