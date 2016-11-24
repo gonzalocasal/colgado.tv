@@ -11,7 +11,7 @@ $model=[
 <param name="wmode" value="opaque" /></object>
 <script type="text/javascript">
 jwplayer("player_421").setup({
-file: "http://server7.stweb.tv/c5n/ngrp:live_all/chunklist_w195879384_b598304.m3u8",
+file: "http://server6.stweb.tv:1935/c5n/live_media/playlist.m3u8",
 title: "C5N - colgado.TV",width: "950",height: "535",stretching: "exactfit",autostart: "true"});
 </script>'];
 include_once'../controller/prepare.php'	;
