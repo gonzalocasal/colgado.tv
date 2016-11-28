@@ -167,7 +167,7 @@ margin-left:auto;
 margin-right:auto;
 position:absolute;
 right:0;
-top:75px;
+top:85px;
 width:800px;
 z-index:980
 }
@@ -218,7 +218,7 @@ padding-top:10px;
 width:480px;
 margin-left: auto;
 margin-right: auto;
-margin-top:40px;
+margin-top:30px;
 }
 
 #contactoImage{
@@ -239,7 +239,7 @@ background-position:left -36px
 }
 
 #space {
-margin-top:75px;
+margin-top:85px;
 visibility:hidden
 }
 
