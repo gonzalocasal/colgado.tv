@@ -3,11 +3,8 @@
         <title>
         {{titulo |raw}}{% if page is empty %} | Colgado{% endif %}
         </title>
-        <style>
-        {% include 'css/style.css' |raw %}
-        {% include 'css/fonts.css' |raw %}
-        {% include 'css/sprites.css' |raw %}
-        </style>
+      
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <meta name="description" content="{{descripcion | raw}}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta property="og:title" content="Colgado del Cable"/>
@@ -22,6 +19,11 @@
         <link href="/view/imgs/favicon76.png" rel="apple-touch-icon" sizes="76x76"/>
         <link href="/view/imgs/favicon120.png" rel="apple-touch-icon" sizes="120x120"/>
         <link href="/view/imgs/favicon152.png" rel="apple-touch-icon" sizes="152x152"/>
+          <style>
+        
+        {% include 'css/style.css' |raw %}
+        {% include 'css/sprites.css' |raw %}
+        </style>
     </head>
     <body>
         <div id="header">
