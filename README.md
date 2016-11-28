@@ -1,4 +1,4 @@
 # colgado.tv
 Template de sitio de streamings desarrollado con las tecnologias HTML5, CSS3, JAVASCRIPT, PHP Y TWIG. 
 
-![](https://k61.kn3.net/C/4/F/6/3/3/160.png)
+![](https://k60.kn3.net/D/8/2/1/A/A/20B.png)
