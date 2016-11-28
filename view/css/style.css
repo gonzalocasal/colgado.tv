@@ -40,7 +40,7 @@ transition:.3s
 
 #nav-home {
 color:#fff;
-margin-right:40px;
+margin-right:110px;
 border-bottom-color:#2D2D2D
 }
 
@@ -177,13 +177,11 @@ display:inline-flex
 }
 
 #logo {
-margin-right: 50px;
 margin-bottom:-18px
 }
 
 #menu-icon {
 cursor:pointer;
-margin-right:2%;
 width:24px;
 height:24px;
 margin-bottom:11px
@@ -598,12 +596,6 @@ font-size:1.3em
 	
 	nav ul {
 	margin:0 0 0 -35px
-	}
-	
-	#logo {
-	margin-bottom:-18px;
-	margin-right:-20px;
-	margin-left:-10px
 	}
 	
 	audio {
