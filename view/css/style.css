@@ -22,19 +22,15 @@ margin:0 auto
 
 nav {
 min-width:1100px;
-line-height:46px;
-padding-top:3px;
-border-top:4px solid #2D2D2D;
+line-height:45px;
 width:100%
 }
 
 nav a {
-border-bottom:2px solid #2D2D2D;
 text-decoration:none;
 font-size:14px;
 font-weight:500;
 color:#757575;
-margin-bottom:-2px;
 o-transition:.3s;
 -ms-transition:.3s;
 -moz-transition:.3s;
@@ -44,14 +40,20 @@ transition:.3s
 
 #nav-home {
 color:#fff;
-margin-right:60px;
+margin-right:40px;
 border-bottom-color:#2D2D2D
 }
 
 .pagActiva {
-color:#fff;
-border-bottom:3px solid #DD3131
+border-bottom:2px solid #DD3131;
+border-top:2px solid #2D2D2D;
+padding-bottom: 10px
 }
+
+.pagActiva a{
+color:#fff;
+}
+
 
 nav a:hover {
 color:#fff
@@ -76,8 +78,6 @@ transition:all .3s ease-in-out
 
 .tab {
 vertical-align:bottom;
-display:inline-block;
-position:relative;
 padding-left:15px;
 padding-right:15px;
 text-align:center
@@ -95,7 +95,11 @@ width:auto
 }
 
 nav li {
-display:inline-block
+display:inline
+}
+
+nav ul {
+margin:0
 }
 
 #player {
@@ -147,13 +151,9 @@ ms-transition:all .2s ease-in;
 o-transition:all .2s ease-in;
 overflow:hidden;
 position:fixed;
-top:55px;
+top:48px;
 transition:all .2s ease-in;
 z-index:1000
-}
-
-nav ul {
-margin:0
 }
 
 #floatLayer {
@@ -167,7 +167,7 @@ margin-left:auto;
 margin-right:auto;
 position:absolute;
 right:0;
-top:85px;
+top:80px;
 width:800px;
 z-index:980
 }
@@ -178,7 +178,7 @@ display:inline-flex
 
 #logo {
 margin-right: 50px;
-margin-bottom:-22px
+margin-bottom:-18px
 }
 
 #menu-icon {
@@ -193,10 +193,6 @@ img {
 border:0
 }
 
-#nav-ayuda {
-margin-right:65px
-}
-
 .img-ayuda {
 display:block;
 margin-left:auto;
@@ -204,7 +200,8 @@ margin-right:auto
 }
 
 #programacion {
-width:140px
+width:140px;
+margin-left:65px
 }
 
 .card {
@@ -239,7 +236,7 @@ background-position:left -36px
 }
 
 #space {
-margin-top:85px;
+margin-top:80px;
 visibility:hidden
 }
 
@@ -403,7 +400,7 @@ box-shadow:0 4px 4px #333;
 height:100%;
 left:0!important;
 overflow:hidden;
-top:55px;
+top:48px;
 z-index:1000;
 font-size:0.875em;
 position:fixed
@@ -461,7 +458,7 @@ box-shadow:0 4px 4px #333;
 height:100%;
 left:0!important;
 overflow:hidden;
-top:55px;
+top:48px;
 z-index:1000;
 font-size:0.875em;
 position:fixed
@@ -592,13 +589,19 @@ font-size:1.3em
 	.mobile-item:hover a {
 	background-color:rgba(0,0,0,.0513726)
 	}
+
+	.pagActiva {
+	border-bottom:2px solid #2D2D2D;
+	border-top:2px solid #2D2D2D;
+	padding-bottom: 10px
+	}
 	
 	nav ul {
 	margin:0 0 0 -35px
 	}
 	
 	#logo {
-	margin-bottom:-22px;
+	margin-bottom:-18px;
 	margin-right:-20px;
 	margin-left:-10px
 	}
