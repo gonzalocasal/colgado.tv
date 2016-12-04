@@ -1,32 +1,36 @@
-function cerrar() {
-    $("#floatLayer").css({
-        opacity: "0"
-    }), setTimeout(function() {
-        $("#floatLayer").css({display: "none"});
-    }, 500);
-}
 
 function setscroll() {
     var a = document.getElementById("items").scrollTop;
     localStorage.setItem("scrollpos", a);
 }
-
 function mclick() {
     var a = 1;
     localStorage.setItem("menuclick", a);
 }
-
+function send(){
+    document.getElementById('boton-submit').click(); 
+    return false;
+}
+$("#boton-submit").click(function() {
+    document.getElementById('boton-submit').click(); 
+    return false;
+});
+$("#cerrar").click(function() {
+    $("#floatLayer").css({
+        opacity: "0"
+    }), setTimeout(function() {
+        $("#floatLayer").css({display: "none"});
+    }, 500);
+});
 $("#shield").click(function() {
     $("#playerProtected").show();
     $("#shield").hide();
     $("#playerProtected").append(content);
     $("#ciframe").attr("scrolling", "no");
 });
-
 $("#cuerpo").css({opacity: "1"}), setTimeout(function() {
     $("#floatLayer").css({opacity: "1"});
 }, 1e3);
-
 $("#sombra").fadeTo(1, 0), $("#luces").click(function() {
     $("#header").css({zIndex: "997"}), 
     $("#player").css({zIndex: "998"}), 
@@ -38,7 +42,6 @@ $("#sombra").fadeTo(1, 0), $("#luces").click(function() {
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     $(".mclick").removeClass("mclick").addClass("slide-in");
 }); 
-
 $("#sombra").click(function() {
     $("#sombra").fadeTo(300, 0), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
@@ -48,8 +51,6 @@ $("#sombra").click(function() {
         $("#sombra").css({display: "none"});
     }, 400);
 });
-
-
 $(document).ready(function(a) {
     
     var b = localStorage.getItem("menuclick");
@@ -90,25 +91,20 @@ $(document).ready(function(a) {
     });
     $("#ciframe").attr("scrolling", "no");
 });
-
 $("#menu-icon").click(function() {
     var a = document.getElementById("menu"), b = a.className;
     "mclick" == b && (a.className = "slide-in on");
 });
-
 $(".menu-link").click(function() {
     var a = document.getElementById("items").scrollTop;
     localStorage.setItem("scrollpos", a);
     var b = 1;
     localStorage.setItem("menuclick", b);
 }),
-
 $(window).resize(function() {
     var a = window.innerHeight - 45;
     $("#items").css("height", a - 70);
 }), 
-
-
 function(a) {
     function b(b, c) {
         a("#menu-search").change(function() {

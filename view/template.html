@@ -24,43 +24,43 @@
         </style>
     </head>
     <body>
-        <div id="header">
-            <div id="centro">
+        <div id=header>
+            <div id=centro>
                 <nav>
                     <ul>
-                    <li><img class="tab" id="menu-icon" src="/view/imgs/icon_menu.png" alt="logo" width="24" height="24" ></li>
-                    <li><a href="/" id="nav-home"><img id="logo" src="/view/imgs/banner.png" alt="" width="166" height="48"/></a></li>
-                    <li class="tab {% if activa==0 %}pagActiva{% endif %}"><strong><a href="/tv" id="nav-tv"             >CABLE</a></strong></li>
-                    <li class="tab {% if activa==2 %}pagActiva{% endif %}"><strong><a href="/radios" id="nav-radio"      >RADIOS</a></strong></li>
-                    <li class="tab {% if activa==3 %}pagActiva{% endif %}"><strong><a href="/contacto" id="nav-contacto" >CONTACTO</a></strong></li>
-                    <li class="tab {% if activa==4 %}pagActiva{% endif %}"><strong><a href="/ayuda" id="nav-ayuda"       >AYUDA</a></strong></li>
-                    <li id="programacion">
+                    <li><img class=tab id=menu-icon src="/view/imgs/icon_menu.png" alt="logo" width=24 height=24 ></li>
+                    <li><a href="/" id="nav-home"><img id=logo src="/view/imgs/banner.png" alt="" width=166 height=48 /></a></li>
+                    <li class="tab {% if activa==0 %}pagActiva{% endif %}"><strong><a href="/tv" id=nav-tv           >CABLE</a></strong></li>
+                    <li class="tab {% if activa==2 %}pagActiva{% endif %}"><strong><a href="/radios" id=nav-radio     >RADIOS</a></strong></li>
+                    <li class="tab {% if activa==3 %}pagActiva{% endif %}"><strong><a href="/contacto" id=nav-contacto >CONTACTO</a></strong></li>
+                    <li class="tab {% if activa==4 %}pagActiva{% endif %}"><strong><a href="/ayuda" id=nav-ayuda       >AYUDA</a></strong></li>
+                    <li id=programacion>
                     {% if programacion is defined %}
-                    <strong><a href="{{programacion}}" target="_blank" class="tab" >PROGRAMACI&Oacute;N</a></strong>
+                    <strong><a href="{{programacion}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></strong>
                     {% endif %}
                     </li>
                     {% if player is defined %}
-                    <li><a class="" id="luces" href="#"></a></li>
+                    <li><a class="" id=luces href="#"></a></li>
                     {% endif %}
                     </ul>
                 </nav>
             </div>
         </div>
-        <div id="menu" class="slide-in">
-            <input type="text" id="menu-search" placeholder="Buscar..."/> 
-            <ul id="items">{% include 'html/menuitems.html' %}</ul>
+        <div id=menu class=slide-in>
+            <input type=text id=menu-search placeholder="Buscar..."/> 
+            <ul id=items>{% include 'html/menuitems.html' %}</ul>
         </div>
-        <div id="space"></div>
-        <div id="sombra"></div>        
+        <div id=space></div>
+        <div id=sombra></div>        
         {% if player is defined %}
-        <div id="cuerpo">
+        <div id=cuerpo>
             {% if protected is defined and protected %}
-                <img id="shield" alt="shield" src="/view/imgs/shield.jpg" />
-                <div id="playerProtected">
+                <img id=shield alt=shield src="/view/imgs/shield.jpg" />
+                <div id=playerProtected>
                 <script type="text/javascript">var content = '{{player |raw}}';</script>
                 </div>
             {% else %}
-                <div id="player">{{player |raw}}</div>
+                <div id=player>{{player |raw}}</div>
             {% endif %}    
         </div>        
         {% else %}

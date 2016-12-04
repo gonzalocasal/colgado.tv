@@ -1,12 +1,12 @@
-<div class="card">
-	<img id="contactoImage" src="/view/imgs/sobre.png" height="200" width="300" alt="Contacto"/><br>
-	<form action="captcha.php" id="form-contacto" method="post" >		
-		<input id="nombre" name="nombre" class="inputcontacto" type="text" placeholder="Nombre" required value=""><br>		
-		<input id="email" name="email" class="inputcontacto" type="email" placeholder="Email" required value=""><br>		
-		<textarea id="mensaje" class="inputcontacto"  name="mensaje" placeholder="Mensaje" required rows="2"></textarea><br>
-		<div id="enviar">
-			<input type="submit" value="ENVIAR" id="boton-submit"/><br>
-			<a href="javascript:{}" class="boton" onclick="document.getElementById('boton-submit').click(); return false;">ENVIAR</a>
+<div class=card>
+	<img id=contactoImage src="/view/imgs/sobre.png" height=200 width=300 alt="Contacto"/><br>
+	<form action="captcha.php" id=form-contacto method=post>		
+		<input id=nombre name=nombre class=inputcontacto type=text placeholder=Nombre required ><br>		
+		<input id=email name=email class=inputcontacto type=email placeholder=Email required ><br>		
+		<textarea id=mensaje class=inputcontacto  name=mensaje placeholder=Mensaje required rows=3></textarea><br>
+		<div id=enviar>
+			<input type=submit value=ENVIAR id=boton-submit /><br>
+			<a href="javascript:{}" class=boton onclick="send()">ENVIAR</a>
 		</div>
 	</form>
 </div>
