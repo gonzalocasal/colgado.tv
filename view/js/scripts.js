@@ -12,10 +12,10 @@ function send(){
     return false;
 }
 $("#close-ad").click(function() {
-    $("#floatLayer").css({
+    $("#float-layer").css({
         opacity: "0"
     }), setTimeout(function() {
-        $("#floatLayer").css({display: "none"});
+        $("#float-layer").css({display: "none"});
     }, 500);
 });
 $("#shield").click(function() {
@@ -25,7 +25,7 @@ $("#shield").click(function() {
     $("#ciframe").attr("scrolling", "no");
 });
 $("#player-container").css({opacity: "1"}), setTimeout(function() {
-    $("#floatLayer").css({opacity: "1"});
+    $("#float-layer").css({opacity: "1"});
 }, 1e3);
 $("#shadow").fadeTo(1, 0), $("#lights").click(function() {
     $("#header").css({zIndex: "997"}), 
@@ -34,7 +34,7 @@ $("#shadow").fadeTo(1, 0), $("#lights").click(function() {
     $("#shield").css({zIndex: "998"}),
     $("#shadow").css({display: "block"}),
     $("#shadow").fadeTo(300, .9),
-    $("#floatLayer").css({zIndex: "999"}), 
+    $("#float-layer").css({zIndex: "999"}), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     $(".mclick").removeClass("mclick").addClass("slide-in");
 }); 
@@ -43,7 +43,7 @@ $("#shadow").click(function() {
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     setTimeout(function() {
         $("#player").css({zIndex: "980"}),
-        $("#floatLayer").css({zIndex: "980"}), 
+        $("#float-layer").css({zIndex: "980"}), 
         $("#shadow").css({display: "none"});
     }, 400);
 });

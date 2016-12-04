@@ -5,21 +5,14 @@ $model=[
 'title'=>'El Garage TV',
 'description'=>'Ver El Garage TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.ar.elgarage.com/tv/programas',
-'player'=>'<div class="noticecontent">
-			<div id="swfclientid812780578581571_div" style="float: left; height: 0px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="swfclientid812780578581571" width="01" height="0" style="width:01px; height:0px;"> <param name="movie" value="http://octoshape-a.akamaihd.net/eps/swfclient/sua.swf"> <param name="flashvars" value="printfunc=swfclientid812780578581571print&amp;donefunc=swfclientid812780578581571done&amp;0=-osasua:id812780578581571osasua&amp;1=-suaosa:akamaihd.net:id812780578581571suaosa&amp;2=-allowDomain:octoshape-a.akamaihd.net&amp;3=-allowInsecureDomain:octoshape-a.akamaihd.net"> <param name="AllowScriptAccess" value="always"> <param name="wmode" value="transparent"> <embed src="http://octoshape-a.akamaihd.net/eps/swfclient/sua.swf" name="swfclientid812780578581571" wmode="transparent" allowscriptaccess="always" flashvars="printfunc=swfclientid812780578581571print&amp;donefunc=swfclientid812780578581571done&amp;0=-osasua:id812780578581571osasua&amp;1=-suaosa:akamaihd.net:id812780578581571suaosa&amp;2=-allowDomain:octoshape-a.akamaihd.net&amp;3=-allowInsecureDomain:octoshape-a.akamaihd.net" width="01" height="01" type="application/x-shockwave-flash"> </object></div><object type="application/x-shockwave-flash" id="player" name="player" data="http://octoshape-a.akamaihd.net/eps/players/infinitehd4/player.swf" width="720" height="405" style="visibility: visible;"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><param name="allowScriptAccess" value="always"></object>
-			<script type="text/javascript" src="//octoshape-a.akamaihd.net/eps/js/swfobject.js"></script><script type="text/javascript">
-                var player_id = "player";
-                var player_width = 800;
-                var player_height = 450;
-                var player_streams = [{                id: "my_stream",
-                                               stream: "octoshape://streams.octoshape.net/datco/garage/live/flv/ch1/abr"}
-                ];
-                var player_stream = "my_stream";
-                var params = {allowFullScreen: true, scale: "noscale", allowScriptAccess: "always"};
-                var attributes = {id: player_id, name: player_id};
-    			swfobject.embedSWF(document.location.protocol+"//octoshape-a.akamaihd.net/eps/players/infinitehd4/player.swf", player_id, player_width, player_height, "10.2.0", null, null, params, attributes);
-			</script>
-		   </div>
-		'];
+'player'=>'<script type="text/javascript" src="/view/js/player.js"></script>
+<object type="application/x-shockwave-flash" data="http://p.jwpcdn.com/6/8/jwplayer.flash.swf" width="950" height="535" id="player_421" name="player_421">
+<param name="allowfullscreen" value="true" />
+<param name="wmode" value="opaque" /></object>
+<script type="text/javascript">
+jwplayer("player_421").setup({
+file: "http://186.0.233.76:1935/Garage/smil:garage.smil/playlist.m3u8",
+title: "El Garage TV - colgado.TV",width: "950",height: "535",stretching: "exactfit",autostart: "true"});
+</script>'];
 include_once'../controller/prepare.php'	;
 ?>

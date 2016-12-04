@@ -170,7 +170,7 @@ transition:all .2s ease-in;
 z-index:1000
 }
 
-#floatLayer {
+#float-layer {
 opacity:0;
 transition:opacity .5s linear;
 background-color:rgba(0,0,0,.7);
@@ -602,7 +602,7 @@ font-size:1.3em
 	width:350px
 	}
 	
-	#floatLayer,
+	#float-layer,
 	#lights,
 	#nav-help,
 	#nav-contact,

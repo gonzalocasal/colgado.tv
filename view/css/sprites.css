@@ -16,7 +16,7 @@
 }
 
 .spritetv {
-    background-image: url(/view/imgs/v1.0.1-spritestv.png);
+    background-image: url(/view/imgs/v1.0.2-spritestv.png);
     transition: .3s
 }
 
@@ -27,6 +27,7 @@
     -webkit-transition: .3s;
     transition: .3s
 }
+
 
 .sprite-360tv {
     width: 92px;
@@ -173,405 +174,405 @@
 }
 
 .sprite-directvsports {
-    width: 62px;
-    height: 65px;
-    background-position: -568px -190px;
+    width: 84px;
+    height: 45px;
+    background-position: -358px -131px;
 }
 
 .sprite-discovery {
     width: 143px;
     height: 28px;
-    background-position: -5px -265px;
+    background-position: -443px -232px;
 }
 
 .sprite-discoverykids {
     width: 65px;
     height: 67px;
-    background-position: -158px -265px;
+    background-position: -596px -190px;
 }
 
 .sprite-disneychannel {
     width: 96px;
     height: 47px;
-    background-position: -233px -265px;
+    background-position: -5px -267px;
 }
 
 .sprite-disneyjunior {
     width: 114px;
     height: 40px;
-    background-position: -339px -265px;
+    background-position: -111px -270px;
 }
 
 .sprite-disneyxd {
     width: 80px;
     height: 55px;
-    background-position: -463px -265px;
+    background-position: -235px -267px;
 }
 
 .sprite-dxtv {
-    width: 125px;
-    height: 36px;
-    background-position: -553px -265px;
+    width: 100px;
+    height: 38px;
+    background-position: -325px -270px;
 }
 
 .sprite-e_ {
     width: 29px;
     height: 65px;
-    background-position: -640px -131px;
+    background-position: -596px -267px;
 }
 
 .sprite-eltrece {
     width: 60px;
     height: 60px;
-    background-position: -5px -311px;
+    background-position: -5px -342px;
 }
 
 .sprite-encuentro {
     width: 65px;
     height: 65px;
-    background-position: -75px -311px;
+    background-position: -75px -342px;
 }
 
 .sprite-espn2 {
-    width: 111px;
-    height: 39px;
-    background-position: -553px -311px;
+    width: 106px;
+    height: 29px;
+    background-position: -435px -270px;
 }
 
 .sprite-espnplus {
     width: 111px;
     height: 39px;
-    background-position: -150px -360px;
+    background-position: -150px -342px;
 }
 
 .sprite-espntv {
-    width: 86px;
-    height: 39px;
-    background-position: -358px -131px;
+    width: 79px;
+    height: 29px;
+    background-position: -271px -342px;
 }
 
 .sprite-filmzone {
     width: 56px;
     height: 58px;
-    background-position: -271px -360px;
+    background-position: -360px -342px;
 }
 
 .sprite-fox {
     width: 81px;
     height: 43px;
-    background-position: -337px -360px;
+    background-position: -426px -342px;
 }
 
 .sprite-foxlife {
     width: 114px;
     height: 48px;
-    background-position: -428px -360px;
+    background-position: -517px -342px;
 }
 
 .sprite-foxsports {
     width: 92px;
     height: 54px;
-    background-position: -552px -360px;
+    background-position: -150px -400px;
 }
 
 .sprite-foxsports2 {
     width: 116px;
     height: 54px;
-    background-position: -5px -424px;
+    background-position: -426px -400px;
 }
 
 .sprite-ftv {
     width: 71px;
     height: 55px;
-    background-position: -131px -424px;
+    background-position: -252px -400px;
 }
 
 .sprite-fx {
     width: 58px;
     height: 42px;
-    background-position: -337px -424px;
+    background-position: -552px -400px;
 }
 
 .sprite-garage {
-    width: 81px;
-    height: 70px;
-    background-position: -405px -424px;
+    width: 67px;
+    height: 60px;
+    background-position: -5px -452px;
 }
 
 .sprite-glitz {
     width: 82px;
     height: 43px;
-    background-position: -496px -424px;
+    background-position: -333px -452px;
 }
 
 .sprite-golden {
     width: 89px;
     height: 41px;
-    background-position: -588px -424px;
+    background-position: -552px -452px;
 }
 
 .sprite-gourmet {
     width: 51px;
     height: 47px;
-    background-position: -5px -206px;
+    background-position: -82px -503px;
 }
 
 .sprite-hbo {
     width: 76px;
     height: 40px;
-    background-position: -212px -475px;
+    background-position: -143px -503px;
 }
 
 .sprite-hbo2 {
     width: 97px;
     height: 41px;
-    background-position: -298px -477px;
+    background-position: -425px -503px;
 }
 
 .sprite-hboplus {
     width: 75px;
     height: 53px;
-    background-position: -588px -475px;
+    background-position: -229px -503px;
 }
 
 .sprite-history {
     width: 66px;
     height: 53px;
-    background-position: -5px -538px;
+    background-position: -532px -503px;
 }
 
 .sprite-hyh {
     width: 78px;
     height: 38px;
-    background-position: -81px -538px;
+    background-position: -5px -566px;
 }
 
 .sprite-id {
     width: 54px;
     height: 59px;
-    background-position: -169px -538px;
+    background-position: -608px -503px;
 }
 
 .sprite-infinito {
     width: 51px;
     height: 52px;
-    background-position: -233px -538px;
+    background-position: -93px -572px;
 }
 
 .sprite-isat {
     width: 95px;
     height: 40px;
-    background-position: -294px -538px;
+    background-position: -154px -572px;
 }
 
 .sprite-magazine {
     width: 53px;
     height: 55px;
-    background-position: -399px -538px;
+    background-position: -259px -572px;
 }
 
 .sprite-mtv {
     width: 69px;
     height: 49px;
-    background-position: -462px -538px;
+    background-position: -322px -572px;
 }
 
 .sprite-natgeo {
     width: 123px;
     height: 45px;
-    background-position: -541px -538px;
+    background-position: -401px -572px;
 }
 
 .sprite-nick {
     width: 80px;
     height: 41px;
-    background-position: -294px -593px;
+    background-position: -534px -572px;
 }
 
 .sprite-onetv {
     width: 63px;
     height: 62px;
-    background-position: -81px -593px;
+    background-position: -686px -5px;
 }
 
 .sprite-pakapaka {
     width: 98px;
     height: 45px;
-    background-position: -541px -593px;
+    background-position: -639px -131px;
 }
 
 .sprite-qm {
     width: 55px;
     height: 55px;
-    background-position: -686px -5px;
+    background-position: -671px -186px;
 }
 
 .sprite-quiero {
     width: 60px;
     height: 49px;
-    background-position: -686px -70px;
+    background-position: -671px -251px;
 }
 
 .sprite-rocknpoptv {
     width: 75px;
     height: 58px;
-    background-position: -649px -593px;
+    background-position: -641px -310px;
 }
 
 .sprite-rt {
     width: 67px;
     height: 58px;
-    background-position: -679px -129px;
+    background-position: -641px -378px;
 }
 
 .sprite-rural {
     width: 70px;
     height: 41px;
-    background-position: -640px -206px;
+    background-position: -668px -77px;
 }
 
 .sprite-sony {
     width: 56px;
     height: 46px;
-    background-position: -688px -257px;
+    background-position: -82px -446px;
 }
 
 .sprite-space {
     width: 122px;
     height: 39px;
-    background-position: -154px -661px;
+    background-position: -624px -572px;
 }
 
 .sprite-studiouniversal {
     width: 107px;
     height: 54px;
-    background-position: -286px -661px;
+    background-position: -624px -621px;
 }
 
 .sprite-syfy {
     width: 71px;
     height: 42px;
-    background-position: -674px -313px;
+    background-position: -651px -446px;
 }
 
 .sprite-tango {
     width: 90px;
     height: 62px;
-    background-position: -403px -661px;
+    background-position: -5px -685px;
 }
 
 .sprite-tateti {
     width: 148px;
     height: 38px;
-    background-position: -503px -661px;
+    background-position: -105px -685px;
 }
 
 .sprite-tbs {
     width: 66px;
     height: 59px;
-    background-position: -674px -475px;
+    background-position: -672px -498px;
 }
 
 .sprite-tcm {
     width: 55px;
     height: 55px;
-    background-position: -687px -365px;
+    background-position: -263px -685px;
 }
 
 .sprite-tec {
     width: 98px;
     height: 33px;
-    background-position: -5px -709px;
+    background-position: -328px -685px;
 }
 
 .sprite-telefe {
     width: 118px;
     height: 45px;
-    background-position: -751px -5px;
+    background-position: -436px -685px;
 }
 
 .sprite-telemax {
     width: 82px;
     height: 45px;
-    background-position: -756px -60px;
+    background-position: -564px -685px;
 }
 
 .sprite-telesur {
     width: 60px;
     height: 68px;
-    background-position: -756px -115px;
+    background-position: -759px -5px;
 }
 
 .sprite-tlc {
     width: 73px;
     height: 40px;
-    background-position: -756px -193px;
+    background-position: -748px -83px;
 }
 
 .sprite-tlnovelas {
     width: 106px;
     height: 59px;
-    background-position: -754px -243px;
+    background-position: -656px -685px;
 }
 
 .sprite-tn {
     width: 78px;
     height: 34px;
-    background-position: -755px -312px;
+    background-position: -736px -186px;
 }
 
 .sprite-tnt {
     width: 59px;
     height: 61px;
-    background-position: -755px -356px;
+    background-position: -741px -230px;
 }
 
 .sprite-trutv {
     width: 85px;
     height: 38px;
-    background-position: -752px -427px;
+    background-position: -726px -310px;
 }
 
 .sprite-tvp {
     width: 58px;
     height: 61px;
-    background-position: -750px -475px;
+    background-position: -726px -358px;
 }
 
 .sprite-tvuniversidad {
     width: 55px;
     height: 55px;
-    background-position: -818px -475px;
+    background-position: -732px -429px;
 }
 
 .sprite-tycsports {
     width: 120px;
     height: 35px;
-    background-position: -674px -546px;
+    background-position: -105px -754px;
 }
 
 .sprite-universal {
     width: 85px;
     height: 61px;
-    background-position: -734px -591px;
+    background-position: -235px -754px;
 }
 
 .sprite-vh1 {
     width: 87px;
     height: 52px;
-    background-position: -661px -662px;
+    background-position: -330px -754px;
 }
 
 .sprite-viajar {
     width: 93px;
     height: 50px;
-    background-position: -758px -662px;
+    background-position: -427px -754px;
 }
 
 .sprite-warner {
     width: 52px;
     height: 50px;
-    background-position: -824px -356px;
+    background-position: -748px -494px;
 }
 
 
