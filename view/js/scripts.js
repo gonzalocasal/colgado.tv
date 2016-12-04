@@ -11,10 +11,6 @@ function send(){
     document.getElementById('boton-submit').click(); 
     return false;
 }
-$("#boton-submit").click(function() {
-    document.getElementById('boton-submit').click(); 
-    return false;
-});
 $("#cerrar").click(function() {
     $("#floatLayer").css({
         opacity: "0"
