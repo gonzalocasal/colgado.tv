@@ -3,8 +3,8 @@
         <title>
         {{titulo |raw}}{% if page is empty %} | Colgado{% endif %}
         </title>
-        <meta name="description" content="{{descripcion | raw}}"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name=description content="{{descripcion | raw}}"/>
+        <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta property="og:title" content="Colgado del Cable"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="http://colgado.tv"/>
@@ -12,12 +12,12 @@
         <meta property="og:description" content="{{descripcion | raw}}"/>
         <meta name="google-site-verification" content="{{googleKey}}" />
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
-        <link href="/view/imgs/favicon.ico" rel="icon" type="image/x-icon">
-        <link href="/view/imgs/favicon.png" rel="apple-touch-icon"/>
-        <link href="/view/imgs/favicon76.png" rel="apple-touch-icon" sizes="76x76"/>
-        <link href="/view/imgs/favicon120.png" rel="apple-touch-icon" sizes="120x120"/>
-        <link href="/view/imgs/favicon152.png" rel="apple-touch-icon" sizes="152x152"/>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
+        <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
+        <link href="/view/imgs/favicon76.png" rel=apple-touch-icon sizes="76x76"/>
+        <link href="/view/imgs/favicon120.png" rel=apple-touch-icon sizes="120x120"/>
+        <link href="/view/imgs/favicon152.png" rel=apple-touch-icon sizes="152x152"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <style>
         {% include 'css/style.css' |raw %}
         {% include 'css/sprites.css' |raw %}
@@ -34,11 +34,7 @@
                     <li class="tab {% if activa==2 %}pagActiva{% endif %}"><strong><a href="/radios" id=nav-radio     >RADIOS</a></strong></li>
                     <li class="tab {% if activa==3 %}pagActiva{% endif %}"><strong><a href="/contacto" id=nav-contacto >CONTACTO</a></strong></li>
                     <li class="tab {% if activa==4 %}pagActiva{% endif %}"><strong><a href="/ayuda" id=nav-ayuda       >AYUDA</a></strong></li>
-                    <li id=programacion>
-                    {% if programacion is defined %}
-                    <strong><a href="{{programacion}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></strong>
-                    {% endif %}
-                    </li>
+                    <li id=programacion>{% if programacion is defined %}<strong><a href="{{programacion}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></strong>{% endif %}</li>
                     {% if player is defined %}
                     <li><a class="" id=luces href="#"></a></li>
                     {% endif %}
