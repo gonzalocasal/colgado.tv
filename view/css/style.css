@@ -282,7 +282,7 @@ margin-top: 10px
 margin-top:50px
 }
 
-#cerrar {
+#close-ad {
 background-image:url(/view/imgs/cruz.svg);
 cursor:pointer;
 position:absolute;
