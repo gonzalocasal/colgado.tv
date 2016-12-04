@@ -1,8 +1,8 @@
 <?php
 $model=[
-'activa'=>4,
-'titulo'=>'Ayuda | Colgado',
-'descripcion'=>'Informaci&oacute;n de ayuda para disfrutar colgado.tv',
+'active'=>4,
+'title'=>'Ayuda | Colgado',
+'description'=>'Informaci&oacute;n de ayuda para disfrutar colgado.tv',
 'page' => 'ayuda.html'];
 include_once'../controller/prepare.php';
 ?>

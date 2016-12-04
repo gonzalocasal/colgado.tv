@@ -1,9 +1,9 @@
 <?php
 $model=[
-'activa'=>2, 
-'titulo'=>'Radio Nacional',
-'descripcion'=>'Escuchar Radio Nacional por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'programacion'=>'http://www.radionacional.com.ar/?page_id=2171',
+'active'=>2, 
+'title'=>'Radio Nacional',
+'description'=>'Escuchar Radio Nacional por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
+'schedule'=>'http://www.radionacional.com.ar/?page_id=2171',
 'player'=>'
 	<script src="http://www.raddios.com/application/libraries/reproh5/jplayerrtmp.min.js"></script>
 	<div id="mediaplayer_wrapper" style="position: relative; display: block; width: 240px; height: 30px;">

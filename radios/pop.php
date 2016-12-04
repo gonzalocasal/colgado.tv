@@ -1,9 +1,9 @@
 <?php
 $model=[
-'activa'=>2, 
-'titulo'=>'POP',
-'descripcion'=>'Escuchar POP por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'programacion'=>'http://www.pop-radio.com.ar/',
+'active'=>2, 
+'title'=>'POP',
+'description'=>'Escuchar POP por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
+'schedule'=>'http://www.pop-radio.com.ar/',
 'player'=>'<script src="http://jwpsrv.com/library/40TpZB2+EeOLRiIACusDuQ.js"></script>
 		<div id="playeriOvjuhZDLLIt"></div>
 		<script type="text/javascript">

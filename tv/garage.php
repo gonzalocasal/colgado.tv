@@ -1,10 +1,10 @@
 <?php
 $model=[
-'activa'=>0,
+'active'=>0,
 'ad'=>true,
-'titulo'=>'El Garage TV',
-'descripcion'=>'Ver El Garage TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'programacion'=>'http://www.ar.elgarage.com/tv/programas',
+'title'=>'El Garage TV',
+'description'=>'Ver El Garage TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
+'schedule'=>'http://www.ar.elgarage.com/tv/programas',
 'player'=>'<div class="noticecontent">
 			<div id="swfclientid812780578581571_div" style="float: left; height: 0px;"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="swfclientid812780578581571" width="01" height="0" style="width:01px; height:0px;"> <param name="movie" value="http://octoshape-a.akamaihd.net/eps/swfclient/sua.swf"> <param name="flashvars" value="printfunc=swfclientid812780578581571print&amp;donefunc=swfclientid812780578581571done&amp;0=-osasua:id812780578581571osasua&amp;1=-suaosa:akamaihd.net:id812780578581571suaosa&amp;2=-allowDomain:octoshape-a.akamaihd.net&amp;3=-allowInsecureDomain:octoshape-a.akamaihd.net"> <param name="AllowScriptAccess" value="always"> <param name="wmode" value="transparent"> <embed src="http://octoshape-a.akamaihd.net/eps/swfclient/sua.swf" name="swfclientid812780578581571" wmode="transparent" allowscriptaccess="always" flashvars="printfunc=swfclientid812780578581571print&amp;donefunc=swfclientid812780578581571done&amp;0=-osasua:id812780578581571osasua&amp;1=-suaosa:akamaihd.net:id812780578581571suaosa&amp;2=-allowDomain:octoshape-a.akamaihd.net&amp;3=-allowInsecureDomain:octoshape-a.akamaihd.net" width="01" height="01" type="application/x-shockwave-flash"> </object></div><object type="application/x-shockwave-flash" id="player" name="player" data="http://octoshape-a.akamaihd.net/eps/players/infinitehd4/player.swf" width="720" height="405" style="visibility: visible;"><param name="allowFullScreen" value="true"><param name="scale" value="noscale"><param name="allowScriptAccess" value="always"></object>
 			<script type="text/javascript" src="//octoshape-a.akamaihd.net/eps/js/swfobject.js"></script><script type="text/javascript">

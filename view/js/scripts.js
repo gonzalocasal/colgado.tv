@@ -19,32 +19,32 @@ $("#cerrar").click(function() {
     }, 500);
 });
 $("#shield").click(function() {
-    $("#playerProtected").show();
+    $("#player-protected").show();
     $("#shield").hide();
-    $("#playerProtected").append(content);
+    $("#player-protected").append(content);
     $("#ciframe").attr("scrolling", "no");
 });
-$("#cuerpo").css({opacity: "1"}), setTimeout(function() {
+$("#player-container").css({opacity: "1"}), setTimeout(function() {
     $("#floatLayer").css({opacity: "1"});
 }, 1e3);
-$("#sombra").fadeTo(1, 0), $("#luces").click(function() {
+$("#shadow").fadeTo(1, 0), $("#lights").click(function() {
     $("#header").css({zIndex: "997"}), 
     $("#player").css({zIndex: "998"}), 
-    $("#playerProtected").css({zIndex: "998"}), 
+    $("#player-protected").css({zIndex: "998"}), 
     $("#shield").css({zIndex: "998"}),
-    $("#sombra").css({display: "block"}),
-    $("#sombra").fadeTo(300, .9),
+    $("#shadow").css({display: "block"}),
+    $("#shadow").fadeTo(300, .9),
     $("#floatLayer").css({zIndex: "999"}), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     $(".mclick").removeClass("mclick").addClass("slide-in");
 }); 
-$("#sombra").click(function() {
-    $("#sombra").fadeTo(300, 0), 
+$("#shadow").click(function() {
+    $("#shadow").fadeTo(300, 0), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     setTimeout(function() {
         $("#player").css({zIndex: "980"}),
         $("#floatLayer").css({zIndex: "980"}), 
-        $("#sombra").css({display: "none"});
+        $("#shadow").css({display: "none"});
     }, 400);
 });
 $(document).ready(function(a) {
@@ -69,18 +69,18 @@ $(document).ready(function(a) {
     }); 
     
     $("#menu-icon").click(function() {
-        var a = $("#sombra").css("display"), b = $("#menu").hasClass("on");
-        if ("block" == a) $("#sombra").fadeTo(300, 0), $("#sombra").css({
+        var a = $("#shadow").css("display"), b = $("#menu").hasClass("on");
+        if ("block" == a) $("#shadow").fadeTo(300, 0), $("#shadow").css({
             display: "none"
         }), 
         $("#menu").removeClass("on"); else {
             var c = window.innerHeight - 45;
             $(".slide-in").toggleClass("on"), $("#items").css("height", c - 70), 
             $("#menu-search").focus(), 
-            0 == b && ($("#sombra").css({
+            0 == b && ($("#shadow").css({
                 display: "block"
             }),
-            $("#sombra").fadeTo(300, .5), $("#header").css({
+            $("#shadow").fadeTo(300, .5), $("#header").css({
                 zIndex: "999"
             }));
         }

@@ -43,13 +43,13 @@ margin-right:105px;
 border-bottom-color:#2D2D2D
 }
 
-.pagActiva {
+.active-page {
 border-bottom:3px solid #009688;
 border-top:3px solid #2D2D2D;
 padding-bottom: 10px
 }
 
-.pagActiva a{
+.active-page a{
 color:#fff;
 }
 
@@ -62,7 +62,7 @@ a:visited {
 text-decoration:none;
 }
 
-#luces {
+#lights {
 vertical-align:bottom;
 display:inline-block;
 overflow:hidden;
@@ -94,10 +94,10 @@ margin-left: auto;
 margin-right: auto;
 margin-top:30px;
 margin-bottom:30px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+box-shadow: 0 1px 4px #333;
 }
 
-#cuerpo {
+#player-container {
 display:inline-block;
 margin-bottom:15px;
 opacity:0;
@@ -105,7 +105,15 @@ transition:opacity .5s linear;
 line-height:0;
 vertical-align:top;
 width:auto;
-box-shadow:0 1px 4px #333;
+box-shadow: 0 1px 4px #333;
+}
+
+#player-protected {
+position:relative;
+display:none;
+background-color:#000;
+line-height:0;
+z-index:980
 }
 
 nav li {
@@ -124,15 +132,7 @@ line-height:0;
 z-index:980
 }
 
-#playerProtected {
-position:relative;
-display:none;
-background-color:#000;
-line-height:0;
-z-index:980
-}
-
-#centro {
+#center {
 overflow:hidden;
 margin-left:auto;
 margin-right:auto;
@@ -205,22 +205,22 @@ img {
 border:0
 }
 
-.img-ayuda {
+.img-help {
 display:block;
 margin-left:auto;
 margin-right:auto
 }
 
-#programacion {
+#schedule {
 width:140px;
 margin-left:65px
 }
 
-#contactoImage{
+#contact-image{
 	margin-top: 10px;
 	box-shadow: 0 2px 5px rgba(0,0,0,.4)
 }
-.contacto-label {
+.contact-label {
 vertical-align:top;
 display:inline-block;
 color:#989898;
@@ -230,7 +230,7 @@ text-align:right;
 width:50px
 }
 
-#luces:hover {
+#lights:hover {
 background-position:left -36px
 }
 
@@ -256,7 +256,7 @@ audio {
 width:500px
 }
 
-#sombra {
+#shadow {
 background-color:#000;
 display:none;
 height:100%;
@@ -273,7 +273,7 @@ content:" ";
 display:block
 }
 
-#form-contacto {
+#form-contact {
 padding:1%;
 margin-top: 10px
 }
@@ -301,7 +301,7 @@ border-width:0
 line-height:13px
 }
 
-.ayuda {
+.help {
 font-size:0.938em;
 color:#333;
 text-align:left;
@@ -314,12 +314,12 @@ font-size: 1em;
 color:#009688
 }
 
-a.ayuda:link {
+a.help:link {
 color:#31ABDD;
 text-decoration:none
 }
 
-a.ayuda:visited {
+a.help:visited {
 color:#31ABDD;
 text-decoration:none
 }
@@ -349,7 +349,7 @@ margin-right:auto
 display:inline-block
 }
 
-.inputcontacto {
+.inputcontact {
 font-family:roboto;
 border:none;
 border-bottom:1px solid #ccc;
@@ -375,7 +375,7 @@ border-left-width:3px;
 border-left-color:#009688
 }
 
-.inputcontacto:focus {
+.inputcontact:focus {
 border-bottom:2px solid #009688;
 outline:0;
 width:250px
@@ -588,7 +588,7 @@ font-size:1.3em
 	background-color:rgba(0,0,0,.0513726)
 	}
 
-	.pagActiva {
+	.active-page {
 	border-bottom:3px solid #2D2D2D;
 	border-top:3px solid #2D2D2D;
 	padding-bottom: 10px
@@ -603,9 +603,9 @@ font-size:1.3em
 	}
 	
 	#floatLayer,
-	#luces,
-	#nav-ayuda,
-	#nav-contacto,
+	#lights,
+	#nav-help,
+	#nav-contact,
 	#nav-global,
 	#nav-radio,
 	#nav-tv,

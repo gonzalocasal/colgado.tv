@@ -1,10 +1,10 @@
 <?php
 $model=[
-'activa'=>0,
+'active'=>0,
 'ad'=>true,
-'titulo'=>'Infobae TV',
-'descripcion'=>'Ver Infobae TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'programacion'=>'http://www.infobae.com/tv',
+'title'=>'Infobae TV',
+'description'=>'Ver Infobae TV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
+'schedule'=>'http://www.infobae.com/tv',
 'player'=>'<object type="application/x-shockwave-flash" name="StrobeMediaPlayback" data="http://denivip.ru/smp/StrobeMediaPlayback.swf" width="950" height="535" id="StrobeMediaPlayback" style="visibility: visible;">
 	<param name="allowFullScreen" value="true">
 	<param name="wmode" value="transparent">
