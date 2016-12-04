@@ -31,6 +31,7 @@ if ($response != null && $response->success) {
 
 	$response = $sg->client->mail()->send()->post($mail);
 
+	session_destroy();
 	echo "<script language=\"JavaScript\">
 	alert(\"Gracias por el mensaje.\");
 	window.location.replace(\"http://colgado.tv\");
