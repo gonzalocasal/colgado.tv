@@ -8,7 +8,7 @@ function mclick() {
     localStorage.setItem("menuclick", a);
 }
 function send(){
-    document.getElementById('boton-submit').click(); 
+    document.getElementById('submit').click(); 
     return false;
 }
 $("#close-ad").click(function() {
