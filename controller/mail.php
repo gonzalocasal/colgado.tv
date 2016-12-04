@@ -15,9 +15,9 @@ if ($_POST["g-recaptcha-response"]) {
 }
 if ($response != null && $response->success) {
 
-    $name    = $_SESSION["nombre"]; 
+    $name    = $_SESSION["name"]; 
     $email   = $_SESSION["email"]; 
-    $message = $_SESSION["mensaje"];
+    $message = $_SESSION["message"];
     $receiver= getenv('EMAIL_RECEIVER');
 
 	$from = new SendGrid\Email(null, $email);
