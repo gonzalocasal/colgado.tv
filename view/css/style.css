@@ -53,7 +53,6 @@ padding-bottom: 10px
 color:#fff;
 }
 
-
 nav a:hover {
 color:#fff
 }
@@ -94,7 +93,7 @@ margin-left: auto;
 margin-right: auto;
 margin-top:30px;
 margin-bottom:30px;
-box-shadow: 0 1px 4px #333;
+box-shadow: 0 1px 4px #333
 }
 
 #player-container {
@@ -105,7 +104,7 @@ transition:opacity .5s linear;
 line-height:0;
 vertical-align:top;
 width:auto;
-box-shadow: 0 1px 4px #333;
+box-shadow: 0 1px 4px #333
 }
 
 #player-protected {
@@ -113,6 +112,16 @@ position:relative;
 display:none;
 background-color:#000;
 line-height:0;
+z-index:980
+}
+
+#player-protected iframe {
+overflow:hidden
+}
+
+#shield {
+cursor:pointer;
+position:relative;
 z-index:980
 }
 
@@ -139,17 +148,6 @@ margin-right:auto;
 max-width:1100px;
 text-align:left;
 padding:0
-}
-
-#playerProtected
-iframe {
-overflow:hidden
-}
-
-#shield {
-cursor:pointer;
-position:relative;
-z-index:980
 }
 
 .slide-in {
