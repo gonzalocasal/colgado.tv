@@ -1,8 +1,8 @@
-.spriteglobal,
 .spriteradio,
 .spritetv {
     background-repeat: no-repeat;
     display: inline-block;
+    margin:2px;
     vertical-align: middle;
     o-transition: .3s;
     -ms-transition: .3s;
