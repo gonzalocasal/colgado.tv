@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>2, 
+'active'=>'radios', 
 'title'=>'Nacional Rock',
 'description'=>'Escuchar Nacional Rock por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://nacionalrock.com/programas/',

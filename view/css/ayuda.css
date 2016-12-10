@@ -1,0 +1,51 @@
+.help {
+font-size:0.938em;
+color:#333;
+text-align:left;
+margin-top:10px;
+padding:1%
+}
+
+.titulo {
+font-size: 1em;
+color:#4684f5
+}
+
+a.help:link {
+color:#31ABDD;
+text-decoration:none
+}
+
+a.help:visited {
+color:#31ABDD;
+text-decoration:none
+}
+
+#browsers {
+text-align:center;
+width:100%;
+margin-top:15px
+}
+
+.logo-browser {
+margin-left:15px;
+margin-right:15px
+}
+
+.img-help {
+display:block;
+margin-left:auto;
+margin-right:auto
+}
+
+.error-title{
+color:#4684f5;
+font-weight: 400;
+font-size:2em
+}
+
+.error-message{
+color:#4684f5;
+font-weight: lighter;
+font-size:1.3em
+}

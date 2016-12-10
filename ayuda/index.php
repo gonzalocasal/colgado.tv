@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>4,
+'active'=>'ayuda',
 'title'=>'Ayuda | Colgado',
 'description'=>'Informaci&oacute;n de ayuda para disfrutar colgado.tv',
 'page' => 'ayuda.html'];

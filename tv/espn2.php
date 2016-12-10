@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'protected'=>true,
 'title'=>'ESPN 2',

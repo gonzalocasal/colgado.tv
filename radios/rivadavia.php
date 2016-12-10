@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>2, 
+'active'=>'radios', 
 'title'=>'Rivadavia',
 'description'=>'Escuchar Rivadavia por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://rivadavia.com.ar/programacion/',

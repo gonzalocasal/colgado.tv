@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>2, 
+'active'=>'radios', 
 'title'=>'Mega',
 'description'=>'Escuchar Mega por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.fm-mega983.com.ar/',

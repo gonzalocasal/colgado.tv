@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Discovery Kids',
 'description'=>'Ver Discovery Kids por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',

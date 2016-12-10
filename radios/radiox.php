@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>2, 
+'active'=>'radios', 
 'title'=>'Radio X',
 'description'=>'Escuchar Radio X por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'player'=>'<div id=block width="615" height="255">

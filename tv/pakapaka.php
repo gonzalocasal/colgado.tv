@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Paka Paka',
 'description'=>'Ver Paka Paka por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',

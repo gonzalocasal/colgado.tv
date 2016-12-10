@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Canal 26',
 'description'=>'Ver Canal 26 internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',

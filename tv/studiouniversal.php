@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Studio Universal',
 'description'=>'Ver Studio Universal por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',

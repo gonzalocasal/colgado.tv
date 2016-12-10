@@ -1,0 +1,84 @@
+#contact-image{
+	margin-top: 10px;
+	box-shadow: 0 2px 5px rgba(0,0,0,.4)
+}
+
+.contact-label {
+vertical-align:top;
+display:inline-block;
+color:#989898;
+font-size:0.813em;
+font-weight:400;
+text-align:right;
+width:50px
+}
+
+.boton {
+box-shadow:0 2px 5px rgba(0,0,0,.4);
+background-color:#4684f5;
+color:#fff;
+display:inline-block;
+font-family:roboto;
+font-size:0.875em;
+font-weight:600;
+moz-border-radius:5px;
+text-decoration:none;
+padding:6px 20px
+}
+
+#form-captcha {
+line-height:13px
+}
+
+#form-contact {
+padding:1%;
+margin-top: 10px
+}
+
+textarea {
+resize:none
+}
+
+#captcha {
+display:block;
+margin-left:77px;
+margin-right:auto
+}
+
+.g-recaptcha {
+display:inline-block
+}
+
+.inputcontact {
+font-family:roboto;
+border:none;
+border-bottom:1px solid #ccc;
+font-weight: 400;
+color: #333;
+font-size:0.875em;
+width:250px;
+margin:0 0 17px 7px;
+padding:5px 2px 2px
+}
+
+.inputcontact:focus {
+border-bottom:2px solid #4684f5;
+outline:0;
+width:250px
+}
+
+#enviar {
+margin-bottom:10px;
+margin-top:5px;
+text-align:center
+}
+
+#submit {
+display:none
+}
+
+.boton:active {
+position:relative;
+top:1px
+}
+

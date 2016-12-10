@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>2, 
+'active'=>'radios', 
 'title'=>'Vale',
 'description'=>'Escuchar Vale por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.radio-vale975.com.ar/',

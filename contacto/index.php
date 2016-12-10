@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>3,
+'active'=>'contacto',
 'title'=>'Contacto | Colgado',
 'description'=>'Contacto',
 'page' => 'contacto.html'];

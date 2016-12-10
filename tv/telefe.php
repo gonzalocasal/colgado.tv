@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Telefe',
 'description'=>'Ver Telefe online por internet en vivo las 24hs toda la programaci&oacute;n sin l&iacute;mites.',

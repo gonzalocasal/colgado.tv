@@ -1,6 +1,6 @@
 <?php
 $model=[
-'active'=>0,
+'active'=>'tv',
 'ad'=>true,
 'title'=>'Comedy Central',
 'description'=>'Ver Comedy Central por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
