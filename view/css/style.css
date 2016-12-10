@@ -427,7 +427,7 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
 	.mobile-item {
 	border-left-style:solid;
 	border-left-width:3px;
@@ -444,24 +444,29 @@ overflow-y:auto
 	border-left-color:#4684f5
 	}
 	
-	#ciframe {
+	#player-container {
 	width:100%;
-	max-height:250px
+	max-height:400px
+	}
+
+	#player-protected {
+	width:100%;
+	max-height:400px
+	}
+
+
+	#player{
+	width:100%;
+	max-height:400px
+	}
+
+	iframe {
+	width:100%;
+	max-height:400px
 	}
 	
 	#cuerpo {
-	width:100%;
-	max-height:250px
-	}
-	
-	#player {
-	width:100%;
-	max-height:250px
-	}
-	
-	#player-protected {
-	width:100%;
-	max-height:250px
+	width:100%
 	}
 	
 	.card {
@@ -502,7 +507,7 @@ overflow-y:auto
 	#nav-global,
 	#nav-radio,
 	#nav-tv,
-	#programacion,
+	#schedule,
 	#menu-search,
 	.menu-item,
 	.menu-separator {
