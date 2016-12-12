@@ -5,12 +5,12 @@
         </title>
         <meta name=description content="{{description | raw}}"/>
         <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name=google-site-verification content="{{googleKey}}" />
         <meta property="og:title" content="Colgado del Cable"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="http://colgado.tv"/>
         <meta property="og:image" content="http://colgado.tv/view/imgs/play.png"/>
-        <meta property="og:description" content="{{description | raw}}"/>
-        <meta name="google-site-verification" content="{{googleKey}}" />
+        <meta property="og:description" content="{{description | raw}}"/>        
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
         <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
         <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
@@ -18,8 +18,8 @@
         <link href="/view/imgs/favicon120.png" rel=apple-touch-icon sizes="120x120"/>
         <link href="/view/imgs/favicon152.png" rel=apple-touch-icon sizes="152x152"/>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
-        <link rel="stylesheet" type="text/css" href="/view/css/style.css?version=1.0.0">
-        <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?version=1.0.0">
+        <link rel="stylesheet" type="text/css" href="/view/css/style.css?version={{version}}">
+        <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?version={{version}}">
     </head>
     <body>
         <div id=header>
@@ -28,11 +28,11 @@
                     <ul>
                     <li><img class=tab id=menu-icon src="/view/imgs/icon_menu.png" alt="logo" width=24 height=24 ></li>
                     <li><a href="/" id="nav-home"><img id=logo src="/view/imgs/banner.png" alt="" width=166 height=48 /></a></li>
-                    <li class="tab {% if active=='tv' %}active-page{% endif %}"><strong><a href="/tv" id=nav-tv >CABLE</a></strong></li>
-                    <li class="tab {% if active=='radios' %}active-page{% endif %}"><strong><a href="/radios" id=nav-radio >RADIOS</a></strong></li>
-                    <li class="tab {% if active=='contacto' %}active-page{% endif %}"><strong><a href="/contacto" id=nav-contact >CONTACTO</a></strong></li>
-                    <li class="tab {% if active=='ayuda' %}active-page{% endif %}"><strong><a href="/ayuda" id=nav-help >AYUDA</a></strong></li>
-                    <li id=schedule>{% if schedule is defined %}<strong><a href="{{schedule}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></strong>{% endif %}</li>
+                    <li class="tab {% if active=='tv' %}active-page{% endif %}"><a href="/tv" id=nav-tv >CABLE</a></li>
+                    <li class="tab {% if active=='radios' %}active-page{% endif %}"><a href="/radios" id=nav-radio >RADIOS</a></li>
+                    <li class="tab {% if active=='contacto' %}active-page{% endif %}"><a href="/contacto" id=nav-contact >CONTACTO</a></li>
+                    <li class="tab {% if active=='ayuda' %}active-page{% endif %}"><a href="/ayuda" id=nav-help >AYUDA</a></li>
+                    <li id=schedule>{% if schedule is defined %}<a href="{{schedule}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a>{% endif %}</li>
                     {% if player is defined %}
                     <li><a class="" id=lights href="#"></a></li>
                     {% endif %}
@@ -63,7 +63,7 @@
         {% if ad %}
             {% include 'html/ad.html' |raw %}
         {% endif %}
-        <script type="text/javascript" src="/view/js/jquery.js" ></script>
-        <script type="text/javascript" src="/view/js/scripts.js" ></script>       
+        <script type="text/javascript" src="/view/js/jquery.js?version={{version}}" ></script>
+        <script type="text/javascript" src="/view/js/scripts.js?version={{version}}" ></script>       
     </body>
 </html>
