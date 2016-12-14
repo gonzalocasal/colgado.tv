@@ -35,9 +35,4 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,
 # Webfonts
   ExpiresByType font/roboto             "access plus 1 month"
 
-
-  <IfModule mod_headers.c>
-  Header append Cache-Control "public"
-  </IfModule>
-
 </IfModule>
