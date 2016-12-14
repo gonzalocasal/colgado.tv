@@ -19,8 +19,6 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,
 # Perhaps better to whitelist expires rules? Perhaps.
   ExpiresDefault                          "access plus 1 month"
 
-# Your document html
-  ExpiresByType text/html                 "access plus 1 day"
 
 # Favicon (cannot be renamed)
   ExpiresByType image/x-icon              "access plus 1 week"
