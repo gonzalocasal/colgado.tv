@@ -4,7 +4,7 @@
         {{title |raw}}{% if page is empty %} | Colgado{% endif %}
         </title>
         <meta name=description content="{{description | raw}}"/>
-        <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta name=viewport content="width=device-width, initial-scale=0.8, maximum-scale=1.1, user-scalable=yes"/>
         <meta name=google-site-verification content="{{googleKey}}" />
         <meta property="og:title" content="Colgado del Cable"/>
         <meta property="og:type" content="website"/>
@@ -20,6 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
+        <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
     </head>
     <body>
         <div id=header>
