@@ -7,12 +7,12 @@ margin:0 auto
 }
 
 .spritetv {
-background-image: url(/view/imgs/v1.0.3-spritestv.png);
+background-image: url(/view/imgs/spritestv.png);
 transition: .3s
 }
 
 .spriteradio {
-background-image: url(/view/imgs/v1.1-spritesradio.png);
+background-image: url(/view/imgs/spritesradio.png);
 -ms-transition: .3s;
 -moz-transition: .3s;
 -webkit-transition: .3s;
