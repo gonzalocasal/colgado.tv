@@ -37,7 +37,7 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,
 
 
   <IfModule mod_headers.c>
-    Header append Cache-Control "public"
+  Header append Cache-Control "public"
   </IfModule>
 
 </IfModule>
