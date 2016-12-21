@@ -16,10 +16,6 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,
 <IfModule mod_expires.c>
   ExpiresActive on
 
-# Perhaps better to whitelist expires rules? Perhaps.
-  ExpiresDefault                          "access plus 1 month"
-
-
 # Favicon (cannot be renamed)
   ExpiresByType image/x-icon              "access plus 1 week"
 
@@ -31,8 +27,5 @@ RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,
   ExpiresByType text/css                  "access plus 1 week"
   ExpiresByType application/javascript    "access plus 1 week"
   ExpiresByType text/javascript           "access plus 1 week"
-
-# Webfonts
-  ExpiresByType font/roboto             "access plus 1 month"
 
 </IfModule>
