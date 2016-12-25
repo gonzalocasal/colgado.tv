@@ -8,7 +8,7 @@ padding:1%
 
 .titulo {
 font-size: 1em;
-color:#4684f5
+color:#009688
 }
 
 a.help:link {
@@ -47,13 +47,13 @@ margin-right:auto
 }
 
 .error-title{
-color:#4684f5;
+color:#009688;
 font-weight: 400;
 font-size:2em
 }
 
 .error-message{
-color:#4684f5;
+color:#009688;
 font-weight: lighter;
 font-size:1.3em
 }

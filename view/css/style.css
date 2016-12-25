@@ -63,7 +63,7 @@ border-bottom-color:#2D2D2D
 }
 
 .active-page {
-border-bottom:3px solid #4684f5;
+border-bottom:3px solid #009688;
 border-top:3px solid #2D2D2D;
 padding-bottom: 10px
 }
@@ -289,7 +289,7 @@ border-left-color:#fff
 .menu-item:hover {
 border-left-style:solid;
 border-left-width:3px;
-border-left-color:#4684f5
+border-left-color:#009688
 }
 
 .mclick {
@@ -335,7 +335,7 @@ moz-box-sizing:border-box
 }
 
 #mactive {
-color:#4684f5;
+color:#009688;
 font-weight:700
 }
 
@@ -431,7 +431,7 @@ overflow-y:auto
 	.mobile-item:hover {
 	border-left-style:solid;
 	border-left-width:3px;
-	border-left-color:#4684f5
+	border-left-color:#009688
 	}
 	
 	#player-container {
