@@ -12,7 +12,7 @@ $model=[
 <param name="wmode" value="opaque" /></object>
 <script type="text/javascript">
 jwplayer("player_421").setup({
-file: "http://cdnapi.kaltura.com/p/1885581/sp/188558100/playManifest/entryId/0_pp4mf5wo/format/applehttp/protocol/http/uiConfId/35254601/a.m3u8?referrer=aHR0cDovL3d3dy50eWNzcG9ydHNwbGF5LmNvbQ==&playSessionId=61b99a31-63a1-009e-245b-453ba12a2a88",
+file: "http://clairinlive-a.akamaihd.net/dc-1/live/hls/p/1885581/e/1_8xzo6fux/t/YO19xXbHgW_22sNZezlmTg/index-s32.m3u8",
 title: "TyC Sports - colgado.TV",width: "950",height: "535",stretching: "exactfit",autostart: "true"});
 </script>'];
 include_once'../controller/prepare.php'	;
