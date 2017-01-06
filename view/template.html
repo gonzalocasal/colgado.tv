@@ -30,9 +30,11 @@
                     <li class="tab {% if active=='radios' %}active-page{% endif %}"><a href="/radios" id=nav-radio >RADIOS</a></li>
                     <li class="tab {% if active=='contacto' %}active-page{% endif %}"><a href="/contacto" id=nav-contact >CONTACTO</a></li>
                     <li class="tab {% if active=='ayuda' %}active-page{% endif %}"><a href="/ayuda" id=nav-help >AYUDA</a></li>
-                    <li id=schedule>{% if schedule is defined %}<a href="{{schedule}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a>{% endif %}</li>
                     {% if player is defined %}
                     <li><a class="" id=lights href="#"></a></li>
+                    {% endif %}
+                    {% if schedule is defined %}
+                    <li id=schedule><a href="{{schedule}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></li>
                     {% endif %}
                     </ul>
                 </nav>
