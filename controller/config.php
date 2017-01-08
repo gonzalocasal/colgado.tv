@@ -7,5 +7,4 @@ $templateDirCompi=''.$root.'/view/view-c';
 Twig_Autoloader::register();
 $loader = new Twig_Loader_Filesystem($templateDir);
 $twig = new Twig_Environment($loader);
-require 'cacheControl.php';
 ?>
