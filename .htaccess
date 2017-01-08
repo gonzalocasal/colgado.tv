@@ -7,12 +7,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC]
 
-#Avoid Hotlinks
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?colgado.tv [NC]
-RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?localhost [NC]
-RewriteRule \.(jpg|jpeg|png|gif)$ http://colgado.tv/view/imgs/hotlink.png [NC,R,L]
-
 <IfModule mod_expires.c>
   ExpiresActive on
 
