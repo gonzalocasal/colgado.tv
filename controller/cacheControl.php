@@ -1,7 +1,7 @@
 <?php
 $environment = getenv('VIEW_VERSION');
 $parameter= $_GET['v'];
-if (array_key_exists('player', $model)) ){
+if (array_key_exists('player', $model)){
 	header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1.
 	header("Pragma: no-cache"); // HTTP 1.0.
 	header("Expires: 0");
