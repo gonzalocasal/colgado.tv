@@ -3,6 +3,6 @@ $model=[
 'active'=>'contacto',
 'title'=>'Contacto | Colgado',
 'description'=>'Contacto',
-'page' => 'contacto.html'];
+'page' => 'mensaje.html'];
 include_once'../controller/prepare.php';
 ?>

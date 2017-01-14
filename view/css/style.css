@@ -444,6 +444,25 @@ overflow-y:auto
 	border-left-color:#009688
 	}
 	
+	.mobile-link {
+	padding-left:15px;
+	font-weight:500
+	}
+	
+	.mobile-item:hover a {
+	background-color:rgba(0,0,0,.0513726)
+	}
+
+	.active-page {
+	border-bottom:3px solid #2D2D2D;
+	border-top:3px solid #2D2D2D;
+	padding-bottom: 10px
+	}
+
+	#modalContent {
+	width:100%
+	}
+
 	#player-container {
 	width:100%;
 	max-height:400px
@@ -474,21 +493,6 @@ overflow-y:auto
 	
 	img {
 	max-width:100%
-	}
-	
-	.mobile-link {
-	padding-left:15px;
-	font-weight:500
-	}
-	
-	.mobile-item:hover a {
-	background-color:rgba(0,0,0,.0513726)
-	}
-
-	.active-page {
-	border-bottom:3px solid #2D2D2D;
-	border-top:3px solid #2D2D2D;
-	padding-bottom: 10px
 	}
 	
 	nav ul {

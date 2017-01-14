@@ -1,6 +1,6 @@
 #contact-image{
-	margin-top: 10px;
-	box-shadow: 0 2px 5px rgba(0,0,0,.4)
+margin-top: 10px;
+box-shadow: 0 2px 5px rgba(0,0,0,.4)
 }
 
 .contact-label {
@@ -43,7 +43,9 @@ margin-right:auto
 }
 
 .g-recaptcha {
-display:inline-block
+display:inline-block;
+margin-bottom: 20px;
+margin-top: 10px
 }
 
 .inputcontact {
@@ -77,10 +79,6 @@ position:relative;
 top:1px
 }
 
-.g-recaptcha{
-margin-bottom: 15px
-}
-
 .modal {
 display: block;
 position: fixed;
@@ -94,19 +92,22 @@ background-color: rgb(0,0,0);
 background-color: rgba(0,0,0,0.4)
 }
 
-.modal-content {
+#modalContent {
 position: relative;
 background-color: #fefefe;
 margin: auto;
 padding: 0;
 border: 1px solid #888;
-min-width: 400px;
-max-width: 400px;
+width: 300px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 -webkit-animation-name: animatetop;
 -webkit-animation-duration: 0.4s;
 animation-name: animatetop;
 animation-duration: 0.4s
+}
+
+#modalBody {
+padding: 2px 16px
 }
 
 @-webkit-keyframes animatetop {
@@ -119,20 +120,4 @@ from {top:-300px; opacity:0}
 to {top:0; opacity:1}
 }
 
-.close {
-color: white;
-float: right;
-font-size: 28px;
-font-weight: bold
-}
 
-.close:hover,
-.close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer
-}
-
-.modal-body {
-padding: 2px 16px
-}
