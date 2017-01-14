@@ -7,12 +7,11 @@ require('vendor/recaptchalib.php');
 $secret = getenv('CAPTCHA_SECRET_KEY');
 $response = null; 
 $reCaptcha = new ReCaptcha($secret);
+
 if ($_POST["g-recaptcha-response"]) {
-	$response = $reCaptcha->verifyResponse(
-	$_SERVER["REMOTE_ADDR"],
-	$_POST["g-recaptcha-response"]
-	);
+	$response = $reCaptcha->verifyResponse($_SERVER["REMOTE_ADDR"], $_POST["g-recaptcha-response"]);
 }
+
 if ($response != null && $response->success) {
 
     $name    = $_SESSION["name"]; 
@@ -32,9 +31,9 @@ if ($response != null && $response->success) {
 	$response = $sg->client->mail()->send()->post($mail);
 
 	session_destroy();
-	echo '<script language="JavaScript">alert("GRACIAS POR EL MENSAJE");window.location.replace("http://colgado.tv");</script>';
+	include('../contacto/mensaje.php');
 }else{
-	echo '<script language="JavaScript">window.location.replace("http://colgado.tv");</script>';
+	header("Location:".$_SERVER["DOCUMENT_ROOT"]."");
 }
 
 ?>
