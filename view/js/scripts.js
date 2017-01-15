@@ -1,49 +1,37 @@
 //ON READY
 $(document).ready(function(a) {  
     //CHECK SIDE MENU STATUS
-    var menuOpened = localStorage.getItem("menuOpened");   
-    if ("true" == menuOpened) {
+    if ("true" == localStorage.getItem("menuOpened")) {
         document.getElementById("menu").className = "mclick";
-        var headerSize = 45;
-        var currentHeight = window.innerHeight - headerSize, scrollPosition = localStorage.getItem("scrollpos");
-        $("#items").css("height", currentHeight - 70), $("#items").scrollTop(scrollPosition);
+        var headerSize =  $("#header").height();
+        var itemsTopPosition = $("#items").position().top;
+        var currentHeight = window.innerHeight - headerSize;
+        var scrollPosition = localStorage.getItem("menuScrollPosition");
+        $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
     }
     //REMOVE IFRAME SCROLLING
     $("#ciframe").attr("scrolling", "no");
 });
 
-//CONTACT SUBMIT 
-$("#submitLink").click(function() {
-    $("#submit").click();
-});
-
-//CONTACT MESSAGE 
-$("#messageBotton").click(function() {
-   document.location.href="/";
-});
-
 //CLOSE AD
 $("#close-ad").click(function() {
     $("#float-layer").css({opacity: "0"});
-    setTimeout(function() {
-        $("#float-layer").css({display: "none"});
-    }, 500);
+    setTimeout(function() {$("#float-layer").css({display: "none"});}, 500);
 });
 
 //HIDE PLAYER SHIELD
 $("#shield").click(function() {
-    $("#player-protected").show();
     $("#shield").hide();
+    $("#player-protected").show();
     $("#player-protected").append(content);
     $("#ciframe").attr("scrolling", "no");
 });
 
 //FADEIN LOADING PLAYER
-$("#player-container").css({opacity: "1"}), setTimeout(function() {
-    $("#float-layer").css({opacity: "1"});
-}, 1e3);
+$("#player-container").css({opacity: "1"});
+setTimeout(function() {$("#float-layer").css({opacity: "1"});}, 500);
 
-//LIGHTS OUT
+//LIGHTS DOWN
 $("#shadow").fadeTo(1, 0), $("#lights").click(function() {
     $("#header").css({zIndex: "997"}), 
     $("#player").css({zIndex: "998"}), 
@@ -67,6 +55,16 @@ $("#shadow").click(function() {
     }, 400);
 });
 
+//CONTACT SUBMIT 
+$("#submitLink").click(function() {
+    $("#submit").click();
+});
+
+//CONTACT MESSAGE 
+$("#messageBotton").click(function() {
+   document.location.href="/";
+});
+
 //SIDE MENU ICON CLICK
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
@@ -75,9 +73,10 @@ $("#menu-icon").click(function() {
         $("#shadow").fadeTo(300, 0), $("#shadow").css({display: "none"}), 
         $("#menu").removeClass("on");
     else {
-        var headerSize = 45;
+        var headerSize =  $("#header").height();
+        var itemsTopPosition = $("#items").position().top;
         var menuHeight = window.innerHeight - headerSize;
-        $(".slide-in").toggleClass("on"), $("#items").css("height", menuHeight - 70), 
+        $(".slide-in").toggleClass("on"), $("#items").css("height", menuHeight - itemsTopPosition), 
         $("#menu-search").focus(), 0 == menuOpened && (
             $("#shadow").css({display: "block"}),
             $("#shadow").fadeTo(300, .5), 
@@ -88,26 +87,25 @@ $("#menu-icon").click(function() {
 
 //HIDE SIDE MENU
 $(document).mouseup(function(a) {
-    var menuOpened = localStorage.getItem("menuOpened");
-    if ("true" == menuOpened) {
-        setTimeout(function() {document.getElementById("menu").className = "slide-in";}, 300);
+    if ("true" == localStorage.getItem("menuOpened")) {
+        setTimeout(function() {$("#menu").attr("class","slide-in");}, 300);
         localStorage.setItem("menuOpened", "false");
     }
 }); 
 
 //SIDE MENU ITEMS CLICK
 $(".menu-link").click(function() {
-    var menuScrollPosition = document.getElementById("items").scrollTop;
-    localStorage.setItem("scrollpos", menuScrollPosition);
+    localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
     localStorage.setItem("menuOpened", "true");
 }),
 
 //SIDE MENU VERTICAL RESPONSIVE
 $(window).resize(function() {
-    var headerSize = 45;
+    var headerSize =  $("#header").height();
+    var itemsTopPosition = $("#items").position().top;
     var menuHeight = window.innerHeight - headerSize;
-    $("#items").css("height", menuHeight - 70);
-}), 
+    $("#items").css("height", menuHeight - itemsTopPosition);
+}),
 
 //SEARCH IN SIDE MENU
 function(a) {

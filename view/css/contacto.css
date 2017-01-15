@@ -82,7 +82,7 @@ top:1px
 .modal {
 display: block;
 position: fixed;
-z-index: 1;
+z-index: 999;
 padding-top: 100px;
 left: 0;
 top: 0;
@@ -98,7 +98,7 @@ background-color: #fefefe;
 margin: auto;
 padding: 0;
 border: 1px solid #888;
-width: 300px;
+width: 350px;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 -webkit-animation-name: animatetop;
 -webkit-animation-duration: 0.4s;
