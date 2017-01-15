@@ -1,7 +1,7 @@
 //ON READY
 $(document).ready(function(a) {  
     //CHECK SIDE MENU STATUS
-    var menuOpened = localStorage.getItem("menuclick");   
+    var menuOpened = localStorage.getItem("menuOpened");   
     if ("true" == menuOpened) {
         document.getElementById("menu").className = "mclick";
         var headerSize = 45;
@@ -88,20 +88,18 @@ $("#menu-icon").click(function() {
 
 //HIDE SIDE MENU
 $(document).mouseup(function(a) {
-    var menuOpened = localStorage.getItem("menuclick");
+    var menuOpened = localStorage.getItem("menuOpened");
     if ("true" == menuOpened) {
         setTimeout(function() {document.getElementById("menu").className = "slide-in";}, 300);
-        menuOpened = "false";
-        localStorage.setItem("menuclick", menuOpened);
+        localStorage.setItem("menuOpened", "false");
     }
 }); 
 
 //SIDE MENU ITEMS CLICK
 $(".menu-link").click(function() {
     var menuScrollPosition = document.getElementById("items").scrollTop;
-    var menuOpened = "true";
     localStorage.setItem("scrollpos", menuScrollPosition);
-    localStorage.setItem("menuclick", menuOpened);
+    localStorage.setItem("menuOpened", "true");
 }),
 
 //SIDE MENU VERTICAL RESPONSIVE
