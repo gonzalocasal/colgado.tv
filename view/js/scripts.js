@@ -1,17 +1,15 @@
 //ON READY
 $(document).ready(function(a) {  
-    
     //CHECK SIDE MENU STATUS
     var menuOpened = localStorage.getItem("menuclick");   
     if ("true" == menuOpened) {
         document.getElementById("menu").className = "mclick";
-        var currentHeight = window.innerHeight - 45, scrollPosition = localStorage.getItem("scrollpos");
+        var headerSize = 45;
+        var currentHeight = window.innerHeight - headerSize, scrollPosition = localStorage.getItem("scrollpos");
         $("#items").css("height", currentHeight - 70), $("#items").scrollTop(scrollPosition);
     }
-    
     //REMOVE IFRAME SCROLLING
     $("#ciframe").attr("scrolling", "no");
-
 });
 
 //CONTACT SUBMIT 
