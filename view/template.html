@@ -15,6 +15,7 @@
         <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
         <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
@@ -25,16 +26,25 @@
                 <nav>
                     <ul>
                     <li><img class=tab id=menu-icon src="/view/imgs/icon_menu.png" alt="logo" width=24 height=24 ></li>
-                    <li><a href="/" id="nav-home"><img id=logo src="/view/imgs/banner.png" alt="" width=166 height=48 /></a></li>
-                    <li class="tab {% if active=='tv' %}active-page{% endif %}"><a href="/" id=nav-tv >CABLE</a></li>
-                    <li class="tab {% if active=='radios' %}active-page{% endif %}"><a href="/radios" id=nav-radio >RADIOS</a></li>
-                    <li class="tab {% if active=='contacto' %}active-page{% endif %}"><a href="/contacto" id=nav-contact >CONTACTO</a></li>
-                    <li class="tab {% if active=='ayuda' %}active-page{% endif %}"><a href="/ayuda" id=nav-help >AYUDA</a></li>
-                    {% if player is defined %}
-                    <li><a class="" id=lights href="#"></a></li>
-                    {% endif %}
+                    <li class="tab {% if active=='tv' %}active-page{% endif %}">
+                        <a href="/" id=nav-tv ><i class="material-icons md-18 md-light {% if active=='tv' %}active{% endif %}">live_tv</i>TV</a>
+                    </li>
+                    <li class="tab {% if active=='radios' %}active-page{% endif %}">
+                        <a href="/radios" id=nav-radio ><i class="material-icons md-18 md-light {% if active=='radios' %}active{% endif %}">radio</i>RADIOS</a>
+                    </li>
+                    <li class="tab {% if active=='contacto' %}active-page{% endif %}">
+                        <a href="/contacto" id=nav-contact ><i class="material-icons md-18 md-light {% if active=='contacto' %}active{% endif %}">mail_outline</i>CONTACTO</a>
+                    </li>
+                    <li class="tab {% if active=='ayuda' %}active-page{% endif %}">
+                        <a href="/ayuda" id=nav-help ><i class="material-icons md-18 md-light  {% if active=='ayuda' %}active{% endif %}">info_outline</i>AYUDA</a>
+                    </li>                   
                     {% if schedule is defined %}
-                    <li id=schedule><a href="{{schedule}}" target="_blank" class=tab >PROGRAMACI&Oacute;N</a></li>
+                    <li class="tab" id=schedule>
+                        <a href="{{schedule}}" target="_blank" class=tab ><i class="material-icons md-18 md-light">date_range</i>PROGRAMACI&Oacute;N</a>
+                    </li>
+                    {% endif %}
+                    {% if player is defined %}
+                    <i id=lights class="material-icons md-18 md-light">brightness_6</i>
                     {% endif %}
                     </ul>
                 </nav>
