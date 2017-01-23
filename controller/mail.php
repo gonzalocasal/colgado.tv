@@ -31,7 +31,7 @@ if ($response != null && $response->success) {
 	$response = $sg->client->mail()->send()->post($mail);
 
 	session_destroy();
-	include('../contacto/mensaje.php');
+	require('../contacto/mensaje.php');
 }else{
 	header("Location:".$_SERVER["DOCUMENT_ROOT"]."");
 }

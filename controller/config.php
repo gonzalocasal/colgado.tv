@@ -1,7 +1,7 @@
 <?php
 header("Content-Type: text/html; charset=utf-8");
 $root= $_SERVER["DOCUMENT_ROOT"];
-require_once ''.$root.'/controller/vendor/twig/lib/Twig/Autoloader.php';
+require ''.$root.'/controller/vendor/twig/lib/Twig/Autoloader.php';
 $templateDir=''.$root.'/view/';
 $templateDirCompi=''.$root.'/view/view-c';
 Twig_Autoloader::register();
