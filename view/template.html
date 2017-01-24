@@ -16,8 +16,8 @@
         <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="/view/css/style.css">
-        <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css">
+        <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
+        <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
     </head>
     <body>
@@ -25,7 +25,7 @@
             <div id=center>
                 <nav>
                     <ul>
-                    <li><img class=tab id=menu-icon src="/view/imgs/icon_menu.png" alt="logo" width=24 height=24 ></li>
+                    <li><i id=menu-icon class="material-icons md-24 md-light ">menu</i>  </li>
                     <li class="tab {% if active=='tv' %}active-page{% endif %}">
                         <a href="/" id=nav-tv ><i class="material-icons md-18 md-light {% if active=='tv' %}active{% endif %}">live_tv</i>TV</a>
                     </li>
@@ -74,6 +74,6 @@
             {% include 'html/ad.html' |raw %}
         {% endif %}
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
-        <script type="text/javascript" src="/view/js/scripts.js" ></script>       
+        <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>       
     </body>
 </html>
