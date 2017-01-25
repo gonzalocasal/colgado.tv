@@ -75,6 +75,6 @@
         {% endif %}
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
-        <script type="text/javascript" src="/view/js/analytics.js"></script>
+        <script type="text/javascript">{% include 'js/analytics.js' |raw %}</script>
     </body>
 </html>
