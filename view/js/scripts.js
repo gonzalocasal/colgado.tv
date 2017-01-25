@@ -9,8 +9,6 @@ $(document).ready(function(a) {
         var scrollPosition = localStorage.getItem("menuScrollPosition");
         $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
     }
-    //REMOVE IFRAME SCROLLING
-    $("#ciframe").attr("scrolling", "no");
 });
 
 //CLOSE AD
@@ -24,7 +22,6 @@ $("#shield").click(function() {
     $("#shield").hide();
     $("#player-protected").show();
     $("#player-protected").append(content);
-    $("#ciframe").attr("scrolling", "no");
 });
 
 //FADEIN LOADING PLAYER
