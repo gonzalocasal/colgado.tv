@@ -438,7 +438,8 @@ overflow-y:auto
 
 	#menu-icon{
 	margin-left: 15px;
-	margin-right: 0px
+	margin-right: 0px;
+	margin-top: -2px;
 	}
 
 	.mobile-item {
