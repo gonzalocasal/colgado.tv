@@ -10,18 +10,18 @@ RewriteRule ^([^\.]+)$ $1.php [NC]
 <IfModule mod_expires.c>
   ExpiresActive on
 
-  ExpiresDefault                          "access plus 1 week"
+  ExpiresDefault                          "access plus 1 hour"
 
 # Favicon (cannot be renamed)
-  ExpiresByType image/x-icon              "access plus 1 week"
+  ExpiresByType image/x-icon              "access plus 1 hour"
 
 # Media: images, video, audio
-  ExpiresByType image/png                 "access plus 1 week"
-  ExpiresByType image/jpg                 "access plus 1 week"
+  ExpiresByType image/png                 "access plus 1 hour"
+  ExpiresByType image/jpg                 "access plus 1 hour"
 
 # CSS and JavaScript
-  ExpiresByType text/css                  "access plus 1 week"
-  ExpiresByType application/javascript    "access plus 1 week"
-  ExpiresByType text/javascript           "access plus 1 week"
+  ExpiresByType text/css                  "access plus 1 hour"
+  ExpiresByType application/javascript    "access plus 1 hour"
+  ExpiresByType text/javascript           "access plus 1 hour"
 
 </IfModule>
