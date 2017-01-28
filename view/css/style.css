@@ -10,7 +10,8 @@ margin:0 auto
 .spritetv {
 background-repeat: no-repeat;
 display: inline-block;
-margin:4px;
+margin-bottom: 10px;
+margin-left: 5px;
 vertical-align: middle;
 transition: .3s
 o-transition: .3s;
