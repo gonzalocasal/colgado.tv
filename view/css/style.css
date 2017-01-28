@@ -10,7 +10,7 @@ margin:0 auto
 .spritetv {
 background-repeat: no-repeat;
 display: inline-block;
-margin:2px;
+margin:4px;
 vertical-align: middle;
 transition: .3s
 o-transition: .3s;
@@ -84,7 +84,7 @@ color: #FFFFFF;
 font-size: 24px;
 vertical-align: text-top
 }
-   
+
 .active-page {
 border-bottom:3px solid #009688;
 border-top:3px solid #2D2D2D;
@@ -132,7 +132,7 @@ text-align:center
 	color:#FFFFFF;
 }
 
-.material-icons.md-light{ 
+.material-icons.md-light{
 	color: #757575;
 	vertical-align: sub;
 	font-size: 20px;
@@ -144,11 +144,11 @@ text-align:center
 	transition:.3s
 }
 
-.material-icons.md-light.active{ 
+.material-icons.md-light.active{
 	color: #FFFFFF;
 }
 
-.material-icons.md-dark{ 
+.material-icons.md-dark{
 	vertical-align: sub;
 	font-size: 20px;
 	margin-right: 10px
@@ -451,18 +451,18 @@ overflow-y:auto
 	line-height:35px;
 	border-left-color:#fff
 	}
-	
+
 	.mobile-item:hover {
 	border-left-style:solid;
 	border-left-width:3px;
 	border-left-color:#009688
 	}
-	
+
 	.mobile-link {
 	padding-left:15px;
 	font-weight:500
 	}
-	
+
 	.mobile-item:hover a {
 	background-color:rgba(0,0,0,.0513726)
 	}
@@ -496,27 +496,27 @@ overflow-y:auto
 	width:100%;
 	max-height:400px
 	}
-	
+
 	#cuerpo {
 	width:100%
 	}
-	
+
 	.card {
 	max-width:100%
 	}
-	
+
 	img {
 	max-width:100%
 	}
-	
+
 	nav ul {
 	margin:0 0 0 -35px
 	}
-	
+
 	audio {
 	width:100%
 	}
-	
+
 	#float-layer,
 	#lights,
 	#nav-help,

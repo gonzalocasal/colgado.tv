@@ -37,7 +37,7 @@
                     </li>
                     <li class="tab {% if active=='ayuda' %}active-page{% endif %}">
                         <a href="/ayuda" id=nav-help ><i class="material-icons md-18 md-light  {% if active=='ayuda' %}active{% endif %}">info_outline</i>AYUDA</a>
-                    </li>                   
+                    </li>
                     {% if schedule is defined %}
                     <li class="tab" id=schedule>
                         <a href="{{schedule}}" target="_blank" class=tab ><i class="material-icons md-18 md-light">date_range</i>PROGRAMACI&Oacute;N</a>
@@ -51,11 +51,11 @@
             </div>
         </div>
         <div id=menu class=slide-in>
-            <input type=text id=menu-search placeholder="Buscar..."/> 
+            <input type=text id=menu-search placeholder="Buscar..."/>
             <ul id=items>{% include 'html/menuitems.html' %}</ul>
         </div>
         <div id=space></div>
-        <div id=shadow></div>        
+        <div id=shadow></div>
         {% if player is defined %}
         <div id=player-container>
             {% if protected is defined and protected %}
@@ -65,11 +65,11 @@
                 </div>
             {% else %}
                 <div id=player>{{player |raw}}</div>
-            {% endif %}    
-        </div>        
+            {% endif %}
+        </div>
         {% else %}
             {% include 'html/'~page |raw %}
-        {% endif %}        
+        {% endif %}
         {% if ad %}
             {% include 'html/ad.html' |raw %}
         {% endif %}
