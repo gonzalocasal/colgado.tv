@@ -4,6 +4,8 @@ $model=[
 'title'=>'Am&eacute;rica 1190',
 'description'=>'Escuchar Am&eacute;rica 1190 por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://amradioamerica.infonews.com/programacion.html',
-'player'=>'<iframe id="cifrmae" src="http://tunein.com/embed/player/s6989/" style="width:100%;height:100px;"></iframe>'];
+'player'=>'<iframe id="cifrmae" src="http://america.stweb.tv/index_128.php" width=206 height=130 ></iframe>'];
 include_once'../controller/prepare.php';	
 ?>
+
+
