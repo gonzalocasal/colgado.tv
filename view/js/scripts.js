@@ -24,6 +24,7 @@ $("#shield").click(function() {
     $("#shield").hide();
     $("#player-protected").show();
     $("#player-protected").append(content);
+    $("#ciframe").attr("scrolling", "no");
 });
 
 //FADEIN LOADING PLAYER
