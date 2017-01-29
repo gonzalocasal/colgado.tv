@@ -9,6 +9,8 @@ $(document).ready(function(a) {
         var scrollPosition = localStorage.getItem("menuScrollPosition");
         $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
     }
+    //REMOVE SCROLLBAR FROM PLAYER
+    $("#ciframe").attr("scrolling", "no");
 });
 
 //CLOSE AD
