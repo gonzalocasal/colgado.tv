@@ -1,9 +1,12 @@
+.card{
+	padding: 10px;
+}
+
 .help {
 font-size:0.938em;
 color:#333;
 text-align:left;
-margin-top:10px;
-padding: 10px;
+margin-bottom: 10px;
 }
 
 .titulo {
