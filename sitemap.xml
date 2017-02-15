@@ -11,10 +11,6 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/global/</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
   <loc>http://colgado.tv/radios/</loc>
   <changefreq>monthly</changefreq>
 </url>
@@ -35,6 +31,10 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
+  <loc>http://colgado.tv/tv/america</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
   <loc>http://colgado.tv/tv/tvpublica</loc>
   <changefreq>monthly</changefreq>
 </url>
@@ -43,11 +43,59 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
+  <loc>http://colgado.tv/tv/tycsports</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/dxtv</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/directvsports</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/garage</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/foxsports</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/foxsports2</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/espn</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/espn2</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
   <loc>http://colgado.tv/tv/tn</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://colgado.tv/tv/c5n</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/ln+</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/america24</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/cronica</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/cn23</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -60,34 +108,6 @@
 </url>
 <url>
   <loc>http://colgado.tv/tv/rt</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/tycsports</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/dxtv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/garage</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/espn</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/espn2</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/foxsports</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/foxsports2</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -139,7 +159,15 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
+  <loc>http://colgado.tv/tv/telemax</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
   <loc>http://colgado.tv/tv/construirtv</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/tv/ciudad</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -147,11 +175,11 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/tv/acuamayor</loc>
+  <loc>http://colgado.tv/tv/qm</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/tv/qm</loc>
+  <loc>http://colgado.tv/tv/acuamayor</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -172,10 +200,6 @@
 </url>
 <url>
   <loc>http://colgado.tv/tv/vh1</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/vevo</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -236,10 +260,6 @@
 </url>
 <url>
   <loc>http://colgado.tv/tv/foxlife</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/e!</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -339,166 +359,6 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/global/tvchile</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/lared</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/mega</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/canal13c</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/chv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/atv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/global</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/frecuencialatina</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tvperu</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/gamatv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/ectv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/uno</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/ecuavisa</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/caracol</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/rcn</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/ntn24</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/scolombia</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/telemedellin</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/vtv</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/globovision</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/venevision</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/milenio</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/teleformula</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/azteca7</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/azteca13</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/telemundo</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/univision</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/antena3</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/cuatro</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/telecinco</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/lasexta</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tve1</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tve2</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tdp</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/24h</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tvg</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/tvg2</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/dw</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/euronews</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/bbc</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
   <loc>http://colgado.tv/radios/la100</loc>
   <changefreq>monthly</changefreq>
 </url>
@@ -527,10 +387,6 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/vale</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
   <loc>http://colgado.tv/radios/one</loc>
   <changefreq>monthly</changefreq>
 </url>
@@ -543,11 +399,11 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/latina</loc>
+  <loc>http://colgado.tv/radios/vale</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/radiox</loc>
+  <loc>http://colgado.tv/radios/latina</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -607,7 +463,11 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/radio9</loc>
+  <loc>http://colgado.tv/radios/am950</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://colgado.tv/radios/america1190</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -627,11 +487,11 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/la8</loc>
+  <loc>http://colgado.tv/radios/vida</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/radios/vida</loc>
+  <loc>http://colgado.tv/radios/la8</loc>
   <changefreq>monthly</changefreq>
 </url>
 <url>
@@ -667,31 +527,7 @@
   <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://colgado.tv/tv/america</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/america24</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/americasports</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/tv/directvsports</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/panamericana</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/global/americap</loc>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://colgado.tv/radios/america1190</loc>
+  <loc>http://colgado.tv/tv/e!</loc>
   <changefreq>monthly</changefreq>
 </url>
 </urlset>
