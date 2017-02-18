@@ -9,7 +9,6 @@ $reCaptcha = new ReCaptcha($secret);
 if ($_POST["g-recaptcha-response"]) {
 	$response = $reCaptcha->verifyResponse($_SERVER["REMOTE_ADDR"], $_POST["g-recaptcha-response"]);
 }
-
 if ( isset($response) != null && $response->success) {
    	$subject = "contacto de ".$_SESSION["name"];
 	$from    = new SendGrid\Email(null, $_SESSION["email"]);
@@ -19,9 +18,8 @@ if ( isset($response) != null && $response->success) {
 
 	$sg = new \SendGrid(getenv('SENDGRID_API_KEY'));
 	$response = $sg->client->mail()->send()->post($mail);
-	session_destroy();
+	
 	require('../contacto/mensaje.php');
-}else{
-	header("Location:".$_SERVER["DOCUMENT_ROOT"]."");
 }
+session_destroy();
 ?>
