@@ -36,6 +36,15 @@ textarea {
 resize:none
 }
 
+.info {
+margin-top: 30px;
+text-align:center
+}
+
+.logo-info {
+padding-right: 7px
+}
+
 #captcha {
 display:block;
 margin-left:77px;
