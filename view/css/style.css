@@ -157,6 +157,7 @@ text-align:center
 
 .card {
 background-color:#FFF;
+border-radius: 2px;
 line-height:25px;
 text-align:center;
 vertical-align:top;

@@ -42,12 +42,12 @@ resize:none
 }
 
 .info {
-margin-top: 30px;
+margin-top: 15px;
 text-align:center
 }
 
 .logo-info {
-padding-right: 7px;
+padding-right: 8px;
 transition: .3s
 o-transition: .3s;
 -ms-transition: .3s;
