@@ -120,9 +120,8 @@ function(a) {
     function b(b, c) {
         a("#menu-search").change(function() {
             var b = a(this).val();
-            return b ? (a("#items").find("a:not(:Contains(" + b + "))").parent().fadeOut(), 
-            a("#items").find("a:Contains(" + b + ")").parent().fadeIn()) : a("#items").find("li").fadeIn(), 
-            !1;
+            return b ? (a("#items").find("a:not(:Contains(" + b + "))").parent().fadeOut(),
+                a("#items").find("a:Contains(" + b + ")").parent().fadeIn()) : a("#items").find("li").fadeIn(), !1;
         }).keyup(function() {
             a(".menu-separator").css("display", "none"), a(this).change();
         });
@@ -132,5 +131,4 @@ function(a) {
     }, a(function() {
         b(a("#list"), a("#items"));
     });
-}
-
+}(jQuery)
