@@ -246,6 +246,15 @@ z-index:980
 display:inline-flex
 }
 
+.social-button{
+margin-right: 20px;
+vertical-align: top;
+}
+
+#social-buttons{
+margin-bottom: -20px;
+}
+
 img {
 border:0
 }
