@@ -5,6 +5,6 @@ $model=[
 'title'=>'Telesur',
 'description'=>'Ver Telesur por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.directv.com.ar/guia/ChannelDetail.aspx?id=722',
-'player'=>'<iframe id="ciframe" width="950" height="535" src="https://www.youtube.com/embed/84RsLa3Ufu8?autoplay=1" frameborder="0" allowfullscreen></iframe>'];
+'player'=>'<iframe id="ciframe" width="950" height="535" src="https://www.youtube.com/embed/6eAJ3w1djDg?autoplay=1" frameborder="0" allowfullscreen></iframe>'];
 include_once'../controller/prepare.php'	;
 ?>
