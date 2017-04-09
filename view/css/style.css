@@ -121,7 +121,7 @@ color:#FFFFFF
 vertical-align:bottom;
 padding-left:15px;
 padding-right:15px;
-font-weight: 600;
+font-weight: 400;
 text-align:center
 }
 
@@ -229,7 +229,7 @@ z-index:1000
 #float-layer {
 opacity:0;
 transition:opacity .5s linear;
-background-color:rgba(0,0,0,.7);
+background-color:rgba(255,255,255,.7);
 display:block;
 height:450px;
 left:0;
@@ -252,7 +252,7 @@ vertical-align: top;
 }
 
 #social-buttons{
-margin-bottom: -35px;
+margin-bottom: 50px;
 margin-top: 15px;
 }
 
@@ -293,7 +293,7 @@ margin-bottom: 14px
 }
 
 #close-ad {
-color: #FFFFFF;
+color: #000;
 cursor:pointer;
 position:absolute;
 top:6px;
@@ -387,7 +387,7 @@ position:fixed
 
 #menu-search {
 padding-left:15px;
-font-weight:500;
+font-weight:400;
 background-color:#212121;
 border-bottom-color:#C5C5C5;
 color:#777;
@@ -400,7 +400,7 @@ border-width:0 0 1px
 
 .menu-link {
 padding-left:15px;
-font-weight:500
+font-weight:400
 }
 
 #items {
@@ -472,8 +472,8 @@ overflow-y:auto
 	}
 
 	.mobile-link {
-	padding-left:15px;
-	font-weight:500
+	padding-left: 15px;
+	font-weight: 400
 	}
 
 	.mobile-item:hover a {
