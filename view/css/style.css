@@ -375,7 +375,7 @@ color:#333
 }
 
 .slide-in.on {
-box-shadow:0 4px 4px #333;
+box-shadow:0 4px 8px #333;
 height:100%;
 left:0!important;
 overflow:hidden;
@@ -394,7 +394,8 @@ color:#777;
 height:30px;
 font-size:0.875em;
 width:100%;
-border-width:0 0 1px
+border-width:0 0 1px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
 }
 
 .menu-link {
