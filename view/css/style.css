@@ -395,7 +395,7 @@ height:30px;
 font-size:0.875em;
 width:100%;
 border-width:0 0 1px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
 }
 
 .menu-link {
