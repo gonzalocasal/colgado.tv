@@ -5,6 +5,7 @@ $model=[
 'title'=>'Investigation Disccovery',
 'description'=>'Ver Investigation Disccovery por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.directv.com.ar/guia/ChannelDetail.aspx?id=223',
-'player'=>'<iframe id="ciframe" src="http://embed.latino-webtv.com/idiscovery.html" width="950" height="535"></iframe>'];
+'player'=>'<script type="text/javascript">id="idiscovery"; width="950"; height="535";</script>
+<script type="text/javascript" src="http://stream.latino-webtv.com/embed.js"></script>'];
 include_once'../controller/prepare.php'	;
 ?>
