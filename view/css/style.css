@@ -36,6 +36,7 @@ z-index:997;
 transition:left .2s ease-in;
 box-shadow:0 1px 4px #333;
 webkit-transition:left .2s ease-in
+
 }
 
 nav {
@@ -212,7 +213,7 @@ z-index:980
 webkit-transition:left .2s ease-in;
 background-color:#fff;
 width:215px;
-box-shadow:0 4px 4px #333;
+box-shadow: 0 4px 4px #333;
 font-size:0.875em;
 height:100%;
 left:-220px;
@@ -375,7 +376,7 @@ color:#333
 }
 
 .slide-in.on {
-box-shadow:5px 10px 15px 5px rgba(0,0,0,.1);
+box-shadow: 0 4px 4px #333;
 height:100%;
 left:0!important;
 overflow:hidden;
