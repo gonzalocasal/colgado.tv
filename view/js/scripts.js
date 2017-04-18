@@ -2,6 +2,11 @@
 $(document).ready(function(a) {  
     //CHECK SIDE MENU STATUS
     if ("true" == localStorage.getItem("menuOpened")) {
+        $("#shadow").css({display: "block"});
+        $("#shadow").fadeTo(1, .5);
+        $("#player").css({zIndex: "999"});
+        $("#header").css({zIndex: "999"});
+        $("#menu-search").focus();
         document.getElementById("menu").className = "mclick";
         var headerSize =  $("#header").height();
         var itemsTopPosition = $("#items").position().top;
@@ -76,9 +81,10 @@ $("#messageBotton").click(function() {
 //SIDE MENU ICON CLICK
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
-    var menuOpened = $("#menu").hasClass("on");
-    if ("block" == shadowStatus)
-        $("#shadow").fadeTo(300, 0), $("#shadow").css({display: "none"}), 
+    var menuOpened = ("true" == localStorage.getItem("menuOpened"));
+    if ("block" == shadowStatus || menuOpened)
+        $("#shadow").fadeTo(300, 0),
+        $("#shadow").css({display: "none"}), 
         $("#menu").removeClass("on");
     else {
         var headerSize =  $("#header").height();
@@ -88,7 +94,8 @@ $("#menu-icon").click(function() {
         $("#menu-search").focus(), 0 == menuOpened && (
             $("#shadow").css({display: "block"}),
             $("#shadow").fadeTo(300, .5), 
-            $("#header").css({zIndex: "999"})
+            $("#header").css({zIndex: "999"}),
+            $("#player").css({zIndex: "999"})
         );
     }
 });
