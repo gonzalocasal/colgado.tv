@@ -5,6 +5,6 @@ $model=[
 'title'=>'HispanTV',
 'schedule'=>'http://www.hispantv.com/programacion',
 'description'=>'Ver HispanTV por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'player'=>'<iframe id="ciframe" width="950" height="535" src="https://www.youtube.com/embed/bj_Rqu_ec-o?autoplay=1" frameborder="0" allowfullscreen></iframe>'];
+'player'=> basename($_SERVER["PHP_SELF"], ".php")];
 include_once'../controller/prepare.php'	;
 ?>

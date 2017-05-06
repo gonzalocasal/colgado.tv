@@ -4,6 +4,6 @@ $model=[
 'ad'=>true,
 'title'=>'VEVO',
 'description'=>'Ver VEVO por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
-'player'=>'<iframe id="ciframe" src="http://iptvcanales.com/xw/reproductorm3u8.php?n_canal=16" width="950" height="535"></iframe>'];
+'player'=> basename($_SERVER["PHP_SELF"], ".php")];
 include_once'../controller/prepare.php'	;
 ?>

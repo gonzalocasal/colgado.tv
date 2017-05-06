@@ -5,7 +5,6 @@ $model=[
 'title'=>'Film Zone',
 'description'=>'Ver Film Zone por internet en vivo las 24hs toda la programaci&oacute;n online y sin l&iacute;mites.',
 'schedule'=>'http://www.directv.com.ar/guia/ChannelDetail.aspx?id=505',
-'player'=>'<script type="text/javascript">id="Film-Zone"; width="950"; height="535";</script>
-<script type="text/javascript" src="http://stream.latino-webtv.com/embed.js"></script>'];
+'player'=> basename($_SERVER["PHP_SELF"], ".php")];
 include_once'../controller/prepare.php'	;
 ?>

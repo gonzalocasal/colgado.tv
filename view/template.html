@@ -64,7 +64,9 @@
                 <script type="text/javascript">var content = '{{player |raw}}';</script>
                 </div>
             {% else %}
-                <div id=player>{{player |raw}}</div>
+                <div id=player>
+                {% include 'html/media/' ~active~ '/' ~player~ '.html'%}
+                </div>
             {% endif %}
         </div>
         {% else %}
