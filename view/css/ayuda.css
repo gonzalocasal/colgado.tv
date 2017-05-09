@@ -15,7 +15,8 @@ color:#009688
 
 a.help:link {
 color:#31ABDD;
-text-decoration:none
+text-decoration:none;
+margin: 0px
 }
 
 a.help:visited {
