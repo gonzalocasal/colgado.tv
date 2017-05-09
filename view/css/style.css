@@ -44,16 +44,6 @@ line-height:45px;
 min-width:920px
 }
 
-nav li {
-display:inline
-}
-
-nav ul {
-margin-left: -35px;
-margin-top: 0px;
-margin-bottom: 0px;
-}
-
 nav a {
 text-decoration:none;
 font-size:0.9em;
@@ -65,10 +55,8 @@ o-transition:.3s;
 transition:.3s
 }
 
-#nav-home {
-color:#fff;
-margin-right: 30px;
-border-bottom-color:#181818
+nav :hover  {
+color:white
 }
 
 #center {
@@ -84,77 +72,47 @@ padding:0
 cursor:pointer;
 color: #FFFFFF;
 font-size: 24px;
-vertical-align: middle
+vertical-align: middle;
+margin-left: -50px;
+margin-right: 30px
 }
 
 .active-page {
-border-bottom:3px solid #009688;
-border-top:3px solid #181818;
-padding-bottom: 12px
-}
+border-bottom:2px solid #009688;
+border-top:2px solid #181818;
+padding-bottom: 13px;
+color:white;
 
-.active-page a{
-color:#fff;
 }
 
 a:visited {
 text-decoration:none;
 }
 
-#lights {
-cursor:pointer;
-display:inline-block;
-overflow:hidden;
-margin-left: 30px;
-border-bottom:1px solid #181818;
-transition:all .3s ease-in-out
-}
-
-#schedule {
-margin-left: 20px
-}
-
-#lights:hover {
-color:#FFFFFF
-}
-
 .tab {
 vertical-align:middle;
-padding-left:15px;
-padding-right:15px;
+padding-left:20px;
+padding-right:20px;
 font-weight: 400;
 text-align:center
 }
 
-.tab:hover i  {
-	color:#FFFFFF;
-}
-
-.tab:hover a  {
-	color:#FFFFFF;
-}
-
 .material-icons.md-light{
-	color: #757575;
 	vertical-align: sub;
 	font-size: 20px;
-	margin-right: 10px;
-	o-transition:.3s;
-	-ms-transition:.3s;
-	-moz-transition:.3s;
-	-webkit-transition:.3s;
-	transition:.3s
-}
 
-.material-icons.md-light.active{
-	color: #FFFFFF;
 }
 
 .material-icons.md-dark{
-	vertical-align: sub;
-	font-size: 20px;
-	margin-right: 10px
+vertical-align: sub;
+font-size: 20px;
+margin-right: 10px
 }
+
+#nav-help{
+	margin-right: 30px;
+}
+
 
 .card {
 background-color:#FFF;
@@ -446,6 +404,10 @@ overflow-x:hidden;
 overflow-y:auto
 }
 
+.trackedUrls{
+display: none;
+}
+
 @media screen and (max-width: 919px){
 	#center {
 	text-align:left
@@ -455,37 +417,6 @@ overflow-y:auto
 	margin-left: 15px;
 	margin-right: 0px;
 	margin-top: -2px;
-	}
-
-	.mobile-item {
-	border-left-style:solid;
-	border-left-width:3px;
-	display:block;
-	color:#fff;
-	font-size:0.875em;
-	line-height:35px;
-	border-left-color:#fff
-	}
-
-	.mobile-item:hover {
-	border-left-style:solid;
-	border-left-width:3px;
-	border-left-color:#009688
-	}
-
-	.mobile-link {
-	padding-left: 15px;
-	font-weight: 400
-	}
-
-	.mobile-item:hover a {
-	background-color:rgba(0,0,0,.0513726)
-	}
-
-	.active-page {
-	border-bottom:3px solid #181818;
-	border-top:3px solid #181818;
-	padding-bottom: 10px
 	}
 
 	#modalContent {
@@ -517,15 +448,12 @@ overflow-y:auto
 	}
 
 	.card {
-	max-width:100%
+	width:100%;
+	padding: 0px
 	}
 
 	img {
 	max-width:100%
-	}
-
-	nav ul {
-	margin:0 0 0 -35px
 	}
 
 	audio {
@@ -533,16 +461,8 @@ overflow-y:auto
 	}
 
 	#float-layer,
-	#lights,
-	#nav-help,
-	#nav-contact,
-	#nav-global,
-	#nav-radio,
-	#nav-tv,
-	#schedule,
-	#menu-search,
-	.menu-item,
-	.menu-separator {
+	#nav-schedule,
+	#nav-lights {
 	display:none
 	}
 }

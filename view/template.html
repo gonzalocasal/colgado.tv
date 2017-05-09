@@ -24,29 +24,30 @@
         <div id=header>
             <div id=center>
                 <nav>
-                    <ul>
-                    <li><i id=menu-icon class="material-icons md-24 md-light ">menu</i>  </li>
-                    <li class="tab {% if active=='tv' %}active-page{% endif %}">
-                        <a href="/" id=nav-tv ><i class="material-icons md-18 md-light {% if active=='tv' %}active{% endif %}">live_tv</i>TV</a>
+                <i id=menu-icon class=" tab material-icons md-24 md-light ">menu</i> 
+                <a href="/" id=nav-tv >
+                    <i class="{% if active=='tv' %}active-page{% endif %} tab material-icons md-18 md-light ">live_tv</i>     
+                </a>
+                <a href="/radios" id=nav-radio >
+                    <i class="tab material-icons md-18 md-light {% if active=='radios' %}active-page{% endif %}">radio</i>
+                </a>
+                <a href="/contacto" id=nav-contact >
+                    <i class="tab material-icons md-18 md-light {% if active=='contacto' %}active-page{% endif %}">mail_outline</i>
+                </a>
+                <a href="/ayuda" id=nav-help >
+                    <i class="tab material-icons md-18 md-light  {% if active=='ayuda' %}active-page{% endif %}">info_outline</i>
+                </a>
+                {% if schedule is defined %}
+                <a href="{{schedule}}" id=nav-schedule target="_blank" >
+                    <i id=schedule class="tab material-icons md-18 md-light">date_range</i>
+                </a>
+                {% endif %}
+                {% if player is defined %}
+                 <a href="#" id=nav-lights>
+                        <i class=" tab material-icons md-18 md-light">brightness_6</i>
                     </li>
-                    <li class="tab {% if active=='radios' %}active-page{% endif %}">
-                        <a href="/radios" id=nav-radio ><i class="material-icons md-18 md-light {% if active=='radios' %}active{% endif %}">radio</i>RADIOS</a>
-                    </li>
-                    <li class="tab {% if active=='contacto' %}active-page{% endif %}">
-                        <a href="/contacto" id=nav-contact ><i class="material-icons md-18 md-light {% if active=='contacto' %}active{% endif %}">mail_outline</i>CONTACTO</a>
-                    </li>
-                    <li class="tab {% if active=='ayuda' %}active-page{% endif %}">
-                        <a href="/ayuda" id=nav-help ><i class="material-icons md-18 md-light  {% if active=='ayuda' %}active{% endif %}">info_outline</i>AYUDA</a>
-                    </li>
-                    {% if schedule is defined %}
-                    <li class="tab" id=schedule>
-                        <a href="{{schedule}}" target="_blank" class=tab ><i class="material-icons md-18 md-light">date_range</i>PROGRAMACI&Oacute;N</a>
-                    </li>
-                    {% endif %}
-                    {% if player is defined %}
-                    <i id=lights class="material-icons md-18 md-light">brightness_6</i>
-                    {% endif %}
-                    </ul>
+                </a>
+                {% endif %}
                 </nav>
             </div>
         </div>

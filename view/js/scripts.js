@@ -45,7 +45,7 @@ $("#player-container").css({opacity: "1"});
 setTimeout(function() {$("#float-layer").css({opacity: "1"});}, 500);
 
 //LIGHTS DOWN
-$("#shadow").fadeTo(1, 0), $("#lights").click(function() {
+$("#shadow").fadeTo(1, 0), $("#nav-lights").click(function() {
     $("#header").css({zIndex: "997"}), 
     $("#player").css({zIndex: "998"}), 
     $("#player-protected").css({zIndex: "998"}), 

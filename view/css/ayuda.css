@@ -1,10 +1,8 @@
-.card{
-	padding: 10px;
-	width: 460px
-}
 
 .help {
 font-size: 13.5px;
+margin-left: 10px;
+margin-right: 10px;
 color:#333;
 text-align:left;
 margin-bottom: 15px;
@@ -42,7 +40,7 @@ o-transition: .3s;
 }
 
 .logo-browser:hover{
-    opacity: .7
+opacity: .7
 }
 
 .img-help {
