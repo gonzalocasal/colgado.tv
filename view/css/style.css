@@ -72,17 +72,14 @@ padding:0
 cursor:pointer;
 color: #FFFFFF;
 font-size: 24px;
-vertical-align: middle;
-margin-left: -50px;
-margin-right: 30px
+vertical-align: middle
 }
 
 .active-page {
 border-bottom:2px solid #009688;
 border-top:2px solid #181818;
 padding-bottom: 13px;
-color:white;
-
+color:white
 }
 
 a:visited {
@@ -112,7 +109,6 @@ margin-right: 10px
 #nav-help{
 	margin-right: 30px;
 }
-
 
 .card {
 background-color:#FFF;
