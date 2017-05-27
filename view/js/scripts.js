@@ -1,10 +1,8 @@
 //ON READY
 $(document).ready(function(a) {  
     //CHECK SIDE MENU STATUS
-    if ("true" == localStorage.getItem("menuOpened")) {
-        $("#shadow").css({display: "block"});
-        $("#shadow").fadeTo(1, .5);
-        $("#player").css({zIndex: "999"});
+    if ("true" == localStorage.getItem("menuOpened")) {     
+        $("#player").css({zIndex: "998"});
         $("#header").css({zIndex: "999"});
         $("#menu-search").focus();
         document.getElementById("menu").className = "mclick";
@@ -69,7 +67,7 @@ $("#shadow").click(function() {
 });
 
 //CONTACT SUBMIT 
-$("#submitLink").click(function() {
+$("#submit-link").click(function() {
     $("#submit").click();
 });
 
@@ -82,9 +80,7 @@ $("#messageBotton").click(function() {
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
     var menuOpened = ("true" == localStorage.getItem("menuOpened"));
-    if ("block" == shadowStatus || menuOpened)
-        $("#shadow").fadeTo(300, 0),
-        $("#shadow").css({display: "none"}), 
+    if ( menuOpened)
         $("#menu").removeClass("on");
     else {
         var headerSize =  $("#header").height();
@@ -92,10 +88,8 @@ $("#menu-icon").click(function() {
         var menuHeight = window.innerHeight - headerSize;
         $(".slide-in").toggleClass("on"), $("#items").css("height", menuHeight - itemsTopPosition), 
         $("#menu-search").focus(), 0 == menuOpened && (
-            $("#shadow").css({display: "block"}),
-            $("#shadow").fadeTo(300, .5), 
             $("#header").css({zIndex: "999"}),
-            $("#player").css({zIndex: "999"})
+            $("#player").css({zIndex: "998"})
         );
     }
 });

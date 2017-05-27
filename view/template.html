@@ -21,29 +21,29 @@
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
     </head>
     <body>
-        <div id=header>
-            <div id=center>
+        <div id=header class=header>
+            <div id=center  class=center>
                 <nav>
-                <i id=menu-icon class=" tab material-icons md-24 md-light ">menu</i> 
+                <i id=menu-icon class="menu-icon tab material-icons md-24 md-light ">menu</i> 
                 <a href="/" id=nav-tv >
                     <i class="{% if active=='tv' %}active-page{% endif %} tab material-icons md-18 md-light ">live_tv</i>     
                 </a>
-                <a href="/radios" id=nav-radio >
+                <a href="/radios" class=nav-radio >
                     <i class="tab material-icons md-18 md-light {% if active=='radios' %}active-page{% endif %}">radio</i>
                 </a>
-                <a href="/contacto" id=nav-contact >
+                <a href="/contacto" class=nav-contact >
                     <i class="tab material-icons md-18 md-light {% if active=='contacto' %}active-page{% endif %}">mail_outline</i>
                 </a>
-                <a href="/ayuda" id=nav-help >
+                <a href="/ayuda" class=nav-help >
                     <i class="tab material-icons md-18 md-light  {% if active=='ayuda' %}active-page{% endif %}">info_outline</i>
                 </a>
                 {% if schedule is defined %}
-                <a href="{{schedule}}" id=nav-schedule target="_blank" >
-                    <i id=schedule class="tab material-icons md-18 md-light">date_range</i>
+                <a href="{{schedule}}" class=nav-schedule target="_blank" >
+                    <i class="schedul tab material-icons md-18 md-light">date_range</i>
                 </a>
                 {% endif %}
                 {% if player is defined %}
-                 <a href="#" id=nav-lights>
+                 <a href="#" id=nav-lights class=nav-lights>
                     <i class=" tab material-icons md-18 md-light">brightness_6</i>
                 </a>
                 {% endif %}
@@ -51,20 +51,20 @@
             </div>
         </div>
         <div id=menu class=slide-in>
-            <input type=text id=menu-search placeholder="Buscar..."/>
-            <ul id=items>{% include 'html/menuitems.html' %}</ul>
+            <input type=text id=menu-search class=menu-search placeholder="Buscar..."/>
+            <ul id=items class=items>{% include 'html/menuitems.html' %}</ul>
         </div>
-        <div id=space></div>
-        <div id=shadow></div>
+        <div id=space class=space></div>
+        <div id=shadow class=shadow></div>
         {% if player is defined %}
-        <div id=player-container>
+        <div id=player-container class=player-container>
             {% if protected is defined and protected %}
-                <img id=shield alt=shield src="/view/imgs/shield.jpg" />
-                <div id=player-protected>
+                <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" />
+                <div id=player-protected class=player-protected>
                 <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
                 </div>
             {% else %}
-                <div id=player>
+                <div id=player class=player>
                 {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
                 </div>
             {% endif %}
