@@ -5,7 +5,8 @@ $(document).ready(function(a) {
         $("#player").css({zIndex: "998"});
         $("#header").css({zIndex: "999"});
         $("#menu-search").focus();
-        document.getElementById("menu").className = "mclick";
+        $("#menu").removeClass("slide-in");
+        $("#menu").addClass("mclick");
         var headerSize =  $("#header").height();
         var itemsTopPosition = $("#items").position().top;
         var currentHeight = window.innerHeight - headerSize;
@@ -80,12 +81,17 @@ $("#messageBotton").click(function() {
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
     var menuOpened = ("true" == localStorage.getItem("menuOpened"));
-    if ( menuOpened)
+    if ( menuOpened){
         $("#menu").removeClass("on");
-    else {
+        $("#menu").removeClass("mclick");
+        $("#menu").addClass("slide-in");
+        localStorage.setItem("menuOpened", "false");
+    }else {
         var headerSize =  $("#header").height();
         var itemsTopPosition = $("#items").position().top;
         var menuHeight = window.innerHeight - headerSize;
+        localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
+        localStorage.setItem("menuOpened", "true");
         $(".slide-in").toggleClass("on"), $("#items").css("height", menuHeight - itemsTopPosition), 
         $("#menu-search").focus(), 0 == menuOpened && (
             $("#header").css({zIndex: "999"}),
@@ -94,19 +100,11 @@ $("#menu-icon").click(function() {
     }
 });
 
-//HIDE SIDE MENU
-$(document).mouseup(function(a) {
-    if ("true" == localStorage.getItem("menuOpened")) {
-        setTimeout(function() {$("#menu").attr("class","slide-in");}, 300);
-        localStorage.setItem("menuOpened", "false");
-    }
-}); 
-
 //SIDE MENU ITEMS CLICK
 $(".menu-link").click(function() {
     localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
-    localStorage.setItem("menuOpened", "true");
 }),
+
 
 //SIDE MENU VERTICAL RESPONSIVE
 $(window).resize(function() {
