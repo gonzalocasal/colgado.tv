@@ -27,17 +27,14 @@ $(document).ready(function(a) {
     ga('send', 'pageview');
 });
 
-
 //REMOVE LOCAL CACHE ON EVENT
-if(typeof vipe !== 'undefined'){
-    if (!localStorage.event || localStorage.event !== vipe) {
-        localStorage.setItem("event", vipe);
-        localStorage.setItem("newEvent", true);
-    }
-}
-if (!localStorage.newEvent && localStorage.newEvent && $("#nav-tv i").hasClass("active-page")) {
-    localStorage.setItem("newEvent", false);
+if (localStorage.getItem("NEW_EVENT")=="true" && active=="tv") {
+    localStorage.setItem("NEW_EVENT", false);
     window.location.reload(true);
+}
+if(typeof vipe !== 'undefined' && vipe !== '' && localStorage.EVENT !== vipe){
+    localStorage.setItem("EVENT", vipe);
+    localStorage.setItem("NEW_EVENT", true);
 }
 
 //CLOSE AD

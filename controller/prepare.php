@@ -1,4 +1,5 @@
 <?php
+require 'show.php';
 require 'cache.php';
 require 'config.php';
 $environmet=[

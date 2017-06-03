@@ -1,8 +1,6 @@
 <!DOCTYPE html><html lang="es">
     <head>
-        <title>
-        {{title |raw}}{% if page is empty %} | Colgado{% endif %}
-        </title>
+        <title>{{title |raw}}{% if page is empty %} | Colgado{% endif %}</title>
         <meta name=description content="{{description | raw}}"/>
         <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.1, user-scalable=yes"/>
         <meta name=google-site-verification content="{{googleKey}}" />
@@ -56,12 +54,6 @@
         </div>
         <div id=space class=space></div>
         <div id=shadow class=shadow></div>
-        {% if vipe is defined %}
-        <div class=card>
-            <span class=title-vipe>{{vipe.title}}</span><br>
-            <a href="tv/vipe" alt="{{vipe.title}}"><img src="{{vipe.banner}}" /></a>
-        </div>         
-        {% endif %}
         {% if player is defined %}
         <div id=player-container class=player-container>
             {% if protected is defined and protected %}
@@ -75,15 +67,21 @@
                 </div>
             {% endif %}
         </div>
+        {% if vipe is defined %}<script>var vipe="{{vipe.eventTitle}}"</script>{% endif %}      
         {% else %}
-            {% include 'html/'~page |raw %}
+            {% if vipe is defined and active=='tv' %}
+            <div class=card>
+                <span class=title-vipe>{{vipe.eventTitle}}</span><br>
+                <a href="tv/vipe" alt="{{vipe.eventDescription}}"><img src="{{vipe.banner}}" /></a>
+            </div>
+            <script>var vipe="{{vipe.title}}"</script>         
+            {% endif %}
+            {% include 'html/'~page |raw %}       
         {% endif %}
         {% if ad %}
             {% include 'html/ad.html' |raw %}
         {% endif %}
-        {% if vipe is defined %}
-        <script type="text/javascript">var vipe="{{vipe.title}}"</script>
-        {% endif %}
+        <script>var active="{{active}}"</script>             
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
     </body>
