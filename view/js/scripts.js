@@ -18,8 +18,6 @@ $(document).ready(function(a) {
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
 
-
-
     //ANALYTICS
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,8 +32,12 @@ $(document).ready(function(a) {
 if(typeof vipe !== 'undefined'){
     if (!localStorage.event || localStorage.event !== vipe) {
         localStorage.setItem("event", vipe);
-        window.location.reload(true);
+        localStorage.setItem("newEvent", true);
     }
+}
+if (!localStorage.newEvent && localStorage.newEvent && $("#nav-tv i").hasClass("active-page")) {
+    localStorage.setItem("newEvent", false);
+    window.location.reload(true);
 }
 
 //CLOSE AD
