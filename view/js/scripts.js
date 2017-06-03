@@ -18,13 +18,7 @@ $(document).ready(function(a) {
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
 
-    //REMOVE LOCAL CACHE ON EVENT
-    if(typeof vipe !== 'undefined'){
-        if (!localStorage.event || localStorage.event !== vipe) {
-            localStorage.setItem("event", vipe);
-            window.location.reload(true);
-        }
-    }
+
 
     //ANALYTICS
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -33,7 +27,16 @@ $(document).ready(function(a) {
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-41210250-1', 'auto');
     ga('send', 'pageview');
-    });
+});
+
+
+//REMOVE LOCAL CACHE ON EVENT
+if(typeof vipe !== 'undefined'){
+    if (!localStorage.event || localStorage.event !== vipe) {
+        localStorage.setItem("event", vipe);
+        window.location.reload(true);
+    }
+}
 
 //CLOSE AD
 $("#close-ad").click(function() {
