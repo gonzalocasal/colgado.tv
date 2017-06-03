@@ -7,6 +7,7 @@ $(document).ready(function(a) {
         $("#menu-search").focus();
         $("#menu").removeClass("slide-in");
         $("#menu").addClass("mclick");
+        $(".menu-icon").addClass("menu-icon-open");
         var headerSize =  $("#header").height();
         var itemsTopPosition = $("#items").position().top;
         var currentHeight = window.innerHeight - headerSize;
@@ -85,6 +86,7 @@ $("#menu-icon").click(function() {
         $("#menu").removeClass("on");
         $("#menu").removeClass("mclick");
         $("#menu").addClass("slide-in");
+        $(".menu-icon").removeClass("menu-icon-open");
         localStorage.setItem("menuOpened", "false");
     }else {
         var headerSize =  $("#header").height();
@@ -92,7 +94,9 @@ $("#menu-icon").click(function() {
         var menuHeight = window.innerHeight - headerSize;
         localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
         localStorage.setItem("menuOpened", "true");
-        $(".slide-in").toggleClass("on"), $("#items").css("height", menuHeight - itemsTopPosition), 
+        $(".menu-icon").addClass("menu-icon-open");
+        $(".slide-in").toggleClass("on"), 
+        $("#items").css("height", menuHeight - itemsTopPosition), 
         $("#menu-search").focus(), 0 == menuOpened && (
             $("#header").css({zIndex: "999"}),
             $("#player").css({zIndex: "998"})

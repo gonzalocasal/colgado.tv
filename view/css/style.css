@@ -36,7 +36,12 @@ z-index:997;
 transition:left .2s ease-in;
 box-shadow:0 1px 4px #333;
 webkit-transition:left .2s ease-in
+}
 
+.title-vipe {
+font-size: 13.5px;
+color:#009688;
+align-self: center
 }
 
 nav {
@@ -55,7 +60,7 @@ o-transition:.3s;
 transition:.3s
 }
 
-nav :hover  {
+nav :hover {
 color:white
 }
 
@@ -69,8 +74,20 @@ padding:0
 }
 
 .menu-icon {
+vertical-align: middle;
 cursor:pointer;
 color: #FFFFFF;
+padding: 10px
+}
+
+.menu-icon :hover{
+border-radius: 50%;
+background: #2f2f2f
+}
+
+.menu-icon-open {
+border-radius: 50%;
+background: #2f2f2f
 }
 
 .active-page {
@@ -88,8 +105,7 @@ text-decoration:none;
 vertical-align:middle;
 padding-left:20px;
 padding-right:20px;
-font-weight: 400;
-text-align:center
+font-weight: 400
 }
 
 .material-icons.md-light{

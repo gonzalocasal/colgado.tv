@@ -24,7 +24,7 @@
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
-                <i id=menu-icon class="menu-icon tab material-icons md-24 md-light ">menu</i> 
+                <i id=menu-icon class="menu-icon material-icons md-24 md-light ">menu</i> 
                 <a href="/" id=nav-tv >
                     <i class="{% if active=='tv' %}active-page{% endif %} tab material-icons md-18 md-light ">live_tv</i>     
                 </a>
@@ -56,6 +56,12 @@
         </div>
         <div id=space class=space></div>
         <div id=shadow class=shadow></div>
+        {% if vipe is defined %}
+        <div class=card>
+            <span class=title-vipe>{{vipe.title}}</span><br>
+            <a href="tv/vipe" alt="{{vipe.title}}"><img src="{{vipe.banner}}" /></a>
+        </div>         
+        {% endif %}
         {% if player is defined %}
         <div id=player-container class=player-container>
             {% if protected is defined and protected %}
