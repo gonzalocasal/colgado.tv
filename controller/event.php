@@ -5,6 +5,6 @@ $event=[
 'banner'=>'https://seeklogo.com/images/U/UEFA_Champions_League-logo-300A743B55-seeklogo.com.png',
 'date'=>'03/06/2017',
 'begin'=>'14:40',
-'ends'=>'14:45'
+'ends'=>'19:00'
 ];
 ?>
