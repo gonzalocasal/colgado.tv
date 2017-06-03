@@ -13,9 +13,18 @@ $(document).ready(function(a) {
         var currentHeight = window.innerHeight - headerSize;
         var scrollPosition = localStorage.getItem("menuScrollPosition");
         $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
+
     }
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
+
+    //REMOVE LOCAL CACHE ON EVENT
+    if(typeof vipe !== 'undefined'){
+        if (!localStorage.event || localStorage.event !== vipe) {
+            localStorage.setItem("event", vipe);
+            window.location.reload(true);
+        }
+    }
 
     //ANALYTICS
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

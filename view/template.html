@@ -81,7 +81,9 @@
         {% if ad %}
             {% include 'html/ad.html' |raw %}
         {% endif %}
-        
+        {% if vipe is defined %}
+        <script type="text/javascript">var vipe="{{vipe.title}}"</script>
+        {% endif %}
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
     </body>
