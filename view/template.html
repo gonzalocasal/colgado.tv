@@ -11,6 +11,9 @@
         <meta property="og:url" content="http://colgado.tv"/>
         <meta property="og:image" content="http://colgado.tv/view/imgs/play.png"/>
         <meta property="og:description" content="{{description | raw}}"/>
+        {% if vipe is defined %}
+        <meta http-equiv="Expires" content="-1">
+        {% endif %}
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
         <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
         <link href="/view/imgs/favicon.png" rel=apple-touch-icon />

@@ -13,6 +13,8 @@ $(document).ready(function(a) {
         var currentHeight = window.innerHeight - headerSize;
         var scrollPosition = localStorage.getItem("menuScrollPosition");
         $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
+
+        location.reload(true);
     }
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
