@@ -36,6 +36,12 @@ if(typeof vipe !== 'undefined' && vipe !== '' && localStorage.EVENT !== vipe){
     localStorage.setItem("NEW_EVENT", true);
 }
 
+//REMOVE LOCAL CACHE ON NEW VERSION
+if (localStorage.getItem("VERSION") != version) {
+    localStorage.setItem("VERSION", version);
+    window.location.reload(true);
+}
+
 //CLOSE AD
 $("#close-ad").click(function() {
     $("#float-layer").css({opacity: "0"});
