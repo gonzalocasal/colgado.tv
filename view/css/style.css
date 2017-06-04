@@ -76,18 +76,12 @@ padding:0
 .menu-icon {
 vertical-align: middle;
 cursor:pointer;
-color: #FFFFFF;
+color: #757575;
 padding: 10px
 }
 
-.menu-icon :hover{
-border-radius: 50%;
-background: #2f2f2f
-}
-
 .menu-icon-open {
-border-radius: 50%;
-background: #2f2f2f
+color: #FFF;
 }
 
 .active-page {
