@@ -1,7 +1,7 @@
 //ON READY
 $(document).ready(function(a) {  
     //CHECK SIDE MENU STATUS
-    if ("true" == localStorage.getItem("menuOpened")) {     
+    if ("true" == localStorage.getItem("MENU_OPENED")) {     
         $("#player").css({zIndex: "998"});
         $("#header").css({zIndex: "999"});
         $("#menu-search").focus();
@@ -91,23 +91,23 @@ $("#messageBotton").click(function() {
 //SIDE MENU ICON CLICK
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
-    var menuOpened = ("true" == localStorage.getItem("menuOpened"));
-    if ( menuOpened){
+    var MENU_OPENED = ("true" == localStorage.getItem("MENU_OPENED"));
+    if ( MENU_OPENED){
         $("#menu").removeClass("on");
         $("#menu").removeClass("mclick");
         $("#menu").addClass("slide-in");
         $(".menu-icon").removeClass("menu-icon-open");
-        localStorage.setItem("menuOpened", "false");
+        localStorage.setItem("MENU_OPENED", "false");
     }else {
         var headerSize =  $("#header").height();
         var itemsTopPosition = $("#items").position().top;
         var menuHeight = window.innerHeight - headerSize;
         localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
-        localStorage.setItem("menuOpened", "true");
+        localStorage.setItem("MENU_OPENED", "true");
         $(".menu-icon").addClass("menu-icon-open");
         $(".slide-in").toggleClass("on"), 
         $("#items").css("height", menuHeight - itemsTopPosition), 
-        $("#menu-search").focus(), 0 == menuOpened && (
+        $("#menu-search").focus(), 0 == MENU_OPENED && (
             $("#header").css({zIndex: "999"}),
             $("#player").css({zIndex: "998"})
         );
