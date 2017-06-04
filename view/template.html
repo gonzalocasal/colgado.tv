@@ -81,10 +81,7 @@
         {% if ad %}
             {% include 'html/ad.html' |raw %}
         {% endif %}
-        <script>
-        var active="{{active}}";
-        var version="{{version}}"
-        </script>             
+        <script type="text/javascript">var active="{{active}}"; var version="{{version}}"</script>             
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
     </body>
