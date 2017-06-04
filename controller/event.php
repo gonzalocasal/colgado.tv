@@ -1,10 +1,9 @@
 <?php
 $event=[
-'eventTitle'=>'CHAMPIONS LEAGUE',
-'eventDescription'=>'Ver La Final de la Champions League en vivo por internet.',
-'banner'=>'https://seeklogo.com/images/U/UEFA_Champions_League-logo-300A743B55-seeklogo.com.png',
-'date'=>'03/06/2017',
-'begin'=>'08:00',
-'ends'=>'19:00'
+'title'=>'BOCA - INDEPENDIENTE',
+'banner'=>'https://k61.kn3.net/0/C/B/1/4/1/6C9.png',
+'date'=>'04/06/2017',
+'begin'=>'15:12',
+'ends'=>'21:00'
 ];
 ?>
