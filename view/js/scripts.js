@@ -26,19 +26,11 @@ $(document).ready(function(a) {
     ga('send', 'pageview');
 });
 
-//REMOVE LOCAL CACHE ON EVENT
-if (localStorage.getItem("NEW_EVENT")=="true" && active=="tv") {
-    localStorage.setItem("NEW_EVENT", false);
-    window.location.reload(true);
-}
-if(typeof vipe !== 'undefined' && vipe !== '' && localStorage.EVENT !== vipe){
-    localStorage.setItem("EVENT", vipe);
-    localStorage.setItem("NEW_EVENT", true);
-}
 
-//REMOVE LOCAL CACHE ON NEW VERSION
-if (localStorage.getItem("VERSION") != version) {
-    localStorage.setItem("VERSION", version);
+//REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
+if (localStorage.VERSION != VERSION  || (localStorage.EVENT !== EVENT && ACTIVE =="tv" )) {
+    localStorage.setItem("VERSION", VERSION);
+    localStorage.setItem("EVENT", EVENT);
     window.location.reload(true);
 }
 

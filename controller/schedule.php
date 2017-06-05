@@ -6,6 +6,6 @@ $currentDate = date('d/m/Y H:i', strtotime($currentDate));
 $dateBegin   = date('d/m/Y H:i', strtotime($event['date'] .' '. $event['begin']));
 $dateEnd     = date('d/m/Y H:i', strtotime($event['date'] .' '. $event['ends']));
 if( ($dateBegin < $currentDate) && ($currentDate < $dateEnd) ){
-	$model['vipe'] = $event;
+	$model['EVENT'] = $event;
 }
 ?>
