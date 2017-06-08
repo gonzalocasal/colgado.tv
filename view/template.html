@@ -23,10 +23,10 @@
             <div id=center  class=center>
                 <nav>
                 <i id=menu-icon class="menu-icon material-icons md-24 md-light ">menu</i> 
-                <a href="/" id=nav-tv class=nav-page><i class="{% if active=='tv' %}active-page{% endif %} tab material-icons md-18 md-light ">live_tv</i></a>
-                <a href="/radios" class=nav-page><i class="tab material-icons md-18 md-light {% if active=='radios' %}active-page{% endif %}">radio</i><span></span></a>
-                <a href="/contacto" class=nav-page><i class="tab material-icons md-18 md-light {% if active=='contacto' %}active-page{% endif %}">mail_outline</i></a>
-                <a href="/ayuda" class=nav-page><i class="tab material-icons md-18 md-light  {% if active=='ayuda' %}active-page{% endif %}">info_outline</i></a>
+                <a href="/" id=nav-tv class="nav-page {% if active=='tv'%}active{% endif %}"><i class="tab material-icons md-18 md-light">live_tv</i></a>
+                <a href="/radios"     class="nav-page {% if active=='radios'%}active{% endif %}"><i class="tab material-icons md-18 md-light">radio</i><span></span></a>
+                <a href="/contacto"   class="nav-page {% if active=='contacto'%}active{% endif %}"><i class="tab material-icons md-18 md-light">mail_outline</i></a>
+                <a href="/ayuda"      class="nav-page {% if active=='ayuda'%}active{% endif %}"><i class="tab material-icons md-18 md-light">info_outline</i></a>
                 {% if schedule is defined %}
                 <a href="{{schedule}}" class=nav-schedule target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i></a>
                 {% endif %}
