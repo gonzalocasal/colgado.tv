@@ -248,12 +248,35 @@ display:block
 }
 
 .close-ad {
-color: #000;
+color: #ff002b;
 cursor:pointer;
 position:absolute;
 top:6px;
 left:710px;
-z-index:999
+z-index:999;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+}
+
+
+.close-ad:before {
+content: "close";
+position: absolute;
+right: 1em;
+padding: 0 1px;
+font-family: "Material Icons";
+-webkit-transition-duration: 1s;
+transition-duration: 1s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-timing-function: ease-in-out;
+transition-timing-function: ease-in-out
+}
+.close-ad:active:before,
+.close-ad:focus:before,
+.close-ad:hover:before {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
 }
 
 iframe {
