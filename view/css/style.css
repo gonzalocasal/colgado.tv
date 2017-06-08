@@ -60,56 +60,44 @@ o-transition:.3s;
 transition:.3s
 }
 
-nav :hover {
-color:white
+.nav-page{
+display: inline-block;
+vertical-align: middle;
+margin-left: -2px;
+margin-right: -2px;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px transparent;
+position: relative;
+overflow: hidden
 }
 
-.nav-tv, .nav-radio, .nav-contact, .nav-help {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: -2px;
-    margin-right: -2px;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  overflow: hidden
+.nav-page :before{
+content: "";
+position: absolute;
+z-index: -1;
+left: 50%;
+right: 50%;
+bottom: 0;
+background: #009688;
+height: 2px;
+-webkit-transition-property: left, right;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 0.2s;
+transition-duration: 0.2s;
+transition-property: left, right;
+transition-timing-function: ease-out
 }
 
-.nav-tv :before,
-.nav-radio :before,
-.nav-contact :before,
-.nav-help :before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  background: #009688;
-  height: 2px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out
-}
-
-.nav-tv :hover:before, 
-.nav-tv :focus:before, 
-.nav-tv :active:before,
-.nav-radio :hover:before, 
-.nav-radio :focus:before, 
-.nav-radio :active:before,
-.nav-contact :hover:before, 
-.nav-contact :focus:before, 
-.nav-contact :active:before,
-.nav-help :hover:before, 
-.nav-help :focus:before, 
-.nav-help :active:before {
+.nav-page :hover:before, 
+.nav-page :focus:before, 
+.nav-page :active:before{
   left: 0;
-  right: 0
+  right: 0;
+}
+
+.center a :hover {
+color:white
 }
 
 .center {
