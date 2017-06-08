@@ -64,6 +64,54 @@ nav :hover {
 color:white
 }
 
+.nav-tv, .nav-radio, .nav-contact, .nav-help {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -2px;
+    margin-right: -2px;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden
+}
+
+.nav-tv :before,
+.nav-radio :before,
+.nav-contact :before,
+.nav-help :before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #009688;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out
+}
+
+.nav-tv :hover:before, 
+.nav-tv :focus:before, 
+.nav-tv :active:before,
+.nav-radio :hover:before, 
+.nav-radio :focus:before, 
+.nav-radio :active:before,
+.nav-contact :hover:before, 
+.nav-contact :focus:before, 
+.nav-contact :active:before,
+.nav-help :hover:before, 
+.nav-help :focus:before, 
+.nav-help :active:before {
+  left: 0;
+  right: 0
+}
+
 .center {
 overflow:hidden;
 margin-left:auto;
@@ -93,6 +141,7 @@ color: #FFF;
 border-bottom:2px solid #009688;
 border-top:2px solid #181818;
 padding-bottom: 10px;
+padding-top: 10px;
 color:white
 }
 
@@ -140,7 +189,7 @@ transition:opacity .5s linear;
 line-height:0;
 vertical-align:top;
 width:auto;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
 }
 
 .player-protected {
@@ -207,15 +256,49 @@ z-index:998
 display:inline-flex
 }
 
-.social-button{
-margin-right: 20px;
-vertical-align: top;
-}
-
 .social-buttons{
 margin-bottom: 50px;
-margin-top: 15px;
+margin-top: 15px
 }
+
+.share-facebook, .share-twitter {
+background-repeat: no-repeat;
+display: block;
+opacity: 0.4;
+margin-right: 30px;
+height:32px;
+width:32px;
+o-transition:.4s;
+-ms-transition:.4s;
+-moz-transition:.4s;
+-webkit-transition:.4s;
+transition:.4s
+}
+
+.share-facebook {
+background-image: url("/view/imgs/facebook-black.png");
+}
+
+.share-twitter {
+background-image: url("/view/imgs/twitter-black.png");
+width:38px;
+}
+
+.facebook-button, .twitter-button{
+display: inline-flex;
+}
+
+.facebook-button a:hover{
+background-image: url("/view/imgs/facebook.png");
+opacity: 1;
+}
+
+.twitter-button a:hover{
+background-image: url("/view/imgs/twitter.png");
+opacity: 1;
+}
+
+share-twitter
 
 img {
 border:0
@@ -251,22 +334,22 @@ display:block
 color: #ff002b;
 cursor:pointer;
 position:absolute;
-top:6px;
+top:10px;
 left:710px;
 z-index:999;
 -webkit-transform: perspective(1px) translateZ(0);
 transform: perspective(1px) translateZ(0);
 }
 
-
 .close-ad:before {
 content: "close";
+font-size: 25px;
 position: absolute;
 right: 1em;
 padding: 0 1px;
 font-family: "Material Icons";
--webkit-transition-duration: 1s;
-transition-duration: 1s;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
 -webkit-transition-property: transform;
 transition-property: transform;
 -webkit-transition-timing-function: ease-in-out;

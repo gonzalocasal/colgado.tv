@@ -26,7 +26,6 @@ $(document).ready(function(a) {
     ga('send', 'pageview');
 });
 
-
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
 if (localStorage.VERSION != VERSION  || (localStorage.EVENT !== EVENT && ACTIVE =="tv" )) {
     localStorage.setItem("VERSION", VERSION);
@@ -38,6 +37,18 @@ if (localStorage.VERSION != VERSION  || (localStorage.EVENT !== EVENT && ACTIVE 
 $("#close-ad").click(function() {
     $("#float-layer").css({opacity: "0"});
     setTimeout(function() {$("#float-layer").css({display: "none"});}, 500);
+});
+
+//FACEBOOK SHARE POP-UP
+$(".share-facebook").click(function() {
+    window.open('http://www.facebook.com/share.php?u='+window.location.href, 'newwindow', 'width=300, height=250')
+    return false;
+});
+
+//TWITTER SHARE POP-UP 
+$(".share-twitter").click(function() {
+    window.open('http://twitter.com/share?url='+window.location.href, 'newwindow', 'width=300, height=250');
+    return false;
 });
 
 //HIDE PLAYER SHIELD
@@ -116,7 +127,6 @@ $("#menu-icon").click(function() {
 $(".menu-link").click(function() {
     localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
 }),
-
 
 //SIDE MENU VERTICAL RESPONSIVE
 $(window).resize(function() {
