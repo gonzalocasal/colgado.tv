@@ -1,9 +1,9 @@
 <?php
 $event=[
-'title'=>'BOCA',
-'banner'=>'https://k61.kn3.net/0/C/B/1/4/1/6C9.png',
-'date'=>'04/06/2017',
-'begin'=>'17:30',
-'ends'=>'21:00'
+'title'=>'Argentina - Brasil',
+'banner'=>'http://4.bp.blogspot.com/-W6FCh0breuQ/T8ECnVGxf9I/AAAAAAAAJa0/7UcdlrrIg78/s1600/Argentina-vs-Brasil.png',
+'date'=>'09/06/2017',
+'begin'=>'07:00',
+'ends'=>'09:00'
 ];
 ?>
