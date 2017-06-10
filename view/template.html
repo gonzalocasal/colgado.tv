@@ -17,6 +17,9 @@
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
+        {% if player is defined %}
+              <link rel="stylesheet" type="text/css" href="/view/css/ad.css?v={{version}}">
+        {% endif %}
     </head>
     <body>
         <div id=header class=header>
