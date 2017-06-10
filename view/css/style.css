@@ -129,6 +129,10 @@ height: 2px;
 color:white
 }
 
+.nav-help{
+margin-right: 20px;
+}
+
 .active, .menu-icon-open { 
 color:white
 }
@@ -147,10 +151,6 @@ font-weight: 400
 .material-icons.md-light{
 font-size: 20px;
 display: inline
-}
-
-.nav-help{
-margin-right: 30px;
 }
 
 .title-vipe {

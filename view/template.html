@@ -26,7 +26,7 @@
                 <a href="/" id=nav-tv class="nav-page {% if active=='tv'%}active{% endif %}"><i class="tab material-icons md-18 md-light">live_tv</i></a>
                 <a href="/radios"     class="nav-page {% if active=='radios'%}active{% endif %}"><i class="tab material-icons md-18 md-light">radio</i><span></span></a>
                 <a href="/contacto"   class="nav-page {% if active=='contacto'%}active{% endif %}"><i class="tab material-icons md-18 md-light">mail_outline</i></a>
-                <a href="/ayuda"      class="nav-page {% if active=='ayuda'%}active{% endif %}"><i class="tab material-icons md-18 md-light">info_outline</i></a>
+                <a href="/ayuda"      class="nav-page {% if active=='ayuda'%}active{% endif %} nav-help"><i class="tab material-icons md-18 md-light">info_outline</i></a>
                 {% if schedule is defined %}
                 <a href="{{schedule}}" class=nav-schedule target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i></a>
                 {% endif %}
