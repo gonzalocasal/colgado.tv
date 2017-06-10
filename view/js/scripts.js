@@ -72,8 +72,10 @@ $("#shadow").fadeTo(1, 0), $("#nav-lights").click(function() {
     $("#shadow").css({display: "block"}),
     $("#shadow").fadeTo(300, .9),
     $("#float-layer").css({zIndex: "999"}), 
-    $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
+    $(".slide-in").removeClass("slide-in on").addClass("slide-in"),
+    $(".menu-icon").removeClass("menu-icon-open"),
     $(".mclick").removeClass("mclick").addClass("slide-in");
+    localStorage.setItem("MENU_OPENED", "false");
 }); 
 
 //LIGHTS UP
