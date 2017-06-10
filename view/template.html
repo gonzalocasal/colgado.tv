@@ -28,10 +28,10 @@
                 <a href="/contacto"   class="nav-page {% if active=='contacto'%}active{% endif %}"><i class="tab material-icons md-18 md-light">mail_outline</i></a>
                 <a href="/ayuda"      class="nav-page {% if active=='ayuda'%}active{% endif %} nav-help"><i class="tab material-icons md-18 md-light">info_outline</i></a>
                 {% if schedule is defined %}
-                <a href="{{schedule}}" class=nav-schedule target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i></a>
+                <a href="{{schedule}}" class=nav-page target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i></a>
                 {% endif %}
                 {% if player is defined %}
-                <a href="#" id=nav-lights class=nav-lights><i class="tab material-icons md-18 md-light">brightness_6</i></a>
+                <a href="#" id=nav-lights class=nav-page><i class="tab material-icons md-18 md-light">brightness_6</i></a>
                 {% endif %}
                 </nav>
             </div>
