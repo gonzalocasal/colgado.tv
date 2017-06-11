@@ -36,6 +36,13 @@ if (localStorage.VERSION != VERSION  || (localStorage.EVENT !== EVENT && ACTIVE 
 //CLOSE AD
 $("#close-ad").click(function() {
     $("#float-layer").css({opacity: "0"});
+    $(".player-tv").css({
+            'filter'         : 'blur(0px)',
+            '-webkit-filter' : 'blur(0px)',
+            '-moz-filter'    : 'blur(0px)',
+            '-o-filter'      : 'blur(0px)',
+            '-ms-filter'     : 'blur(0px)'
+});  
     setTimeout(function() {$("#float-layer").css({display: "none"});}, 500);
 });
 

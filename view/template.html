@@ -43,17 +43,17 @@
             <input type=text id=menu-search class=menu-search placeholder="Buscar..."/>
             <ul id=items class=items>{% include 'html/menuitems.html' %}</ul>
         </div>
-        <div id=space class=space></div>
+        <div id=space  class=space></div>
         <div id=shadow class=shadow></div>
         {% if player is defined %}
             <div id=player-container class=player-container>
                 {% if protected is defined and protected %}
-                    <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" />
-                    <div id=player-protected class=player-protected>
+                    <img id=shield class="shield player-tv" alt=shield src="/view/imgs/shield.jpg" />
+                    <div id=player-protected class="player-protected">
                     <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
                     </div>
                 {% else %}
-                    <div id=player class=player>
+                    <div id=player class=player-{{active}}>
                     {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
                     </div>
                 {% endif %}

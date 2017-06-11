@@ -181,7 +181,7 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
 display:inline-block;
 margin-bottom:15px;
 opacity:0;
-transition:opacity .5s linear;
+transition: .5s linear;
 line-height:0;
 vertical-align:top;
 width:auto;
@@ -206,12 +206,25 @@ position:relative;
 z-index:980
 }
 
-.player {
+.player-tv, .player-radio {
 position:relative;
 overflow:hidden;
 background-color:#000;
 line-height:0;
-z-index:980
+z-index:980;
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
+}
+
+.player-tv {
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
 }
 
 .slide-in {
