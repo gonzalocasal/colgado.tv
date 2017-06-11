@@ -68,7 +68,10 @@ $("#shield").click(function() {
 
 //FADEIN LOADING PLAYER
 $("#player-container").css({opacity: "1"});
-setTimeout(function() {$("#float-layer").css({opacity: "1"});}, 500);
+setTimeout(function() {
+    $("#float-layer").css({opacity: "1"});
+    $("#close-ad").css({opacity: "1"});
+    }, 500);
 
 //LIGHTS DOWN
 $("#shadow").fadeTo(1, 0), $("#nav-lights").click(function() {

@@ -13,6 +13,40 @@ width:900px;
 z-index:998
 }
 
+.close-ad {
+color: #ff002b;
+cursor:pointer;
+position:absolute;
+top:10px;
+left:720px;
+z-index:999;
+opacity: 0;
+transition:opacity .5s linear;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+}
+
+.close-ad:before {
+content: "close";
+font-size: 25px;
+position: absolute;
+right: 1em;
+padding: 0 1px;
+font-family: "Material Icons";
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-timing-function: ease-in-out;
+transition-timing-function: ease-in-out
+}
+.close-ad:active:before,
+.close-ad:focus:before,
+.close-ad:hover:before {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
 .ad {
 display:inline-flex
 }
@@ -57,36 +91,4 @@ opacity: 1;
 .twitter-button a:hover{
 background-image: url("/view/imgs/ad-twitter.png");
 opacity: 1;
-}
-
-.close-ad {
-color: #ff002b;
-cursor:pointer;
-position:absolute;
-top:10px;
-left:720px;
-z-index:999;
--webkit-transform: perspective(1px) translateZ(0);
-transform: perspective(1px) translateZ(0);
-}
-
-.close-ad:before {
-content: "close";
-font-size: 25px;
-position: absolute;
-right: 1em;
-padding: 0 1px;
-font-family: "Material Icons";
--webkit-transition-duration: 0.5s;
-transition-duration: 0.5s;
--webkit-transition-property: transform;
-transition-property: transform;
--webkit-transition-timing-function: ease-in-out;
-transition-timing-function: ease-in-out
-}
-.close-ad:active:before,
-.close-ad:focus:before,
-.close-ad:hover:before {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg)
 }
