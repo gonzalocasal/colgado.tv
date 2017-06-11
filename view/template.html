@@ -58,7 +58,6 @@
                     </div>
                 {% endif %}
             </div>
-            {% if ad %}{% include 'html/ad.html' |raw %}{% endif %}
         {% else %}
             {% if EVENT is defined and active=='tv' %}
                 <div class=card>
@@ -68,7 +67,7 @@
             {% endif %}
             {% include 'html/'~page |raw %}       
         {% endif %}
-        
+        {% if ad %}{% include 'html/ad.html' |raw %}{% endif %}
         <script type="text/javascript">var ACTIVE="{{active}}"; var VERSION="{{version}}"; var EVENT="{{EVENT.title}}"</script>             
         <script type="text/javascript" src="/view/js/jquery.js" ></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
