@@ -3,14 +3,14 @@ opacity:0;
 transition:opacity .5s linear;
 background-color:rgba(255,255,255,.7);
 display:block;
-height:450px;
+height:320px;
 left:0;
 margin-left:auto;
 margin-right:auto;
 position:absolute;
 right:0;
 top:90px;
-width:800px;
+width:600px;
 z-index:998
 }
 
@@ -19,7 +19,7 @@ display:inline-flex
 }
 
 .social-buttons{
-margin-bottom: 50px;
+margin-bottom: 20px;
 margin-top: 15px
 }
 
@@ -27,7 +27,6 @@ margin-top: 15px
 background-repeat: no-repeat;
 display: block;
 opacity: 0.4;
-margin-right: 30px;
 height:24px;
 width:24px;
 o-transition:.2s;
@@ -39,6 +38,7 @@ transition:.2s
 
 .share-facebook {
 background-image: url("/view/imgs/ad-fb-black.png");
+margin-right: 30px;
 }
 
 .share-twitter {
@@ -65,7 +65,7 @@ color: #ff002b;
 cursor:pointer;
 position:absolute;
 top:10px;
-left:710px;
+left:610px;
 z-index:999;
 -webkit-transform: perspective(1px) translateZ(0);
 transform: perspective(1px) translateZ(0);
