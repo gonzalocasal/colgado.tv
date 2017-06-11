@@ -1,16 +1,15 @@
 .float-layer {
-opacity:0;
-transition:opacity .5s linear;
 background-color:rgba(255,255,255, 0.0);
+transition:opacity .5s linear;
 display:block;
-height:320px;
-left:0;
 margin-left:auto;
 margin-right:auto;
 position:absolute;
 right:0;
-top:90px;
-width:600px;
+left:0;
+height:506px;
+top:75px;
+width:900px;
 z-index:998
 }
 
@@ -65,7 +64,7 @@ color: #ff002b;
 cursor:pointer;
 position:absolute;
 top:10px;
-left:610px;
+left:720px;
 z-index:999;
 -webkit-transform: perspective(1px) translateZ(0);
 transform: perspective(1px) translateZ(0);

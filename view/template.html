@@ -46,14 +46,14 @@
         <div id=space  class=space></div>
         <div id=shadow class=shadow></div>
         {% if player is defined %}
-            <div id=player-container class=player-container>
+            <div id=player-container class=player-container-{{active}} >
                 {% if protected is defined and protected %}
-                    <img id=shield class="shield player-tv" alt=shield src="/view/imgs/shield.jpg" />
-                    <div id=player-protected class="player-protected">
+                    <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" />
+                    <div id=player-protected class=player-protected>
                     <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
                     </div>
                 {% else %}
-                    <div id=player class=player-{{active}}>
+                    <div id=player class=player>
                     {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
                     </div>
                 {% endif %}

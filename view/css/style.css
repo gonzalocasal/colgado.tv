@@ -177,15 +177,23 @@ margin-bottom:30px;
 box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
 }
 
-.player-container {
+.player-container-tv, .player-container-radios {
 display:inline-block;
 margin-bottom:15px;
 opacity:0;
-transition: .5s linear;
+transition:opacity .5s linear;
 line-height:0;
 vertical-align:top;
 width:auto;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px
+}
+
+.player-container-tv {
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
 }
 
 .player-protected {
@@ -206,25 +214,12 @@ position:relative;
 z-index:980
 }
 
-.player-tv, .player-radio {
+.player {
 position:relative;
 overflow:hidden;
 background-color:#000;
 line-height:0;
-z-index:980;
--webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-filter: blur(5px);
-}
-
-.player-tv {
--webkit-filter: blur(5px);
--moz-filter: blur(5px);
--o-filter: blur(5px);
--ms-filter: blur(5px);
-filter: blur(5px);
+z-index:980
 }
 
 .slide-in {
