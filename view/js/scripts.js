@@ -27,7 +27,7 @@ $(document).ready(function(a) {
 });
 
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
-if ( (localStorage.VERSION!="" && localStorage.VERSION != VERSION ) || (localStorage.EVENT !== EVENT && ACTIVE =="tv") ) {
+if ( (typeof localStorage.VERSION != 'undefined' && localStorage.VERSION != VERSION ) || (localStorage.EVENT !== EVENT && ACTIVE =="tv") ) {
     localStorage.setItem("VERSION", VERSION);
     localStorage.setItem("EVENT", EVENT);
     window.location.reload(true);
