@@ -94,6 +94,7 @@ $("#shadow").click(function() {
     $("#shadow").fadeTo(300, 0), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     setTimeout(function() {
+        $("#header").css({zIndex: "981"}), 
         $("#player").css({zIndex: "980"}),
         $("#float-layer").css({zIndex: "980"}), 
         $("#shadow").css({display: "none"});

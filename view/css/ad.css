@@ -1,10 +1,11 @@
 .float-layer {
-background-color:rgba(255,255,255, 0.0);
+background-color:rgba(0,0,0, 0.2);
 transition:opacity .5s linear;
 display:block;
 margin-left:auto;
 margin-right:auto;
 position:absolute;
+opacity: 0;
 right:0;
 left:0;
 height:506px;
