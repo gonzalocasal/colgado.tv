@@ -1,11 +1,12 @@
 <?php
 include 'event.php';
+$format = 'd/m/Y H:i';
 $dateBsAs = new DateTime("now", new DateTimeZone("America/Argentina/Buenos_Aires"));
-$currentDate = date_format($dateBsAs, 'd/m/Y H:i');
-$currentDate = date('d/m/Y H:i', strtotime($currentDate));
-$dateBegin   = date('d/m/Y H:i', strtotime($event['date'] .' '. $event['begin']));
-$dateEnd     = date('d/m/Y H:i', strtotime($event['date'] .' '. $event['ends']));
-if( ($dateBegin < $currentDate) && ($currentDate < $dateEnd) ){
-	$model['EVENT'] = $event;
-}
+$currentDate = date_format($dateBsAs, $format);
+$dateBegin = $event['date'].' '.$event['begin'];
+$dateEnd   = $event['date'].' '.$event['ends'];
+$dateBegin   = \DateTime::createFromFormat($format,$dateBegin);
+$dateEnd     = \DateTime::createFromFormat($format,$dateEnd);
+$currentDate = \DateTime::createFromFormat($format,$currentDate);
+$model['EVENT'] = ($dateBegin < $currentDate && $currentDate < $dateEnd? $event : false);
 ?>

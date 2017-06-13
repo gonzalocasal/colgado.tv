@@ -1,9 +1,9 @@
 <?php
 $event=[
-'title'=>'Argentina - Brasil',
-'banner'=>'http://4.bp.blogspot.com/-W6FCh0breuQ/T8ECnVGxf9I/AAAAAAAAJa0/7UcdlrrIg78/s1600/Argentina-vs-Brasil.png',
-'date'=>'09/06/2017',
-'begin'=>'07:00',
-'ends'=>'09:00'
+'title'=>'Argentina - Singapur',
+'banner'=>'http://lh4.googleusercontent.com/-jYjhxTAjrjk/TkfejhTS58I/AAAAAAAAAzg/irQCYyk_eZI/logoafa.png',
+'date'=>'13/06/2017',
+'begin'=>'08:00',
+'ends'=>'11:00'
 ];
 ?>

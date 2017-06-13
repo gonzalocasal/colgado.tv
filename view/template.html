@@ -59,7 +59,7 @@
                 {% endif %}
             </div>
         {% else %}
-            {% if EVENT is defined and active=='tv' %}
+            {% if EVENT and active=='tv' %}
                 <div class=card>
                     <span class=title-vipe>{{EVENT.title}}</span><br>
                     <a href="tv/evento" alt="{{EVENT.title}}"><img src="{{EVENT.banner}}" /></a>
