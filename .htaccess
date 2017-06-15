@@ -6,6 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC]
+RewriteCond %{HTTPS} off
+RewriteRule ^(cart/|checkout/) https://%{HTTP_HOST}%{REQUEST_URI}
 
 <IfModule mod_expires.c>
   ExpiresActive on
