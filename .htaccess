@@ -2,12 +2,6 @@ ErrorDocument 404 /controller/404.php
 
 #Remove .php
 RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^colgado\.tv [NC]
-RewriteCond %{SERVER_PORT} 80 
-RewriteRule ^(.*)$ https://colgado.tv/$1 [R,L]
-
-
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}\.php -f
