@@ -7,8 +7,9 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^([^\.]+)$ $1.php [NC]
 
-RewriteCond %{HTTP-Forwarded-Port} !=80
+RewriteCond %{HTTP-Forwarded-Port} !=443
 RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
 
 <IfModule mod_expires.c>
   ExpiresActive on
