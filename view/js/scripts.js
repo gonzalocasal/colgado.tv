@@ -8,11 +8,8 @@ $(document).ready(function(a) {
         $("#menu").removeClass("slide-in");
         $("#menu").addClass("mclick");
         $(".menu-icon").addClass("menu-icon-open");
-        var headerSize =  $("#header").height();
-        var itemsTopPosition = $("#items").position().top;
-        var currentHeight = window.innerHeight - headerSize;
-        var scrollPosition = localStorage.getItem("menuScrollPosition");
-        $("#items").css("height", currentHeight - itemsTopPosition), $("#items").scrollTop(scrollPosition);
+        sideMenuResponsive();
+        $("#items").scrollTop(localStorage.getItem("menuScrollPosition"));
     }
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
@@ -111,6 +108,19 @@ $("#messageBotton").click(function() {
    document.location.href="/";
 });
 
+//SIDE MENU VERTICAL RESPONSIVE
+function sideMenuResponsive () {
+       var headerSize =  $("#header").height();
+        var itemsTopPosition = $("#items").position().top;
+        var menuTop = $('#menu').css('top');
+        var menuHeight = window.innerHeight - headerSize;
+        if(menuTop== "0px"){
+            $("#items").css("height", menuHeight);
+        }else{
+            $("#items").css("height", menuHeight - headerSize);
+        }
+}; 
+
 //SIDE MENU ICON CLICK
 $("#menu-icon").click(function() {
     var shadowStatus = $("#shadow").css("display");
@@ -122,14 +132,11 @@ $("#menu-icon").click(function() {
         $(".menu-icon").removeClass("menu-icon-open");
         localStorage.setItem("MENU_OPENED", "false");
     }else {
-        var headerSize =  $("#header").height();
-        var itemsTopPosition = $("#items").position().top;
-        var menuHeight = window.innerHeight - headerSize;
+        sideMenuResponsive();
         localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
         localStorage.setItem("MENU_OPENED", "true");
         $(".menu-icon").addClass("menu-icon-open");
         $(".slide-in").toggleClass("on"), 
-        $("#items").css("height", menuHeight - itemsTopPosition), 
         $("#menu-search").focus(), 0 == MENU_OPENED && (
             $("#header").css({zIndex: "999"}),
             $("#player").css({zIndex: "998"})
@@ -144,10 +151,7 @@ $(".menu-link").click(function() {
 
 //SIDE MENU VERTICAL RESPONSIVE
 $(window).resize(function() {
-    var headerSize =  $("#header").height();
-    var itemsTopPosition = $("#items").position().top;
-    var menuHeight = window.innerHeight - headerSize;
-    $("#items").css("height", menuHeight - itemsTopPosition);
+   sideMenuResponsive();
 }),
 
 //SEARCH IN SIDE MENU

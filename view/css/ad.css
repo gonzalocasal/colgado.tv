@@ -41,11 +41,12 @@ transition-property: transform;
 -webkit-transition-timing-function: ease-in-out;
 transition-timing-function: ease-in-out
 }
+
 .close-ad:active:before,
 .close-ad:focus:before,
 .close-ad:hover:before {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg)
+-webkit-transform: rotate(360deg);
+transform: rotate(360deg)
 }
 
 .ad {
@@ -85,11 +86,13 @@ display: inline-flex;
 }
 
 .facebook-button a:hover{
-background-image: url("/view/imgs/ad-fb.png");
 opacity: 1;
 }
 
 .twitter-button a:hover{
-background-image: url("/view/imgs/ad-twitter.png");
 opacity: 1;
+}
+
+.trackedUrls{
+display: none;
 }
