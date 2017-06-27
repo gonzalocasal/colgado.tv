@@ -291,7 +291,7 @@ webkit-transform: translate3d(0,0,0);
 transform: translate3d(0,0,0)
 }
 
-.slide-in.on, .mclick {
+.slide-in.on {
 transition-duration: 300ms;
 }
 
