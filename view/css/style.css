@@ -291,6 +291,14 @@ webkit-transform: translate3d(0,0,0);
 transform: translate3d(0,0,0)
 }
 
+.slide-in.on, .mclick {
+transition-duration: 300ms;
+}
+
+.slide-in.on, .mclick {
+transition-duration: 1ms;
+}
+
 .menu-search {
 padding-left:15px;
 font-weight:400;
