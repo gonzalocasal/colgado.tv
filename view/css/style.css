@@ -296,7 +296,7 @@ transition-duration: 300ms;
 }
 
 .mclick {
-transition-duration: 1ms;
+transition-duration: 0ms;
 }
 
 .menu-search {
