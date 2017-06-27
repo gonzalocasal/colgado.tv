@@ -31,7 +31,7 @@ display: inline
 }
 
 .header {
-background-color:#FFF;
+background-color:#2A2A2A;
 position:fixed;
 left:0;
 
@@ -91,7 +91,7 @@ right: 0;
 nav a {
 text-decoration:none;
 font-size:0.9em;
-color:#657786;
+color:#7D7D7D;
 o-transition:.3s;
 -ms-transition:.3s;
 -moz-transition:.3s;
@@ -126,7 +126,7 @@ bottom: 0;
 left: 0;
 right: 0;
 height: 3px;
-color: black;
+color: white;
 background: #4285f4
 }
 
@@ -137,15 +137,15 @@ margin-right: -2px
 }
 
 .center a :hover {
-color: black
+color: white
 }
 
 .active{
-color: black
+color: white
 }
 
 .menu-icon-open { 
-color:black
+color:white
 }
 
 a:visited {
