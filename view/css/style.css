@@ -275,21 +275,24 @@ transition:all .2s ease-in;
 moz-transition:all .2s ease-in;
 ms-transition:all .2s ease-in;
 o-transition:all .2s ease-in;
-webkit-transition:left .2s ease-in
+webkit-transition:left .2s ease-in:
+webkit-transform: translate3d(-220,0,0);
+transform: translate3d(-220,0,0);
 }
 
 .slide-in.on, .mclick {
 background-color: #FFF;
 overflow:hidden;
 position:fixed;
-
 top:0px;
 left:0!important;
 width:215px;
 height:100%;
 z-index:1000;
 font-size:0.875em;
-box-shadow: 0 4px 4px #333
+box-shadow: 0 4px 4px #333;
+webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
 }
 
 .menu-search {
