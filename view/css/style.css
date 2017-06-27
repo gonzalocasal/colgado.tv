@@ -34,7 +34,6 @@ display: inline
 background-color:#2A2A2A;
 position:fixed;
 left:0;
-
 right:0;
 top:0;
 z-index:999;
@@ -276,8 +275,8 @@ moz-transition:all .2s ease-in;
 ms-transition:all .2s ease-in;
 o-transition:all .2s ease-in;
 webkit-transition:left .2s ease-in:
-webkit-transform: translate3d(-220,0,0);
-transform: translate3d(-220,0,0);
+webkit-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0);
 }
 
 .slide-in.on, .mclick {
