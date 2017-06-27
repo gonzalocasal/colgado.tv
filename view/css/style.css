@@ -295,7 +295,7 @@ transform: translate3d(0,0,0)
 transition-duration: 300ms;
 }
 
-.slide-in.on, .mclick {
+.mclick {
 transition-duration: 1ms;
 }
 
