@@ -270,8 +270,9 @@ font-size:0.875em;
 height:100%;
 left:-220px;
 z-index:1000;
+transition-duration: 300ms;
 webkit-transform: translate3d(-220px,0,0);
-transform: translate3d(-220px,0,0);
+transform: translate3d(-220px,0,0)
 }
 
 .slide-in.on, .mclick {
@@ -285,8 +286,9 @@ height:100%;
 z-index:1000;
 font-size:0.875em;
 box-shadow: 0 4px 4px #333;
+transition-duration: 300ms;
 webkit-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+transform: translate3d(0,0,0)
 }
 
 .menu-search {
