@@ -270,13 +270,8 @@ font-size:0.875em;
 height:100%;
 left:-220px;
 z-index:1000;
-transition:all .2s ease-in;
-moz-transition:all .2s ease-in;
-ms-transition:all .2s ease-in;
-o-transition:all .2s ease-in;
-webkit-transition:left .2s ease-in:
-webkit-transform: translate3d(0,0,0);
-transform: translate3d(0,0,0);
+webkit-transform: translate3d(-220px,0,0);
+transform: translate3d(-220px,0,0);
 }
 
 .slide-in.on, .mclick {
@@ -284,7 +279,7 @@ background-color: #FFF;
 overflow:hidden;
 position:fixed;
 top:0px;
-left:0!important;
+left:0px;
 width:215px;
 height:100%;
 z-index:1000;
