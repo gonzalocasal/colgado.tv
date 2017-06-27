@@ -106,7 +106,7 @@ z-index: -1;
 left: 50%;
 right: 50%;
 bottom: 0;
-background: #4285f4;
+background: #FF2676;
 height: 3px;
 -webkit-transition-property: left, right;
 -webkit-transition-timing-function: ease-out;
@@ -127,7 +127,7 @@ left: 0;
 right: 0;
 height: 3px;
 color: white;
-background: #4285f4
+background: #FF2676
 }
 
 .nav-schedule,
