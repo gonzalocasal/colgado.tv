@@ -32,6 +32,7 @@ display: inline
 
 .header {
 background-color:#2A2A2A;
+opacity: 0.93;
 position:fixed;
 left:0;
 right:0;
@@ -51,16 +52,25 @@ text-align:center;
 padding:0
 }
 
-.menu-icon {
+.menu-icon{
 vertical-align: middle;
 cursor:pointer;
-color: #757575;
 padding: 10px;
+color: #757575;
 o-transition:.3s;
 -ms-transition:.3s;
 -moz-transition:.3s;
 -webkit-transition:.3s;
 transition:.3s
+}
+
+.menu-icon-open { 
+color:white;
+o-transition:.0s;
+-ms-transition:.0s;
+-moz-transition:.0s;
+-webkit-transition:.0s;
+transition:.0s
 }
 
 nav {
@@ -143,9 +153,6 @@ color: white
 color: white
 }
 
-.menu-icon-open { 
-color:white
-}
 
 a:visited {
 text-decoration:none
@@ -160,7 +167,7 @@ font-weight: 400
 
 .title-vipe {
 font-size: 13.5px;
-color:#4285f4;
+color:#FF2676;
 align-self: center
 }
 
