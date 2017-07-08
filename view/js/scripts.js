@@ -31,7 +31,7 @@ if ( (typeof localStorage.VERSION != 'undefined' && localStorage.VERSION != VERS
 }
 
 //CLOSE AD
-$("#close-ad").click(function() {
+$("#close").click(function() {
     $("#float-layer").css({opacity: "0"});
     $(".player-container-tv").css({
     'filter'         : 'blur(0px)',
@@ -67,7 +67,7 @@ $("#shield").click(function() {
 $("#player-container").css({opacity: "1"});
 setTimeout(function() {
     $("#float-layer").css({opacity: "1"});
-    $("#close-ad").css({opacity: "1"});
+    $("#close").css({opacity: "1"});
     }, 500);
 
 //LIGHTS DOWN

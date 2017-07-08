@@ -14,7 +14,7 @@ width:900px;
 z-index:998
 }
 
-.close-ad {
+.close {
 color: #ff002b;
 cursor:pointer;
 position:absolute;
@@ -27,7 +27,7 @@ transition:opacity .5s linear;
 transform: perspective(1px) translateZ(0);
 }
 
-.close-ad:before {
+.close:before {
 content: "close";
 font-size: 25px;
 position: absolute;
@@ -42,9 +42,9 @@ transition-property: transform;
 transition-timing-function: ease-in-out
 }
 
-.close-ad:active:before,
-.close-ad:focus:before,
-.close-ad:hover:before {
+.close:active:before,
+.close:focus:before,
+.close:hover:before {
 -webkit-transform: rotate(360deg);
 transform: rotate(360deg)
 }
