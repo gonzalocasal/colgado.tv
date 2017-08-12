@@ -27,7 +27,7 @@ o-transition: .3s;
 }
 
 .material-icons.md-light{
-font-size: 22px;
+font-size: 23px;
 display: inline
 }
 
@@ -79,7 +79,7 @@ line-height:55px;
 min-width:920px
 }
 
-.nav-page{
+.nav-page, .nav-menu{
 display: inline-block;
 vertical-align: middle;
 margin-left: -2px;
@@ -444,7 +444,7 @@ padding-left:75px
 	width:100%
 	}
 	.slide-in, .slide-in.on, .mclick {
-	top: 46px
+	top: 57px
 	}
 	
 }
