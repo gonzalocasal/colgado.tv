@@ -1,8 +1,8 @@
 <?php
 $event=[
-'title'=>'FLOYD MAYWEATHER VS CONOR MCGREGOR',
-'banner'=>'http://www.infobae.com/new-resizer/PqOI29jOJZMiV4otGjqhkAB0v5w=/600x0/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2017/07/14145028/McGregor-Mayweather-cara-a-cara-1920.jpg?token=bar',
-'beginDate'=>'26/08/2017 18:00',
-'endDate'=>'27/08/2017 02:00'
+'title'=>'URUGUAY VS ARGENTINA',
+'banner'=>'http://4.bp.blogspot.com/-xFGqkq1fyQk/UHaTrwL5qWI/AAAAAAAAK38/TXWpeGNAoL0/s1600/ver+Argentina+vs+Uruguay+en+vivo+online.jpg',
+'beginDate'=>'31/08/2017 18:00',
+'endDate'=>'31/08/2017 23:00'
 ];
 ?>
