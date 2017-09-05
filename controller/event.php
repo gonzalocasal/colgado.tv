@@ -1,8 +1,8 @@
 <?php
 $event=[
-'title'=>'URUGUAY VS ARGENTINA',
-'banner'=>'http://4.bp.blogspot.com/-xFGqkq1fyQk/UHaTrwL5qWI/AAAAAAAAK38/TXWpeGNAoL0/s1600/ver+Argentina+vs+Uruguay+en+vivo+online.jpg',
-'beginDate'=>'31/08/2017 18:00',
-'endDate'=>'31/08/2017 23:00'
+'title'=>'ARGENTINA VS VENEZUELA',
+'banner'=>'http://www.libertadyprogresonline.org/wp-content/uploads/2015/03/Argentina-y-Venezuela-680x365.jpg',
+'beginDate'=>'05/09/2017 18:00',
+'endDate'=>'05/09/2017 23:00'
 ];
 ?>
