@@ -58,7 +58,7 @@
             </div>
         {% else %}
             {% if EVENT and active=='tv' %}
-                <div class=card>
+                <div class=card ng-cloak>
                     <a href="tv/evento" alt="{{EVENT.title}}"><img width=480 src="{{EVENT.banner}}" /></a>
                 </div>      
             {% endif %}
