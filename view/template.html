@@ -6,23 +6,18 @@
         <meta name=google-site-verification content="{{googleKey}}" />
         
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
-        <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
-        <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
-        
+      
+        <link rel="icon" type="image/png" href="/view/imgs/favicon.png" />
+
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        
 
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
-        {% if player is defined %}
-              <link rel="stylesheet" type="text/css" href="/view/css/float.css?v={{version}}">
-        {% endif %}
+        {% if player is defined %} <link rel="stylesheet" type="text/css" href="/view/css/float.css?v={{version}}"> {% endif %}
     </head>
     <body ng-app=colgado>
         <div id=header class=header>
@@ -63,14 +58,15 @@
             </div>
         {% else %}
             {% if EVENT and active=='tv' %}
-                <div class=card ng-cloak>
+                <div class=card>
                     <a href="tv/evento" alt="{{EVENT.title}}"><img width=480 src="{{EVENT.banner}}" /></a>
                 </div>      
             {% endif %}
             {% include 'html/'~page |raw %}       
         {% endif %}
         {% if ad %}{% include 'html/ad.html' |raw %}{% endif %}
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
     </body>
 </html>
