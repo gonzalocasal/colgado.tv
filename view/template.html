@@ -4,24 +4,27 @@
         <meta name=description content="{{description | raw}}"/>
         <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.1, user-scalable=yes"/>
         <meta name=google-site-verification content="{{googleKey}}" />
-        <meta property="og:title" content="Colgado del Cable"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:url" content="http://colgado.tv"/>
-        <meta property="og:image" content="http://colgado.tv/view/imgs/play.png"/>
-        <meta property="og:description" content="{{description | raw}}"/>
+        
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
         <link href="/view/imgs/favicon.ico" rel=icon type="image/x-icon">
         <link href="/view/imgs/favicon.png" rel=apple-touch-icon />
+        
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        
+
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
         {% if player is defined %}
               <link rel="stylesheet" type="text/css" href="/view/css/float.css?v={{version}}">
         {% endif %}
     </head>
-    <body>
+    <body ng-app=colgado>
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
@@ -60,15 +63,14 @@
             </div>
         {% else %}
             {% if EVENT and active=='tv' %}
-                <div class=card>
+                <div class=card ng-cloak>
                     <a href="tv/evento" alt="{{EVENT.title}}"><img width=480 src="{{EVENT.banner}}" /></a>
                 </div>      
             {% endif %}
             {% include 'html/'~page |raw %}       
         {% endif %}
         {% if ad %}{% include 'html/ad.html' |raw %}{% endif %}
-        <script type="text/javascript">var ACTIVE="{{active}}"; var VERSION="{{version}}"; var EVENT="{{EVENT.title}}"</script>             
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <script type="text/javascript" src="/view/js/scripts.js?v={{version}}" ></script>
     </body>
 </html>

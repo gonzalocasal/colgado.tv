@@ -171,3 +171,5 @@ function(a) {
         b(a("#list"), a("#items"));
     });
 }(jQuery)
+
+var app = angular.module('colgado', []);
