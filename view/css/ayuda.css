@@ -10,7 +10,7 @@ margin-bottom: 15px;
 
 .title {
 font-size: 13.5px;
-color:#FF2676;
+color:#448aff;
 }
 
 a.help:link {
@@ -51,13 +51,13 @@ margin-right:auto
 }
 
 .error-title{
-color:#FF2676;
+color:#448aff;
 font-weight: 400;
 font-size:2em
 }
 
 .error-message{
-color:#FF2676;
+color:#448aff;
 font-weight: lighter;
 font-size:1.3em
 }

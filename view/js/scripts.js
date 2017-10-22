@@ -24,14 +24,15 @@ $(document).ready(function(a) {
 });
 
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
-if ( (typeof localStorage.VERSION != 'undefined' && localStorage.VERSION != VERSION ) || (typeof localStorage.VERSION != 'undefined' && localStorage.EVENT !== EVENT && ACTIVE =="tv") ) {
+if ( (typeof localStorage.VERSION != 'undefined' && localStorage.VERSION != VERSION ) || 
+     (typeof localStorage.VERSION != 'undefined' && localStorage.EVENT !== EVENT && ACTIVE =="tv") ) {
     localStorage.setItem("VERSION", VERSION);
     localStorage.setItem("EVENT", EVENT);
     window.location.reload(true);
 }
 
-//CLOSE AD
-$("#close").click(function() {
+
+function closeAd(){
     $("#float-layer").css({opacity: "0"});
     $(".player-container-tv").css({
     'filter'         : 'blur(0px)',
@@ -41,27 +42,27 @@ $("#close").click(function() {
     '-ms-filter'     : 'blur(0px)'
     });  
     setTimeout(function() {$("#float-layer").css({display: "none"});}, 500);
-});
+}
 
 //FACEBOOK SHARE POP-UP
-$(".share-facebook").click(function() {
+function facebookShare(){    
     window.open('http://www.facebook.com/share.php?u='+window.location.href, 'newwindow', 'width=300, height=250')
     return false;
-});
+}
 
 //TWITTER SHARE POP-UP 
-$(".share-twitter").click(function() {
+function twitterShare(){
     window.open('http://twitter.com/share?url='+window.location.href, 'newwindow', 'width=300, height=250');
     return false;
-});
+}
 
 //HIDE PLAYER SHIELD
-$("#shield").click(function() {
+function hideShield(){
     $("#shield").hide();
     $("#player-protected").show();
     $("#player-protected").append(content);
     $("#ciframe").attr("scrolling", "no");
-});
+}
 
 //FADEIN LOADING PLAYER
 $("#player-container").css({opacity: "1"});
@@ -70,24 +71,25 @@ setTimeout(function() {
     $("#close").css({opacity: "1"});
     }, 500);
 
+
 //LIGHTS DOWN
-$("#shadow").fadeTo(1, 0), $("#nav-lights").click(function() {
-    $("#header").css({zIndex: "0"}), 
-    $("#player").css({zIndex: "1"}),
-    $("#float-layer").css({zIndex: "1"}),
-    $("#player-protected").css({zIndex: "998"}), 
-    $("#shield").css({zIndex: "998"}),
-    $("#shadow").css({zIndex: "0"}), 
-    $("#shadow").fadeTo(300, .9),
-    $("#shadow").css({display: "block"}),
-    $(".slide-in").removeClass("slide-in on").addClass("slide-in"),
-    $(".menu-icon").removeClass("menu-icon-open"),
+function lightsDown(){
+    $("#header").css({zIndex: "0"});
+    $("#player").css({zIndex: "1"});
+    $("#float-layer").css({zIndex: "1"});
+    $("#player-protected").css({zIndex: "998"});
+    $("#shield").css({zIndex: "998"});
+    $("#shadow").css({zIndex: "0"});
+    $("#shadow").fadeTo(300, .9);
+    $("#shadow").css({display: "block"});
+    $(".slide-in").removeClass("slide-in on").addClass("slide-in");
+    $(".menu-icon").removeClass("menu-icon-open");
     $(".mclick").removeClass("mclick").addClass("slide-in");
     localStorage.setItem("MENU_OPENED", "false");
-}); 
+}
 
 //LIGHTS UP
-$("#shadow").click(function() {
+function lightsUp(){
     $("#shadow").fadeTo(300, 0), 
     $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
     setTimeout(function() {
@@ -96,17 +98,19 @@ $("#shadow").click(function() {
         $("#float-layer").css({zIndex: "980"}), 
         $("#shadow").css({display: "none"});
     }, 400);
-});
+}
 
 //CONTACT SUBMIT 
-$("#submit-link").click(function() {
+function submitContacto(){
     $("#submit").click();
-});
+}
+
 
 //CONTACT MESSAGE 
-$("#messageBotton").click(function() {
+function acceptMessage(){
    document.location.href="/";
-});
+}
+
 
 //SIDE MENU VERTICAL RESPONSIVE
 function sideMenuResponsive () {
@@ -122,7 +126,7 @@ function sideMenuResponsive () {
 }; 
 
 //SIDE MENU ICON CLICK
-$("#menu-icon").click(function() {
+function menuClick(){
     var shadowStatus = $("#shadow").css("display");
     var MENU_OPENED = ("true" == localStorage.getItem("MENU_OPENED"));
     if ( MENU_OPENED){
@@ -142,7 +146,7 @@ $("#menu-icon").click(function() {
             $("#player").css({zIndex: "998"})
         );
     }
-});
+}
 
 //SIDE MENU ITEMS CLICK
 $(".menu-link").click(function() {

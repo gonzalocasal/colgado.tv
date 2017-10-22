@@ -4,18 +4,12 @@
         <meta name=description content="{{description | raw}}"/>
         <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.1, user-scalable=yes"/>
         <meta name=google-site-verification content="{{googleKey}}" />
-        
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
-      
         <link rel="icon" type="image/png" href="/view/imgs/favicon.png" />
-
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel=stylesheet>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
-        
-
         <style>.sprite{{active}} {background-image: url(/view/imgs/sprites{{active}}.png?v={{version}})}</style>
         {% if player is defined %} <link rel="stylesheet" type="text/css" href="/view/css/float.css?v={{version}}"> {% endif %}
     </head>
@@ -23,7 +17,7 @@
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
-                <a href="#!"        class="nav-menu" ><i id=menu-icon class="menu-icon material-icons md-24 md-light ">menu</i></a>
+                <a href="#!"        class="nav-menu" onclick=menuClick() ><i id=menu-icon class="menu-icon material-icons md-24 md-light ">menu</i></a>
                 <a href="/"         class="nav-page {% if active=='tv'%}active{% endif %}"><i class="tab material-icons md-18 md-light">live_tv</i></a>
                 <a href="/radios"   class="nav-page {% if active=='radios'%}active{% endif %}"><i class="tab material-icons md-18 md-light">radio</i><span></span></a>
                 <a href="/contacto" class="nav-page {% if active=='contacto'%}active{% endif %}"><i class="tab material-icons md-18 md-light">mail_outline</i></a>
@@ -32,7 +26,7 @@
                 <a href="{{schedule}}" class=nav-page target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i></a>
                 {% endif %}
                 {% if player is defined %}
-                <a href="#" id=nav-lights class=nav-page><i class="tab material-icons md-18 md-light">brightness_6</i></a>
+                <a href="#" id=nav-lights onclick=lightsDown() class=nav-page><i class="tab material-icons md-18 md-light">brightness_6</i></a>
                 {% endif %}
                 </nav>
             </div>
@@ -42,11 +36,11 @@
             <ul id=items class=items>{% include 'html/menuitems.html' %}</ul>
         </div>
         <div id=space  class=space></div>
-        <div id=shadow class=shadow></div>
+        <div id=shadow class=shadow onclick=lightsUp()></div>
         {% if player is defined %}
             <div id=player-container class=player-container-{{active}} >
                 {% if protected is defined and protected %}
-                    <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" />
+                    <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" onclick=hideShield() />
                     <div id=player-protected class=player-protected>
                     <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
                     </div>

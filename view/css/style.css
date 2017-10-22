@@ -32,8 +32,7 @@ display: inline
 }
 
 .header {
-background-color:#2A2A2A;
-opacity: 0.93;
+background: rgba(0,0,0,0.8);
 position:fixed;
 left:0;
 right:0;
@@ -91,53 +90,20 @@ position: relative;
 overflow: hidden
 }
 
-.nav-page :hover:before, 
-.nav-page :focus:before, 
-.nav-page :active:before{
-left: 0;
-right: 0;
-}
+
 
 nav a {
 text-decoration:none;
 font-size:0.9em;
 color:#7D7D7D;
-o-transition:.3s;
--ms-transition:.3s;
--moz-transition:.3s;
--webkit-transition:.3s;
-transition:.3s
+ 
 }
 
-.nav-page :before{
-content: "";
-position: absolute;
-z-index: -1;
-left: 50%;
-right: 50%;
-bottom: 0;
-
-height: 2px;
--webkit-transition-property: left, right;
--webkit-transition-timing-function: ease-out;
--webkit-transition-duration: 0.2s;
-transition-duration: 0.2s;
-transition-property: left, right;
-transition-timing-function: ease-out
+nav a :hover {
+color: white;
+transition: all 0.3s ease;
 }
 
-.active :before{ 
-content: "";
-position: absolute;
-z-index: -1;
-left: 50%;
-right: 50%;
-bottom: 0;
-left: 0;
-right: 0;
-height: 2px;
-color: white
-}
 
 .nav-schedule,
 .nav-lights {
@@ -145,9 +111,7 @@ margin-left: -2px;
 margin-right: -2px
 }
 
-.center a :hover {
-color: white
-}
+
 
 .active{
 color: white
@@ -167,7 +131,7 @@ font-weight: 400
 
 .title-vipe {
 font-size: 13.5px;
-color:#FF2676;
+color:#448aff;
 align-self: center
 }
 
@@ -184,7 +148,7 @@ margin-left: auto;
 margin-right: auto;
 margin-top:25px;
 margin-bottom:25px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
 }
 
 .player-container-tv, .player-container-radios {
@@ -344,7 +308,7 @@ border-left-color:#fff
 .menu-item:hover {
 border-left-style:solid;
 border-left-width:3px;
-border-left-color:#FF2676
+border-left-color:#448aff
 }
 
 .mclick a {
