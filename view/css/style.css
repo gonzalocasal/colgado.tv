@@ -361,7 +361,7 @@ padding-left:75px
 }
 
 
-@media screen and (max-width: 919px){
+@media screen and (max-width: 700px){
 	.center {
 	text-align:left
 	}
@@ -371,11 +371,11 @@ padding-left:75px
 	}
 
 	.modal-content {
-	width:100%
+	width:95%
 	}
 
 	#player-container {
-	width:100%;
+	width:95%;
 	max-height:500px;
 	-webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -385,31 +385,31 @@ padding-left:75px
 	}
 
 	.player-protected {
-	width:100%;
+	width:95%;
 	max-height:400px
 	}
 
 	.player{
-	width:100%;
+	width:95%;
 	max-height:400px
 	}
 
 	iframe {
-	width:100%;
+	width:95%;
 	max-height:400px
 	}
 
 	.card {
-	width:100%;
+	width:95%;
 	padding: 0px
 	}
 
 	img {
-	max-width:100%
+	max-width:95%
 	}
 
 	audio {
-	width:100%
+	width:95%
 	}
 	.slide-in, .slide-in.on, .mclick {
 	top: 57px
