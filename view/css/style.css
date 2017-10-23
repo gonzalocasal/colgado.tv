@@ -390,12 +390,12 @@ padding-left:75px
 	}
 
 	.player{
-	width:95%;
+	width:100%;
 	max-height:400px
 	}
 
 	iframe {
-	width:95%;
+	width:100%;
 	max-height:400px
 	}
 
@@ -409,7 +409,7 @@ padding-left:75px
 	}
 
 	audio {
-	width:95%
+	width:100%
 	}
 	.slide-in, .slide-in.on, .mclick {
 	top: 57px
