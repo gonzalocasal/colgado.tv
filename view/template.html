@@ -38,6 +38,7 @@
         <div id=space  class=space></div>
         <div id=shadow class=shadow onclick=lightsUp()></div>
         {% if player is defined %}
+            <script>var playerOn=true </script> 
             <div id=player-container class=player-container-{{active}} >
                 {% if protected is defined and protected %}
                     <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" onclick=hideShield() />
