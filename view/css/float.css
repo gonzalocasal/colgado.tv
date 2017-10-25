@@ -8,9 +8,9 @@ position:absolute;
 opacity: 0;
 right:0;
 left:0;
-height: 506px;
-top: 90px;
-width: 900px;
+    height: 520px;
+    top: 85px;
+    width: 910px;
 z-index:998
 }
 
@@ -72,12 +72,12 @@ transition:.2s
 }
 
 .share-facebook {
-background-image: url("/view/imgs/ad-fb-black.png");
+background-image: url("/view/imgs/ad-fb.png");
 margin-right: 30px;
 }
 
 .share-twitter {
-background-image: url("/view/imgs/ad-twitter-black.png");
+background-image: url("/view/imgs/ad-twitter.png");
 width:38px;
 }
 
