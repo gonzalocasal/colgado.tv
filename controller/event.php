@@ -1,8 +1,8 @@
 <?php
 $event=[
-'title'=>'ECUADOR - ARGENTINA',
+'title'=>'RUSIA - ARGENTINA',
 'banner'=>'/view/imgs/evento.png',
-'beginDate'=>'10/10/2017 18:00',
-'endDate'=>'10/10/2017 23:00'
+'beginDate'=>'11/11/2017 08:00',
+'endDate'=>'11/11/2017 12:00'
 ];
 ?>
