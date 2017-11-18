@@ -11,8 +11,10 @@ $(document).ready(function(a) {
         sideMenuResponsive();
         $("#items").scrollTop(localStorage.getItem("menuScrollPosition"));
     }
-    if(playerOn == true)
+
+    if ( typeof playerOn !== 'undefined') {
         lightsDown();
+    }
 
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
