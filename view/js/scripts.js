@@ -11,17 +11,20 @@ $(document).ready(function(a) {
         sideMenuResponsive();
         $("#items").scrollTop(localStorage.getItem("menuScrollPosition"));
     }
-
     if ( typeof playerOn !== 'undefined') {
         lightsDown();
     }
-
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
 
-  
 });
 
+//REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
+if ( (typeof localStorage.VERSION != 'undefined' && localStorage.VERSION != VERSION ) || (typeof localStorage.VERSION != 'undefined' && localStorage.EVENT !== EVENT && ACTIVE =="tv") ) {
+    localStorage.setItem("VERSION", VERSION);
+    localStorage.setItem("EVENT", EVENT);
+    window.location.reload(true);
+}
 
 function closeAd(){
     $("#float-layer").css({opacity: "0"});
