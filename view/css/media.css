@@ -1,0 +1,30 @@
+
+.header {
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
+	background: #141414;
+	border-bottom: 1px solid #141414;
+}
+
+
+.active {
+	color: white
+}
+
+.menu-icon-open {
+	color: white;
+	transition: .3s
+}
+
+.nav-page:hover {
+	color: white;
+	transition: .3s
+}
+
+body{
+	background: #141414;
+}

@@ -1,23 +1,22 @@
 //ON READY
 $(document).ready(function(a) {  
-    //CHECK SIDE MENU STATUS
-    if ("true" == localStorage.getItem("MENU_OPENED")) {     
-        $("#player").css({zIndex: "998"});
-        $("#header").css({zIndex: "999"});
-        $("#menu-search").focus();
-        $("#menu").removeClass("slide-in");
-        $("#menu").addClass("mclick");
-        $(".menu-icon").addClass("menu-icon-open");
-        sideMenuResponsive();
-        $("#items").scrollTop(localStorage.getItem("menuScrollPosition"));
-    }
-    if ( typeof playerOn !== 'undefined') {
-        lightsDown();
-    }
+
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
 
+    var  tb = $('.header');
+tbs = "top-bar-scrolled";
+$(window).scroll(function() {
+  if($(this).scrollTop()) {
+    tb.addClass(tbs);
+  } else {
+    tb.removeClass(tbs);
+  }
 });
+
+
+});
+
 
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
 if ((localStorage.VERSION !== VERSION ) || (localStorage.EVENT !== EVENT && ACTIVE ==="tv")) {
@@ -67,33 +66,6 @@ setTimeout(function() {
     }, 500);
 
 
-//LIGHTS DOWN
-function lightsDown(){
-    $("#header").css({zIndex: "0"});
-    $("#player").css({zIndex: "1"});
-    $("#float-layer").css({zIndex: "1"});
-    $("#player-protected").css({zIndex: "998"});
-    $("#shield").css({zIndex: "998"});
-    $("#shadow").css({zIndex: "0"});
-    $("#shadow").fadeTo(300, .9);
-    $("#shadow").css({display: "block"});
-    $(".slide-in").removeClass("slide-in on").addClass("slide-in");
-    $(".menu-icon").removeClass("menu-icon-open");
-    $(".mclick").removeClass("mclick").addClass("slide-in");
-    localStorage.setItem("MENU_OPENED", "false");
-}
-
-//LIGHTS UP
-function lightsUp(){
-    $("#shadow").fadeTo(300, 0), 
-    $(".slide-in").removeClass("slide-in on").addClass("slide-in"), 
-    setTimeout(function() {
-        $("#header").css({zIndex: "981"}), 
-        $("#player").css({zIndex: "980"}),
-        $("#float-layer").css({zIndex: "980"}), 
-        $("#shadow").css({display: "none"});
-    }, 400);
-}
 
 //CONTACT SUBMIT 
 function submitContacto(){
@@ -122,8 +94,7 @@ function sideMenuResponsive () {
 
 //SIDE MENU ICON CLICK
 function menuClick(){
-    var shadowStatus = $("#shadow").css("display");
-    var MENU_OPENED = ("true" == localStorage.getItem("MENU_OPENED"));
+    var MENU_OPENED = $("#menu").hasClass("on");
     if ( MENU_OPENED){
         $("#menu").removeClass("on");
         $("#menu").removeClass("mclick");
@@ -132,8 +103,6 @@ function menuClick(){
         localStorage.setItem("MENU_OPENED", "false");
     }else {
         sideMenuResponsive();
-        localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
-        localStorage.setItem("MENU_OPENED", "true");
         $(".menu-icon").addClass("menu-icon-open");
         $(".slide-in").toggleClass("on"), 
         $("#menu-search").focus(), 0 == MENU_OPENED && (
