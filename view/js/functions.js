@@ -3,18 +3,16 @@ $(document).ready(function(a) {
 
     //REMOVE SCROLLBAR FROM PLAYER
     $("#ciframe").attr("scrolling", "no");
-
+    //TOP BAR SHADOW
     var  tb = $('.header');
-tbs = "top-bar-scrolled";
-$(window).scroll(function() {
-  if($(this).scrollTop()) {
-    tb.addClass(tbs);
-  } else {
-    tb.removeClass(tbs);
-  }
-});
-
-
+    tbs = "top-bar-scrolled";
+    $(window).scroll(function() {
+        if($(this).scrollTop()) {
+            tb.addClass(tbs);
+        } else {
+           tb.removeClass(tbs);
+        }
+    });
 });
 
 
@@ -30,10 +28,6 @@ function closeAd(){
     $("#float-layer").css({opacity: "0"});
     $(".player-container-tv").css({
     'filter'         : 'blur(0px)',
-    '-webkit-filter' : 'blur(0px)',
-    '-moz-filter'    : 'blur(0px)',
-    '-o-filter'      : 'blur(0px)',
-    '-ms-filter'     : 'blur(0px)'
     });  
     setTimeout(function() {$("#float-layer").css({display: "none"});}, 500);
 }
