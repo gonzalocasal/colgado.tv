@@ -49,10 +49,6 @@ body{
 }
 
 .player-container-tv {
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
 	filter: blur(5px);
 }
 
@@ -82,3 +78,30 @@ body{
 	z-index: 980
 }
 
+
+@media screen and (max-width: 800px) {
+	.player-container-tv {
+		width: 100%;
+		max-height: 500px;
+		filter: blur(0px);
+	}
+	.player-protected {
+		width: 100%;
+		max-height: 400px
+	}
+	.player {
+		width: 100%;
+		max-height: 400px
+	}
+	iframe {
+		width: 100%;
+		max-height: 400px
+	}
+	.float-layer {
+		display: none
+	}
+
+	audio {
+		width: 100%
+	}
+}
