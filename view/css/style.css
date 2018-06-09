@@ -307,40 +307,7 @@ iframe {
 	.menu-icon{
 		padding-left: 10px;
 	}
-	.player-container {
-		width: 100%;
-		max-height: 500px;
-		-webkit-filter: blur(0px);
-		-moz-filter: blur(0px);
-		-o-filter: blur(0px);
-		-ms-filter: blur(0px);
-		filter: blur(0px);
-	}
-	.player-protected {
-		width: 100%;
-		max-height: 400px
-	}
-	.player {
-		width: 100%;
-		max-height: 400px
-	}
-	iframe {
-		width: 100%;
-		max-height: 400px
-	}
-	.card {
-		width: 95%;
-		padding: 0px
-	}
 	
-
-	#float-layer {
-		display: none
-	}
-
-	audio {
-		width: 100%
-	}
 	.slide-in,
 	.slide-in.on,
 	.mclick {
