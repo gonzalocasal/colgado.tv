@@ -17,6 +17,7 @@
         {% endif %}
     </head>
     <body ng-app=colgado>
+
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
@@ -43,7 +44,8 @@
         <div id=space  class=space></div>
         {% if player is defined %}
             <script>var playerOn=true </script> 
-            <div id=player-container class=player-container-{{active}} >
+
+            <div id=player-container class="player-container player-container-{{active}} ">
                 {% if protected is defined and protected %}
                     <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" onclick=hideShield() />
                     <div id=player-protected class=player-protected>
