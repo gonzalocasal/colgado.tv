@@ -131,7 +131,9 @@ a:visited {
 
 .player-container-tv,
 .player-container-radios {
-	display: inline-block;
+	max-width: 900px;
+	margin-right: auto;
+    margin-left: auto;
 	margin-bottom: 15px;
 	opacity: 0;
 	transition: opacity .5s linear;
@@ -345,7 +347,7 @@ iframe {
 	.center {
 		text-align: left
 	}
-	#float-layer {
+	.float-layer {
 		display: none
 	}
 	.header span{
@@ -357,7 +359,7 @@ iframe {
 	.menu-icon{
 		padding-left: 10px;
 	}
-	#player-container {
+	.player-container {
 		width: 100%;
 		max-height: 500px;
 		-webkit-filter: blur(0px);
