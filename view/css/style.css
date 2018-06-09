@@ -134,7 +134,7 @@ img {
 }
 
 .space {
-	margin-top: 90px;
+	margin-top: 85px;
 	visibility: hidden
 }
 
@@ -297,7 +297,6 @@ iframe {
 	.center {
 		text-align: left
 	}
-
 	.header span{
 		display: none;
 	}
@@ -307,7 +306,6 @@ iframe {
 	.menu-icon{
 		padding-left: 10px;
 	}
-
 	
 	.slide-in,
 	.slide-in.on,
