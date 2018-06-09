@@ -301,8 +301,8 @@ iframe {
 	.header span{
 		display: none;
 	}
-	.modal-content {
-		width: 95%
+	.modal-content, .card {
+		width: 83%
 	}
 	.menu-icon{
 		padding-left: 10px;
