@@ -87,7 +87,6 @@ nav a {
 
 
 .nav-page:hover {
-	color: black;
 	transition: .3s
 	background-color: grey;
 	background-color: rgba(0, 0, 0, .0513726);
