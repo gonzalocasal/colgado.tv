@@ -1,47 +1,48 @@
 .contact-label {
-vertical-align:top;
-display:inline-block;
-color:#989898;
-font-size: 0.95em;
-font-weight:400;
-text-align:right;
-width:50px
+	vertical-align:top;
+	display:inline-block;
+	color:#989898;
+	font-size: 0.95em;
+	font-weight:400;
+	text-align:right;
+	width:50px
 }
 
 .button {
-box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
-background-color:red;
-color:#fff;
-display:inline-block;
-font-family:roboto;
-font-size: 0.95em;
-text-decoration:none;
-padding:6px 20px;
-margin-bottom: 15px;
-transition: .3s
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+	background-color: #ff0000;
+	color:#fff;
+	display:inline-block;
+	font-family:roboto;
+	text-decoration:none;
+	padding:6px 20px;
+	margin-bottom: 15px;
+	transition: .3s
+	font-size: 14.7px;
+	font-weight: 500;
 }
 
 .form-contact {
-padding:1%;
-margin-top: 10px
+	padding:1%;
+	margin-top: 10px
 }
 
 textarea {
-resize:none
+	resize:none
 }
 
 .info {
-margin-top: 15px;
-text-align:center
+	margin-top: 15px;
+	text-align:center
 }
 
 .logo-info {
-padding-right: 8px;
-transition: .3s
-o-transition: .3s;
--ms-transition: .3s;
--moz-transition: .3s;
--webkit-transition: .3s
+	padding-right: 8px;
+	transition: .3s
+	o-transition: .3s;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s
 }
 
 .logo-info:hover,
@@ -50,67 +51,67 @@ o-transition: .3s;
 }
 
 .g-recaptcha {
-display:inline-block;
-margin-bottom: 20px;
-margin-top: 10px
+	display:inline-block;
+	margin-bottom: 20px;
+	margin-top: 10px
 }
 
 .input-contact {
-font-family:roboto;
-border:none;
-border-bottom:1px solid #ccc;
-font-weight: 400;
-color: #333;
-font-size:0.875em;
-width:250px;
-margin:0 0 17px 7px;
-padding:5px 2px 2px
+	font-family:roboto;
+	border:none;
+	border-bottom:1px solid #ccc;
+	font-weight: 400;
+	color: #333;
+	font-size:0.875em;
+	width:250px;
+	margin:0 0 17px 7px;
+	padding:5px 2px 2px
 }
 
 .input-contact:focus {
-border-bottom:2px solid red;
-outline:0;
-width:250px
+	border-bottom:2px solid#ff0000;
+	outline:0;
+	width:250px
 }
 
 .submit {
-display:none
+	display:none
 }
 
 .boton:active {
-position:relative;
-top:1px
+	position:relative;
+	top:1px
 }
 
 .modal {
-display: block;
-position: fixed;
-z-index: 999;
-padding-top: 100px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgb(0,0,0);
-background-color: rgba(0,0,0,0.4)
+	display: block;
+	position: fixed;
+	z-index: 999;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4)
 }
 
 .modal-content {
-position: relative;
-background-color: #fefefe;
-margin: auto;
-padding: 0;
-border: 1px solid #888;
-width: 350px;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
--webkit-animation-name: animatetop;
--webkit-animation-duration: 0.4s;
-animation-name: animatetop;
-animation-duration: 0.4s
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
 }
 
 .modal-body {
-padding: 2px 16px
+	padding: 2px 16px
 }
 
 @-webkit-keyframes animatetop {
