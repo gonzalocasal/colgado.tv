@@ -58,7 +58,8 @@ body {
 
 nav {
 	line-height: 55px;
-	min-width: 920px
+	min-width: 920px;
+	margin-top: -2px;
 }
 
 .nav-page {
