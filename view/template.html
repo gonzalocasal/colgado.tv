@@ -6,7 +6,7 @@
         <meta name=google-site-verification content="{{googleKey}}" />
         <link rel="image_src" href="http://colgado.tv/view/imgs/play.png"/>
         <link rel="icon" type="image/png" href="/view/imgs/favicon.png" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/view/css/style.css?v={{version}}">
         <link rel="stylesheet" type="text/css" href="/view/css/{{active}}.css?v={{version}}">
@@ -21,8 +21,10 @@
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
-                <a href="#!"        class="nav-page" onclick=menuClick() ><i id=menu-icon class="menu-icon material-icons md-18 md-light ">menu</i></a>
-                <a href="/"         class="nav-page {% if active=='tv'%}active{% endif %}">
+                <a href="#!"  class="nav-page" onclick=menuClick() >
+                    <i id=menu-icon class="tab menu-icon material-icons md-18 md-light ">menu</i>
+                </a>
+                <a href="/"   class="nav-page {% if active=='tv'%}active{% endif %}">
                     <i class="tab material-icons md-18 md-light">tv</i> <span>Televisi&oacute;n</span>
                 </a>
                 <a href="/radios"   class="nav-page {% if active=='radios'%}active{% endif %}">
@@ -32,7 +34,7 @@
                     <i class="tab material-icons md-18 md-light">mail_outline</i><span>Contacto</span>
                 </a>
                 {% if schedule is defined %}
-                <a href="{{schedule}}" class=nav-page target="_blank" ><i class="schedul tab material-icons md-18 md-light">date_range</i><span>Programaci&oacute;n</span></a>
+                <a href="{{schedule}}" class=nav-page target="_blank" ><i class="tab material-icons md-18 md-light">date_range</i><span>Programaci&oacute;n</span></a>
                 {% endif %}
                 </nav>
             </div>
