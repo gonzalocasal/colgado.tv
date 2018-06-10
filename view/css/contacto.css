@@ -20,6 +20,12 @@
 	margin-left: 5px;
 }
 
+
+.info a:visited{
+	color: #7D7D7D;
+}
+
+
 .info .facebook:hover{
 	color: #4266b3;
 }
