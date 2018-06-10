@@ -70,11 +70,13 @@ body{
 	z-index: 980
 }
 
-.player {
+#player{
 	position: relative;
 	overflow: hidden;
 	background-color: #0000;
 	line-height: 0;
+	margin-left: auto;
+    margin-right: auto;
 	z-index: 980
 }
 
