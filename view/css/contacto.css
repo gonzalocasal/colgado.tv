@@ -3,7 +3,6 @@
 	display:inline-block;
 	color:#989898;
 	font-size: 0.95em;
-	font-weight:400;
 	text-align:right;
 	width:50px
 }
@@ -60,7 +59,6 @@ textarea {
 	font-family:roboto;
 	border:none;
 	border-bottom:1px solid #ccc;
-	font-weight: 400;
 	color: #333;
 	font-size:0.875em;
 	width:250px;

@@ -44,15 +44,8 @@ body {
   box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
 }
 
-.menu-icon {
-	vertical-align: text-bottom;
-	cursor: pointer;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
 .menu-icon-open {
-	color: black;
+	color: #111;
 	transition: .3s
 }
 
@@ -76,8 +69,18 @@ nav {
 	padding-right: 10px;
 	padding-left: 10px;
     font-weight: 500;
-
 }
+
+.nav-page span {
+	padding-left: 5px
+}
+
+
+.menu-icon {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 
 nav a {
 	text-decoration: none;
@@ -105,7 +108,6 @@ a:visited {
 
 .tab {
 	vertical-align: sub;
-	padding-right: 5px;
 	font-weight: 400
 }
 
@@ -203,7 +205,8 @@ iframe {
 
 .menu-search {
 	padding-left: 15px;
-	font-weight: 400;
+	font-weight: 500;
+	font-family: 'roboto';
 	border-bottom-color: #D4D4D4;
 	border-bottom-width: 2px;
 	color: #777;
@@ -273,12 +276,13 @@ iframe {
 
 .menu-item a,
 .menu-item a:visited {
-	font-weight: 400;
-	color: #333
+	font-weight: 500;
+	color: #7D7D7D
 }
 
 .menu-item:hover a {
-	background-color: rgba(0, 0, 0, .0513726)
+	background-color: rgba(0, 0, 0, .0513726);
+	color: #111;
 }
 
 .menu-separator {
@@ -299,10 +303,16 @@ iframe {
 	.modal-content, .card {
 		width: 95%
 	}
-	.menu-icon{
+	.tab{
+		vertical-align: text-bottom;
+		cursor: pointer;
 		padding-left: 10px;
+		padding-right: 10px;
 	}
-	
+	.nav-page {
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 	.slide-in,
 	.slide-in.on,
 	.mclick {
