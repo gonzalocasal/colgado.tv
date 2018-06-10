@@ -56,14 +56,14 @@ textarea {
 }
 
 .input-contact {
-	font-family:roboto;
-	border:none;
-	border-bottom:1px solid #ccc;
-	color: #333;
-	font-size:0.875em;
-	width:250px;
-	margin:0 0 17px 7px;
-	padding:5px 2px 2px
+	font-family: roboto;
+    border: none;
+    border-bottom: 2px solid #f1f1f1;
+    color: #333;
+    font-size: 0.875em;
+    width: 250px;
+    margin: 0 0 17px 7px;
+    padding: 5px 2px 2px;
 }
 
 .input-contact:focus {
