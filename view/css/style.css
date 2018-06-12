@@ -204,15 +204,16 @@ iframe {
 
 .menu-search {
 	padding-left: 15px;
-	font-weight: 500;
-	font-family: 'roboto';
-	border-bottom-color: #D4D4D4;
-	border-bottom-width: 2px;
-	color: #777;
-	height: 44px;
-	font-size: 0.875em;
-	width: 100%;
-	border-width: 0 0 1px;
+    font-weight: 500;
+    font-family: 'roboto';
+    border-bottom-color: #D4D4D4;
+    border-bottom-width: 2px;
+    color: #7D7D7D;
+    height: 52px;
+    font-size: 0.9em;
+    width: 100%;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+    border-width: 0 0 1px;
 }
 
 .menu-search:focus {
