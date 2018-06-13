@@ -296,9 +296,6 @@ iframe {
 	nav {
 		min-width: unset;
 	}
-	.header span{
-		display: none;
-	}
 	.tab{
 		vertical-align: text-bottom;
 		cursor: pointer;
@@ -313,6 +310,12 @@ iframe {
 	.slide-in.on,
 	.mclick {
 		top: 54px
+	}
+}
+
+@media screen and (max-width: 655px) {
+	.header span{
+		display: none;
 	}
 }
 
