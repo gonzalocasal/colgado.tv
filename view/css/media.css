@@ -1,6 +1,6 @@
 
 body{
-	background: #141414;
+	background: #242424;
 }
 
 .header {
@@ -10,7 +10,7 @@ body{
 	right: 0;
 	top: 0;
 	z-index: 999;
-	background: #141414;
+	background: #242424;
 	box-shadow: unset;
 }
 

@@ -17,6 +17,15 @@ $(document).ready(function(a) {
 
 });
 
+// BODY CLICK TO CLOSE MENU
+window.addEventListener('click', function(e){   
+  if ( document.getElementById('menu').contains(e.target) || document.getElementById('header').contains(e.target) || e.target.href != null){
+    return;
+  } else{
+    closeMenu();
+  }
+});
+
 
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
 if ((localStorage.VERSION !== VERSION ) || (localStorage.EVENT !== EVENT && ACTIVE ==="tv")) {
@@ -92,11 +101,7 @@ function sideMenuResponsive () {
 function menuClick(){
     var MENU_OPENED = $("#menu").hasClass("on");
     if ( MENU_OPENED){
-        $("#menu").removeClass("on");
-        $("#menu").removeClass("mclick");
-        $("#menu").addClass("slide-in");
-        $(".menu-icon").removeClass("menu-icon-open");
-        localStorage.setItem("MENU_OPENED", "false");
+        closeMenu();
     }else {
         sideMenuResponsive();
         $(".menu-icon").addClass("menu-icon-open");
@@ -108,10 +113,12 @@ function menuClick(){
     }
 }
 
-//SIDE MENU ITEMS CLICK
-$(".menu-link").click(function() {
-    localStorage.setItem("menuScrollPosition", $("#items").scrollTop());
-}),
+function closeMenu(){
+    $("#menu").removeClass("on");
+        $("#menu").removeClass("mclick");
+        $("#menu").addClass("slide-in");
+        $(".menu-icon").removeClass("menu-icon-open");
+}
 
 //SIDE MENU VERTICAL RESPONSIVE
 $(window).resize(function() {
