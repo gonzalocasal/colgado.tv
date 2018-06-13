@@ -111,4 +111,12 @@ body{
 	audio {
 		width: 100%
 	}
+
+
+}
+
+@media screen and (max-width: 655px) {
+	.header span{
+		display: none;
+	}
 }
