@@ -26,7 +26,8 @@ body{
 
 .nav-page:hover {
 	color: white;
-	transition: .3s
+	transition: .3s;
+	background: #242424;
 }
 
 
