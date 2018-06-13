@@ -1,98 +1,98 @@
 .float-layer {
-background-color:rgba(0,0,0, 0.2);
-transition:opacity .5s linear;
-display:block;
-margin-left:auto;
-margin-right:auto;
-position:absolute;
-opacity: 0;
-right:0;
-left:0;
-    height: 520px;
-    top: 85px;
-    width: 910px;
-z-index:998
+	background-color:rgba(0,0,0, 0.2);
+	transition:opacity .5s linear;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	position:absolute;
+	opacity: 0;
+	right:0;
+	left:0;
+	height: 520px;
+	top: 80px;
+	width: 910px;
+	z-index:998
 }
 
 .close {
-color: #ffffff;
-cursor:pointer;
-position:absolute;
-top:10px;
-opacity: 0;
-left:720px;
-z-index:999;
-transition:opacity .5s linear;
--webkit-transform: perspective(1px) translateZ(0);
-transform: perspective(1px) translateZ(0);
+	color: #ffffff;
+	cursor:pointer;
+	position:absolute;
+	top:10px;
+	opacity: 0;
+	left:720px;
+	z-index:999;
+	transition:opacity .5s linear;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
 }
 
 .close:before {
-content: "close";
-font-size: 25px;
-position: absolute;
-right: 1em;
-padding: 0 1px;
-font-family: "Material Icons";
--webkit-transition-duration: 0.5s;
-transition-duration: 0.5s;
--webkit-transition-property: transform;
-transition-property: transform;
--webkit-transition-timing-function: ease-in-out;
-transition-timing-function: ease-in-out
+	content: "close";
+	font-size: 25px;
+	position: absolute;
+	right: 1em;
+	padding: 0 1px;
+	font-family: "Material Icons";
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out
 }
 
 .close:active:before,
 .close:focus:before,
 .close:hover:before {
--webkit-transform: rotate(360deg);
-transform: rotate(360deg)
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg)
 }
 
 .ad {
-display:inline-flex
+	display:inline-flex
 }
 
 .social-buttons{
-margin-bottom: 20px;
-margin-top: 15px
+	margin-bottom: 20px;
+	margin-top: 15px
 }
 
 .share-facebook, .share-twitter {
-background-repeat: no-repeat;
-display: block;
-opacity: 0.4;
-height:24px;
-width:24px;
-o-transition:.2s;
--ms-transition:.2s;
--moz-transition:.2s;
--webkit-transition:.2s;
-transition:.2s
+	background-repeat: no-repeat;
+	display: block;
+	opacity: 0.4;
+	height:24px;
+	width:24px;
+	o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s
 }
 
 .share-facebook {
-background-image: url("/view/imgs/ad-fb.png");
-margin-right: 30px;
+	background-image: url("/view/imgs/ad-fb.png");
+	margin-right: 30px;
 }
 
 .share-twitter {
-background-image: url("/view/imgs/ad-twitter.png");
-width:38px;
+	background-image: url("/view/imgs/ad-twitter.png");
+	width:38px;
 }
 
 .facebook-button, .twitter-button{
-display: inline-flex;
+	display: inline-flex;
 }
 
 .facebook-button a:hover{
-opacity: 1;
+	opacity: 1;
 }
 
 .twitter-button a:hover{
-opacity: 1;
+	opacity: 1;
 }
 
 .trackedUrls{
-display: none;
+	display: none;
 }
