@@ -313,7 +313,7 @@ iframe {
 	}
 }
 
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 490px) {
 	.header span{
 		display: none;
 	}
