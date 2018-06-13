@@ -81,7 +81,6 @@ nav {
 	padding-right: 10px;
 }
 
-
 nav a {
 	text-decoration: none;
 	color: #7D7D7D;
@@ -294,14 +293,11 @@ iframe {
 }
 
 @media screen and (max-width: 800px) {
-	.center {
-		text-align: left
+	nav {
+		min-width: unset;
 	}
 	.header span{
 		display: none;
-	}
-	.modal-content, .card {
-		width: 95%
 	}
 	.tab{
 		vertical-align: text-bottom;
@@ -317,6 +313,13 @@ iframe {
 	.slide-in.on,
 	.mclick {
 		top: 54px
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.modal-content, .card {
+		width: 95%
 	}
 }
 
