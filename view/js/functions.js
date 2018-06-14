@@ -27,6 +27,11 @@ window.addEventListener('click', function(e){
 });
 
 
+//CLICK CARDS
+function redirect(link){
+    window.location=link;
+}
+
 //REMOVE LOCAL CACHE ON NEW VERSION OR EVENT
 if ((localStorage.VERSION !== VERSION ) || (localStorage.EVENT !== EVENT && ACTIVE ==="tv")) {
     localStorage.setItem("VERSION", VERSION);

@@ -25,6 +25,21 @@
 	color: #7D7D7D;
 }
 
+.card-contact{
+	background-color: #fff;
+    line-height: 25px;
+    text-align: center;
+    vertical-align: top;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: .275rem;
+    box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+}
 
 .info .facebook:hover{
 	color: #4266b3;
