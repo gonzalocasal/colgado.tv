@@ -104,19 +104,28 @@ a:visited {
 	font-weight: 400
 }
 
+.card-wrapper{
+	display: inline-block;
+    vertical-align: top;
+	margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
 .card {
 	background-color: #FFF;
     line-height: 25px;
     cursor: pointer;
     text-align: center;
-    display: inline-block;
-    vertical-align: top;
+    
+    display: table-cell;
+    vertical-align: middle;
+
     width: 165px;
     height: 80px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
     border-radius: .275rem;
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
