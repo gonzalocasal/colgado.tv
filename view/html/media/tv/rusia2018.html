@@ -1,0 +1,32 @@
+<div id=player-container class="player-container player-container-{{active}} ">
+	<div id=player></div>
+	<script src="https://jwpsrv.com/library/40TpZB2+EeOLRiIACusDuQ.js"></script>
+</div>
+
+<a href="#" onclick="loadtyc()" id=link-tyc  style="display:none"  class=opcion2>Ver en Tyc Sports</a><br>
+<a href="#" onclick="loadtvp()" id=link-tvp class=opcion2>Ver en la TV P&uacute;blica</a><br>
+
+<script type="text/javascript" >
+	function loadtyc() {
+		jwplayer("player").setup({
+	    	file: "https://d3055hobuue3je.cloudfront.net/out/v1/b841c366cbe540e6a106c3ba83e5c8d6/index.m3u8",
+	    	autostart: "true",
+	    	width: "100%",
+	    	aspectratio: "16:9"
+	  	});
+	  	$("#link-tvp").css("display", "block");
+	  	$("#link-tyc").css("display", "none");
+	}
+
+	function loadtvp() {
+		jwplayer("player").setup({
+	    	file: "https://contar-live.secure.footprint.net/worldcup2018/worldcup2/test/2400kbps.m3u8",
+	    	autostart: "true",
+	    	width: "100%",
+	    	aspectratio: "16:9"
+	  	});
+	  	$("#link-tvp").css("display", "none");
+	  	$("#link-tyc").css("display", "block");
+	}
+loadtyc();
+</script>

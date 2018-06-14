@@ -24,10 +24,19 @@ body{
 	transition: .3s
 }
 
-.nav-page:hover {
+.nav-page:hover ,.opcion2:hover {
 	color: white;
 	transition: .3s;
 	background: #242424;
+}
+
+.opcion2{
+	text-decoration: none;
+	color: #7D7D7D;
+}
+
+.player-container2{
+	display: none;
 }
 
 

@@ -48,19 +48,22 @@
         <div id=space  class=space></div>
         {% if player is defined %}
             <script>var playerOn=true </script> 
-
-            <div id=player-container class="player-container player-container-{{active}} ">
-                {% if protected is defined and protected %}
-                    <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" onclick=hideShield() />
-                    <div id=player-protected class=player-protected>
-                    <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
-                    </div>
-                {% else %}
-                    <div id=player class=player>
-                    {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
-                    </div>
-                {% endif %}
-            </div>
+            {% if (player=='rusia2018') %}
+                {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
+            {% else %}
+                <div id=player-container class="player-container player-container-{{active}} ">
+                    {% if protected is defined and protected %}
+                        <img id=shield class=shield alt=shield src="/view/imgs/shield.jpg" onclick=hideShield() />
+                        <div id=player-protected class=player-protected>
+                        <script type="text/javascript">var content = '{% include "html/media/" ~active~ "/" ~player~ ".html" |raw %}';</script>
+                        </div>
+                    {% else %}
+                        <div id=player class=player>
+                        {% include 'html/media/' ~active~ '/' ~player~ '.html' |raw %}
+                        </div>
+                    {% endif %}
+                </div>
+            {% endif %}
         {% else %}
             {% if EVENT and active=='tv' %}
                 <div class=card ng-cloak>
