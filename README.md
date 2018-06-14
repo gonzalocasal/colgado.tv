@@ -1,4 +1,4 @@
 # colgado.tv
 Template site of media streamings developed with: HTML5 - CSS3 - JQUERY - PHP - TWIG. 
 
-![](https://k61.kn3.net/3/F/4/4/5/2/E5B.png)
+![](https://k62.kn3.net/D/2/C/9/7/F/6F9.png)
