@@ -161,3 +161,10 @@ to {top:0; opacity:1}
 }
 
 
+
+@media screen and (max-width: 550px) {
+	
+	.card-contact{
+		width: 95%
+	}
+}
