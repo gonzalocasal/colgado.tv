@@ -69,7 +69,7 @@ function hideShield(){
 }
 
 //FADEIN LOADING PLAYER
-$("#player-container").css({opacity: "1"});
+$(".player-container").css({opacity: "1"});
 setTimeout(function() {
     $("#float-layer").css({opacity: "1"});
     $("#close").css({opacity: "1"});
