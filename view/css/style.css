@@ -173,137 +173,7 @@ iframe {
 	border-width: 0
 }
 
-.slide-in {
-	background-color: #FFF;
-	overflow: hidden;
-	position: fixed;
-	top: 0px;
-	width: 215px;
-	box-shadow: 0 4px 4px #333;
-	font-size: 0.875em;
-	height: 100%;
-	left: -220px;
-	z-index: 1000;
-	transition-duration: 300ms;
-	webkit-transform: translate3d(-220px, 0, 0);
-	transform: translate3d(-220px, 0, 0)
-}
 
-.slide-in.on,
-.mclick {
-	background-color: #FFF;
-	overflow: hidden;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 215px;
-	height: 100%;
-	z-index: 1000;
-	font-size: 0.875em;
-	box-shadow: 0 4px 4px #333;
-	transition-duration: 300ms;
-	webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0)
-}
-
-.slide-in.on {
-	transition-duration: 300ms;
-}
-
-.mclick {
-	transition-duration: 0ms;
-}
-
-.menu-search {
-	padding-left: 15px;
-    font-weight: 500;
-    font-family: 'roboto';
-    border-bottom-color: #D4D4D4;
-    border-bottom-width: 2px;
-    color: #7D7D7D;
-    height: 53px;
-    font-size: 0.9em;
-    width: 100%;
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
-    border-width: 0 0 1px;
-}
-
-.menu-search:focus {
-	outline: 0
-}
-
-.menu-link {
-	padding-left: 15px;
-	font-weight: 400
-}
-
-.items {
-	overflow-y: scroll;
-	text-align: left;
-	width: 240px
-}
-
-.menu-item {
-	border-left-style: solid;
-	border-left-width: 3px;
-	color: #fff;
-	line-height: 35px;
-	border-left-color: #fff
-}
-
-.menu-item:hover {
-	border-left-style: solid;
-	border-left-width: 3px;
-	border-left-color: red
-}
-
-.mclick a {
-	display: block;
-	text-decoration: none;
-	color: #333
-}
-
-.slide-in a {
-	display: block;
-	text-decoration: none;
-	color: #333
-}
-
-.mclick ul {
-	list-style: none;
-	margin: 0;
-	padding: 0
-}
-
-.slide-in ul {
-	list-style: none;
-	margin: 0;
-	padding: 0
-}
-
-.slide-in a:visited,
-.mclick a:visited {
-	color: #333
-}
-
-.menu-item a,
-.menu-item a:visited {
-	font-weight: 500;
-	color: #7D7D7D
-}
-
-.menu-item:hover a {
-	background-color: rgba(0, 0, 0, .0513726);
-	color: #111;
-}
-
-.menu-separator {
-	color: #A7A4A4;
-	background-color: #D4D4D4;
-	padding-bottom: 0;
-	padding-top: 1px;
-	padding-left: 75px
-}
 
 @media screen and (max-width: 800px) {
 	nav {
@@ -337,10 +207,7 @@ iframe {
 	.header span{
 		display: none;
 	}
-	.nav-page {
-		padding-right: 0px;
-		padding-left: 0px;
-	}
+	
 }
 
 [ng\:cloak],
