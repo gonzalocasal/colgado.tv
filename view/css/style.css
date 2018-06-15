@@ -17,8 +17,6 @@ body {
 	-webkit-transition: .3s
 }
 
-
-
 .material-icons.md-light {
 	font-size: 23px;
 	display: inline
@@ -119,13 +117,10 @@ a:visited {
     line-height: 25px;
     cursor: pointer;
     text-align: center;
-    
     display: table-cell;
     vertical-align: middle;
-
     width: 165px;
     height: 80px;
-
     border-radius: .275rem;
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
@@ -329,7 +324,7 @@ iframe {
 
 @media screen and (max-width: 550px) {
 	.spritetv,.spriteradios{
-		 transform: scale(0.7);
+		 transform: scale(0.9);
 	}
 
 	.card{
