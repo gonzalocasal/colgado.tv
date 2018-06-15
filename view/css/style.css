@@ -326,13 +326,11 @@ iframe {
 	.spritetv,.spriteradios{
 		 transform: scale(0.8);
 	}
-
 	.card{
-		width: 110px;
+		width: 120px;
 		margin-left: 2px;
 		margin-right: 2px;
 	}
-
 	.modal-content{
 		width: 95%
 	}
