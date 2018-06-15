@@ -324,7 +324,7 @@ iframe {
 
 @media screen and (max-width: 550px) {
 	.spritetv,.spriteradios{
-		 transform: scale(0.9);
+		 transform: scale(0.8);
 	}
 
 	.card{
