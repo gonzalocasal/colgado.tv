@@ -23,9 +23,7 @@
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
-                <a href="#!"  class="nav-page menu-icon-tab" id=menu-tab onclick=menuClick() >
-                    <i id=menu-icon class="tab menu-icon material-icons">menu</i>
-                </a>
+             
                 <a href="/"   class="nav-page {% if active=='tv'%}active{% endif %}">
                     <i class="tab material-icons">tv</i> <span>Televisi&oacute;n</span>
                 </a>
@@ -35,16 +33,14 @@
                 <a href="/contacto" class="nav-page {% if active=='contacto'%}active{% endif %}">
                     <i class="tab material-icons">mail_outline</i><span>Contacto</span>
                 </a>
+                
                 {% if schedule is defined %}
                 <a href="{{schedule}}" class=nav-page target="_blank" ><i class="tab material-icons">date_range</i><span>Programaci&oacute;n</span></a>
                 {% endif %}
                 </nav>
             </div>
         </div>
-        <div id=menu class=slide-in>
-            <input type=text id=menu-search class=menu-search placeholder="Buscar..."/>
-            <ul id=items class=items>{% include 'html/menuitems.html' %}</ul>
-        </div>
+        
         <div id=space  class=space></div>
         {% if player is defined %}
             <script>var playerOn=true </script> 
