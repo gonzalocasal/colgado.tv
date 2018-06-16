@@ -17,15 +17,6 @@ $(document).ready(function(a) {
 
 });
 
-// BODY CLICK TO CLOSE MENU
-window.addEventListener('click', function(e){   
-  if ( document.getElementById('menu').contains(e.target) || document.getElementById('header').contains(e.target) || e.target.href != null){
-    return;
-  } else{
-    closeMenu();
-  }
-});
-
 
 //CLICK CARDS
 function redirect(link){
@@ -87,3 +78,6 @@ function submitContacto(){
 function acceptMessage(){
    document.location.href="/";
 }
+
+
+var app = angular.module('colgado', []);
