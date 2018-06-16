@@ -87,6 +87,3 @@ function submitContacto(){
 function acceptMessage(){
    document.location.href="/";
 }
-
-
-var app = angular.module('colgado', []);
