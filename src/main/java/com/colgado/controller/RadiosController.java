@@ -168,10 +168,10 @@ public class RadiosController implements ControllerI {
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/radios/millenium")
-	public String millenium(Model model) {
-		String title = "Millenium";
-		String template = "millenium";
+	@RequestMapping("/radios/milenium")
+	public String milenium(Model model) {
+		String title = "Milenium";
+		String template = "milenium";
 		String schedule = "http://www.fmmilenium.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
@@ -243,6 +243,16 @@ public class RadiosController implements ControllerI {
 		String title = "Continental";
 		String template = "continental";
 		String schedule = "http://www.radiolared.multimediosamerica.com.ar";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
+	
+	@RequestMapping("/radios/radionacional")
+	public String radionacional(Model model) {
+		String title = "Radio Nacional";
+		String template = "radionacional";
+		String schedule = "http://www.radionacional.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
