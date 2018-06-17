@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.6.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'colgado'
+    version =  '1.0.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.5.RELEASE'
+    compile group: 'org.springframework', name: 'spring-orm', version: '4.2.5.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '1.1.7.RELEASE'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+    compile 'com.sendgrid:sendgrid-java:3.0.9'
+	compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.2.1'
+	compile 'org.mockito:mockito-core:2.18.3'
+	
+    testCompile("junit:junit")
+}
