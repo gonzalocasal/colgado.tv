@@ -1,0 +1,8 @@
+<script>
+grecaptcha.ready(function() {
+    grecaptcha.execute('6LcFOF8UAAAAAJ2bN2bFvELDEFCqlp6a61_pHUV1', {action: 'homepage'})
+    .then(function(token) {
+        $('input[name=token]').val(token);                
+    });
+});
+</script>
