@@ -351,10 +351,10 @@ public class TVController implements ControllerI{
 	}
 	
 	
-	@RequestMapping("/tv/construir")
-	public String construir(Model model) {
+	@RequestMapping("/tv/construirtv")
+	public String construirtv(Model model) {
 		String title = "Construir TV";
-		String template = "construir";
+		String template = "construirtv";
 		String schedule = "http://www.construirtv.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
@@ -669,11 +669,11 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/hbo2")
+	@RequestMapping("/tv/hboplus")
 	public String hbo2(Model model) {
-		String title = "HBO 2";
-		String template = "hbo2";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=525";
+		String title = "HBO Plus";
+		String template = "hboplus";
+		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=526";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
