@@ -2,7 +2,7 @@ package com.colgado.utils;
 
 public class Constants {
 
-	public static final String DEFAULT_VIEW = "template";
+	public static final String DEFAULT_VIEW = "view/template";
 	public static final String ROBOT_VIEW = "robot";
 	public static final String MENSSAGE_VIEW = "mensaje";
 

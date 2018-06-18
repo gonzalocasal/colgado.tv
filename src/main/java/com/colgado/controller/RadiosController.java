@@ -16,7 +16,7 @@ public class RadiosController implements ControllerI {
 	public String root(Model model) {
 		addCommonAttributes(model);
 		model.addAttribute("title", "Radios");
-		return "template";
+		return DEFAULT_VIEW;
 	}
 
 	@RequestMapping("/radios/la100")
