@@ -338,7 +338,35 @@ public class RadiosController implements ControllerI {
 		return DEFAULT_VIEW;
 	}
 	
+	@RequestMapping("/radios/coolradio")
+	public String coolradio(Model model) {
+		String title = "Cool Radio";
+		String template = "coolradio";
+		String schedule = "http://www.coolihd.com/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
 	
+	@RequestMapping("/radios/red92")
+	public String red92(Model model) {
+		String title = "Red 92";
+		String template = "red92";
+		String schedule = "http://red92.com/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
+	
+	@RequestMapping("/radios/laredonda")
+	public String laredonda(Model model) {
+		String title = "FM La Redonda";
+		String template = "laredonda";
+		String schedule = "http://www.fmlaredonda.com.ar/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
 	
 	@Override
 	public void addCommonAttributes(Model model) {
