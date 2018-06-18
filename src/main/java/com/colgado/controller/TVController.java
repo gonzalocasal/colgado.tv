@@ -86,21 +86,21 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/dxtv")
-	public String dxtv(Model model) {
-		String title = "DEPORTV";
-		String template = "dxtv";
-		String schedule = "http://deportv.gov.ar/programacion";
+	@RequestMapping("/tv/tntsports")
+	public String tntsports(Model model) {
+		String title = "TNT Sports";
+		String template = "tntsports";
+		String schedule = "https://tntsportsla.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/directvsports")
-	public String directvsports(Model model) {
-		String title = "DirecTV Sports";
-		String template = "directvsports";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=610";
+	@RequestMapping("/tv/foxsportspremium")
+	public String foxsportspremium(Model model) {
+		String title = "FOX Sports Premium";
+		String template = "foxsportspremium";
+		String schedule = "https://play.foxsportsla.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
@@ -141,6 +141,26 @@ public class TVController implements ControllerI{
 		String title = "ESPN 2";
 		String template = "espn2";
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=623";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
+	
+	@RequestMapping("/tv/directvsports")
+	public String directvsports(Model model) {
+		String title = "DirecTV Sports";
+		String template = "directvsports";
+		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=610";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
+	
+	@RequestMapping("/tv/dxtv")
+	public String dxtv(Model model) {
+		String title = "DEPORTV";
+		String template = "dxtv";
+		String schedule = "http://deportv.gov.ar/programacion";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
@@ -569,11 +589,11 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/tnt")
-	public String tnt(Model model) {
-		String title = "TNT";
-		String template = "tnt";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=502";
+	@RequestMapping("/tv/hbo")
+	public String hbo(Model model) {
+		String title = "HBO";
+		String template = "hbo";
+		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=524";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
@@ -584,6 +604,16 @@ public class TVController implements ControllerI{
 		String title = "Space";
 		String template = "space";
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=518";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		return DEFAULT_VIEW;
+	}
+	
+	@RequestMapping("/tv/tnt")
+	public String tnt(Model model) {
+		String title = "TNT";
+		String template = "tnt";
+		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=502";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
@@ -659,25 +689,6 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/hbo")
-	public String hbo(Model model) {
-		String title = "HBO";
-		String template = "hbo";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=524";
-		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
-	}
-	
-	@RequestMapping("/tv/hboplus")
-	public String hbo2(Model model) {
-		String title = "HBO Plus";
-		String template = "hboplus";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=526";
-		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
-	}
 	
 	
 	@RequestMapping("/tv/rusia2018")
