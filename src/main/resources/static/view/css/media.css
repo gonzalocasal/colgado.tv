@@ -120,8 +120,6 @@ body{
 	audio {
 		width: 100%
 	}
-
-
 }
 
 @media screen and (max-width: 655px) {
@@ -130,7 +128,9 @@ body{
 	}
 }
 
-
-@media screen and (max-width: 410px) {
-	
+@media screen and (max-width: 325px) {
+	.nav-page{
+		margin-right: 3px;
+		margin-left: 3px;
+	}
 }
