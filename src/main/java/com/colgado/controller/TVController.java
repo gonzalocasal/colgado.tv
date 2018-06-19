@@ -19,7 +19,7 @@ public class TVController implements ControllerI{
 		addCommonAttributes(model);
 		model.addAttribute("active", ACTIVE_TV);
 		model.addAttribute("version", version);
-		model.addAttribute("title", "Televisi&oacaute;n");
+		model.addAttribute("title", "Televisi&oacute;n");
 		model.addAttribute("ad", false);
 		return DEFAULT_VIEW;
 	}
