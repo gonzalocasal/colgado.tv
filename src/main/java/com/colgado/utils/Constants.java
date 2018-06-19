@@ -3,8 +3,8 @@ package com.colgado.utils;
 public class Constants {
 
 	public static final String DEFAULT_VIEW = "view/template";
-	public static final String ROBOT_VIEW = "robot";
-	public static final String MENSSAGE_VIEW = "mensaje";
+	public static final String ROBOT_VIEW = "view/robot";
+	public static final String MENSSAGE_VIEW = "view/mensaje";
 
 	public static final String ACTIVE_TV = "tv";
 	public static final String ACTIVE_CONTACTO = "contacto";
