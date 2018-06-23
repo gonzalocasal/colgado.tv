@@ -39,7 +39,7 @@ public class YoutubeIdsProvider {
 	
 	public String getId(String documentId) {
 		String url = String.format(COLLECTION_YOUTUBE_URL, fireStoreProjectId, documentId, fireStoreApiKey);
-		LOGGER.info("Getting youtube transmission for: "+documentId+" from: "+ url.replace(fireStoreApiKey, "***"));
+		LOGGER.info("Getting youtube transmission id for: "+documentId);
 		RestTemplate restTemplate = new RestTemplate();
 		YoutubeDocument document = restTemplate.getForObject(url, YoutubeDocument.class);
 		return document.getFields().getId().getStringValue();
@@ -51,10 +51,11 @@ public class YoutubeIdsProvider {
 		for (String key : channelsIds.keySet()) {
 			String channelId = channelsIds.get(key);
 			String url = String.format(YOUTUBE_API_URL, channelId, youtubeApiKey);
-			LOGGER.info("Looking in youtube for transmission id of "+key+" from: "+ url.replace(youtubeApiKey, "***"));
+			LOGGER.info("Looking in youtube for transmission id of "+key);
 			YoutubeApiResponse response = restTemplate.getForObject(url, YoutubeApiResponse.class);
+			LOGGER.info(response.getItems());
 			String videoId = response.getItems().get(0).getId().getVideoId();
-			LOGGER.info("Transmission id: "+videoId);
+			LOGGER.info("Received Transmission id: "+videoId);
 			updateChannelId(key, videoId);
 		}
 	}
@@ -65,7 +66,7 @@ public class YoutubeIdsProvider {
 		restTemplate.setRequestFactory(requestFactory);
 		
 		String url = String.format(COLLECTION_YOUTUBE_URL, fireStoreProjectId, channel, fireStoreApiKey);
-		LOGGER.info("Updating db with new transmission id: "+ url.replace(fireStoreApiKey, "***"));
+		LOGGER.info("Updating DB with new transmission id of: "+ channel);
 		YoutubeApiRequest request =  generateYoutubeRequest(transmissionId) ;
 		final HttpEntity<?> requestEntity = new HttpEntity<>(request);
 
