@@ -10,8 +10,16 @@ public class Constants {
 	public static final String ACTIVE_CONTACTO = "contacto";
 	public static final String ACTIVE_RADIOS = "radios";
 	
+	public static final String COLLECTION_YOUTUBE_URL = "https://firestore.googleapis.com/v1beta1/projects/%s/databases/(default)/documents/youtube/%s?key=%s";
+	
+	public static final String DOCUMENT_A24 = "a24";
+	
 	public static final String EMAIL_SUBJECT = "colgado.tv, Contacto de ";
 	
 	public static final String GOOGLE_CAPTCHA_VERIFY_URI = "https://www.google.com/recaptcha/api/siteverify";
+	
+	
+	
+
 	
 }
