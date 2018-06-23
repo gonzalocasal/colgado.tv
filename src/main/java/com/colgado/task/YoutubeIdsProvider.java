@@ -45,7 +45,7 @@ public class YoutubeIdsProvider {
 		return document.getFields().getId().getStringValue();
 	}
 	
-	@Scheduled(fixedRate = 60000, initialDelay = 0)
+	@Scheduled(fixedRate = 600000, initialDelay = 0)
 	public void getUpdatedYoutubeIds() {
 		RestTemplate restTemplate = new RestTemplate();
 		for (String key : channelsIds.keySet()) {
