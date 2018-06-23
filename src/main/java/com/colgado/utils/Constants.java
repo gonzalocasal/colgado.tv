@@ -25,6 +25,6 @@ public class Constants {
 	
 	public static final String GOOGLE_CAPTCHA_VERIFY_URI = "https://www.google.com/recaptcha/api/siteverify";
 
-	public static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&order=viewCount&type=video&channelId=%s&key=%s";
+	public static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&order=viewCount&regionCode=AR&type=video&channelId=%s&key=%s";
 	
 }

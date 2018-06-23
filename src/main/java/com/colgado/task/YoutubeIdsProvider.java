@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -54,10 +53,6 @@ public class YoutubeIdsProvider {
 			String url = String.format(YOUTUBE_API_URL, channelId, youtubeApiKey);
 			LOGGER.info("Looking in youtube for transmission id of "+key);
 			YoutubeApiResponse response = restTemplate.getForObject(url, YoutubeApiResponse.class);
-			
-			ResponseEntity<String> responseString = restTemplate.getForEntity(url , String.class);
-			LOGGER.info(responseString);
-			
 			
 			String videoId = response.getItems().get(0).getId().getVideoId();
 			LOGGER.info("Received Transmission id: "+videoId);
