@@ -15,7 +15,7 @@ public class Constants {
 	public static final String DOCUMENT_A24 = "a24";
 	public static final String DOCUMENT_C5N = "c5n";
 	public static final String DOCUMENT_CANAL26 = "canal26";
-	public static final String DOCUMENT_LN = "ln+";
+	public static final String DOCUMENT_LN = "ln";
 	public static final String DOCUMENT_RT = "rt";
 	public static final String DOCUMENT_TELESUR = "telesur";
 	public static final String DOCUMENT_TN = "tn";
