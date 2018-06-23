@@ -2,6 +2,8 @@ package com.colgado.controller;
 
 import static com.colgado.utils.Constants.*;
 import java.io.IOException;
+
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +23,8 @@ import com.sendgrid.SendGrid;
 
 @Controller
 public class ContactoController implements ControllerI{
+	
+	final static Logger LOGGER = Logger.getLogger(ContactoController.class);
 
 	@Value("${version}")
 	private String version;
@@ -43,6 +47,7 @@ public class ContactoController implements ControllerI{
 	
 	@PostMapping("/contacto")
     public String greetingSubmit(@ModelAttribute Contacto contacto) {
+		LOGGER.info("Nuevo mensaje");
 		if(isHuman(contacto)) {
 			Mail mail = generateMail(contacto);
 			SendGrid sg = new SendGrid(emailApiKey);
@@ -50,6 +55,7 @@ public class ContactoController implements ControllerI{
 			request.method = Method.POST;
 			request.endpoint = "mail/send";
 		      try {
+		    	LOGGER.info("Enviando Email");
 				request.body = mail.build();
 				sg.api(request);
 			} catch (IOException e) {
@@ -61,6 +67,7 @@ public class ContactoController implements ControllerI{
     }
 
 	private Mail generateMail(Contacto contacto) {
+		LOGGER.info("Generando Email");
 		Email from = new Email(contacto.getEmail());
 		String subject = EMAIL_SUBJECT+contacto.getNombre();
 		Email to = new Email(emailReceiver);
@@ -70,6 +77,7 @@ public class ContactoController implements ControllerI{
 	}
 
 	private Boolean isHuman(Contacto contacto) {
+		LOGGER.info("Validando que el emisor sea humano");
 		String uri = GOOGLE_CAPTCHA_VERIFY_URI+"?secret="+captchaApiKey+"&response="+contacto.getToken();
 		RestTemplate restTemplate = new RestTemplate();
 		CaptchaResult result = restTemplate.postForObject( uri, null, CaptchaResult.class);

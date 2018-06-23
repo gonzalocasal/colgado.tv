@@ -2,14 +2,20 @@ package com.colgado.controller;
 
 import static com.colgado.utils.Constants.*;
 import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.colgado.task.YoutubeIdsProvider;
+
 @Controller
 public class TVController implements ControllerI{
 	
+	@Autowired
+	private YoutubeIdsProvider youtube;
 	
 	@Value("${version}")
 	private String version;
@@ -213,6 +219,8 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=719";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		String a24id = youtube.getId(DOCUMENT_A24);
+		model.addAttribute("id", a24id);		
 		return DEFAULT_VIEW;
 	}
 	
