@@ -1,13 +1,20 @@
 package com.colgado.controller;
 
 import static com.colgado.utils.Constants.*;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.colgado.task.YoutubeIdsProvider;
+
 @Controller
 public class RadiosController implements ControllerI {
+	
+	@Autowired
+	private YoutubeIdsProvider youtube;
 	
 	@Value("${version}")
 	private String version;
@@ -76,6 +83,8 @@ public class RadiosController implements ControllerI {
 		String schedule = "https://vorterix.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		String id = youtube.getId(DOCUMENT_VORTERIX);
+		model.addAttribute("id", id);	
 		return DEFAULT_VIEW;
 	}
 	
