@@ -2,6 +2,7 @@ package com.colgado.task;
 
 import static com.colgado.utils.Constants.*;
 
+import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import com.colgado.model.FieldId;
+import com.colgado.model.YoutubeApiItem;
 import com.colgado.model.YoutubeApiRequest;
 import com.colgado.model.YoutubeApiRequestFields;
 import com.colgado.model.YoutubeApiResponse;
@@ -54,9 +56,16 @@ public class YoutubeIdsProvider {
 			LOGGER.info("Looking in youtube for transmission id of "+key);
 			YoutubeApiResponse response = restTemplate.getForObject(url, YoutubeApiResponse.class);
 			
-			String videoId = response.getItems().get(0).getId().getVideoId();
-			LOGGER.info("Received Transmission id: "+videoId);
-			updateChannelId(key, videoId);
+			List<YoutubeApiItem> items = response.getItems();
+			if(items.isEmpty()){
+				LOGGER.info("Transmission not found");
+			}
+			else {
+				String videoId = items.get(0).getId().getVideoId();
+				LOGGER.info("Received Transmission id: "+videoId);
+				updateChannelId(key, videoId);	
+			}
+			
 		}
 	}
 
