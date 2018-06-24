@@ -122,12 +122,14 @@ a:visited {
     width: 165px;
     height: 85px;
     border-radius: .275rem;
+    transition: box-shadow .25s;
+    
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
 
 .card:hover{
-	opacity: .7;
-	box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+	opacity: .8;
+	box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
 }
 
 .container{
