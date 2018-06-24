@@ -1,6 +1,8 @@
 <!DOCTYPE html><html lang="es">
     <head>
         <#include "analytics.html">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <title>${title} | Colgado </title>
         <meta name=description content=" "/>
         <meta name=viewport content="width=device-width, initial-scale=1.0,  user-scalable=yes"/>
@@ -62,11 +64,7 @@
             var VERSION="${version}"; 
             var EVENT="${version}"
         </script>             
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script type="text/javascript" src="/js/functions.js" ></script>
-        
-
         <#if active=='contacto'>
             <#include "captcha.html">
         </#if>
