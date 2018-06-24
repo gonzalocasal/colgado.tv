@@ -83,7 +83,7 @@ public class RadiosController implements ControllerI {
 		String schedule = "https://vorterix.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_VORTERIX);
+		String id = youtube.getId(CHANNEL_VORTERIX);
 		model.addAttribute("id", id);	
 		return DEFAULT_VIEW;
 	}

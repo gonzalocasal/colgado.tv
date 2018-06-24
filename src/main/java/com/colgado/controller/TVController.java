@@ -189,7 +189,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=716";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_TN);
+		String id = youtube.getId(CHANNEL_TN);
 		model.addAttribute("id", id);
 		return DEFAULT_VIEW;
 	}
@@ -201,7 +201,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=717";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_C5N);
+		String id = youtube.getId(CHANNEL_C5N);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}
@@ -213,7 +213,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=715";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_LN);
+		String id = youtube.getId(CHANNEL_LN);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}
@@ -225,7 +225,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=719";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_A24);
+		String id = youtube.getId(CHANNEL_A24);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}
@@ -247,7 +247,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=720";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_CANAL26);
+		String id = youtube.getId(CHANNEL_CANAL26);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}
@@ -259,7 +259,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=722";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_TELESUR);
+		String id = youtube.getId(CHANNEL_TELESUR);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}
@@ -271,7 +271,7 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=722";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(DOCUMENT_RT);
+		String id = youtube.getId(CHANNEL_RT);
 		model.addAttribute("id", id);		
 		return DEFAULT_VIEW;
 	}

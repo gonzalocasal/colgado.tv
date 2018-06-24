@@ -10,16 +10,14 @@ public class Constants {
 	public static final String ACTIVE_CONTACTO = "contacto";
 	public static final String ACTIVE_RADIOS = "radios";
 	
-	public static final String COLLECTION_YOUTUBE_URL = "https://firestore.googleapis.com/v1beta1/projects/%s/databases/(default)/documents/youtube/%s?key=%s";
-	
-	public static final String DOCUMENT_A24 = "a24";
-	public static final String DOCUMENT_C5N = "c5n";
-	public static final String DOCUMENT_CANAL26 = "canal26";
-	public static final String DOCUMENT_LN = "ln";
-	public static final String DOCUMENT_RT = "rt";
-	public static final String DOCUMENT_TELESUR = "telesur";
-	public static final String DOCUMENT_TN = "tn";
-	public static final String DOCUMENT_VORTERIX = "vorterix";
+	public static final String CHANNEL_A24 = "a24";
+	public static final String CHANNEL_C5N = "c5n";
+	public static final String CHANNEL_CANAL26 = "canal26";
+	public static final String CHANNEL_LN = "ln";
+	public static final String CHANNEL_RT = "rt";
+	public static final String CHANNEL_TELESUR = "telesur";
+	public static final String CHANNEL_TN = "tn";
+	public static final String CHANNEL_VORTERIX = "vorterix";
 	
 	public static final String EMAIL_SUBJECT = "colgado.tv, Contacto de ";
 	
