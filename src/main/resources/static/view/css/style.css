@@ -175,6 +175,35 @@ iframe {
 	border-width: 0
 }
 
+.info {
+	margin-top: 15px;
+	margin-bottom: : 15px;
+	text-align:center
+}
+
+.info a{
+	color: #7D7D7D;
+	font-size: 20px;
+	margin-right: 7px;
+	margin-left: 7px;
+}
+
+
+.info a:visited{
+	color: #7D7D7D;
+}
+
+.info .facebook:hover{
+	color: #4266b3;
+}
+
+.info .github:hover{
+	color: #25292e;
+}
+
+.info .twitter:hover{
+	color: #1da1f2;
+}
 
 
 @media screen and (max-width: 800px) {
