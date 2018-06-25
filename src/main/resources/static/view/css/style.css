@@ -177,7 +177,7 @@ iframe {
 
 .info {
 	margin-top: 15px;
-	margin-bottom: : 15px;
+	margin-bottom: 10px;
 	text-align:center
 }
 
@@ -187,7 +187,6 @@ iframe {
 	margin-right: 7px;
 	margin-left: 7px;
 }
-
 
 .info a:visited{
 	color: #7D7D7D;
