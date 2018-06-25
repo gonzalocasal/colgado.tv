@@ -33,12 +33,13 @@ public class YoutubeIdsProvider {
 		String url = String.format(YOUTUBE_API_URL, channelId, youtubeApiKey);
 		YoutubeApiResponse response = restTemplate.getForObject(url, YoutubeApiResponse.class);
 		List<YoutubeApiItem> items = response.getItems();
-		if(items.isEmpty()){
+		String videoId = "";
+		if(items.isEmpty()) {
 			LOGGER.info("Transmission not found");
-			return "";
+			return videoId;
 		}
 		else {
-			String videoId = items.get(0).getId().getVideoId();
+			videoId = items.get(0).getId().getVideoId();
 			LOGGER.info("Received Transmission id: "+videoId);
 			return	videoId;
 		}
