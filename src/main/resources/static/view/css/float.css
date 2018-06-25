@@ -15,12 +15,13 @@
 }
 
 .close {
-	color: #ffffff;
+	color: #ff0000;
+    text-shadow: 0 0 3px #FF0000;
 	cursor:pointer;
 	position:absolute;
-	top:15px;
+	top:55px;
+	left:630px;
 	opacity: 0;
-	left:660px;
 	z-index:999;
 	transition:opacity .5s linear;
 	-webkit-transform: perspective(1px) translateZ(0);
