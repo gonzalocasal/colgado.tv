@@ -20,7 +20,7 @@
 	position:absolute;
 	top:10px;
 	opacity: 0;
-	left:720px;
+	left:560px;
 	z-index:999;
 	transition:opacity .5s linear;
 	-webkit-transform: perspective(1px) translateZ(0);
