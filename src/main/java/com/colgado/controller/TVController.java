@@ -247,6 +247,8 @@ public class TVController implements ControllerI{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=720";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		String id = youtube.getId(CHANNEL_KZO);
+		model.addAttribute("id", id);
 		return DEFAULT_VIEW;
 	}
 	
@@ -368,6 +370,19 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
+	
+	@RequestMapping("/tv/kzo")
+	public String kzo(Model model) {
+		String title = "KZO";
+		String template = "kzo";
+		String schedule = "https://kuarzo.com/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		String id = youtube.getId(CHANNEL_KZO);
+		model.addAttribute("id", id);		
+		return DEFAULT_VIEW;
+	}
+	
 	@RequestMapping("/tv/magazine")
 	public String magazine(Model model) {
 		String title = "Ciudad Magazine";
@@ -458,14 +473,6 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/vh1")
-	public String vh1(Model model) {
-		String title = "VH1";
-		String template = "vh1";
-		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
-	}
 	
 	@RequestMapping("/tv/pakapaka")
 	public String pakapaka(Model model) {
