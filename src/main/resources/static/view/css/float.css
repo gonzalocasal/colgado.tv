@@ -17,23 +17,11 @@
 .close {
 	color: #ff0000;
 	cursor:pointer;
-	position:absolute;
-	top:55px;
-	left:630px;
 	opacity: 0;
-	z-index:999;
-	transition:opacity .5s linear;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-}
-
-.close:before {
-	content: "close";
-	font-size: 25px;
 	position: absolute;
-	right: 1em;
-	padding: 0 1px;
-	font-family: "Material Icons";
+    top: 0px;
+    right: 0px;
+	transition:opacity .5s linear;
 }
 
 .close:hover{
@@ -41,11 +29,14 @@
 }
 
 .ad {
-	background-color: white;
+	background-color: transparent;
     width: 310px;
     height: 255px;
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
+    vertical-align: top;
+    position: relative
 }
 
 .social-span{
