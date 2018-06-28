@@ -50,25 +50,12 @@ textarea {
 	resize:none
 }
 
-.logo-info {
-	padding-right: 8px;
-	transition: .3s
-	o-transition: .3s;
-	-ms-transition: .3s;
-	-moz-transition: .3s;
-	-webkit-transition: .3s
-}
 
 .logo-info:hover,
 .button:hover {
     opacity: .7
 }
 
-.g-recaptcha {
-	display:inline-block;
-	margin-bottom: 20px;
-	margin-top: 10px
-}
 
 .input-contact {
 	font-family: roboto;
@@ -96,32 +83,11 @@ textarea {
 	top:1px
 }
 
-.modal {
-	display: block;
-	position: fixed;
-	z-index: 999;
-	padding-top: 100px;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4)
+.info a{
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
-.modal-content {
-	position: relative;
-	background-color: #fefefe;
-	margin: auto;
-	padding: 0;
-	border: 1px solid #888;
-	width: 350px;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-animation-name: animatetop;
-	-webkit-animation-duration: 0.4s;
-	animation-name: animatetop;
-	animation-duration: 0.4s
-}
 
 .modal-body {
 	padding: 2px 16px
