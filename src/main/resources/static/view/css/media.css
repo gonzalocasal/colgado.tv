@@ -93,8 +93,8 @@ body{
 
 @media screen and (max-width: 800px) {
 	.player-container-tv {
-		width: 100%;
-		max-height: 500px;
+		width: 100vw; 
+		height: 56.25vw;
 		filter: blur(0px);
 	}
 	.space{
