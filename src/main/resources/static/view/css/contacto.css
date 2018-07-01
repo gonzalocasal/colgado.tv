@@ -12,7 +12,7 @@
     display: inline-block;
     margin-top: 15px;
     border-radius: .275rem;
-    box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
 }
 
 
@@ -87,10 +87,8 @@ textarea {
 	margin-right: 10px;
 	margin-left: 10px;
 }
-
-
-.modal-body {
-	padding: 2px 16px
+.info {
+	margin-left: 0px;
 }
 
 @-webkit-keyframes animatetop {
