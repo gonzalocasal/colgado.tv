@@ -347,7 +347,6 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	
 	@RequestMapping("/tv/tec")
 	public String tec(Model model) {
 		String title = "TEC TV";
@@ -357,8 +356,6 @@ public class TVController implements ControllerI{
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
 	}
-	
-	
 
 	@RequestMapping("/tv/encuentro")
 	public String encuentro(Model model) {
@@ -714,8 +711,6 @@ public class TVController implements ControllerI{
 		return DEFAULT_VIEW;
 	}
 	
-	
-	
 	@RequestMapping("/tv/rusia2018")
 	public String rusia2018(Model model) {
 		String title = "Rusia 2018";
@@ -732,7 +727,6 @@ public class TVController implements ControllerI{
 		model.addAttribute("version", version);
 		model.addAttribute("ad", true);
 	}
-
 
 	@Override
 	public void addMediaAttributes(Model model, String title, String template, String schedule) {
