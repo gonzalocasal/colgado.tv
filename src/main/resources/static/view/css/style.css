@@ -127,10 +127,17 @@ a:visited {
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
 
-.card:hover{
+.card:hover span{
 	transform: scale(1.05); 
-	box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
+	
 }
+
+.card:hover {
+	box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
+	
+}
+
+
 
 .container{
     max-width: 1000px;
