@@ -1,4 +1,4 @@
-package com.colgado.model;
+package com.colgado.pojo;
 
 public class YoutubeApiItem {
 	

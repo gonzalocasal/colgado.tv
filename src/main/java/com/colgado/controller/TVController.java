@@ -9,13 +9,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.colgado.task.YoutubeIdsProvider;
+import com.colgado.service.MediaURLProvider;
+import com.colgado.service.YoutubeIdsProvider;
 
 @Controller
 public class TVController implements ControllerI{
 	
 	@Autowired
 	private YoutubeIdsProvider youtube;
+
+	@Autowired
+	private MediaURLProvider urlProvider;
 	
 	@Value("${version}")
 	private String version;
@@ -35,6 +39,7 @@ public class TVController implements ControllerI{
 		String title = "Telefe";
 		String template = "telefe";
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=123";
+		model.addAttribute("url", urlProvider.getTelefeURL());
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
