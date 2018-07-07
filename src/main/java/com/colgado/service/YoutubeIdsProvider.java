@@ -1,4 +1,4 @@
-package com.colgado.task;
+package com.colgado.service;
 
 import static com.colgado.utils.Constants.*;
 
@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.colgado.model.YoutubeApiItem;
-import com.colgado.model.YoutubeApiResponse;
+import com.colgado.pojo.YoutubeApiItem;
+import com.colgado.pojo.YoutubeApiResponse;
 
 @Component
 public class YoutubeIdsProvider {

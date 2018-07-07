@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.colgado.task.YoutubeIdsProvider;
+import com.colgado.service.YoutubeIdsProvider;
 
 @Controller
 public class RadiosController implements ControllerI {

@@ -1,4 +1,4 @@
-package com.colgado.model;
+package com.colgado.pojo;
 
 import java.util.List;
 
