@@ -128,8 +128,7 @@ a:visited {
 }
 
 .card:hover span{
-	transform: scale(1.05); 
-	
+	transform: scale(1.05); 	
 }
 
 .card:hover {
@@ -238,6 +237,9 @@ iframe {
 		width: 120px;
 		margin-left: 2px;
 		margin-right: 2px;
+	}
+	.card:hover span{
+		transform: scale(0.9); 	
 	}
 	.modal-content{
 		width: 95%
