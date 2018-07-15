@@ -22,7 +22,7 @@ import com.sendgrid.Request;
 import com.sendgrid.SendGrid;
 
 @Controller
-public class ContactoController implements ControllerI{
+public class ContactoController implements ColgadoController{
 	
 	final static Logger LOGGER = Logger.getLogger(ContactoController.class);
 

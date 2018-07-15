@@ -13,7 +13,7 @@ import com.colgado.service.MediaURLProvider;
 import com.colgado.service.YoutubeIdsProvider;
 
 @Controller
-public class TVController implements ControllerI{
+public class TVController implements ColgadoController{
 	
 	@Autowired
 	private YoutubeIdsProvider youtube;
