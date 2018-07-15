@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.colgado.service.YoutubeIdsProvider;
 
 @Controller
-public class RadiosController implements ControllerI {
+public class RadiosController implements ColgadoController {
 	
 	@Autowired
 	private YoutubeIdsProvider youtube;
