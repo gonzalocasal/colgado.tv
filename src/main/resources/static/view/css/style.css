@@ -60,7 +60,6 @@ nav {
 	position: relative;
 	overflow: hidden;
 	font-size: 14.7px;
-	
     font-weight: 500;
 }
 
@@ -127,16 +126,9 @@ a:visited {
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
 
-.card:hover span{
-	transform: scale(1.05); 	
-}
-
 .card:hover {
 	box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
-	
 }
-
-
 
 .container{
     max-width: 1000px;
