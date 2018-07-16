@@ -18,6 +18,7 @@ public class Constants {
 	public static final String CHANNEL_RT = "rt";
 	public static final String CHANNEL_TELESUR = "telesur";
 	public static final String CHANNEL_TN = "tn";
+	public static final String CHANNEL_TVP = "tvp";
 	public static final String CHANNEL_VORTERIX = "vorterix";
 	
 	public static final String EMAIL_SUBJECT = "colgado.tv, Contacto de ";
