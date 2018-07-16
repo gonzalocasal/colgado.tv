@@ -41,15 +41,11 @@
         <div id=space  class=space></div>
 
         <#if player??>
-            <#if player=='rusia2018'>
-                <#include "media/${active}/${player}.html">
-            <#else>          
-                <div id=player-container class="player-container player-container-${active}">
-                    <div id=player class=player>
-                        <#include "media/${active}/${player}.html">
-                    </div>
+            <div id=player-container class="player-container player-container-${active}">
+                <div id=player class=player>
+                    <#include "media/${active}/${player}.html">
                 </div>
-            </#if>
+            </div>
             <#if ad?? && ad>
                 <#include "float.html">
             </#if>
@@ -67,6 +63,5 @@
         <#if active=='contacto'>
             <#include "captcha.html">
         </#if>
-
     </body>
 </html>
