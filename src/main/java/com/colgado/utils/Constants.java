@@ -25,6 +25,16 @@ public class Constants {
 	
 	public static final String GOOGLE_CAPTCHA_VERIFY_URI = "https://www.google.com/recaptcha/api/siteverify";
 
+	public static final String SOURCE_ENCUENTRO = "https://api.cont.ar/api/v2/stream/5";
+	public static final String SOURCE_DEPORTV = "https://api.cont.ar/api/v2/stream/2";
+	public static final String SOURCE_PAKAPAKA = "https://api.cont.ar/api/v2/stream/18";
+	public static final String SOURCE_TECTV = "https://api.cont.ar/api/v2/stream/21";
+	public static final String SOURCE_TELEFE = "http://m3u8.futbollibre.online/hls/telefe2.php";
+	
 	public static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&order=viewCount&regionCode=AR&type=video&channelId=%s&key=%s";
+	
+	
+	
+	
 	
 }
