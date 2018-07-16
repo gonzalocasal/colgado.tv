@@ -716,16 +716,7 @@ public class TVController implements ColgadoController{
 		return DEFAULT_VIEW;
 	}
 	
-	@RequestMapping("/tv/rusia2018")
-	public String rusia2018(Model model) {
-		String title = "Rusia 2018";
-		String template = "rusia2018";
-		String schedule = "http://www.promiedos.com.ar/";
-		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
-	}
-	
+		
 	@Override
 	public void addCommonAttributes(Model model) {
 		model.addAttribute("active", ACTIVE_TV);
