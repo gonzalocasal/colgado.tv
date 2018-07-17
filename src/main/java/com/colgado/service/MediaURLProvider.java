@@ -35,56 +35,23 @@ public class MediaURLProvider {
 		
 		Class<?> className = getClassName(clazz);
 		
-		StringBuilder sb = new StringBuilder();
-		URLConnection connection;
-		try {
-			connection = new URL(source).openConnection();
-			connection.addRequestProperty("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36");
-			connection.connect();
-
-			BufferedReader r  = new BufferedReader(new InputStreamReader(connection.getInputStream(), Charset.forName("UTF-8")));
-
-			String line;
-			while ((line = r.readLine()) != null) {
-			    sb.append(line);
-			}
-			LOGGER.info(sb.toString());
-			
-		
-		} catch (MalformedURLException e1) {
-			e1.printStackTrace();
-		} catch (IOException e1) {
-			e1.printStackTrace();
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/**
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		
-		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
+		request.addHeader("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36");
+		request.addHeader("origin", "https://www.cont.ar");
+		request.addHeader("referer", "https://www.cont.ar");
+		request.addHeader("x-csrf-token", "LL8dqdktXCS4SCpajnWiecp1NxvAC6SRTcejACWn");
+		request.addHeader("x-requested-with", "XMLHttpRequest");
+		
 		HttpResponse response = execute(client,request);
 		
 		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
 		
 		String json = parseResponse(response);
-		**/
-
 
 		Gson gson = new Gson ();
-        return gson.fromJson(sb.toString(),className );
+        return gson.fromJson(json,className );
 	}
 
 	public String getTelefeURL() {
