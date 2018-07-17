@@ -1,7 +1,14 @@
 package com.colgado.service;
 
 import static com.colgado.utils.Constants.*;
+
+import java.util.Arrays;
+
 import org.apache.log4j.Logger;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
@@ -15,8 +22,18 @@ public class MediaURLProvider {
 
 	public Object getMediaURL(String source, String clazz){
 		RestTemplate restTemplate = new RestTemplate();
+		
 		Class<?> className = getClassName(clazz);
-		return restTemplate.getForObject(source, className);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+        headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
+
+        HttpEntity<String> entity = new HttpEntity<String>(headers);
+        return restTemplate.exchange(source, HttpMethod.GET ,entity ,className);
+        
+
+		
 	}
 
 	public String getTelefeURL() {
