@@ -38,7 +38,7 @@ public class MediaURLProvider {
 		URLConnection connection;
 		try {
 			connection = new URL(source).openConnection();
-			connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
+			connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB;     rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 (.NET CLR 3.5.30729)");
 			connection.connect();
 
 			BufferedReader r  = new BufferedReader(new InputStreamReader(connection.getInputStream(), Charset.forName("UTF-8")));
@@ -56,6 +56,16 @@ public class MediaURLProvider {
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
