@@ -32,18 +32,18 @@ public class MediaURLProvider {
 	final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
 
 	public Object getMediaURL(String source, String clazz){
+		
 		Class<?> className = getClassName(clazz);
 		
-		
+		StringBuilder sb = new StringBuilder();
 		URLConnection connection;
 		try {
 			connection = new URL(source).openConnection();
-			connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-GB;     rv:1.9.2.13) Gecko/20101203 Firefox/3.6.13 (.NET CLR 3.5.30729)");
+			connection.addRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
 			connection.connect();
 
 			BufferedReader r  = new BufferedReader(new InputStreamReader(connection.getInputStream(), Charset.forName("UTF-8")));
 
-			StringBuilder sb = new StringBuilder();
 			String line;
 			while ((line = r.readLine()) != null) {
 			    sb.append(line);
@@ -70,7 +70,7 @@ public class MediaURLProvider {
 		
 		
 		
-		
+		/**
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		
@@ -80,9 +80,11 @@ public class MediaURLProvider {
 		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
 		
 		String json = parseResponse(response);
+		**/
+
 
 		Gson gson = new Gson ();
-        return gson.fromJson(json,className );
+        return gson.fromJson(sb.toString(),className );
 	}
 
 	public String getTelefeURL() {
