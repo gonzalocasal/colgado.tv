@@ -9,6 +9,7 @@ import static com.colgado.utils.Constants.SOURCE_TELEFE;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.CookieManager;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -38,11 +39,9 @@ public class MediaURLProvider {
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		
-		request.addHeader("user-agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36");
-		request.addHeader("origin", "https://www.cont.ar");
-		request.addHeader("referer", "https://www.cont.ar");
-		request.addHeader("x-csrf-token", "LL8dqdktXCS4SCpajnWiecp1NxvAC6SRTcejACWn");
-		request.addHeader("x-requested-with", "XMLHttpRequest");
+		request.addHeader("Content-Type", "application/json");
+		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
+		
 		
 		HttpResponse response = execute(client,request);
 		
