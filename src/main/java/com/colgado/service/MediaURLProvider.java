@@ -1,19 +1,24 @@
 package com.colgado.service;
 
-import static com.colgado.utils.Constants.*;
+import static com.colgado.utils.Constants.SOURCE_DEPORTV;
+import static com.colgado.utils.Constants.SOURCE_ENCUENTRO;
+import static com.colgado.utils.Constants.SOURCE_PAKAPAKA;
+import static com.colgado.utils.Constants.SOURCE_TECTV;
+import static com.colgado.utils.Constants.SOURCE_TELEFE;
 
-import java.util.Arrays;
+import java.io.IOException;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
-import org.springframework.web.client.RestTemplate;
 
 import com.colgado.pojo.ContARPojo;
 import com.colgado.pojo.TelefePojo;
+import com.google.gson.Gson;
 
 @Component
 public class MediaURLProvider {
@@ -21,19 +26,20 @@ public class MediaURLProvider {
 	final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
 
 	public Object getMediaURL(String source, String clazz){
-		RestTemplate restTemplate = new RestTemplate();
-		
 		Class<?> className = getClassName(clazz);
-
-        HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        headers.add("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
-
-        HttpEntity<String> entity = new HttpEntity<String>(headers);
-        return restTemplate.exchange(source, HttpMethod.GET ,entity ,className);
-        
-
 		
+		HttpClient client = HttpClientBuilder.create().build();
+		HttpGet request = new HttpGet(source);
+		
+		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
+		HttpResponse response = execute(client,request);
+		
+		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
+		
+		String json = parseResponse(response);
+
+		Gson gson = new Gson ();
+        return gson.fromJson(json,className );
 	}
 
 	public String getTelefeURL() {
@@ -74,6 +80,24 @@ public class MediaURLProvider {
 			e.printStackTrace();
 		}
 		return className;
+	}
+	
+	private HttpResponse execute(HttpClient client, HttpGet request) {
+		try {
+			return client.execute(request);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	private String parseResponse(HttpResponse response) {
+		try {
+			return EntityUtils.toString(response.getEntity(), "UTF-8");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 	
 }
