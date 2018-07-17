@@ -176,6 +176,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://deportv.gov.ar/programacion";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("url", urlProvider.getDeporTVURL());
 		return DEFAULT_VIEW;
 	}
 	
@@ -359,6 +360,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=734";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("url", urlProvider.getTecTVURL());
 		return DEFAULT_VIEW;
 	}
 
@@ -369,6 +371,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=126";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("url", urlProvider.getEncuentroURL());
 		return DEFAULT_VIEW;
 	}
 	
@@ -483,6 +486,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=303";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("url", urlProvider.getPakaPakaURL());
 		return DEFAULT_VIEW;
 	}
 	
