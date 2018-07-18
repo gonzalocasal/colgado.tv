@@ -1,9 +1,17 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://jwpsrv.com/library/40TpZB2+EeOLRiIACusDuQ.js"></script>
 <script type="text/javascript">
-  jwplayer("player").setup({
-    file: "${url}",
-    autostart: "true",
-    width: "100%",
-    aspectratio: "16:9"
+  $.get( "https://api.cont.ar/api/v2/stream/5", function( data ) {
+	 	$( ".result" ).html( data );
+	 	alert( "Load was performed." );
+	 	jwplayer("player").setup({
+	      	file: data,
+	    	autostart: "true",
+	    	width: "100%",
+	    	aspectratio: "16:9"
+  		});
   });
+  
+  
 </script>
