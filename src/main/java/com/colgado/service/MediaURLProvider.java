@@ -11,7 +11,6 @@ import java.io.IOException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -30,24 +29,16 @@ public class MediaURLProvider {
 		
 		Class<?> className = getClassName(clazz);
 		
-		
-		
-		HttpClientBuilder clientb = HttpClientBuilder.create();
-		BasicCookieStore cookieStore = new BasicCookieStore();
-		clientb.setDefaultCookieStore(cookieStore);
-
-		HttpClient client = clientb.build();
-		
+		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		
-		request.addHeader("Content-Type", "application/json");
+		request.addHeader("accept", "aapplication/json, text/plain, */*");
 		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-		
 		
 		HttpResponse response = execute(client,request);
 		
 		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
-		LOGGER.info("Response Code : " + response.getEntity());
+		LOGGER.info("Response Entity : " + response.getEntity());
 		
 		String json = parseResponse(response);
 
