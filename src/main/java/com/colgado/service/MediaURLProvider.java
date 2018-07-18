@@ -32,13 +32,9 @@ public class MediaURLProvider {
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		
-		request.addHeader("accept", "aapplication/json, text/plain, */*");
 		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
 		
 		HttpResponse response = execute(client,request);
-		
-		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
-		LOGGER.info("Response Entity : " + response.getEntity());
 		
 		String json = parseResponse(response);
 
@@ -97,7 +93,9 @@ public class MediaURLProvider {
 
 	private String parseResponse(HttpResponse response) {
 		try {
-			return EntityUtils.toString(response.getEntity(), "UTF-8");
+			String entity = EntityUtils.toString(response.getEntity(), "UTF-8");
+			LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode() + " ::: "+ entity);
+			return entity;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
