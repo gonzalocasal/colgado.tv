@@ -1,9 +1,5 @@
 package com.colgado.service;
 
-import static com.colgado.utils.Constants.SOURCE_DEPORTV;
-import static com.colgado.utils.Constants.SOURCE_ENCUENTRO;
-import static com.colgado.utils.Constants.SOURCE_PAKAPAKA;
-import static com.colgado.utils.Constants.SOURCE_TECTV;
 import static com.colgado.utils.Constants.SOURCE_TELEFE;
 
 import java.io.IOException;
@@ -16,7 +12,6 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
-import com.colgado.pojo.ContARPojo;
 import com.colgado.pojo.TelefePojo;
 import com.google.gson.Gson;
 
@@ -39,30 +34,6 @@ public class MediaURLProvider {
 		LOGGER.info("Looking for Telefe transmission URL");
 		TelefePojo result = (TelefePojo) getMediaURL(SOURCE_TELEFE,TelefePojo.class.getName());
 		return result.getTelefe();
-	}
-	
-	public String getEncuentroURL() {
-		LOGGER.info("Looking for Encuentro transmission URL");
-		ContARPojo result = (ContARPojo) getMediaURL(SOURCE_ENCUENTRO,ContARPojo.class.getName());
-		return result.getData().getHls();
-	}
-
-	public String getDeporTVURL() {
-		LOGGER.info("Looking for DeporTV transmission URL");
-		ContARPojo result = (ContARPojo) getMediaURL(SOURCE_DEPORTV,ContARPojo.class.getName());
-		return result.getData().getHls();
-	}
-
-	public String getPakaPakaURL() {
-		LOGGER.info("Looking for Paka Paka transmission URL");
-		ContARPojo result = (ContARPojo) getMediaURL(SOURCE_PAKAPAKA,ContARPojo.class.getName());
-		return result.getData().getHls();
-	}
-	
-	public String getTecTVURL() {
-		LOGGER.info("Looking for TEC TV transmission URL");
-		ContARPojo result = (ContARPojo) getMediaURL(SOURCE_TECTV,ContARPojo.class.getName());
-		return result.getData().getHls();
 	}
 	
 	private Class<?> getClassName(String clazz) {
