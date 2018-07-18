@@ -6,18 +6,12 @@ import static com.colgado.utils.Constants.SOURCE_PAKAPAKA;
 import static com.colgado.utils.Constants.SOURCE_TECTV;
 import static com.colgado.utils.Constants.SOURCE_TELEFE;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.CookieManager;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.nio.charset.Charset;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -36,7 +30,14 @@ public class MediaURLProvider {
 		
 		Class<?> className = getClassName(clazz);
 		
-		HttpClient client = HttpClientBuilder.create().build();
+		
+		
+		HttpClientBuilder clientb = HttpClientBuilder.create();
+		BasicCookieStore cookieStore = new BasicCookieStore();
+		clientb.setDefaultCookieStore(cookieStore);
+
+		HttpClient client = clientb.build();
+		
 		HttpGet request = new HttpGet(source);
 		
 		request.addHeader("Content-Type", "application/json");
@@ -46,6 +47,7 @@ public class MediaURLProvider {
 		HttpResponse response = execute(client,request);
 		
 		LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
+		LOGGER.info("Response Code : " + response.getEntity());
 		
 		String json = parseResponse(response);
 
