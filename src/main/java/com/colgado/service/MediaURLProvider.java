@@ -10,11 +10,8 @@ import java.io.IOException;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.config.CookieSpecs;
-import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
@@ -29,23 +26,11 @@ public class MediaURLProvider {
 	final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
 
 	public Object getMediaURL(String source, String clazz){
-		
 		Class<?> className = getClassName(clazz);
-		
-		
-		 HttpClient client = HttpClients.custom()
-			        .setDefaultRequestConfig(RequestConfig.custom()
-			            .setCookieSpec(CookieSpecs.STANDARD).build())
-			        .build();
-		
+		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
-		
-		request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-		
 		HttpResponse response = execute(client,request);
-		
 		String json = parseResponse(response);
-
 		Gson gson = new Gson ();
         return gson.fromJson(json,className );
 	}

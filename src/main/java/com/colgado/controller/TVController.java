@@ -371,7 +371,6 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=126";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		model.addAttribute("url", urlProvider.getEncuentroURL());
 		return DEFAULT_VIEW;
 	}
 	
