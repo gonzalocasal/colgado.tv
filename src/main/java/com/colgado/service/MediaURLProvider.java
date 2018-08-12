@@ -21,7 +21,7 @@ public class MediaURLProvider {
 	final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
 
 	public Object getMediaURL(String source, String clazz){
-		Class<?> className = getClassName(clazz);
+	    Class<?> className = getClassName(clazz);
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		HttpResponse response = execute(client,request);

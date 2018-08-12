@@ -141,9 +141,8 @@ public class RadiosController implements ColgadoController {
 	public String vale(Model model) {
 		String title = "Vale";
 		String template = "vale";
-		String schedule = null;
 		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
+		addMediaAttributes(model,title,template,null);
 		return DEFAULT_VIEW;
 	}
 	
@@ -171,9 +170,8 @@ public class RadiosController implements ColgadoController {
 	public String mega(Model model) {
 		String title = "Mega";
 		String template = "mega";
-		String schedule = null;
 		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
+		addMediaAttributes(model,title,template,null);
 		return DEFAULT_VIEW;
 	}
 	
@@ -211,9 +209,8 @@ public class RadiosController implements ColgadoController {
 	public String pasion(Model model) {
 		String title = "FM Pasi&oacute;n";
 		String template = "espn";
-		String schedule = null;
 		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
+		addMediaAttributes(model,title,template,null);
 		return DEFAULT_VIEW;
 	}
 	
@@ -231,9 +228,8 @@ public class RadiosController implements ColgadoController {
 	public String radio10(Model model) {
 		String title = "Radio 10";
 		String template = "radio10";
-		String schedule = null;
 		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,schedule);
+		addMediaAttributes(model,title,template,null);
 		return DEFAULT_VIEW;
 	}
 	

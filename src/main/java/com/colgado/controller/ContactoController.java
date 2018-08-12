@@ -48,7 +48,7 @@ public class ContactoController implements ColgadoController{
 	@PostMapping("/contacto")
     public String greetingSubmit(@ModelAttribute Contacto contacto) {
 		LOGGER.info("Nuevo mensaje");
-		if(isHuman(contacto)) {
+		if (isHuman(contacto)) {
 			Mail mail = generateMail(contacto);
 			SendGrid sg = new SendGrid(emailApiKey);
 			Request request = new Request();

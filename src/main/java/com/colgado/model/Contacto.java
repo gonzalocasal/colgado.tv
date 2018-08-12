@@ -7,7 +7,7 @@ public class Contacto {
 	private String mensaje;
 	private String token;
 	
-	
+
 	public String getNombre() {
 		return nombre;
 	}
