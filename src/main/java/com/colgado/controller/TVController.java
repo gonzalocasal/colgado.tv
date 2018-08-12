@@ -1,16 +1,14 @@
 package com.colgado.controller;
 
-import static com.colgado.utils.Constants.*;
-import javax.servlet.http.HttpServletResponse;
-
+import com.colgado.service.MediaURLProvider;
+import com.colgado.service.YoutubeIdsProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.colgado.service.MediaURLProvider;
-import com.colgado.service.YoutubeIdsProvider;
+import static com.colgado.utils.Constants.*;
 
 @Controller
 public class TVController implements ColgadoController{
@@ -25,7 +23,7 @@ public class TVController implements ColgadoController{
 	private String version;
 
 	@RequestMapping("/")
-	public String root(Model model, HttpServletResponse response) {
+	public String root(Model model) {
 		addCommonAttributes(model);
 		model.addAttribute("active", ACTIVE_TV);
 		model.addAttribute("version", version);
@@ -717,8 +715,8 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		return DEFAULT_VIEW;
 	}
-	
-		
+
+
 	@Override
 	public void addCommonAttributes(Model model) {
 		model.addAttribute("active", ACTIVE_TV);
@@ -732,5 +730,5 @@ public class TVController implements ColgadoController{
 		model.addAttribute("player", template);
 		model.addAttribute("schedule", schedule);
 	}
-	
+
 }

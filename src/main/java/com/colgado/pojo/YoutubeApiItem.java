@@ -11,7 +11,5 @@ public class YoutubeApiItem {
 	public void setId(itemId id) {
 		this.id = id;
 	}
-	
-	
 
 }

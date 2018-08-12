@@ -24,8 +24,7 @@ public class YoutubeIdsProvider {
 	
 	@Value("#{channelsIds}")
 	private Map<String,String> channelsIds;
-	
-	
+
 	public String getId(String channel) {
 		LOGGER.info("Looking in youtube for transmission id of "+channel.toUpperCase());
 		RestTemplate restTemplate = new RestTemplate();
@@ -43,8 +42,7 @@ public class YoutubeIdsProvider {
 			LOGGER.info("Received Transmission id: "+videoId);
 			return	videoId;
 		}
-		
+
 	}
 
-	
 }
