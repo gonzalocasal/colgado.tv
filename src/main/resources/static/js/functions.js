@@ -1,3 +1,6 @@
+
+var app = angular.module('colgado', ["ngRoute"]);
+
 //ON READY
 $(document).ready(function(a) {  
 
@@ -80,4 +83,3 @@ function acceptMessage(){
 }
 
 
-var app = angular.module('colgado', []);
