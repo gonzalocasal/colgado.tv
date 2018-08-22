@@ -18,6 +18,8 @@
             .sprite${active} {background-image: url(/imgs/sprites${active}.png?v=${version})}
         </style>
         <#include "analytics.html">
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     </head>
     <body ng-app=colgado>
         <div id=header class=header>
@@ -57,8 +59,6 @@
             var VERSION="${version}"; 
             var EVENT="${version}"
         </script>             
-        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script defer src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script defer src="/js/functions.js" ></script>
         <#if active=='contacto'>
             <#include "captcha.html">
