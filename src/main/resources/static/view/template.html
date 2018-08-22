@@ -3,7 +3,7 @@
         <title>${title} | Colgado </title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">        
-        <meta name=description content=" "/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <meta name=viewport content="width=device-width, initial-scale=1.0,  user-scalable=yes"/>
         <meta name=google-site-verification content="IKzoNmqe6cDmat2NuqBP_TiVO11F84j4yuRbiMbKGbg" />
         <link rel="image_src" href="http://colgado.tv/imgs/play.png"/>
@@ -18,10 +18,8 @@
             .sprite${active} {background-image: url(/imgs/sprites${active}.png?v=${version})}
         </style>
         <#include "analytics.html">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     </head>
-    <body ng-app=colgado>
+    <body >
         <div id=header class=header>
             <div id=center  class=center>
                 <nav>
