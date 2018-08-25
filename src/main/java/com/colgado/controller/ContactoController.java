@@ -42,9 +42,9 @@ public class ContactoController implements ColgadoController{
 	public String root(Model model) {
 		addCommonAttributes(model);
 		model.addAttribute("title", "Contacto");
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
-	
+
 	@PostMapping("/contacto")
     public String greetingSubmit(@ModelAttribute Contacto contacto) {
 		LOGGER.info("Nuevo mensaje");
@@ -72,8 +72,7 @@ public class ContactoController implements ColgadoController{
 		String subject = EMAIL_SUBJECT+contacto.getNombre();
 		Email to = new Email(emailReceiver);
 		Content content = new Content("text/plain", contacto.getMensaje());
-		Mail mail = new Mail(from, subject, to, content);
-		return mail;
+		return new Mail(from, subject, to, content);
 	}
 
 	private Boolean isHuman(Contacto contacto) {
