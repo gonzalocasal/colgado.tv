@@ -29,9 +29,9 @@ public class TVController implements ColgadoController{
 		model.addAttribute("version", version);
 		model.addAttribute("title", "Televisi&oacute;n");
 		model.addAttribute("ad", false);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
-	
+
 	@RequestMapping("/tv/telefe")
 	public String telefe(Model model) {
 		String title = "Telefe";
@@ -40,9 +40,11 @@ public class TVController implements ColgadoController{
 		model.addAttribute("url", urlProvider.getTelefeURL());
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
-	
+
+
+
 	@RequestMapping("/tv/eltrece")
 	public String eltrece(Model model) {
 		String title = "El Trece";
@@ -50,7 +52,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=124";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/america")
@@ -60,7 +62,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=120";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tvpublica")
@@ -72,7 +74,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_TVP);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -83,7 +85,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=122";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -94,7 +96,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=629";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tntsports")
@@ -104,7 +106,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://tntsportsla.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/foxsportspremium")
@@ -114,7 +116,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://play.foxsportsla.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/foxsports")
@@ -124,7 +126,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=605";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/foxsports2")
@@ -134,7 +136,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=608";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/espn")
@@ -144,7 +146,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=621";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/espn2")
@@ -154,7 +156,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=623";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/directvsports")
@@ -164,7 +166,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=610";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/dxtv")
@@ -174,7 +176,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://deportv.gov.ar/programacion";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/garage")
@@ -184,7 +186,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.elgarage.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tn")
@@ -196,7 +198,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_TN);
 		model.addAttribute("id", id);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/c5n")
@@ -208,7 +210,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_C5N);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/ln+")
@@ -220,7 +222,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_LN);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/america24")
@@ -232,7 +234,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_A24);
 		model.addAttribute("id", id);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/cronica")
@@ -242,7 +244,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=718";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/canal26")
@@ -254,7 +256,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_CANAL26);
 		model.addAttribute("id", id);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/telesur")
@@ -266,7 +268,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_TELESUR);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/rt")
@@ -278,7 +280,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_RT);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/tv/cnn")
@@ -288,7 +290,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=704";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	
@@ -299,7 +301,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=742";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/discovery")
@@ -309,7 +311,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=732";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/natgeo")
@@ -319,7 +321,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=730";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/id")
@@ -329,7 +331,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=223";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/trutv")
@@ -339,7 +341,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=220";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/tv/animalplanet")
@@ -349,7 +351,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=734";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tec")
@@ -359,7 +361,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=734";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/tv/encuentro")
@@ -369,7 +371,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=126";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -382,7 +384,7 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_KZO);
 		model.addAttribute("id", id);		
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/magazine")
@@ -392,7 +394,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=236";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/telemax")
@@ -402,7 +404,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=726";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -413,7 +415,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.construirtv.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -424,7 +426,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.buenosaires.gob.ar/canaldelaciudad/programacion";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tvuniversidad")
@@ -434,7 +436,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://tv.unlp.edu.ar/programas";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/argentinisima")
@@ -444,7 +446,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.argentinisimatv.com.ar/grilla/grilla.html";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/rural")
@@ -454,7 +456,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=125";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/vorterix")
@@ -463,7 +465,7 @@ public class TVController implements ColgadoController{
 		String template = "vorterix";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/mtv")
@@ -472,7 +474,7 @@ public class TVController implements ColgadoController{
 		String template = "mtv";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	
@@ -483,7 +485,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=303";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/cartoon")
@@ -493,7 +495,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=304";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/nick")
@@ -503,7 +505,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=308";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/discoverykids")
@@ -513,7 +515,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=330";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/disney")
@@ -523,7 +525,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=312";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/disneyjunior")
@@ -533,7 +535,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=315";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/disneyxd")
@@ -543,7 +545,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=316";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/fox")
@@ -553,7 +555,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=204";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/fx")
@@ -563,7 +565,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=217";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/foxlife")
@@ -573,7 +575,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=231";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/warner")
@@ -583,7 +585,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=206";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/universal")
@@ -593,7 +595,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=218";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/axn")
@@ -603,7 +605,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=214";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	 
 	@RequestMapping("/tv/sony")
@@ -613,7 +615,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=210";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/hbo")
@@ -623,7 +625,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=524";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/tv/space")
@@ -633,7 +635,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=518";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tnt")
@@ -643,7 +645,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=502";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/cinecanal")
@@ -653,7 +655,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=507";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/studiouniversal")
@@ -663,7 +665,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=508";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/isat")
@@ -673,7 +675,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=520";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/cinemax")
@@ -683,7 +685,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=509";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/amc")
@@ -693,7 +695,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=210";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/tcm")
@@ -703,7 +705,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=504";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/tv/golden")
@@ -713,7 +715,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=517";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 
@@ -730,5 +732,6 @@ public class TVController implements ColgadoController{
 		model.addAttribute("player", template);
 		model.addAttribute("schedule", schedule);
 	}
+
 
 }

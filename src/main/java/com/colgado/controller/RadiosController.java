@@ -23,7 +23,7 @@ public class RadiosController implements ColgadoController {
 	public String root(Model model) {
 		addCommonAttributes(model);
 		model.addAttribute("title", "Radios");
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/radios/la100")
@@ -33,7 +33,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.cienradios.com.ar/argentina/la-100/vivo#fragment-2";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/pop")
@@ -43,7 +43,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://www.minutouno.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/metro")
@@ -53,7 +53,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.metro951.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/disney")
@@ -63,7 +63,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://radiodisney.disneylatino.com/argentina";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/los40")
@@ -73,7 +73,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.los40principales.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/vorterix")
@@ -85,7 +85,7 @@ public class RadiosController implements ColgadoController {
 		addMediaAttributes(model,title,template,schedule);
 		String id = youtube.getId(CHANNEL_VORTERIX);
 		model.addAttribute("id", id);	
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/rocknpop")
@@ -95,7 +95,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://fmrockandpop.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/aspen")
@@ -105,7 +105,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://www.fmaspen.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 
 	@RequestMapping("/radios/one")
@@ -114,7 +114,7 @@ public class RadiosController implements ColgadoController {
 		String template = "one";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/nacionalrock")
@@ -124,7 +124,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.radionacional.com.ar/nacionalrock/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/rqp")
@@ -134,7 +134,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://www.rqp.fm/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/vale")
@@ -143,7 +143,7 @@ public class RadiosController implements ColgadoController {
 		String template = "vale";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/latina")
@@ -153,7 +153,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.latina101.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/convos")
@@ -163,7 +163,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.radioconvos.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/mega")
@@ -172,7 +172,7 @@ public class RadiosController implements ColgadoController {
 		String template = "mega";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/milenium")
@@ -182,7 +182,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.fmmilenium.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/blue")
@@ -192,7 +192,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.bluefm.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/espn")
@@ -202,7 +202,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.espn.com.ar/espnradio/play?s=1079fm";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/pasion")
@@ -211,7 +211,7 @@ public class RadiosController implements ColgadoController {
 		String template = "espn";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/mitre")
@@ -221,7 +221,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://radiomitre.cienradios.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/radio10")
@@ -230,7 +230,7 @@ public class RadiosController implements ColgadoController {
 		String template = "radio10";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,null);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/lared")
@@ -240,7 +240,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.radiolared.multimediosamerica.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/continental")
@@ -250,7 +250,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.radiolared.multimediosamerica.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/radionacional")
@@ -260,7 +260,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.radionacional.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/delplata")
@@ -270,7 +270,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://www.amdelplata.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/am750")
@@ -280,7 +280,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://750.am/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/rivadavia")
@@ -290,7 +290,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.rivadavia.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/cooperativa")
@@ -300,7 +300,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://radiocooperativa.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/cadena3")
@@ -310,7 +310,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://www.cadena3.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/delsol")
@@ -320,7 +320,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://estaciondelsol.elsol.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/brava")
@@ -330,7 +330,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://brava.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/vida")
@@ -340,7 +340,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.fmvida.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/coolradio")
@@ -350,7 +350,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.coolihd.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/red92")
@@ -360,7 +360,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://red92.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@RequestMapping("/radios/laredonda")
@@ -370,7 +370,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.fmlaredonda.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		return DEFAULT_VIEW;
+		return getDefaultView();
 	}
 	
 	@Override
