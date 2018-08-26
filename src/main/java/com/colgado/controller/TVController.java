@@ -724,7 +724,6 @@ public class TVController implements ColgadoController{
 		model.addAttribute("active", ACTIVE_TV);
 		model.addAttribute("version", version);
 		model.addAttribute("ad", true);
-		model.addAttribute("adCode", System.getenv(ENVIRONMENT_VARIABLE_AD_CODE));
 	}
 
 	@Override
