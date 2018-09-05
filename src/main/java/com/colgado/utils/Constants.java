@@ -10,6 +10,7 @@ public class Constants {
 	public static final String CHANNEL_A24 = "a24";
 	public static final String CHANNEL_C5N = "c5n";
 	public static final String CHANNEL_CANAL26 = "canal26";
+	public static final String CHANNEL_CRONICA = "cronica";
 	public static final String CHANNEL_KZO = "kzo";
 	public static final String CHANNEL_LN = "ln";
 	public static final String CHANNEL_RT = "rt";
