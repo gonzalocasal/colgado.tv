@@ -131,7 +131,7 @@ public class TVController implements ColgadoController{
 	
 	@RequestMapping("/tv/foxsports2")
 	public String foxsports2(Model model) {
-		String title = "FOX Sports";
+		String title = "FOX Sports 2";
 		String template = "foxsports2";
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=608";
 		addCommonAttributes(model);
