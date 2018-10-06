@@ -1,13 +1,11 @@
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://jwpsrv.com/library/40TpZB2+EeOLRiIACusDuQ.js"></script>
 <script type="text/javascript">
-  $.get( "https://api.cont.ar/api/v2/stream/18", function( data ) {
-	 	$( ".result" ).html( data );
-	 	jwplayer("player").setup({
-	      	file: data.data.hls,
-	    	autostart: "true",
-	    	width: "100%",
-	    	aspectratio: "16:9"
-  		});
-  });
+ 	jwplayer("player").setup({
+  	file: "https://contar-live.secure.footprint.net/hls-live/ionmicroremux-Pakapaka/_definst_/live/stream2.m3u8",
+	autostart: "true",
+	width: "100%",
+	aspectratio: "16:9"
+});
 </script>

@@ -37,7 +37,9 @@ public class TVController implements ColgadoController{
 		String title = "Telefe";
 		String template = "telefe";
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=123";
-		addCommonAttributes(model);
+        String url = urlProvider.getTelefeURL();
+        model.addAttribute("url", url);
+        addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return getDefaultView();
 	}
