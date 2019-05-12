@@ -26,7 +26,7 @@ public class YoutubeIdsProvider {
 	private Map<String,String> channelsIds;
 
 	public String getId(String channel) {
-		LOGGER.info("Looking in youtube for transmission id of "+channel.toUpperCase());
+		LOGGER.info("Looking in youtube for transmission id of " + channel.toUpperCase());
 		RestTemplate restTemplate = new RestTemplate();
 		String channelId = channelsIds.get(channel);
 		String url = String.format(YOUTUBE_API_URL, channelId, youtubeApiKey);
@@ -39,7 +39,7 @@ public class YoutubeIdsProvider {
 		}
 		else {
 			videoId = items.get(0).getId().getVideoId();
-			LOGGER.info("Received Transmission id: "+videoId);
+			LOGGER.info("Received Transmission id: " + videoId);
 			return	videoId;
 		}
 

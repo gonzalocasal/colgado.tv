@@ -11,6 +11,10 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	        <value>UCR9120YBAqMfntqgRTKmkjQ</value>
 	    </entry>
 
+		<entry key="americasports">
+			<value>UCnx743KuO_16sCMIbEg7Y7Q</value>
+		</entry>
+
 		<entry key="c5n">
 	        <value>UCFgk2Q2mVO1BklRQhSv6p0w</value>
 	    </entry>
@@ -30,7 +34,11 @@ http://www.springframework.org/schema/util http://www.springframework.org/schema
 	    <entry key="ln">
 	        <value>UCba3hpU7EFBSk817y9qZkiA</value>
 	    </entry>
-	    
+
+		<entry key="nettv">
+			<value>UC8aY1r3sNj1nujEisGkxtyA</value>
+		</entry>
+
 	    <entry key="rt">
 	        <value>UC2mtXUpAYLYJIZ2deSPhlqw</value>
 	    </entry>

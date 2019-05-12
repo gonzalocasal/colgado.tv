@@ -7,13 +7,13 @@
         <meta name=google-site-verification content="IKzoNmqe6cDmat2NuqBP_TiVO11F84j4yuRbiMbKGbg" />
         <link rel="image_src" href="http://colgado.tv/imgs/play.png"/>
         <link rel="icon" type="image/png" href="/imgs/favicon.png" />
+        <link rel="stylesheet" href="/view/css/style.css">
+        <link rel="stylesheet" href="/view/css/${active}.css">
+        <#if player??>
+            <link rel="stylesheet" href="/view/css/float.css">
+            <link rel="stylesheet" href="/view/css/media.css">
+        </#if>
         <style>
-            <#include "css/style.css"> 
-            <#include "css/${active}.css">
-            <#if player??>
-                <#include "css/float.css">
-                <#include "css/media.css">
-            </#if>    
             .sprite${active} {background-image: url(/imgs/sprites${active}.png?v=${version})}
         </style>
         <#include "analytics.html">
