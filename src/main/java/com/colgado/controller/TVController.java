@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import static com.colgado.utils.Constants.*;
 
 @Controller
@@ -44,8 +43,6 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
-
-
 	@RequestMapping("/tv/eltrece")
 	public String eltrece(Model model) {
 		String title = "El Trece";
@@ -73,8 +70,7 @@ public class TVController implements ColgadoController{
 		String schedule = "https://www.directv.com.ar/guia/ChannelDetail.aspx?id=121";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_TVP);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_TVP));
 		return getDefaultView();
 	}
 	
@@ -189,6 +185,17 @@ public class TVController implements ColgadoController{
 		addMediaAttributes(model,title,template,schedule);
 		return getDefaultView();
 	}
+
+	@RequestMapping("/tv/americasports")
+	public String americasports(Model model) {
+		String title = "AM Sports";
+		String template = "americasports";
+		String schedule = "https://www.amsports.com.ar/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("id", youtube.getId(CHANNEL_AMERICA_SPORTS));
+		return getDefaultView();
+	}
 	
 	@RequestMapping("/tv/tn")
 	public String tn(Model model) {
@@ -197,8 +204,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=716";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_TN);
-		model.addAttribute("id", id);
+		model.addAttribute("id", youtube.getId(CHANNEL_TN));
 		return getDefaultView();
 	}
 	
@@ -209,8 +215,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=717";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_C5N);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_C5N));
 		return getDefaultView();
 	}
 	
@@ -221,8 +226,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=715";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_LN);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_LN));
 		return getDefaultView();
 	}
 	
@@ -233,8 +237,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=719";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_A24);
-		model.addAttribute("id", id);
+		model.addAttribute("id", youtube.getId(CHANNEL_A24));
 		return getDefaultView();
 	}
 	
@@ -245,8 +248,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=718";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_CRONICA);
-		model.addAttribute("id", id);
+		model.addAttribute("id", youtube.getId(CHANNEL_CRONICA));
 		return getDefaultView();
 	}
 	
@@ -257,8 +259,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=720";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_CANAL26);
-		model.addAttribute("id", id);
+		model.addAttribute("id", youtube.getId(CHANNEL_CANAL26));
 		return getDefaultView();
 	}
 	
@@ -269,8 +270,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=722";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_TELESUR);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_TELESUR));
 		return getDefaultView();
 	}
 	
@@ -281,8 +281,7 @@ public class TVController implements ColgadoController{
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=722";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_RT);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_RT));
 		return getDefaultView();
 	}
 
@@ -385,8 +384,17 @@ public class TVController implements ColgadoController{
 		String schedule = "https://kuarzo.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_KZO);
-		model.addAttribute("id", id);		
+		model.addAttribute("id", youtube.getId(CHANNEL_KZO));
+		return getDefaultView();
+	}
+
+	@RequestMapping("/tv/nettv")
+	public String nettv(Model model) {
+		String title = "Net TV";
+		String template = "nettv";
+		String schedule = "https://www.canalnet.tv/";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
 		return getDefaultView();
 	}
 	
@@ -721,7 +729,6 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
-
 	@Override
 	public void addCommonAttributes(Model model) {
 		model.addAttribute("active", ACTIVE_TV);
@@ -735,6 +742,5 @@ public class TVController implements ColgadoController{
 		model.addAttribute("player", template);
 		model.addAttribute("schedule", schedule);
 	}
-
 
 }

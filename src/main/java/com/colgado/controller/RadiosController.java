@@ -83,8 +83,7 @@ public class RadiosController implements ColgadoController {
 		String schedule = "https://vorterix.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
-		String id = youtube.getId(CHANNEL_VORTERIX);
-		model.addAttribute("id", id);	
+		model.addAttribute("id", youtube.getId(CHANNEL_VORTERIX));
 		return getDefaultView();
 	}
 	
@@ -232,7 +231,16 @@ public class RadiosController implements ColgadoController {
 		addMediaAttributes(model,title,template,null);
 		return getDefaultView();
 	}
-	
+
+	@RequestMapping("/radios/cnnradio")
+	public String cnnradio(Model model) {
+		String title = "CNN Radio";
+		String template = "cnnradio";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,null);
+		return getDefaultView();
+	}
+
 	@RequestMapping("/radios/lared")
 	public String lared(Model model) {
 		String title = "La Red";
@@ -386,6 +394,5 @@ public class RadiosController implements ColgadoController {
 		model.addAttribute("player", template);
 		model.addAttribute("schedule", schedule);
 	}
-
 
 }
