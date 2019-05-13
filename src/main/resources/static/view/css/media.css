@@ -3,6 +3,10 @@ body{
 	background: #242424;
 }
 
+h1 {
+    color: #e9ebee;
+}
+
 .header {
 	background: rgba(0, 0, 0, 0.8);
 	position: fixed;
