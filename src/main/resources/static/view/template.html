@@ -8,11 +8,11 @@
         <meta name="description" content="${title} en vivo por internet gratis online HD"/>
         <link rel="image_src" href="http://colgado.tv/imgs/play.png"/>
         <link rel="icon" type="image/png" href="/imgs/favicon.png"/>
-        <link rel="stylesheet" href="/view/css/style.css">
+        <link rel="stylesheet" href="/view/css/style.css?v=${version}">
         <link rel="stylesheet" href="/view/css/${active}.css">
         <#if player??>
-            <link rel="stylesheet" href="/view/css/float.css">
-            <link rel="stylesheet" href="/view/css/media.css">
+            <link rel="stylesheet" href="/view/css/float.css?v=${version}">
+            <link rel="stylesheet" href="/view/css/media.css?v=${version}">
         </#if>
         <style>
             .sprite${active} {background-image: url(/imgs/sprites${active}.png?v=${version})}
