@@ -6,6 +6,11 @@ body {
 	margin: 0 auto
 }
 
+h1 {
+    color: #e9ebee;
+    margin-bottom: -59px;
+}
+
 .spriteradios,
 .spritetv {
 	background-repeat: no-repeat;
