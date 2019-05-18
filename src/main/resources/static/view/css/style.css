@@ -9,7 +9,8 @@ body {
 h1 {
     color: #e9ebee;
     font-size: 13px;
-    margin-bottom: -20px;
+    top: 10px;
+    position: absolute;
 }
 
 .spriteradios,
@@ -144,7 +145,7 @@ img {
 }
 
 .space {
-	margin-top: 75px;
+	margin-top: 70px;
 	visibility: hidden
 }
 
