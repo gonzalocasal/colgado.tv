@@ -61,7 +61,7 @@ public class ContactoController implements ColgadoController{
 			} catch (IOException e) {
 				return ROBOT_VIEW;
 			}
-			return MENSSAGE_VIEW;
+			return MESSAGE_VIEW;
 		}
 		return ROBOT_VIEW;
     }
