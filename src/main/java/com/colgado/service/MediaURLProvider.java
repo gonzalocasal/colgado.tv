@@ -18,21 +18,20 @@ import com.google.gson.Gson;
 @Component
 public class MediaURLProvider {
 
-	final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
+	private final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
 
-	public Object getMediaURL(String source, String clazz){
+	private Object getMediaURL(String source, String clazz){
 	    Class<?> className = getClassName(clazz);
 		HttpClient client = HttpClientBuilder.create().build();
 		HttpGet request = new HttpGet(source);
 		HttpResponse response = execute(client,request);
-		String json = parseResponse(response);
 		Gson gson = new Gson ();
-        return gson.fromJson(json,className );
+        return gson.fromJson((response != null) ? parseResponse(response) : "" , className);
 	}
 
 	public String getTelefeURL() {
 		LOGGER.info("Looking for Telefe transmission URL");
-		TelefePojo result = (TelefePojo) getMediaURL(SOURCE_TELEFE,TelefePojo.class.getName());
+		TelefePojo result = (TelefePojo) getMediaURL(SOURCE_TELEFE, TelefePojo.class.getName());
 		return result.getTelefe();
 	}
 	
