@@ -262,6 +262,17 @@ public class TVController implements ColgadoController{
 		model.addAttribute("id", youtube.getId(CHANNEL_CANAL26));
 		return getDefaultView();
 	}
+
+	@RequestMapping("/tv/cn23")
+	public String cn23(Model model) {
+		String title = "CN23";
+		String template = "cn23";
+		String schedule = "https://www.facebook.com/cn23tv";
+		addCommonAttributes(model);
+		addMediaAttributes(model,title,template,schedule);
+		model.addAttribute("id", youtube.getId(CHANNEL_CN23));
+		return getDefaultView();
+	}
 	
 	@RequestMapping("/tv/telesur")
 	public String telesur(Model model) {
