@@ -1,11 +1,22 @@
+    <script type="text/javascript" src="https://content.jwplatform.com/players/ubIUxrYq-k8DL16H5.js"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://jwpsrv.com/library/40TpZB2+EeOLRiIACusDuQ.js"></script>
-<script type="text/javascript">
- 	jwplayer("player").setup({
-  	file: "https://content.jwplatform.com/videos/ubIUxrYq-640.mp4",
-	autostart: "true",
-	width: "100%",
-	aspectratio: "16:9"
-});
-</script>
+    <script>
+        if (window == window.top) {
+            document.getElementById("title").style.display = "block";
+            document.getElementById("description").style.display = "block";
+            document.body.style.width = "70%";
+            document.body.style.overflow = "visible";
+        } else {
+          /** Used to pass play/pause messages parent iframe via postMessage **/
+          window.addEventListener("message", function(evt) {
+            switch (evt.data) {
+              case "play":
+                jwplayer().play(true);
+                break;
+              case "pause":
+                jwplayer().pause(true);
+                break;
+            }
+          });
+        }
+    </script>
