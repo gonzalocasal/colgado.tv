@@ -7,7 +7,6 @@
             document.body.style.width = "70%";
             document.body.style.overflow = "visible";
         } else {
-          /** Used to pass play/pause messages parent iframe via postMessage **/
           window.addEventListener("message", function(evt) {
             switch (evt.data) {
               case "play":
