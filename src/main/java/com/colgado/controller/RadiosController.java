@@ -126,11 +126,11 @@ public class RadiosController implements ColgadoController {
 		return getDefaultView();
 	}
 	
-	@RequestMapping("/radios/rqp")
+	@RequestMapping("/radios/perfil")
 	public String rqp(Model model) {
-		String title = "RQP";
-		String template = "rqp";
-		String schedule = "https://www.rqp.fm/";
+		String title = "Perfil";
+		String template = "perfil";
+		String schedule = "https://radio.perfil.com/";
 		addCommonAttributes(model);
 		addMediaAttributes(model,title,template,schedule);
 		return getDefaultView();
