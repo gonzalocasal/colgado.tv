@@ -23,5 +23,5 @@ public class Constants {
 	public static final String EMAIL_SUBJECT = "colgado.tv, Contacto de ";
 	public static final String GOOGLE_CAPTCHA_VERIFY_URI = "https://www.google.com/recaptcha/api/siteverify";
 	public static final String SOURCE_TELEFE = "http://sv.televisionlibre.net/telefe.json";
-	public static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=relevance&regionCode=AR&type=video&channelId=%s&key=%s&q=vivo+directo";
+	public static final String YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?channelId=%s&eventType=live&part=id&regionCode=AR&type=video&videoType=any&key=%s";
 }
