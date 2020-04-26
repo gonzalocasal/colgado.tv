@@ -744,7 +744,7 @@ public class TVController implements ColgadoController{
 	public void addCommonAttributes(Model model) {
 		model.addAttribute("active", ACTIVE_TV);
 		model.addAttribute("version", version);
-		model.addAttribute("ad", true);
+		model.addAttribute("ad", false);
 	}
 
 	@Override

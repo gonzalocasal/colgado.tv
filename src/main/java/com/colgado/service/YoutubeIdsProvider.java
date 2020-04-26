@@ -35,14 +35,12 @@ public class YoutubeIdsProvider {
 		String videoId = "";
 		if(items.isEmpty()) {
 			LOGGER.info("Transmission not found");
-			return videoId;
 		}
 		else {
 			videoId = items.get(0).getId().getVideoId();
 			LOGGER.info("Received Transmission id: " + videoId);
-			return	videoId;
 		}
-
+		return videoId;
 	}
 
 }

@@ -62,9 +62,6 @@ h1 {
 	box-shadow: unset;
 }
 
-.player-container-tv {
-	filter: blur(5px);
-}
 
 .player-protected {
 	position: relative;
