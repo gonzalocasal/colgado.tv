@@ -18,7 +18,7 @@ public class YoutubeIdsProvider {
 
 	final static Logger LOGGER = Logger.getLogger(YoutubeIdsProvider.class);
 
-	@Value("${youtube.api.key}")
+	@Value("${youtube.api}")
 	private String youtubeApiKey;
 	
 	

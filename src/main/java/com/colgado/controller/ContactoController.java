@@ -32,10 +32,10 @@ public class ContactoController implements ColgadoController{
 	@Value("${email.receiver}")
 	private String emailReceiver;
 	
-	@Value("${email.api.key}")
+	@Value("${email.api}")
 	private String emailApiKey;
 	
-	@Value("${captcha.api.key}")
+	@Value("${captcha.api}")
 	private String captchaApiKey;
 
 	@RequestMapping("/contacto")
