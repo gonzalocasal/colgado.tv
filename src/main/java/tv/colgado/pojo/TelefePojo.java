@@ -1,4 +1,4 @@
-package com.colgado.pojo;
+package tv.colgado.pojo;
 
 public class TelefePojo {
 

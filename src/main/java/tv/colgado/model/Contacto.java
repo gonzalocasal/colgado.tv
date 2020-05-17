@@ -1,4 +1,4 @@
-package com.colgado.model;
+package tv.colgado.model;
 
 public class Contacto {
 	

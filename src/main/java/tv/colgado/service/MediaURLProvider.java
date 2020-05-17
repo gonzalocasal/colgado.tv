@@ -1,9 +1,7 @@
-package com.colgado.service;
+package tv.colgado.service;
 
-import static com.colgado.utils.Constants.SOURCE_TELEFE;
-
-import java.io.IOException;
-
+import tv.colgado.pojo.TelefePojo;
+import com.google.gson.Gson;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -12,8 +10,9 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
-import com.colgado.pojo.TelefePojo;
-import com.google.gson.Gson;
+import java.io.IOException;
+
+import static tv.colgado.utils.Constants.SOURCE_TELEFE;
 
 @Component
 public class MediaURLProvider {

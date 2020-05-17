@@ -1,17 +1,16 @@
-package com.colgado.service;
+package tv.colgado.service;
 
-import static com.colgado.utils.Constants.*;
-
-import java.util.List;
-import java.util.Map;
-
+import tv.colgado.pojo.YoutubeApiItem;
+import tv.colgado.pojo.YoutubeApiResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import com.colgado.pojo.YoutubeApiItem;
-import com.colgado.pojo.YoutubeApiResponse;
+import java.util.List;
+import java.util.Map;
+
+import static tv.colgado.utils.Constants.YOUTUBE_API_URL;
 
 @Component
 public class YoutubeIdsProvider {

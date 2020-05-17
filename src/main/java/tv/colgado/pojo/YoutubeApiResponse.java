@@ -1,4 +1,4 @@
-package com.colgado.pojo;
+package tv.colgado.pojo;
 
 import java.util.List;
 

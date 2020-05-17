@@ -1,14 +1,14 @@
-package com.colgado.controller;
+package tv.colgado.controller;
 
-import static com.colgado.utils.Constants.*;
-
+import tv.colgado.service.YoutubeIdsProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.colgado.service.YoutubeIdsProvider;
+import static tv.colgado.utils.Constants.ACTIVE_RADIOS;
+import static tv.colgado.utils.Constants.CHANNEL_VORTERIX;
 
 @Controller
 public class RadiosController implements ColgadoController {

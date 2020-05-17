@@ -1,8 +1,8 @@
-package com.colgado.controller;
+package tv.colgado.controller;
 
-import static com.colgado.utils.Constants.*;
-import java.io.IOException;
-
+import tv.colgado.model.CaptchaResult;
+import tv.colgado.model.Contacto;
+import com.sendgrid.*;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,14 +12,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
-import com.colgado.model.CaptchaResult;
-import com.colgado.model.Contacto;
-import com.sendgrid.Content;
-import com.sendgrid.Email;
-import com.sendgrid.Mail;
-import com.sendgrid.Method;
-import com.sendgrid.Request;
-import com.sendgrid.SendGrid;
+import java.io.IOException;
+
+import static tv.colgado.utils.Constants.*;
 
 @Controller
 public class ContactoController implements ColgadoController{

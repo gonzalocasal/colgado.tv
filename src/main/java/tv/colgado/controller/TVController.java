@@ -1,13 +1,14 @@
-package com.colgado.controller;
+package tv.colgado.controller;
 
-import com.colgado.service.MediaURLProvider;
-import com.colgado.service.YoutubeIdsProvider;
+import tv.colgado.service.MediaURLProvider;
+import tv.colgado.service.YoutubeIdsProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import static com.colgado.utils.Constants.*;
+
+import static tv.colgado.utils.Constants.*;
 
 @Controller
 public class TVController implements ColgadoController{
@@ -24,11 +25,24 @@ public class TVController implements ColgadoController{
 	@RequestMapping("/")
 	public String root(Model model) {
 		addCommonAttributes(model);
-		model.addAttribute("active", ACTIVE_TV);
 		model.addAttribute("version", version);
 		model.addAttribute("title", "Televisi&oacute;n");
 		model.addAttribute("ad", false);
 		return getDefaultView();
+	}
+
+	@Override
+	public void addCommonAttributes(Model model) {
+		model.addAttribute("active", ACTIVE_TV);
+		model.addAttribute("version", version);
+		model.addAttribute("ad", false);
+	}
+
+	@Override
+	public void addMediaAttributes(Model model, String title, String template, String schedule) {
+		model.addAttribute("title", title);
+		model.addAttribute("player", template);
+		model.addAttribute("schedule", schedule);
 	}
 
 	@RequestMapping("/tv/telefe")
@@ -740,18 +754,5 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
-	@Override
-	public void addCommonAttributes(Model model) {
-		model.addAttribute("active", ACTIVE_TV);
-		model.addAttribute("version", version);
-		model.addAttribute("ad", false);
-	}
-
-	@Override
-	public void addMediaAttributes(Model model, String title, String template, String schedule) {
-		model.addAttribute("title", title);
-		model.addAttribute("player", template);
-		model.addAttribute("schedule", schedule);
-	}
 
 }

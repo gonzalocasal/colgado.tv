@@ -1,4 +1,4 @@
-package com.colgado.utils;
+package tv.colgado.utils;
 
 public class Constants {
 	public static final String DEFAULT_VIEW = "view/template";

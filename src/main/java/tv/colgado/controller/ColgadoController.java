@@ -1,8 +1,8 @@
-package com.colgado.controller;
+package tv.colgado.controller;
 
 import org.springframework.ui.Model;
 
-import static com.colgado.utils.Constants.DEFAULT_VIEW;
+import static tv.colgado.utils.Constants.DEFAULT_VIEW;
 
 public interface ColgadoController {
 	void addCommonAttributes(Model model);
