@@ -1,7 +1,7 @@
 package tv.colgado.service;
 
-import tv.colgado.pojo.YoutubeApiItem;
-import tv.colgado.pojo.YoutubeApiResponse;
+import tv.colgado.dto.YoutubeApiItem;
+import tv.colgado.dto.YoutubeApiResponse;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;

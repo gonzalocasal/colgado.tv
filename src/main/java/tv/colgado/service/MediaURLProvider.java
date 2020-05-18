@@ -1,6 +1,6 @@
 package tv.colgado.service;
 
-import tv.colgado.pojo.TelefePojo;
+import tv.colgado.dto.TelefePojo;
 import com.google.gson.Gson;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;

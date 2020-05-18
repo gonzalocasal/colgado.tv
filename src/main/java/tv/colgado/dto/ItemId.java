@@ -1,6 +1,6 @@
-package tv.colgado.pojo;
+package tv.colgado.dto;
 
-public class itemId {
+public class ItemId {
 
 	private String videoId;
 
