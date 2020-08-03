@@ -2,7 +2,7 @@ body {
 	text-align: center;
 	background-color: #e9ebee;
 	color: rgba(0, 0, 0, 1);
-	font-family: 'roboto';
+	font-family: 'roboto', serif;
 	margin: 0 auto
 }
 
@@ -82,7 +82,7 @@ nav a {
 }
 
 .nav-page:hover {
-	transition: .3s
+	transition: .3s;
 	background-color: grey;
 	background-color: rgba(0, 0, 0, .0513726);
 }
@@ -124,8 +124,7 @@ a:visited {
     width: 165px;
     height: 85px;
     border-radius: .275rem;
-    transition: box-shadow .25s;
-    transition: 0.2s ease;
+	transition: 0.2s ease;
     box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
 

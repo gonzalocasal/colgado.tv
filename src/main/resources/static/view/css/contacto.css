@@ -30,11 +30,11 @@
 	background-color: #ff0000;
 	color:#fff;
 	display:inline-block;
-	font-family:roboto;
+	font-family: roboto, serif;
 	text-decoration:none;
 	padding:6px 20px;
 	margin-bottom: 15px;
-	transition: .3s
+	transition: .3s;
 	font-size: 14.7px;
 	font-weight: 500;
 	border-radius: .2rem;
@@ -58,7 +58,7 @@ textarea {
 
 
 .input-contact {
-	font-family: roboto;
+	font-family: roboto, serif;
     border: none;
     border-bottom: 2px solid #f1f1f1;
     color: #333;
@@ -88,7 +88,7 @@ textarea {
 	margin-left: 10px;
 }
 .info {
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 @-webkit-keyframes animatetop {
