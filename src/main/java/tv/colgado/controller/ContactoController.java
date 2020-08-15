@@ -1,7 +1,5 @@
 package tv.colgado.controller;
 
-import tv.colgado.model.CaptchaResult;
-import tv.colgado.model.Contacto;
 import com.sendgrid.*;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,6 +9,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
+import tv.colgado.model.CaptchaResult;
+import tv.colgado.model.Contacto;
 
 import java.io.IOException;
 
