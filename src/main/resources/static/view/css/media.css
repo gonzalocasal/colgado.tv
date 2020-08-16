@@ -28,12 +28,6 @@ h1 {
 	transition: .3s
 }
 
-.nav-page:hover ,.opcion2:hover {
-	color: white;
-	transition: .3s;
-	background: #242424;
-}
-
 .opcion2{
 	text-decoration: none;
 	color: #7D7D7D;

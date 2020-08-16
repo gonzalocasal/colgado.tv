@@ -26,16 +26,16 @@ h1 {
 }
 
 .header {
-	background-color: rgba(31, 31, 31, 0.95);
+	background-color: rgba(23, 23, 23, 1);
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	z-index: 999;
-	box-shadow: 0 2px 1px 0 rgba(0,0,0,.1);
 }
 
 .top-bar-scrolled {
+  background-color: rgba(23, 23, 23, 0.95);
   box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
 }
 
@@ -81,10 +81,9 @@ nav a {
 	color: #7D7D7D;
 }
 
-.nav-page:hover {
+.nav-page:hover ,.opcion2:hover {
+	color: white;
 	transition: .3s;
-	background-color: grey;
-	background-color: rgba(0, 0, 0, .0513726);
 }
 
 .active i{
