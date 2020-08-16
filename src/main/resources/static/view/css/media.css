@@ -1,10 +1,10 @@
 
 body{
-	background: #242424;
+	background: #171717;
 }
 
 h1 {
-    color: #242424;
+    color: #171717;
 }
 
 .header {
@@ -14,17 +14,17 @@ h1 {
 	right: 0;
 	top: 0;
 	z-index: 999;
-	background: #242424;
+	background: #171717;
 	box-shadow: unset;
 }
 
 
 .active {
-	color: white
+	color: #FFF;
 }
 
 .menu-icon-open {
-	color: white;
+	color: #FFF;
 	transition: .3s
 }
 

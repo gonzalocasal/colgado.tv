@@ -1,6 +1,6 @@
 
 .card-contact{
-	background-color: #fff;
+	background: #1f1f1ff2;
     line-height: 25px;
     text-align: center;
     vertical-align: top;
@@ -58,9 +58,10 @@ textarea {
 
 
 .input-contact {
+	background-color: #1f1f1ff2;
 	font-family: roboto, serif;
     border: none;
-    border-bottom: 2px solid #f1f1f1;
+    border-bottom: 2px solid #444444;
     color: #333;
     font-size: 0.875em;
     width: 250px;

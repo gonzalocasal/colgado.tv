@@ -1,13 +1,13 @@
 body {
 	text-align: center;
-	background-color: #e9ebee;
+	background: #171717;
 	color: rgba(0, 0, 0, 1);
 	font-family: 'roboto', serif;
 	margin: 0 auto
 }
 
 h1 {
-    color: #e9ebee;
+    color: #171717;
     font-size: 13px;
     top: 10px;
     position: absolute;
@@ -26,7 +26,7 @@ h1 {
 }
 
 .header {
-	background-color: rgba(255, 255, 255, 0.95);
+	background-color: rgba(31, 31, 31, 0.95);
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -92,7 +92,7 @@ nav a {
 }
 
 .active {
-	color: #111111;
+	color: #FFF;
 }
 
 a:visited {
@@ -111,11 +111,10 @@ a:visited {
     margin-right: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-
 }
 
 .card {
-	background-color: #FFF;
+	background-color: #1f1f1ff2;
     line-height: 25px;
     cursor: pointer;
     text-align: center;
