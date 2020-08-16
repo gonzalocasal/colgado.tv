@@ -49,13 +49,15 @@ public class YoutubeIdsProvider {
 		return transmissionId;
 	}
 
-	@Scheduled(fixedRate=60*60*1000)
+	@Scheduled(fixedRate=60*720*1000)
 	private void updateAllIds() {
 		LOGGER.info("Updating all youtube transmissions IDs");
 		String transmissionId;
 		for (String channel : channelsIds.keySet()) {
 			transmissionId = getTransmissionIdFromYoutube(channel);
-			transmissionIds.put(channel, transmissionId);
+			if (!transmissionId.isEmpty()) {
+				transmissionIds.put(channel, transmissionId);
+			}
 		}
 	}
 
