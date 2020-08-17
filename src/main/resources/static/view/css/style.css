@@ -120,6 +120,7 @@ a:visited {
     display: table-cell;
     vertical-align: middle;
     width: 165px;
+	max-width: 165px;
     height: 85px;
     border-radius: .275rem;
 	transition: 0.2s ease;
@@ -195,6 +196,7 @@ iframe {
 	}
 	.card{
 		width: 120px;
+		max-width: 120px;
 		margin-left: 2px;
 		margin-right: 2px;
 	}

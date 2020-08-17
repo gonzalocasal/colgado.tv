@@ -60,7 +60,7 @@ textarea {
 	background-color: #212121;
 	font-family: roboto, serif;
     border: none;
-    border-bottom: 2px solid #444444;
+    border-bottom: 1px solid #444444;
     color: #FFF;
     font-size: 0.875em;
     width: 250px;
@@ -69,7 +69,7 @@ textarea {
 }
 
 .input-contact:focus {
-	border-bottom:2px solid#ff0000;
+	border-bottom:1px solid #ff0000;
 	outline:0;
 	width:250px
 }
