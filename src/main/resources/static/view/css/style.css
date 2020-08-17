@@ -106,8 +106,8 @@ a:visited {
 .card-wrapper{
 	display: inline-block;
     vertical-align: top;
-	margin-left: 4px;
-    margin-right: 4px;
+	margin-left: 3px;
+    margin-right: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
