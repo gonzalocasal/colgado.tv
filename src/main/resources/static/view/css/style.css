@@ -106,10 +106,10 @@ a:visited {
 .card-wrapper{
 	display: inline-block;
     vertical-align: top;
-	margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+	margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .card {
