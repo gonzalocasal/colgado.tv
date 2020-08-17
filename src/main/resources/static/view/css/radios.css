@@ -1,227 +1,143 @@
-.sprite-am750 {
-    width: 99px;
-    height: 33px;
-    background-position: -5px -5px;
-}
-
 .sprite-aspen {
-    width: 51px;
-    height: 60px;
-    background-position: -114px -5px;
+    width: 52px;
+    height: 59px;
+    background-position: -5px -5px;
 }
 
 .sprite-blue {
     width: 65px;
     height: 64px;
-    background-position: -175px -5px;
-}
-
-.sprite-brava {
-    width: 93px;
-    height: 36px;
-    background-position: -250px -5px;
+    background-position: -67px -5px;
 }
 
 .sprite-cadena3 {
-    width: 106px;
-    height: 17px;
-    background-position: -250px -51px;
+    width: 125px;
+    height: 19px;
+    background-position: -142px -5px;
 }
 
 .sprite-cnnradio {
-    width: 117px;
-    height: 47px;
-    background-position: -5px -78px;
+    width: 57px;
+    height: 57px;
+    background-position: -277px -5px;
 }
 
 .sprite-continental {
-    width: 48px;
-    height: 58px;
-    background-position: -366px -5px;
+    width: 50px;
+    height: 60px;
+    background-position: -142px -72px;
 }
 
 .sprite-convos {
     width: 60px;
     height: 60px;
-    background-position: -366px -73px;
-}
-
-.sprite-coolradio {
-    width: 89px;
-    height: 28px;
-    background-position: -250px -78px;
-}
-
-.sprite-cooperativa {
-    width: 57px;
-    height: 55px;
-    background-position: -5px -143px;
+    background-position: -202px -72px;
 }
 
 .sprite-delplata {
     width: 57px;
-    height: 56px;
-    background-position: -72px -143px;
-}
-
-.sprite-delsol {
-    width: 69px;
-    height: 53px;
-    background-position: -139px -143px;
+    height: 57px;
+    background-position: -272px -72px;
 }
 
 .sprite-disney {
-    width: 63px;
-    height: 60px;
-    background-position: -218px -143px;
-}
-
-.sprite-espn {
-    width: 80px;
-    height: 45px;
-    background-position: -291px -143px;
-}
-
-.sprite-fmpasion {
-    width: 83px;
-    height: 57px;
-    background-position: -291px -198px;
+    width: 64px;
+    height: 64px;
+    background-position: -5px -139px;
 }
 
 .sprite-la100 {
     width: 59px;
-    height: 60px;
-    background-position: -384px -143px;
-}
-
-.sprite-la99 {
-    width: 68px;
-    height: 51px;
-    background-position: -5px -265px;
+    height: 59px;
+    background-position: -272px -139px;
 }
 
 .sprite-lared {
     width: 60px;
     height: 59px;
-    background-position: -83px -265px;
-}
-
-.sprite-laredonda {
-    width: 89px;
-    height: 62px;
-    background-position: -153px -213px;
+    background-position: -79px -208px;
 }
 
 .sprite-latina {
     width: 101px;
     height: 39px;
-    background-position: -5px -213px;
+    background-position: -79px -142px;
 }
 
 .sprite-los40 {
     width: 81px;
     height: 56px;
-    background-position: -252px -265px;
-}
-
-.sprite-lu24 {
-    width: 57px;
-    height: 56px;
-    background-position: -384px -213px;
+    background-position: -149px -208px;
 }
 
 .sprite-mega {
-    width: 108px;
-    height: 35px;
-    background-position: -153px -331px;
+    width: 125px;
+    height: 46px;
+    background-position: -149px -274px;
 }
 
 .sprite-metro {
-    width: 72px;
-    height: 63px;
-    background-position: -343px -279px;
+    width: 68px;
+    height: 59px;
+    background-position: -344px -5px;
 }
 
 .sprite-milenium {
-    width: 65px;
-    height: 64px;
-    background-position: -5px -352px;
+    width: 58px;
+    height: 58px;
+    background-position: -341px -74px;
 }
 
 .sprite-mitre {
-    width: 89px;
+    width: 85px;
     height: 57px;
-    background-position: -271px -352px;
-}
-
-.sprite-nacionalrock {
-    width: 106px;
-    height: 39px;
-    background-position: -424px -5px;
+    background-position: -284px -208px;
 }
 
 .sprite-one {
     width: 83px;
     height: 29px;
-    background-position: -436px -54px;
-}
-
-.sprite-perfil {
-    width: 65px;
-    height: 57px;
-    background-position: -453px -93px;
+    background-position: -284px -275px;
 }
 
 .sprite-pop {
-    width: 86px;
-    height: 51px;
-    background-position: -453px -160px;
+    width: 98px;
+    height: 52px;
+    background-position: -5px -314px;
 }
 
 .sprite-radio10 {
-    width: 90px;
-    height: 47px;
-    background-position: -451px -221px;
+    width: 94px;
+    height: 45px;
+    background-position: -284px -314px;
 }
 
 .sprite-radionacional {
-    width: 117px;
-    height: 45px;
-    background-position: -425px -279px;
-}
-
-.sprite-red92 {
-    width: 82px;
-    height: 61px;
-    background-position: -425px -334px;
+    width: 129px;
+    height: 15px;
+    background-position: -113px -369px;
 }
 
 .sprite-rivadavia {
-    width: 98px;
-    height: 55px;
-    background-position: -80px -405px;
+    width: 62px;
+    height: 57px;
+    background-position: -422px -5px;
 }
 
 .sprite-rocknpop {
-    width: 81px;
-    height: 60px;
-    background-position: -370px -405px;
+    width: 65px;
+    height: 54px;
+    background-position: -422px -72px;
 }
 
 .sprite-vale {
-    width: 62px;
-    height: 61px;
-    background-position: -80px -334px;
-}
-
-.sprite-vida {
-    width: 105px;
+    width: 126px;
     height: 34px;
-    background-position: -540px -5px;
+    background-position: -341px -142px;
 }
 
 .sprite-vorterix {
     width: 61px;
     height: 50px;
-    background-position: -540px -49px;
+    background-position: -379px -186px;
 }
