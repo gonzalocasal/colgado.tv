@@ -8,6 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import tv.colgado.dto.YoutubeApiResponse;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import static tv.colgado.utils.Constants.YOUTUBE_API_URL;
 
@@ -51,7 +52,7 @@ public class YoutubeIdsProvider {
 		return transmissionId;
 	}
 
-	@Scheduled(fixedRate=60*720*1000)
+	@Scheduled(fixedRate=60*60*1000)
 	private void updateAllIds() {
 		if (isScheduleEnabled) {
 			LOGGER.info("Updating all youtube transmissions IDs");
@@ -61,7 +62,16 @@ public class YoutubeIdsProvider {
 				if (!transmissionId.isEmpty()) {
 					transmissionIds.put(channel, transmissionId);
 				}
+				sleep();
 			}
+		}
+	}
+
+	private void sleep() {
+		try {
+			TimeUnit.SECONDS.sleep(2);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 
