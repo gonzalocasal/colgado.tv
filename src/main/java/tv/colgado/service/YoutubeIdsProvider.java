@@ -19,6 +19,9 @@ public class YoutubeIdsProvider {
 	@Value("${youtube.api}")
 	private String youtubeApiKey;
 
+	@Value("${schedule.enabled}")
+	private boolean isScheduleEnabled;
+
 	@Value("#{channelsIds}")
 	private Map<String,String> channelsIds;
 
@@ -50,12 +53,14 @@ public class YoutubeIdsProvider {
 
 	@Scheduled(fixedRate=60*720*1000)
 	private void updateAllIds() {
-		LOGGER.info("Updating all youtube transmissions IDs");
-		String transmissionId;
-		for (String channel : channelsIds.keySet()) {
-			transmissionId = getTransmissionIdFromYoutube(channel);
-			if (!transmissionId.isEmpty()) {
-				transmissionIds.put(channel, transmissionId);
+		if (isScheduleEnabled) {
+			LOGGER.info("Updating all youtube transmissions IDs");
+			String transmissionId;
+			for (String channel : channelsIds.keySet()) {
+				transmissionId = getTransmissionIdFromYoutube(channel);
+				if (!transmissionId.isEmpty()) {
+					transmissionIds.put(channel, transmissionId);
+				}
 			}
 		}
 	}
