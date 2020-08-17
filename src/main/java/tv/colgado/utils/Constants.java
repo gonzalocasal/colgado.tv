@@ -11,7 +11,8 @@ public class Constants {
 	public static final String CHANNEL_AMERICA_SPORTS = "americasports";
 	public static final String CHANNEL_C5N = "c5n";
 	public static final String CHANNEL_CANAL26 = "canal26";
-	public static final String CHANNEL_CN23 = "cn23";
+	public static final String CHANNEL_DIPUTADOS = "diputados";
+	public static final String CHANNEL_DW = "dw";
 	public static final String CHANNEL_CRONICA = "cronica";
 	public static final String CHANNEL_KZO = "kzo";
 	public static final String CHANNEL_LN = "ln";
