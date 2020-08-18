@@ -114,6 +114,9 @@ a:visited {
 
 .card {
 	background-color: #212121;
+	border-color: #212121;
+	border-width: 2px;
+	border-style: solid;
     line-height: 25px;
     cursor: pointer;
     text-align: center;
@@ -128,7 +131,10 @@ a:visited {
 }
 
 .card:hover {
-	box-shadow: 0 6px 14px -4px rgba(0,0,0,.3);
+	transform: scale(1.1);
+	border-width: 2px;
+	border-style: solid;
+	border-color: white;
 }
 
 .container{

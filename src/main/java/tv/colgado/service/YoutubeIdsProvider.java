@@ -52,7 +52,7 @@ public class YoutubeIdsProvider {
 		return transmissionId;
 	}
 
-	@Scheduled(fixedRate=60*60*1000)
+	@Scheduled(cron="0 1 1 * * *")
 	private void updateAllIds() {
 		if (isScheduleEnabled) {
 			LOGGER.info("Updating all youtube transmissions IDs");

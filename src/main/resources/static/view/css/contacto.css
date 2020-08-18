@@ -69,7 +69,7 @@ textarea {
 }
 
 .input-contact:focus {
-	border-bottom:1px solid #ff0000;
+	border-bottom:1px solid #FFF;
 	outline:0;
 	width:250px
 }
