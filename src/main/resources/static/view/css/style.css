@@ -2,7 +2,7 @@ body {
 	text-align: center;
 	background: #171717;
 	color: rgba(0, 0, 0, 1);
-	font-family: 'roboto', serif;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	margin: 0 auto
 }
 
@@ -35,8 +35,10 @@ h1 {
 }
 
 .top-bar-scrolled {
-  background-color: rgba(23, 23, 23, 0.95);
-  box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
+	background-color: rgba(23, 23, 23, 0.75);
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	box-shadow: 0 6px 4px -4px rgba(0,0,0,.3);
 }
 
 .menu-icon-open {
@@ -63,7 +65,7 @@ nav {
 	position: relative;
 	overflow: hidden;
 	font-size: 14.7px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .nav-page span {

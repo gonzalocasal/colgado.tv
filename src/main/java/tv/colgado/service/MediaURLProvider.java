@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-import static tv.colgado.utils.Constants.SOURCE_TELEFE;
+import static tv.colgado.utils.Constants.API_TELEFE_URL;
 
 @Component
 public class MediaURLProvider {
@@ -20,7 +20,7 @@ public class MediaURLProvider {
 	public String getTelefeURL() {
 		LOGGER.info("Looking for Telefe transmission URL");
 		HttpClient client = HttpClientBuilder.create().build();
-		HttpGet request = new HttpGet(SOURCE_TELEFE);
+		HttpGet request = new HttpGet(API_TELEFE_URL);
 		HttpResponse response = execute(client,request);
 		try {
 			return EntityUtils.toString(response.getEntity(), "UTF-8");

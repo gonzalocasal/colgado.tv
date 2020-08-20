@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import static tv.colgado.utils.Constants.YOUTUBE_API_URL;
+import static tv.colgado.utils.Constants.API_YOUTUBE_URL;
 
 @Component
 public class YoutubeIdsProvider {
@@ -42,7 +42,7 @@ public class YoutubeIdsProvider {
 	private String getTransmissionIdFromYoutube(String channel) {
 		LOGGER.info("Looking in youtube for transmission id of " + channel.toUpperCase());
 		String channelId = channelsIds.get(channel);
-		String url = String.format(YOUTUBE_API_URL, channelId, youtubeApiKey);
+		String url = String.format(API_YOUTUBE_URL, channelId, youtubeApiKey);
 		YoutubeApiResponse response = this.restTemplate.getForObject(url, YoutubeApiResponse.class);
 		String transmissionId = "";
 		if (response!= null && response.getItems() !=null && !response.getItems().isEmpty())

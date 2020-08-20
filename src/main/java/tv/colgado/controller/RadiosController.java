@@ -116,26 +116,6 @@ public class RadiosController implements ColgadoController {
 		return getDefaultView();
 	}
 
-	@RequestMapping("/radios/nacionalrock")
-	public String nacionalrock(Model model) {
-		String title = "Nacional Rock";
-		String template = "nacionalrock";
-		String schedule = "http://www.radionacional.com.ar/nacionalrock/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/perfil")
-	public String rqp(Model model) {
-		String title = "Perfil";
-		String template = "perfil";
-		String schedule = "https://radio.perfil.com/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
 	@RequestMapping("/radios/vale")
 	public String vale(Model model) {
 		String title = "Vale";
@@ -191,25 +171,6 @@ public class RadiosController implements ColgadoController {
 		String schedule = "http://www.bluefm.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/espn")
-	public String espn(Model model) {
-		String title = "ESPN";
-		String template = "espn";
-		String schedule = "http://www.espn.com.ar/espnradio/play?s=1079fm";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/pasion")
-	public String pasion(Model model) {
-		String title = "FM Pasi&oacute;n";
-		String template = "espn";
-		addCommonAttributes(model);
-		addMediaAttributes(model,title,template,null);
 		return getDefaultView();
 	}
 
@@ -301,81 +262,11 @@ public class RadiosController implements ColgadoController {
 		return getDefaultView();
 	}
 
-	@RequestMapping("/radios/cooperativa")
-	public String cooperativa(Model model) {
-		String title = "Cooperativa";
-		String template = "cooperativa";
-		String schedule = "https://radiocooperativa.com.ar/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
 	@RequestMapping("/radios/cadena3")
 	public String cadena3(Model model) {
 		String title = "Cadena 3";
 		String template = "cadena3";
 		String schedule = "https://www.cadena3.com/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/delsol")
-	public String delsol(Model model) {
-		String title = "Del Sol";
-		String template = "delsol";
-		String schedule = "https://estaciondelsol.elsol.com.ar/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/brava")
-	public String brava(Model model) {
-		String title = "Brava";
-		String template = "brava";
-		String schedule = "http://brava.com.ar/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/vida")
-	public String vida(Model model) {
-		String title = "Vida";
-		String template = "vida";
-		String schedule = "http://www.fmvida.com.ar/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/coolradio")
-	public String coolradio(Model model) {
-		String title = "Cool Radio";
-		String template = "coolradio";
-		String schedule = "http://www.coolihd.com/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/red92")
-	public String red92(Model model) {
-		String title = "Red 92";
-		String template = "red92";
-		String schedule = "http://red92.com/";
-		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
-		return getDefaultView();
-	}
-
-	@RequestMapping("/radios/laredonda")
-	public String laredonda(Model model) {
-		String title = "FM La Redonda";
-		String template = "laredonda";
-		String schedule = "http://www.fmlaredonda.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
