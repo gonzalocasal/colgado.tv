@@ -30,6 +30,6 @@ public class Constants {
 	public static final String GOOGLE_CAPTCHA_VERIFY_URI = "https://www.google.com/recaptcha/api/siteverify";
 
 	public static final String VIEW_DEFAULT = "view/template";
-	public static final String VIEW_MESSAGE = "view/mensaje";
-	public static final String VIEW_ROBOT = "view/robot";
+	public static final String VIEW_MESSAGE = "view/message";
+	public static final String VIEW_ROBOT = "error/400";
 }

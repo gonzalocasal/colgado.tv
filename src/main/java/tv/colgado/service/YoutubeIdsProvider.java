@@ -46,7 +46,7 @@ public class YoutubeIdsProvider {
 		YoutubeApiResponse response = this.restTemplate.getForObject(url, YoutubeApiResponse.class);
 		String transmissionId = "";
 		if (response!= null && response.getItems() !=null && !response.getItems().isEmpty())
-			transmissionId = response.getItems().get(0).getId().getVideoId();
+			transmissionId = response.getItems().get(response.getItems().size() - 1).getId().getVideoId();
 		else
 			LOGGER.info("Transmission not found");
 		return transmissionId;
