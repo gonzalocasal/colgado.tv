@@ -54,11 +54,11 @@ public class ContactoController implements ColgadoController{
 				request.body = mail.build();
 				sg.api(request);
 			} catch (IOException e) {
-				return ROBOT_VIEW;
+				return VIEW_ROBOT;
 			}
-			return MESSAGE_VIEW;
+			return VIEW_MESSAGE;
 		}
-		return ROBOT_VIEW;
+		return VIEW_ROBOT;
     }
 
 	private Mail generateMail(Contacto contacto) {
@@ -86,8 +86,6 @@ public class ContactoController implements ColgadoController{
 	}
 
 	@Override
-	public void addMediaAttributes(Model model, String title,String template, String schedule) {
-		
-	}
+	public void addMediaAttributes(Model model, String title,String template, String schedule) {}
 
 }

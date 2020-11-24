@@ -27,13 +27,13 @@
 	background-color: #ff0000;
 	color:#fff;
 	display:inline-block;
-	font-family: roboto, serif;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 	text-decoration:none;
 	padding:6px 20px;
 	margin-bottom: 15px;
 	transition: .3s;
 	font-size: 14.7px;
-	font-weight: 500;
+	font-weight: 400;
 	border-radius: .2rem;
 	opacity: .7;
 	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
@@ -48,9 +48,6 @@ textarea {
 	resize:none
 }
 
-.button {
-
-}
 
 .button:hover {
     opacity: 1
@@ -58,7 +55,7 @@ textarea {
 
 .input-contact {
 	background-color: #212121;
-	font-family: roboto, serif;
+	font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     border: none;
     border-bottom: 1px solid #444444;
     color: #FFF;
