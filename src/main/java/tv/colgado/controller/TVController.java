@@ -268,7 +268,7 @@ public class TVController implements ColgadoController{
 
 	@RequestMapping("/tv/ip")
 	public String ip(Model model) {
-		String title = "Informaci&oacute;n Periodistica";
+		String title = "Informaci&oacute;n Period&iacute;stica";
 		String template = "ip";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, null);
