@@ -266,6 +266,15 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
+	@RequestMapping("/tv/ip")
+	public String ip(Model model) {
+		String title = "Informaci&oacute;n Periodistica";
+		String template = "ip";
+		addCommonAttributes(model);
+		addMediaAttributes(model, title, template, null);
+		return getDefaultView();
+	}
+
 	@RequestMapping("/tv/canal26")
 	public String canal26(Model model) {
 		String title = "Canal 26";
