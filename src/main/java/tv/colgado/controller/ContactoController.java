@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 import tv.colgado.model.CaptchaResult;
-import tv.colgado.model.Contacto;
+import tv.colgado.model.Contact;
 
 import java.io.IOException;
 
@@ -41,16 +41,15 @@ public class ContactoController implements ColgadoController{
 	}
 
 	@PostMapping("/contacto")
-    public String greetingSubmit(@ModelAttribute Contacto contacto) {
-		LOGGER.info("Nuevo mensaje");
-		if (isHuman(contacto)) {
-			Mail mail = generateMail(contacto);
+    public String greetingSubmit(@ModelAttribute Contact contact) {
+		if (isHuman(contact)) {
+			Mail mail = generateMail(contact);
 			SendGrid sg = new SendGrid(emailApiKey);
 			Request request = new Request();
 			request.method = Method.POST;
 			request.endpoint = "mail/send";
 		      try {
-		    	LOGGER.info("Enviando Email");
+		    	LOGGER.info("Sending Email...");
 				request.body = mail.build();
 				sg.api(request);
 			} catch (IOException e) {
@@ -61,18 +60,18 @@ public class ContactoController implements ColgadoController{
 		return VIEW_ROBOT;
     }
 
-	private Mail generateMail(Contacto contacto) {
-		LOGGER.info("Generando Email");
-		Email from = new Email(contacto.getEmail());
-		String subject = EMAIL_SUBJECT+contacto.getNombre();
+	private Mail generateMail(Contact contact) {
+		LOGGER.info("Building new user email...");
+		Email from = new Email(contact.getEmail());
+		String subject = EMAIL_SUBJECT+ contact.getName();
 		Email to = new Email(emailReceiver);
-		Content content = new Content("text/plain", contacto.getMensaje());
+		Content content = new Content("text/plain", contact.getMessage());
 		return new Mail(from, subject, to, content);
 	}
 
-	private Boolean isHuman(Contacto contacto) {
-		LOGGER.info("Validando que el emisor sea humano");
-		String uri = GOOGLE_CAPTCHA_VERIFY_URI+"?secret="+captchaApiKey+"&response="+contacto.getToken();
+	private Boolean isHuman(Contact contact) {
+		LOGGER.info("Validating sender is human...");
+		String uri = GOOGLE_CAPTCHA_VERIFY_URI+"?secret="+captchaApiKey+"&response="+ contact.getToken();
 		RestTemplate restTemplate = new RestTemplate();
 		CaptchaResult result = restTemplate.postForObject( uri, null, CaptchaResult.class);
 		return result.getSuccess();
