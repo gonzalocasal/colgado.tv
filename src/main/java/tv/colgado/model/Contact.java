@@ -1,18 +1,18 @@
 package tv.colgado.model;
 
-public class Contacto {
+public class Contact {
 	
-	private String nombre;
+	private String name;
 	private String email;
-	private String mensaje;
+	private String message;
 	private String token;
 	
 
-	public String getNombre() {
-		return nombre;
+	public String getName() {
+		return name;
 	}
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getEmail() {
 		return email;
@@ -20,11 +20,11 @@ public class Contacto {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getMensaje() {
-		return mensaje;
+	public String getMessage() {
+		return message;
 	}
-	public void setMensaje(String mensaje) {
-		this.mensaje = mensaje;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 	public String getToken() {
 		return token;
