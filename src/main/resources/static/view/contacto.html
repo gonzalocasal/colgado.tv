@@ -2,9 +2,9 @@
 <div class=card-contact>
 	<form action="/contacto" id=form-contact class=form-contact method=post >		
 		<input id=token name=token style="display:none" type=text required ><br>		
-		<input id=nombre name=nombre class=input-contact type=text placeholder=Nombre required ><br>		
+		<input id=name name=name class=input-contact type=text placeholder=Nombre required ><br>
 		<input id=email name=email class=input-contact type=email placeholder=Email required ><br>		
-		<textarea id=mensaje name=mensaje class=input-contact placeholder=Mensaje required rows=3></textarea><br>
+		<textarea id=message name=message class=input-contact placeholder=Mensaje required rows=3></textarea><br>
 		<div id=send>
 			<input type=submit value=ENVIAR  class=submit id=submit /><br>
 			<a href="javascript:{}" onclick=submitContacto() class=button id=submit-link>Enviar</a>
