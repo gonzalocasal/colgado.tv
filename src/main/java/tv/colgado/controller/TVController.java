@@ -604,10 +604,10 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
-	@RequestMapping("/tv/fox")
+	@RequestMapping("/tv/star")
 	public String fox(Model model) {
-		String title = "Fox";
-		String template = "fox";
+		String title = "Star Channel";
+		String template = "star";
 		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=204";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
@@ -764,13 +764,21 @@ public class TVController implements ColgadoController{
 		return getDefaultView();
 	}
 
-	@RequestMapping("/tv/golden")
+	@RequestMapping("/tv/vh1")
 	public String golden(Model model) {
-		String title = "Golden Edge";
-		String template = "golden";
-		String schedule = "http://www.directv.com.ar/guia/ChannelDetail.aspx?id=517";
+		String title = "VH1";
+		String template = "vh1";
 		addCommonAttributes(model);
-		addMediaAttributes(model, title, template, schedule);
+		addMediaAttributes(model, title, template, null);
+		return getDefaultView();
+	}
+
+	@RequestMapping("/tv/much")
+	public String much(Model model) {
+		String title = "Much Music";
+		String template = "much";
+		addCommonAttributes(model);
+		addMediaAttributes(model, title, template, null);
 		return getDefaultView();
 	}
 
