@@ -1,40 +1,34 @@
 package tv.colgado.service;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
+import lombok.extern.log4j.Log4j2;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.net.URL;
 
-import static tv.colgado.utils.Constants.API_TELEFE_URL;
-
+@Log4j2
 @Component
 public class MediaURLProvider {
 
-	private final static Logger LOGGER = Logger.getLogger(MediaURLProvider.class);
-
-	public String getTelefeURL() {
-		LOGGER.info("Looking for Telefe transmission URL");
-		HttpClient client = HttpClientBuilder.create().build();
-		HttpGet request = new HttpGet(API_TELEFE_URL);
-		HttpResponse response = execute(client,request);
+	public String getURL(String channelURL) {
+		log.info("Looking for at {} URL to get Transmission URL", channelURL);
 		try {
-			return EntityUtils.toString(response.getEntity(), "UTF-8");
-		} catch (IOException e) {
-			LOGGER.error(e.getMessage());
-		}
-		return null;
-	}
+			Document doc = Jsoup.connect(channelURL)
+					.userAgent("Mozilla/5.0")
+					.get();
 
-	private HttpResponse execute(HttpClient client, HttpGet request) {
-		try {
-			return client.execute(request);
+			String parsedURL = doc.getElementsByClass("iframe-container").get(0).childNode(1).attributes().get("src");
+			if (parsedURL.startsWith("/embed/")) {
+				URL url = new URL(channelURL);
+				parsedURL = "https://" + url.getHost() + parsedURL;
+			}
+
+			log.info("Parsed URL: {}", parsedURL);
+			return parsedURL;
 		} catch (IOException e) {
-			e.printStackTrace();
+			log.error(e.getMessage());
 		}
 		return null;
 	}

@@ -1,7 +1,7 @@
 package tv.colgado.controller;
 
 import com.sendgrid.*;
-import org.apache.log4j.Logger;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,22 +16,24 @@ import java.io.IOException;
 
 import static tv.colgado.utils.Constants.*;
 
+@Log4j2
 @Controller
-public class ContactoController implements ColgadoController{
-	
-	final static Logger LOGGER = Logger.getLogger(ContactoController.class);
+public class ContactController implements ColgadoController{
 
-	@Value("${version}")
-	private String version;
-	
-	@Value("${email.receiver}")
-	private String emailReceiver;
-	
-	@Value("${email.api}")
-	private String emailApiKey;
-	
-	@Value("${captcha.api}")
-	private String captchaApiKey;
+	private final String version;
+
+	private final String emailReceiver;
+
+	private final String emailApiKey;
+
+	private final String captchaApiKey;
+
+	public ContactController(@Value("${version}") String version, @Value("${email.receiver}") String emailReceiver, @Value("${email.api}") String emailApiKey, @Value("${captcha.api}") String captchaApiKey) {
+		this.version = version;
+		this.emailReceiver = emailReceiver;
+		this.emailApiKey = emailApiKey;
+		this.captchaApiKey = captchaApiKey;
+	}
 
 	@RequestMapping("/contacto")
 	public String root(Model model) {
@@ -49,7 +51,7 @@ public class ContactoController implements ColgadoController{
 			request.method = Method.POST;
 			request.endpoint = "mail/send";
 		      try {
-		    	LOGGER.info("Sending Email...");
+		    	log.info("Sending Email...");
 				request.body = mail.build();
 				sg.api(request);
 			} catch (IOException e) {
@@ -61,7 +63,7 @@ public class ContactoController implements ColgadoController{
     }
 
 	private Mail generateMail(Contact contact) {
-		LOGGER.info("Building new user email...");
+		log.info("Building new user email...");
 		Email from = new Email(contact.getEmail());
 		String subject = EMAIL_SUBJECT+ contact.getName();
 		Email to = new Email(emailReceiver);
@@ -70,11 +72,19 @@ public class ContactoController implements ColgadoController{
 	}
 
 	private Boolean isHuman(Contact contact) {
-		LOGGER.info("Validating sender is human...");
-		String uri = GOOGLE_CAPTCHA_VERIFY_URI+"?secret="+captchaApiKey+"&response="+ contact.getToken();
+		log.info("Validating sender is human...");
+		if (contact == null) {
+			return false;
+		}
+
+		String uri = String.format(GOOGLE_CAPTCHA_VERIFY_URI, captchaApiKey, contact.getToken());
 		RestTemplate restTemplate = new RestTemplate();
 		CaptchaResult result = restTemplate.postForObject( uri, null, CaptchaResult.class);
-		return result.getSuccess();
+		if (result != null && result.getSuccess() != null) {
+			return result.getSuccess();
+		} else {
+			return false;
+		}
 	}
 
 	@Override

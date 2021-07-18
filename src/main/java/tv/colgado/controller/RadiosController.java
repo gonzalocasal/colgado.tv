@@ -13,11 +13,14 @@ import static tv.colgado.utils.Constants.CHANNEL_VORTERIX;
 @Controller
 public class RadiosController implements ColgadoController {
 
-	@Autowired
-	private YoutubeIdsProvider youtube;
 
-	@Value("${version}")
-	private String version;
+	private final YoutubeIdsProvider youtube;
+	private final String version;
+
+	public RadiosController(@Autowired YoutubeIdsProvider youtube, @Value("${version}") String version) {
+		this.youtube = youtube;
+		this.version = version;
+	}
 
 	@RequestMapping("/radios")
 	public String root(Model model) {
@@ -30,7 +33,7 @@ public class RadiosController implements ColgadoController {
 	public String la100(Model model) {
 		String title = "La 100";
 		String template = "la100";
-		String schedule = "http://www.cienradios.com.ar/argentina/la-100/vivo#fragment-2";
+		String schedule = "https://www.cienradios.com.ar/argentina/la-100/vivo#fragment-2";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -50,7 +53,7 @@ public class RadiosController implements ColgadoController {
 	public String metro(Model model) {
 		String title = "Metro";
 		String template = "metro";
-		String schedule = "http://www.metro951.com";
+		String schedule = "https://www.metro951.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -60,7 +63,7 @@ public class RadiosController implements ColgadoController {
 	public String disney(Model model) {
 		String title = "Disney Radio";
 		String template = "disney";
-		String schedule = "http://radiodisney.disneylatino.com/argentina";
+		String schedule = "https://radiodisney.disneylatino.com/argentina";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -70,7 +73,7 @@ public class RadiosController implements ColgadoController {
 	public String los40(Model model) {
 		String title = "Los 40";
 		String template = "los40";
-		String schedule = "http://www.los40principales.com.ar";
+		String schedule = "https://www.los40principales.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -91,7 +94,7 @@ public class RadiosController implements ColgadoController {
 	public String rocknpop(Model model) {
 		String title = "Rock & Pop";
 		String template = "rocknpop";
-		String schedule = "http://fmrockandpop.com";
+		String schedule = "https://fmrockandpop.com";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -129,7 +132,7 @@ public class RadiosController implements ColgadoController {
 	public String latina(Model model) {
 		String title = "Latina";
 		String template = "latina";
-		String schedule = "http://www.latina101.com.ar/";
+		String schedule = "https://www.latina101.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -139,7 +142,7 @@ public class RadiosController implements ColgadoController {
 	public String convos(Model model) {
 		String title = "Con Vos";
 		String template = "convos";
-		String schedule = "http://www.radioconvos.com.ar";
+		String schedule = "https://www.radioconvos.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -158,7 +161,7 @@ public class RadiosController implements ColgadoController {
 	public String milenium(Model model) {
 		String title = "Milenium";
 		String template = "milenium";
-		String schedule = "http://www.fmmilenium.com.ar/";
+		String schedule = "https://www.fmmilenium.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -168,7 +171,7 @@ public class RadiosController implements ColgadoController {
 	public String blue(Model model) {
 		String title = "Blue";
 		String template = "blue";
-		String schedule = "http://www.bluefm.com.ar/";
+		String schedule = "https://www.bluefm.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -206,7 +209,7 @@ public class RadiosController implements ColgadoController {
 	public String lared(Model model) {
 		String title = "La Red";
 		String template = "lared";
-		String schedule = "http://www.radiolared.multimediosamerica.com.ar";
+		String schedule = "https://www.radiolared.multimediosamerica.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -216,7 +219,7 @@ public class RadiosController implements ColgadoController {
 	public String continental(Model model) {
 		String title = "Continental";
 		String template = "continental";
-		String schedule = "http://www.radiolared.multimediosamerica.com.ar";
+		String schedule = "https://www.radiolared.multimediosamerica.com.ar";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -226,7 +229,7 @@ public class RadiosController implements ColgadoController {
 	public String radionacional(Model model) {
 		String title = "Radio Nacional";
 		String template = "radionacional";
-		String schedule = "http://www.radionacional.com.ar/";
+		String schedule = "https://www.radionacional.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();
@@ -256,7 +259,7 @@ public class RadiosController implements ColgadoController {
 	public String rivadavia(Model model) {
 		String title = "Rivadavia";
 		String template = "rivadavia";
-		String schedule = "http://www.rivadavia.com.ar/";
+		String schedule = "https://www.rivadavia.com.ar/";
 		addCommonAttributes(model);
 		addMediaAttributes(model, title, template, schedule);
 		return getDefaultView();

@@ -1,6 +1,6 @@
 package tv.colgado.service;
 
-import org.apache.log4j.Logger;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -12,23 +12,30 @@ import java.util.concurrent.TimeUnit;
 
 import static tv.colgado.utils.Constants.API_YOUTUBE_URL;
 
+@Log4j2
 @Component
 public class YoutubeIdsProvider {
 
-	final static Logger LOGGER = Logger.getLogger(YoutubeIdsProvider.class);
+	private final String youtubeApiKey;
 
-	@Value("${youtube.api}")
-	private String youtubeApiKey;
+	private final boolean isScheduleEnabled;
 
-	@Value("${schedule.enabled}")
-	private boolean isScheduleEnabled;
+	private final Map<String,String> channelsIds;
 
-	@Value("#{channelsIds}")
-	private Map<String,String> channelsIds;
+	private final Map<String,String> transmissionIds;
 
-	private Map<String,String> transmissionIds = new HashMap<>();
+	private final RestTemplate restTemplate;
 
-	private RestTemplate restTemplate = new RestTemplate();
+	public YoutubeIdsProvider(@Value("${youtube.api}") String youtubeApiKey,
+							  @Value("${schedule.enabled}") boolean isScheduleEnabled,
+							  @Value("#{${youtube.api.ids}}")Map<String, String> channelsIds) {
+
+		this.youtubeApiKey = youtubeApiKey;
+		this.isScheduleEnabled = isScheduleEnabled;
+		this.channelsIds = channelsIds;
+		this.transmissionIds = new HashMap<>();
+		this.restTemplate = new RestTemplate();
+	}
 
 	public String getId(String channel) {
 		String transmissionId = transmissionIds.get(channel);
@@ -40,7 +47,7 @@ public class YoutubeIdsProvider {
 	}
 
 	private String getTransmissionIdFromYoutube(String channel) {
-		LOGGER.info("Looking in youtube for transmission id of " + channel.toUpperCase());
+		log.info("Looking in youtube for transmission id of " + channel.toUpperCase());
 		String channelId = channelsIds.get(channel);
 		String url = String.format(API_YOUTUBE_URL, channelId, youtubeApiKey);
 		YoutubeApiResponse response = this.restTemplate.getForObject(url, YoutubeApiResponse.class);
@@ -48,14 +55,14 @@ public class YoutubeIdsProvider {
 		if (response!= null && response.getItems() !=null && !response.getItems().isEmpty())
 			transmissionId = response.getItems().get(response.getItems().size() - 1).getId().getVideoId();
 		else
-			LOGGER.info("Transmission not found");
+			log.info("Transmission not found");
 		return transmissionId;
 	}
 
 	@Scheduled(cron="0 1 1 * * *")
 	private void updateAllIds() {
 		if (isScheduleEnabled) {
-			LOGGER.info("Updating all youtube transmissions IDs");
+			log.info("Updating all youtube transmissions IDs");
 			String transmissionId;
 			for (String channel : channelsIds.keySet()) {
 				transmissionId = getTransmissionIdFromYoutube(channel);
