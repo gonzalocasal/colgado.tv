@@ -9,10 +9,11 @@ Web application of TV media streaming.
 
 ### Frameworks & Libraries
 * Gson 2.8.5
+* Jsoup 1.13.1
+* Lombok 1.18.4
 * reCAPTCHA 3
 * Spring Boot 2.2.2
 * Sendgrid 3.0.9
-
 
 ### Install
 ```
