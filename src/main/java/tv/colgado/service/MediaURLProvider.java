@@ -20,7 +20,7 @@ public class MediaURLProvider {
 					.get();
 
 			String parsedURL = doc.getElementsByClass("iframe-container").get(0).childNode(1).attributes().get("src");
-			if (parsedURL.startsWith("/embed/")) {
+			if (parsedURL.startsWith("/embed")) {
 				URL url = new URL(channelURL);
 				parsedURL = "https://" + url.getHost() + parsedURL;
 			}
