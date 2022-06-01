@@ -94,4 +94,9 @@ public class ContactController implements ColgadoController{
 		model.addAttribute("ad", false);
 	}
 
+	@Override
+	public void addMediaAttributes(Model model, String title,String template, String schedule) {
+		//No implementation required.
+	}
+
 }
