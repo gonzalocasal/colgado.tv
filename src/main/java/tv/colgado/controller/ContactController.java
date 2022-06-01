@@ -71,7 +71,7 @@ public class ContactController implements ColgadoController{
 		return new Mail(from, subject, to, content);
 	}
 
-	private Boolean isHuman(Contact contact) {
+	private boolean isHuman(Contact contact) {
 		log.info("Validating sender is human...");
 		if (contact == null) {
 			return false;
@@ -93,8 +93,5 @@ public class ContactController implements ColgadoController{
 		model.addAttribute("version", version);
 		model.addAttribute("ad", false);
 	}
-
-	@Override
-	public void addMediaAttributes(Model model, String title,String template, String schedule) {}
 
 }

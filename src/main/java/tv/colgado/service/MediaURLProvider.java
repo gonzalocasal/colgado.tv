@@ -14,23 +14,24 @@ public class MediaURLProvider {
 
 	public String getURL(String channelURL) {
 		log.info("Looking for at {} URL to get Transmission URL", channelURL);
+		String parsedUrl = "";
 		try {
 			Document doc = Jsoup.connect(channelURL)
 					.userAgent("Mozilla/5.0")
 					.get();
 
-			String parsedURL = doc.getElementsByClass("iframe-container").get(0).childNode(1).attributes().get("src");
-			if (parsedURL.startsWith("/embed")) {
+			parsedUrl = doc.getElementsByClass("iframe-container").get(0).childNode(1).attributes().get("src");
+			if (parsedUrl.startsWith("/embed")) {
 				URL url = new URL(channelURL);
-				parsedURL = "https://" + url.getHost() + parsedURL;
+				parsedUrl = "https://" + url.getHost() + parsedUrl;
 			}
 
-			log.info("Parsed URL: {}", parsedURL);
-			return parsedURL;
+			log.info("Parsed URL: {}", parsedUrl);
+			return parsedUrl;
 		} catch (IOException e) {
 			log.error(e.getMessage());
 		}
-		return null;
+		return parsedUrl;
 	}
 
 }

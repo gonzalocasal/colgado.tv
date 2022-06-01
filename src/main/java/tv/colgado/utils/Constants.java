@@ -2,6 +2,8 @@ package tv.colgado.utils;
 
 public class Constants {
 
+	private Constants(){}
+
 	public static final String API_YOUTUBE_URL = "https://www.googleapis.com/youtube/v3/search?channelId=%s&eventType=live&part=id&regionCode=AR&type=video&videoType=any&key=%s";
 
 	public static final String ACTIVE_TV = "tv";
